@@ -1,0 +1,60 @@
+{
+  "schema_version": "2.0",
+  "source_role": "MODEL_READABLE_PUBLIC_STATIC_SNAPSHOT",
+  "generated_at": "2026-09-08T15:43:36+07:00",
+  "timezone": "Asia/Ho_Chi_Minh",
+  "static_baseline_cutoff": "2026-09-08",
+  "weekly_replace_from": "2026-09-05/2026-09-11",
+  "current_data_cutoff": "2026-09-08",
+  "latest_completed_session": "2026-09-07",
+  "provisional_status": "YES",
+  "provisional_rows_at_cutoff": 368,
+  "universe_symbols": 405,
+  "daily_delta_rows": 0,
+  "weekly_replace_rows": 388,
+  "index_daily_delta_rows": 0,
+  "validation_status": "fail",
+  "index_validation_status": "pass",
+  "backend_refreshed_at": "2026-09-08T14:45:13+07:00",
+  "indices_refreshed_at": "2026-09-08T13:05:32+07:00",
+  "files": {
+    "daily_delta": "daily_delta.csv",
+    "weekly_replace": "weekly_replace.csv",
+    "index_daily_delta": "index_daily_delta.csv",
+    "market_scan": "market_scan.csv",
+    "sector_scan": "sector_scan.csv",
+    "latest_bars": "latest_bars.csv",
+    "index_recent": "index_recent.json",
+    "universe": "meta/universe.csv",
+    "sector_classification": "meta/sector_classification.csv",
+    "vn30_constituents": "meta/vn30_constituents.csv",
+    "validation_report": "meta/validation_report.json",
+    "indices_sectors_validation": "meta/indices_sectors_validation.json"
+  },
+  "merge_rules": {
+    "daily": "Use Project daily_ohlcv.csv through 2026-09-08; append/replace public daily_delta.csv rows with date > 2026-09-08 by (symbol,date).",
+    "weekly": "Use Project weekly baseline before week 2026-09-05/2026-09-11; replace all rows from week 2026-09-05/2026-09-11 onward with public weekly_replace.csv by (symbol,week).",
+    "index_daily": "Use Project index_daily_ohlcv.csv through 2026-09-08; append/replace public index_daily_delta.csv rows with date > 2026-09-08 by (symbol,date)."
+  },
+  "routing": {
+    "current_analysis": "Read manifest.json first. If fresh, merge public delta with Project frozen baseline using merge_rules, then run Data/Freshness Gate before analysis.",
+    "market_scan": "Use market_scan.csv + sector_scan.csv for screening overlays, then verify Wyckoff price-volume evidence on merged daily/weekly sequences.",
+    "historical_holdout": "ANALYSIS_CUTOFF is absolute. Never use rows after cutoff.",
+    "api_contract": "NONE. These are public read-only static files over HTTPS, not an assumed API."
+  },
+  "method_safety": [
+    "Provisional bars may describe forming behavior but cannot alone CONFIRM a major Event/Phase or completed weekly breakout/breakdown.",
+    "Return/MA/peer metrics are Project overlays; they cannot create or upgrade Wyckoff Event/Phase labels.",
+    "Wave-to-wave RS must still be evaluated from corresponding price swings after merge.",
+    "Same-cutoff OHLCV conflict => DATA CONFLICT; block Locked Analysis until reconciled."
+  ],
+  "hashes": {
+    "daily_delta": "b8dc84d50de1392456e2dd54426eececbb8a1e83a97a80920701a9d665b58dd8",
+    "weekly_replace": "b241c45203189a2f1ba2a974cd8141547aed63c45a4bb3ca3afbbae4274a3ac0",
+    "index_daily_delta": "b8dc84d50de1392456e2dd54426eececbb8a1e83a97a80920701a9d665b58dd8",
+    "market_scan": "7c4efa376524b967626d8b803e09117857149aca7e5475fe2f2eedf50ae260ec",
+    "sector_scan": "3c5aa4d7d8505e2496b7ad7b979130d0f4fe6be094ab2a9891a87f7a09497f04",
+    "latest_bars": "90cf1ccea20f85c1f95667c9a658386196826169c38f0c93cb06b64e05cd5b75",
+    "index_recent": "444f534af2075dcccc37b62b6932ecd69fe00d9aeb3a41047eb7eea3dc23f44b"
+  }
+}
