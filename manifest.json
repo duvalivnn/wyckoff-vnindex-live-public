@@ -1,19 +1,19 @@
 {
   "schema_version": "2.5",
   "source_role": "MODEL_READABLE_PUBLIC_STATIC_SNAPSHOT",
-  "generated_at": "2026-09-08T17:29:10+07:00",
+  "generated_at": "2026-09-09T09:29:08+07:00",
   "timezone": "Asia/Ho_Chi_Minh",
   "project_static_cutoff_rule": "Resolve from Project validation_report.json.latest_data_date at analysis time.",
   "bridge_lookback_days": 180,
-  "bridge_start_date": "2026-03-12",
+  "bridge_start_date": "2026-03-13",
   "weekly_replace_available_from": "2026-03-07/2026-03-13",
-  "current_data_cutoff": "2026-09-08",
+  "current_data_cutoff": "2026-09-09",
   "latest_completed_session": "2026-09-08",
-  "provisional_status": "NO",
-  "provisional_rows_at_cutoff": 0,
+  "provisional_status": "YES",
+  "provisional_rows_at_cutoff": 262,
   "universe_symbols": 405,
-  "daily_bridge_rows": 45721,
-  "weekly_replace_rows": 10655,
+  "daily_bridge_rows": 45601,
+  "weekly_replace_rows": 10657,
   "index_daily_bridge_rows": 246,
   "validation_status": "pass",
   "live_snapshot_validation": {
@@ -34,8 +34,8 @@
   },
   "backend_validation_report_status": "pass",
   "index_validation_status": "pass",
-  "backend_refreshed_at": "2026-09-08T17:28:35+07:00",
-  "indices_refreshed_at": "2026-09-08T17:28:45+07:00",
+  "backend_refreshed_at": "2026-09-09T09:27:51+07:00",
+  "indices_refreshed_at": "2026-09-09T09:28:53+07:00",
   "files": {
     "daily_bridge": "daily_bridge.csv",
     "daily_delta_compat": "daily_delta.csv",
@@ -46,6 +46,11 @@
     "sector_scan": "sector_scan.csv",
     "latest_bars": "latest_bars.csv",
     "index_recent": "index_recent.json",
+    "alerts_live": "alerts_live.json",
+    "alerts_active": "alerts_active.csv",
+    "alerts_new": "alerts_new.csv",
+    "watchlist_live": "watchlist_live.csv",
+    "alert_engine_meta": "alert_engine_meta.json",
     "universe": "meta/universe.csv",
     "sector_classification": "meta/sector_classification.csv",
     "vn30_constituents": "meta/vn30_constituents.csv",
@@ -54,7 +59,7 @@
   },
   "merge_rules": {
     "project_cutoff": "Read Project validation_report.json.latest_data_date as STATIC_BASELINE_CUTOFF.",
-    "coverage_gate": "STATIC_BASELINE_CUTOFF must be on/after 2026-03-12; otherwise BRIDGE_GAP = YES and Current merge is blocked.",
+    "coverage_gate": "STATIC_BASELINE_CUTOFF must be on/after 2026-03-13; otherwise BRIDGE_GAP = YES and Current merge is blocked.",
     "daily": "Use Project daily_ohlcv.csv through STATIC_BASELINE_CUTOFF; append/replace rows from public daily_bridge.csv with date > STATIC_BASELINE_CUTOFF by (symbol,date).",
     "weekly": "Let W be the W-FRI week containing STATIC_BASELINE_CUTOFF. Use Project weekly baseline before W; replace rows from W onward with public weekly_replace.csv by (symbol,week).",
     "index_daily": "Use Project index_daily_ohlcv.csv through STATIC_BASELINE_CUTOFF; append/replace rows from public index_daily_bridge.csv with date > STATIC_BASELINE_CUTOFF by (symbol,date)."
@@ -62,6 +67,7 @@
   "routing": {
     "current_analysis": "Read manifest.json first. If fresh, merge public delta with Project frozen baseline using merge_rules, then run Data/Freshness Gate before analysis.",
     "market_scan": "Use market_scan.csv + sector_scan.csv for screening overlays, then verify Wyckoff price-volume evidence on merged daily/weekly sequences.",
+    "realtime_alert_engine_v1": "Use alerts_live.json / alerts_active.csv / watchlist_live.csv as Project overlay candidates only. Never treat scanner LPS/BUEC/Spring/JAC names as confirmed Method labels.",
     "historical_holdout": "ANALYSIS_CUTOFF is absolute. Never use rows after cutoff.",
     "api_contract": "NONE. These are public read-only static files over HTTPS, not an assumed API."
   },
@@ -69,17 +75,18 @@
     "Provisional bars may describe forming behavior but cannot alone CONFIRM a major Event/Phase or completed weekly breakout/breakdown.",
     "Return/MA/peer metrics are Project overlays; they cannot create or upgrade Wyckoff Event/Phase labels.",
     "Wave-to-wave RS must still be evaluated from corresponding price swings after merge.",
-    "Same-cutoff OHLCV conflict => DATA CONFLICT; block Locked Analysis until reconciled."
+    "Same-cutoff OHLCV conflict => DATA CONFLICT; block Locked Analysis until reconciled.",
+    "Realtime Alert Engine v1 scores/statuses are Project overlays and cannot create or upgrade a Wyckoff Event/Phase."
   ],
   "hashes": {
-    "daily_bridge": "01f618cf41aeea3f6d82f5d1aea1fd2d80be304869d3bced93d1da9ee37d15c6",
-    "daily_delta_compat": "01f618cf41aeea3f6d82f5d1aea1fd2d80be304869d3bced93d1da9ee37d15c6",
-    "weekly_replace": "7ad9be12e8a91ee76b093a596f67ad38938546882a6e02480847e2c473dc2a53",
-    "index_daily_bridge": "aa4f81d3cede9e509f40168ff8acbcfc59d046154fa1d0fa9a9f57974bf2fc42",
-    "index_daily_delta_compat": "aa4f81d3cede9e509f40168ff8acbcfc59d046154fa1d0fa9a9f57974bf2fc42",
-    "market_scan": "e174a7934d7a80eda887ca33de428f6493ab2e66b0798913d3f29bb6b3e11286",
-    "sector_scan": "065b64cacfb3d5c9a2e085344394dd1438e736af4bbb49b8b94aa218957b2ebf",
-    "latest_bars": "01e777693c0da6b29a4a40bcdc654d9446103d7e28d57ff823e4c8b452d3fa76",
-    "index_recent": "ef159afd4f64cf59e5b5b54ec82ebdfa020a443cf114f2d850c639812ddd7830"
+    "daily_bridge": "94c8240b9f9bcf385bddbc740b473495348cc55a0d1e731813277777d874bf83",
+    "daily_delta_compat": "94c8240b9f9bcf385bddbc740b473495348cc55a0d1e731813277777d874bf83",
+    "weekly_replace": "0c86db00f8cca8142bcb75b1738491837a9129c6a33ff68e9b963661543b7125",
+    "index_daily_bridge": "de2e1792366593f361c00a0d834825e21a573b56ea8581dd9b40c4289c4d73bc",
+    "index_daily_delta_compat": "de2e1792366593f361c00a0d834825e21a573b56ea8581dd9b40c4289c4d73bc",
+    "market_scan": "67efb5d23d6604168eb3c01e58b05c7420fc6dba6bc49796603cc5cd52e6a5d9",
+    "sector_scan": "277740a78805b391636a726a95fcc1df5ccfae7525227e29c79850253d805605",
+    "latest_bars": "7ccda79ec440196456dfbec2ceac631001cf58638da27b3aff8f55139b5101a9",
+    "index_recent": "2d7625ae4c611192477490a74f98593401a6499914e61c0813797384b3bef378"
   }
 }
