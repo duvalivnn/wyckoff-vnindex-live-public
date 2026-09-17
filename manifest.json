@@ -1,19 +1,19 @@
 {
   "schema_version": "2.5",
   "source_role": "MODEL_READABLE_PUBLIC_STATIC_SNAPSHOT",
-  "generated_at": "2026-09-16T15:48:29+07:00",
+  "generated_at": "2026-09-17T09:45:54+07:00",
   "timezone": "Asia/Ho_Chi_Minh",
   "project_static_cutoff_rule": "Resolve from Project validation_report.json.latest_data_date at analysis time.",
   "bridge_lookback_days": 180,
-  "bridge_start_date": "2026-03-20",
-  "weekly_replace_available_from": "2026-03-14/2026-03-20",
-  "current_data_cutoff": "2026-09-16",
+  "bridge_start_date": "2026-03-21",
+  "weekly_replace_available_from": "2026-03-21/2026-03-27",
+  "current_data_cutoff": "2026-09-17",
   "latest_completed_session": "2026-09-16",
-  "provisional_status": "NO",
-  "provisional_rows_at_cutoff": 0,
+  "provisional_status": "YES",
+  "provisional_rows_at_cutoff": 287,
   "universe_symbols": 405,
-  "daily_bridge_rows": 45664,
-  "weekly_replace_rows": 10660,
+  "daily_bridge_rows": 45578,
+  "weekly_replace_rows": 10260,
   "index_daily_bridge_rows": 246,
   "validation_status": "pass",
   "live_snapshot_validation": {
@@ -34,8 +34,8 @@
   },
   "backend_validation_report_status": "pass",
   "index_validation_status": "pass",
-  "backend_refreshed_at": "2026-09-16T15:47:20+07:00",
-  "indices_refreshed_at": "2026-09-16T15:48:11+07:00",
+  "backend_refreshed_at": "2026-09-17T09:43:54+07:00",
+  "indices_refreshed_at": "2026-09-17T09:44:53+07:00",
   "files": {
     "daily_bridge": "daily_bridge.csv",
     "daily_delta_compat": "daily_delta.csv",
@@ -59,7 +59,7 @@
   },
   "merge_rules": {
     "project_cutoff": "Read Project validation_report.json.latest_data_date as STATIC_BASELINE_CUTOFF.",
-    "coverage_gate": "STATIC_BASELINE_CUTOFF must be on/after 2026-03-20; otherwise BRIDGE_GAP = YES and Current merge is blocked.",
+    "coverage_gate": "STATIC_BASELINE_CUTOFF must be on/after 2026-03-21; otherwise BRIDGE_GAP = YES and Current merge is blocked.",
     "daily": "Use Project daily_ohlcv.csv through STATIC_BASELINE_CUTOFF; append/replace rows from public daily_bridge.csv with date > STATIC_BASELINE_CUTOFF by (symbol,date).",
     "weekly": "Let W be the W-FRI week containing STATIC_BASELINE_CUTOFF. Use Project weekly baseline before W; replace rows from W onward with public weekly_replace.csv by (symbol,week).",
     "index_daily": "Use Project index_daily_ohlcv.csv through STATIC_BASELINE_CUTOFF; append/replace rows from public index_daily_bridge.csv with date > STATIC_BASELINE_CUTOFF by (symbol,date)."
@@ -79,14 +79,14 @@
     "Realtime Alert Engine v1 scores/statuses are Project overlays and cannot create or upgrade a Wyckoff Event/Phase."
   ],
   "hashes": {
-    "daily_bridge": "505f233c9ca0dc51aaf36aeb7264ae839aad073e651c075d725870ad09723259",
-    "daily_delta_compat": "505f233c9ca0dc51aaf36aeb7264ae839aad073e651c075d725870ad09723259",
-    "weekly_replace": "2a62abdbec575170cf698b584b2cab5a44100084ac01a5cdc3067dbee1af4735",
-    "index_daily_bridge": "8c498efcc99927b5df39f9eacbb434f8340da7f757d6ea6bf3d9a77985fe5dfa",
-    "index_daily_delta_compat": "8c498efcc99927b5df39f9eacbb434f8340da7f757d6ea6bf3d9a77985fe5dfa",
-    "market_scan": "1512976fd49d190e6d1bfe9e90472ce5a25a76d18276d13c59a008abb9ae344a",
-    "sector_scan": "70586de30e42c376b0a3e24e8b80946f1d470600dc2432fdbef1a1ee4dadac16",
-    "latest_bars": "b8ffd8ac6cf4d4d66411f77667bf60a5b02e17a949e3f079aa29a0caab86156e",
-    "index_recent": "a270e2779416603e267d3df4ebf808fabb4eff8cd4269c93e2e98e7c47d8616c"
+    "daily_bridge": "378b6f9f57224424b5427c2f5a57e72863dfecb71e17984ec293e107cd97ebba",
+    "daily_delta_compat": "378b6f9f57224424b5427c2f5a57e72863dfecb71e17984ec293e107cd97ebba",
+    "weekly_replace": "d936914e8933bb34bb01742072848abb5a5de0a02425456980fc6b2b86675ccb",
+    "index_daily_bridge": "61025152b1463f98c148aa7740748dd6e6b42e1f4e58e056d0e6c8f45a3313f2",
+    "index_daily_delta_compat": "61025152b1463f98c148aa7740748dd6e6b42e1f4e58e056d0e6c8f45a3313f2",
+    "market_scan": "492f39c99a380f00a9b8dda34a7a2c128ff27c5bfac76f2f358cf367a9e0c4a7",
+    "sector_scan": "0bb97bf84eb0753dde2550be0c4708e902a28015a77c16c08cdc6986c90c13a9",
+    "latest_bars": "36caca8e83434919d6808c6d3d6c380dd85e6a143e1075c9716868a61b03b7c4",
+    "index_recent": "592442ba354a6ff457194b965185121e686767e216bccf5a9742c6a4cd0fc19a"
   }
 }

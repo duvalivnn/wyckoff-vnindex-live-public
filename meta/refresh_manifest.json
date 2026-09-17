@@ -1,14 +1,22 @@
 {
-  "refreshed_at": "2026-09-16T15:47:20+07:00",
+  "refreshed_at": "2026-09-17T09:43:54+07:00",
   "timezone": "Asia/Ho_Chi_Minh",
-  "refresh_mode": "FULL",
-  "fast_intraday_version": "1.0",
   "source_library": "vnstock",
   "source_provider": "KBS",
+  "session_mode": "INTRADAY_AM",
+  "acquisition_schedule": {
+    "intraday_am": "09:16-11:30",
+    "intraday_pm": "13:00-14:29",
+    "atc_freeze": "14:30-15:00",
+    "eod_finalize_from": "15:01"
+  },
+  "eod_requested": false,
+  "eod_source_finality_gate": "not_requested",
+  "eod_source_finality_detail": "not requested",
   "universe_rule": "exchange=HOSE and type=stock, current listing snapshot",
   "start_date": "2021-01-01",
-  "live_rows_overlaid": 0,
-  "invalid_live_board_rows_rejected": 0,
+  "live_rows_overlaid": 286,
+  "invalid_live_board_rows_rejected": 1,
   "invalid_provisional_rows_dropped": 0,
   "finalized_stale_provisional_rows": 0,
   "errors": {},
@@ -16,16 +24,16 @@
     "expected_symbols": 405,
     "symbols_with_data": 405,
     "symbols_without_data": [],
-    "daily_rows": 523312,
+    "daily_rows": 523599,
     "weekly_rows": 113550,
     "duplicate_daily_keys": 0,
     "duplicate_weekly_keys": 0,
     "invalid_ohlc_rows": 0,
-    "provisional_rows_total": 0,
-    "latest_date_provisional_rows": 0,
+    "provisional_rows_total": 287,
+    "latest_date_provisional_rows": 287,
     "stale_provisional_rows": 0,
     "stale_provisional_dates": [],
     "daily_min_date": "2021-01-04",
-    "daily_max_date": "2026-09-16"
+    "daily_max_date": "2026-09-17"
   }
 }
