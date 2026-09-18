@@ -1,7 +1,7 @@
 {
   "schema_version": "2.5",
   "source_role": "MODEL_READABLE_PUBLIC_STATIC_SNAPSHOT",
-  "generated_at": "2026-09-18T11:41:04+07:00",
+  "generated_at": "2026-09-18T12:03:18+07:00",
   "timezone": "Asia/Ho_Chi_Minh",
   "project_static_cutoff_rule": "Resolve from Project validation_report.json.latest_data_date at analysis time.",
   "bridge_lookback_days": 180,
@@ -51,6 +51,11 @@
     "index_recent": "index_recent.json",
     "intraday_latest": "intraday_latest.csv",
     "intraday_manifest": "intraday_manifest.json",
+    "alerts_live": "alerts_live.json",
+    "alerts_active": "alerts_active.csv",
+    "alerts_new": "alerts_new.csv",
+    "watchlist_live": "watchlist_live.csv",
+    "alert_engine_meta": "alert_engine_meta.json",
     "universe": "meta/universe.csv",
     "sector_classification": "meta/sector_classification.csv",
     "vn30_constituents": "meta/vn30_constituents.csv",
@@ -67,6 +72,7 @@
   "routing": {
     "current_analysis": "Read manifest.json first. If fresh, merge public delta with Project frozen baseline using merge_rules, then run Data/Freshness Gate before analysis.",
     "market_scan": "Use market_scan.csv + sector_scan.csv for screening overlays, then verify Wyckoff price-volume evidence on merged daily/weekly sequences.",
+    "realtime_alert_engine_v1": "Use alerts_live.json / alerts_active.csv / watchlist_live.csv as Project overlay candidates only. Never treat scanner LPS/BUEC/Spring/JAC names as confirmed Method labels.",
     "historical_holdout": "ANALYSIS_CUTOFF is absolute. Never use rows after cutoff.",
     "api_contract": "NONE. These are public read-only static files over HTTPS, not an assumed API."
   },
@@ -74,7 +80,8 @@
     "Provisional bars may describe forming behavior but cannot alone CONFIRM a major Event/Phase or completed weekly breakout/breakdown.",
     "Return/MA/peer metrics are Project overlays; they cannot create or upgrade Wyckoff Event/Phase labels.",
     "Wave-to-wave RS must still be evaluated from corresponding price swings after merge.",
-    "Same-cutoff OHLCV conflict => DATA CONFLICT; block Locked Analysis until reconciled."
+    "Same-cutoff OHLCV conflict => DATA CONFLICT; block Locked Analysis until reconciled.",
+    "Realtime Alert Engine v1 scores/statuses are Project overlays and cannot create or upgrade a Wyckoff Event/Phase."
   ],
   "hashes": {
     "daily_bridge": "1a48e7fcfe2086f5fe43d36caca6bad560bb8b9e8c418bce2c7a04c7ef6101d2",
@@ -85,8 +92,13 @@
     "market_scan": "790b8524ab41c90556afeec8de6059046aa66dfdfae2b712765da6fcfd371b8f",
     "sector_scan": "fa3e2904cb33dde76ab1e48af15a1cc197166503d81cbed782e383ec422b3295",
     "latest_bars": "5b520194d12a71c68d6fe72a6363f36ff3908850dc274084885cacf18a1f6944",
-    "index_recent": "5acdd22468ef8c3413c95672ca4415021317b9cf11923c2ad84650ae0fce9f44",
+    "index_recent": "fe2e7781b5a518d1def45cb45f1bf742c2c60769614fbf5ad573b6084cb7b64c",
     "intraday_latest": "b6647fb8e85cc0ba2f56a3bf8f70272a79a1ac186a693c8b703f3f87d16e520b",
-    "intraday_manifest": "04e510751b783fc40a611066c40bc82809ca858cf07596d8d081ed94756dcd68"
+    "intraday_manifest": "04e510751b783fc40a611066c40bc82809ca858cf07596d8d081ed94756dcd68",
+    "alerts_live": "a430763544428739937f3ac7c11587ab4c354a7adef8a7c0004bde6aed7b2e62",
+    "alerts_active": "518eab5fb340dc9e2e0840d257baa671fed142653fbcabaa930088691205f569",
+    "alerts_new": "0ce2cc7bfc0deb98de9a944afefcbb5725875336b50e6efbab637d58d3f0a559",
+    "watchlist_live": "ad76147e8035876a3f43dded6b65e1b96583ae8aedb727d5035e39fe6759dfdf",
+    "alert_engine_meta": "2ed6a22bfe0eb9e06dceb07c0a83d61831d86ca7f62e00912c09e96b901864b1"
   }
 }
