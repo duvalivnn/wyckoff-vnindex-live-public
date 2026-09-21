@@ -1,13 +1,13 @@
 {
-  "refreshed_at": "2026-09-18T15:37:54+07:00",
+  "refreshed_at": "2026-09-21T09:20:47+07:00",
   "timezone": "Asia/Ho_Chi_Minh",
   "source_library": "vnstock",
   "source_provider": "KBS",
   "start_date": "2021-01-01",
-  "mode": "full",
-  "bar_state": "completed",
-  "eod_source_finality_gate": "pass",
-  "eod_source_finality_detail": "VNINDEX/VN30 EOD bars hiện diện và ổn định",
+  "mode": "indices-only",
+  "bar_state": "provisional_today",
+  "eod_source_finality_gate": "not_requested",
+  "eod_source_finality_detail": "not requested",
   "outputs": [
     "data/index_daily_ohlcv.csv",
     "data/indices/VNINDEX.csv",
@@ -18,18 +18,18 @@
     "data/indices_sectors_validation.json"
   ],
   "checks": {
-    "validated_at": "2026-09-18T15:37:54+07:00",
+    "validated_at": "2026-09-21T09:20:47+07:00",
     "result": "pass",
     "index_rows": {
       "VN30": 1420,
-      "VNINDEX": 1418
+      "VNINDEX": 1419
     },
     "index_latest_date": {
-      "VN30": "2026-09-18",
-      "VNINDEX": "2026-09-18"
+      "VN30": "2026-09-21",
+      "VNINDEX": "2026-09-21"
     },
-    "index_provisional_rows": 0,
-    "eod_final_required": true,
+    "index_provisional_rows": 2,
+    "eod_final_required": false,
     "index_duplicate_keys": 0,
     "index_invalid_high_rows": 0,
     "index_invalid_low_rows": 0,
