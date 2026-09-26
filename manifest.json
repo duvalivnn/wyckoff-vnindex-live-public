@@ -1,7 +1,7 @@
 {
   "schema_version": "2.5",
   "source_role": "MODEL_READABLE_PUBLIC_STATIC_SNAPSHOT",
-  "generated_at": "2026-09-26T19:13:00+07:00",
+  "generated_at": "2026-09-27T05:57:03+07:00",
   "timezone": "Asia/Ho_Chi_Minh",
   "project_static_cutoff_rule": "Resolve from Project validation_report.json.latest_data_date at analysis time.",
   "bridge_lookback_days": 180,
@@ -58,7 +58,7 @@
     "detector_status": {
       "status": "PASS",
       "watch_present": true,
-      "age_hours": 4.641331971944444,
+      "age_hours": 15.375643548055555,
       "coverage": 1.0,
       "min_coverage": 0.95,
       "max_age_hours": 96,
@@ -103,6 +103,35 @@
     ]
   },
   "corporate_action_basis_version": "CA_NORMALIZED_V1",
+  "canonical_replacement_registry": {
+    "schema_version": "1.0",
+    "basis_version": "CA_NORMALIZED_V1",
+    "analysis_cutoff": "2026-09-25",
+    "replacements": [
+      {
+        "symbol": "VPB",
+        "analysis_cutoff": "2026-09-25",
+        "basis_version": "CA_NORMALIZED_V1",
+        "resolved_event_keys": [
+          "VPB|2026-09-24|6a6beb2e0739e044ed7d7138"
+        ],
+        "resolution": "PROVIDER_PROVEN_STABLE_OHLC_SCALE_REVISION",
+        "action": "REBASE_OHLC_FROM_PROVIDER_FULL_HISTORY",
+        "proof_scope": "FULL_HISTORY_THROUGH_LOCKED_CUTOFF",
+        "replacement_file": "canonical_replacements/VPB.csv",
+        "replacement_file_sha256": "405195B58D8A3EC53436022717EB4299B135EBD9B8DF816FF5D7A4EAD8CE5DD2",
+        "row_count": 1426,
+        "start_date": "2021-01-04",
+        "end_date": "2026-09-25",
+        "provider_ohlc_hash": "11800b88020bd2c344aa760298e64549cca958c88066f315182372f4905d9d8a",
+        "canonical_ohlc_hash_after": "11800b88020bd2c344aa760298e64549cca958c88066f315182372f4905d9d8a",
+        "volume_hash_before": "56fd7124736f1fb05b7b209561339f2aec461ea574dc3200e3fcf481bb565839",
+        "volume_hash_after": "56fd7124736f1fb05b7b209561339f2aec461ea574dc3200e3fcf481bb565839",
+        "volume_immutable": true
+      }
+    ],
+    "policy": "FULL_HISTORY_ONLY__NO_PARTIAL_OR_SIMILARITY_BYPASS"
+  },
   "blocked_by_data_integrity": [
     "PGD",
     "PHC"
@@ -136,7 +165,8 @@
     "validation_report": "meta/validation_report.json",
     "quarantine_registry": "meta/quarantine_registry.json",
     "global_integrity_status": "meta/global_integrity_status.json",
-    "indices_sectors_validation": "meta/indices_sectors_validation.json"
+    "indices_sectors_validation": "meta/indices_sectors_validation.json",
+    "canonical_replacement_registry": "canonical_replacement_registry.json"
   },
   "merge_rules": {
     "project_cutoff": "Read Project validation_report.json.latest_data_date as STATIC_BASELINE_CUTOFF.",
@@ -168,11 +198,12 @@
     "market_scan": "dac15236ec0182a3dafdc6f031689ef070443ebf5da63493207b655119762ae7",
     "sector_scan": "9a1671df3a0930795b99ffd159e440744bd6765b80ea63956e70de393ab7aa0a",
     "latest_bars": "a0eb274d1a9e5efe833d66b88cd21ad22074a5c447275334a00477d3bd765d92",
-    "index_recent": "b39bc9051d64a998f0bba32f801dde63d0126b8cce02255d8c701894c6c4c766",
+    "index_recent": "8fcd0e1947fc506146a9f8dfd92da153a394cf88a281f9273b6a595966b7a3c3",
     "alerts_live": "610ea381d4671168f377c51a7e8f48d1c1285019bc06fed896ad8fbbaa41b672",
     "alerts_active": "58e9bbbb1173b96d9fda05f4238fc992d89805248b052321dbb435e6ae47f0e1",
     "alerts_new": "6483aa00efb580f2ef1a3b48ef3024bbbef46d9f562dc272176d9ac4575a5b34",
     "watchlist_live": "d1bd34b892ac7c5fc23fefa0131868fc9606ea4ffea445e4b7bf082d303c24ec",
-    "alert_engine_meta": "d2f25f91a5ae68a5821cd64df977d47ee9938af928ea1402aa8082fdfe69f564"
+    "alert_engine_meta": "d2f25f91a5ae68a5821cd64df977d47ee9938af928ea1402aa8082fdfe69f564",
+    "canonical_replacement_registry": "8389ccd22d41d47f5e1b9f3a617e9d38d115af52123573940fbef106d53d2046"
   }
 }
