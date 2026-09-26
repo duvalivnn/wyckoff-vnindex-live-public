@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0",
+  "certification_id": "P1-VPB-20260925-20260927T060920+0700",
+  "analysis_cutoff": "2026-09-25",
+  "scope": "CANONICAL_REPLACEMENT_ENTRY__VPB",
+  "result": "PASS_FOR_VPB_CURRENT_ANALYSIS",
+  "global_result": "GLOBAL_FAIL_SCOPED_PASS",
+  "excluded_symbols": [
+    "PGD",
+    "PHC"
+  ],
+  "p1_windows_source_authority": {
+    "result": "PASS",
+    "observed_at": "2026-09-27T06:09:20+07:00",
+    "scheduler": {
+      "task": "WyckoffLivePublicSnapshotV2",
+      "enabled": true,
+      "state": "Ready",
+      "last_result": 0
+    },
+    "public_manifest_sha256": "7FD2D1A7229A1F0FDF476A79FF1F948C2EE6B19A9503F17A5E4F825B1BE762CD"
+  },
+  "independent_volume_qa": {
+    "symbol": "VPB",
+    "result": "PASS",
+    "static_rows": 1412,
+    "canonical_rows": 1426,
+    "overlap_rows": 1412,
+    "static_only_rows": 0,
+    "canonical_only_rows": 14,
+    "volume_mismatch_rows": 0,
+    "overlap_volume_sha256": "1d303cbf02ee46d79fd4b801c197fc15b23ee952aef98e8a8c6011f2fcaac724"
+  },
+  "replacement_proof": {
+    "replacement_file_sha256": "405195B58D8A3EC53436022717EB4299B135EBD9B8DF816FF5D7A4EAD8CE5DD2",
+    "canonical_ohlc_hash_after": "11800b88020bd2c344aa760298e64549cca958c88066f315182372f4905d9d8a",
+    "volume_immutable": true
+  },
+  "rollback_drill": {
+    "result": "PASS",
+    "checkpoint": "V1.1.2.5d controlled rollback drill"
+  },
+  "fail_closed_rule": "Any changed cutoff, replacement hash, source hash, failed scheduler run, missing P1 proof, or nonzero volume mismatch invalidates this certificate."
+}

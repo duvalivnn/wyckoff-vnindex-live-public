@@ -1,7 +1,7 @@
 {
   "schema_version": "2.5",
   "source_role": "MODEL_READABLE_PUBLIC_STATIC_SNAPSHOT",
-  "generated_at": "2026-09-27T06:26:33+07:00",
+  "generated_at": "2026-09-27T06:34:07+07:00",
   "timezone": "Asia/Ho_Chi_Minh",
   "project_static_cutoff_rule": "Resolve from Project validation_report.json.latest_data_date at analysis time.",
   "bridge_lookback_days": 180,
@@ -58,7 +58,7 @@
     "detector_status": {
       "status": "PASS",
       "watch_present": true,
-      "age_hours": 15.867408559444444,
+      "age_hours": 15.993513213888889,
       "coverage": 1.0,
       "min_coverage": 0.95,
       "max_age_hours": 96,
@@ -132,6 +132,50 @@
     ],
     "policy": "FULL_HISTORY_ONLY__NO_PARTIAL_OR_SIMILARITY_BYPASS"
   },
+  "data_certification": {
+    "schema_version": "1.0",
+    "certification_id": "P1-VPB-20260925-20260927T060920+0700",
+    "analysis_cutoff": "2026-09-25",
+    "scope": "CANONICAL_REPLACEMENT_ENTRY__VPB",
+    "result": "PASS_FOR_VPB_CURRENT_ANALYSIS",
+    "global_result": "GLOBAL_FAIL_SCOPED_PASS",
+    "excluded_symbols": [
+      "PGD",
+      "PHC"
+    ],
+    "p1_windows_source_authority": {
+      "result": "PASS",
+      "observed_at": "2026-09-27T06:09:20+07:00",
+      "scheduler": {
+        "task": "WyckoffLivePublicSnapshotV2",
+        "enabled": true,
+        "state": "Ready",
+        "last_result": 0
+      },
+      "public_manifest_sha256": "7FD2D1A7229A1F0FDF476A79FF1F948C2EE6B19A9503F17A5E4F825B1BE762CD"
+    },
+    "independent_volume_qa": {
+      "symbol": "VPB",
+      "result": "PASS",
+      "static_rows": 1412,
+      "canonical_rows": 1426,
+      "overlap_rows": 1412,
+      "static_only_rows": 0,
+      "canonical_only_rows": 14,
+      "volume_mismatch_rows": 0,
+      "overlap_volume_sha256": "1d303cbf02ee46d79fd4b801c197fc15b23ee952aef98e8a8c6011f2fcaac724"
+    },
+    "replacement_proof": {
+      "replacement_file_sha256": "405195B58D8A3EC53436022717EB4299B135EBD9B8DF816FF5D7A4EAD8CE5DD2",
+      "canonical_ohlc_hash_after": "11800b88020bd2c344aa760298e64549cca958c88066f315182372f4905d9d8a",
+      "volume_immutable": true
+    },
+    "rollback_drill": {
+      "result": "PASS",
+      "checkpoint": "V1.1.2.5d controlled rollback drill"
+    },
+    "fail_closed_rule": "Any changed cutoff, replacement hash, source hash, failed scheduler run, missing P1 proof, or nonzero volume mismatch invalidates this certificate."
+  },
   "blocked_by_data_integrity": [
     "PGD",
     "PHC"
@@ -166,7 +210,8 @@
     "quarantine_registry": "meta/quarantine_registry.json",
     "global_integrity_status": "meta/global_integrity_status.json",
     "indices_sectors_validation": "meta/indices_sectors_validation.json",
-    "canonical_replacement_registry": "canonical_replacement_registry.json"
+    "canonical_replacement_registry": "canonical_replacement_registry.json",
+    "data_certification": "data_certification_v1.json"
   },
   "merge_rules": {
     "project_cutoff": "Read Project validation_report.json.latest_data_date as STATIC_BASELINE_CUTOFF.",
@@ -198,12 +243,13 @@
     "market_scan": "dac15236ec0182a3dafdc6f031689ef070443ebf5da63493207b655119762ae7",
     "sector_scan": "9a1671df3a0930795b99ffd159e440744bd6765b80ea63956e70de393ab7aa0a",
     "latest_bars": "a0eb274d1a9e5efe833d66b88cd21ad22074a5c447275334a00477d3bd765d92",
-    "index_recent": "9b5ecf8b86fa3ac9cbfa365232131a85d4f1c35425e3dafb429ddaa2784bc73d",
+    "index_recent": "1a84c74eaba5618057df33edc5b1447ea127c36616fd78311935458197bf2741",
     "alerts_live": "610ea381d4671168f377c51a7e8f48d1c1285019bc06fed896ad8fbbaa41b672",
     "alerts_active": "58e9bbbb1173b96d9fda05f4238fc992d89805248b052321dbb435e6ae47f0e1",
     "alerts_new": "6483aa00efb580f2ef1a3b48ef3024bbbef46d9f562dc272176d9ac4575a5b34",
     "watchlist_live": "d1bd34b892ac7c5fc23fefa0131868fc9606ea4ffea445e4b7bf082d303c24ec",
     "alert_engine_meta": "d2f25f91a5ae68a5821cd64df977d47ee9938af928ea1402aa8082fdfe69f564",
-    "canonical_replacement_registry": "8389ccd22d41d47f5e1b9f3a617e9d38d115af52123573940fbef106d53d2046"
+    "canonical_replacement_registry": "8389ccd22d41d47f5e1b9f3a617e9d38d115af52123573940fbef106d53d2046",
+    "data_certification": "24f141a86001a5662defdd1cccd1bd281b3cf0c6f00df8fbd0c34bc56b308bd6"
   }
 }
