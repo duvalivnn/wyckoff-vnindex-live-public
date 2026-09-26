@@ -1,7 +1,7 @@
 {
   "schema_version": "2.5",
   "source_role": "MODEL_READABLE_PUBLIC_STATIC_SNAPSHOT",
-  "generated_at": "2026-09-25T15:39:15+07:00",
+  "generated_at": "2026-09-26T19:13:00+07:00",
   "timezone": "Asia/Ho_Chi_Minh",
   "project_static_cutoff_rule": "Resolve from Project validation_report.json.latest_data_date at analysis time.",
   "bridge_lookback_days": 180,
@@ -11,11 +11,11 @@
   "latest_completed_session": "2026-09-25",
   "provisional_status": "NO",
   "provisional_rows_at_cutoff": 0,
-  "universe_symbols": 405,
-  "daily_bridge_rows": 45996,
-  "weekly_replace_rows": 10270,
+  "universe_symbols": 403,
+  "daily_bridge_rows": 45768,
+  "weekly_replace_rows": 10218,
   "index_daily_bridge_rows": 248,
-  "validation_status": "pass",
+  "validation_status": "PASS_WITH_EXCLUSIONS",
   "live_snapshot_validation": {
     "result": "pass",
     "daily_invalid_high_rows": 0,
@@ -32,7 +32,83 @@
     "stale_provisional_rows": 0,
     "recent_weekly_reconciliation_mismatches": 0
   },
-  "backend_validation_report_status": "pass",
+  "scoped_production": {
+    "schema_version": "1.1.2.5c",
+    "result": "PASS_WITH_EXCLUSIONS",
+    "canonical_symbols": 405,
+    "active_symbols": 403,
+    "excluded_symbols": [
+      "PGD",
+      "PHC"
+    ],
+    "registry_sha256": "d68f2c7b2aaa5359c756ecf785bc7815459cda16019f38d76e9474c420171fe0",
+    "global_integrity_result": "fail"
+  },
+  "corporate_action_data_integrity": {
+    "basis_version": "CA_NORMALIZED_V1",
+    "result": "fail",
+    "blocked_symbols": [
+      "PGD",
+      "PHC"
+    ],
+    "corporate_action_conflicts": 0,
+    "mixed_price_basis_symbols": [],
+    "unresolved_corporate_actions": [],
+    "historical_revision_conflicts": [],
+    "detector_status": {
+      "status": "PASS",
+      "watch_present": true,
+      "age_hours": 4.641331971944444,
+      "coverage": 1.0,
+      "min_coverage": 0.95,
+      "max_age_hours": 96,
+      "scanned_at": "2026-09-26T14:34:28+07:00"
+    },
+    "reconciliation_required_symbols": [
+      "PGD",
+      "PHC"
+    ],
+    "reconciliation_required": [],
+    "due_events": [
+      {
+        "event_key": "PGD|2026-09-24|6a5824793711162a7e853a44",
+        "symbol": "PGD",
+        "ex_date": "2026-09-24",
+        "public_date": "2026-07-15",
+        "status": "EVENT_DUE_RECONCILIATION_REQUIRED",
+        "price_basis_relevant": true,
+        "source": "VCI_COMPANY_EVENTS",
+        "event_id_source": "6a5824793711162a7e853a44",
+        "event_text": "trả cổ tức bằng tiền mặt | cash dividend | trả cổ tức bằng tiền mặt - cả năm 2025 - 1,000 vnd | cash dividend - year 2025 - 1,000 vnd | dividend",
+        "exercise_ratio": 0.1,
+        "value_per_share": 1000.0,
+        "factor_authority": "NONE_EVENT_EVIDENCE_ONLY",
+        "auto_factor_allowed": false
+      },
+      {
+        "event_key": "PHC|2026-09-22|6aa8905c03bfaa031b1238bd",
+        "symbol": "PHC",
+        "ex_date": "2026-09-22",
+        "public_date": "2026-09-17",
+        "status": "EVENT_DUE_RECONCILIATION_REQUIRED",
+        "price_basis_relevant": true,
+        "source": "VCI_COMPANY_EVENTS",
+        "event_id_source": "6aa8905c03bfaa031b1238bd",
+        "event_text": "trả cổ tức bằng tiền mặt | cash dividend | trả cổ tức bằng tiền mặt - cả năm 2025 - 500 vnd | cash dividend - year 2025 - 500 vnd | dividend",
+        "exercise_ratio": 0.05,
+        "value_per_share": 500.0,
+        "factor_authority": "NONE_EVENT_EVIDENCE_ONLY",
+        "auto_factor_allowed": false
+      }
+    ]
+  },
+  "corporate_action_basis_version": "CA_NORMALIZED_V1",
+  "blocked_by_data_integrity": [
+    "PGD",
+    "PHC"
+  ],
+  "backend_validation_report_status": "GLOBAL_FAIL_SCOPED_PASS",
+  "scoped_validation_report_status": "PASS_WITH_EXCLUSIONS",
   "index_validation_status": "pass",
   "backend_refreshed_at": "2026-09-25T15:37:39+07:00",
   "indices_refreshed_at": "2026-09-25T15:37:53+07:00",
@@ -58,6 +134,8 @@
     "sector_classification": "meta/sector_classification.csv",
     "vn30_constituents": "meta/vn30_constituents.csv",
     "validation_report": "meta/validation_report.json",
+    "quarantine_registry": "meta/quarantine_registry.json",
+    "global_integrity_status": "meta/global_integrity_status.json",
     "indices_sectors_validation": "meta/indices_sectors_validation.json"
   },
   "merge_rules": {
@@ -82,19 +160,19 @@
     "Realtime Alert Engine v1 scores/statuses are Project overlays and cannot create or upgrade a Wyckoff Event/Phase."
   ],
   "hashes": {
-    "daily_bridge": "d844a4b25e3d7d4dd4e42b201f91c5702095c2e0e81b5dc2e0d31b7c27051be8",
-    "daily_delta_compat": "d844a4b25e3d7d4dd4e42b201f91c5702095c2e0e81b5dc2e0d31b7c27051be8",
-    "weekly_replace": "750b2f08899dd2d4515e8a2fe649615c4c72e7226b4210e34458858fb5c47dae",
+    "daily_bridge": "4fdc70075b63d196db8699ec8cd2d3c6950f2af3fc09214ccd259208c94d9893",
+    "daily_delta_compat": "4fdc70075b63d196db8699ec8cd2d3c6950f2af3fc09214ccd259208c94d9893",
+    "weekly_replace": "84ebcb45f61ed8378b41ba9361a3f52a57fc1558c14c55e1b1f2cb6c3671e2ff",
     "index_daily_bridge": "5505dae17725a5c7eac9976588cefa87686928f20920ab5a353b73a3c5d8fd16",
     "index_daily_delta_compat": "5505dae17725a5c7eac9976588cefa87686928f20920ab5a353b73a3c5d8fd16",
-    "market_scan": "8823554d268476cdb81536ff78aa8aef8aa570b2036a877be0675b589c7a7e25",
-    "sector_scan": "ccc5ab7ec9640ba782ac7cd7d54f277b5533e9b2032caf21819cf27c06ce6c9e",
-    "latest_bars": "bd92bbc5a9624c28292f78b2ef60202aadde62d07ec0769ac5011d5ba0f70ec8",
-    "index_recent": "287349fa72452610679648d05edafddbe7d43c47adc4141e01c23a493ff5ab2b",
-    "alerts_live": "82b17e28b3a2dc7b205043f630e1d45988f56f1802851875fc4308fdd61429f2",
-    "alerts_active": "a33a638ff1a5478ba31355f02b4e0682084f9a06a9da9b5f5b9f5de25ca94cb5",
-    "alerts_new": "20046533942c1ae525ec4c366e9d9eec0afeb9bce80fdb60a16cc33763b96c90",
-    "watchlist_live": "d26d99835d6b56c8ffd5366408115c16a0c4ae499698d4afe787823c1a90eb56",
-    "alert_engine_meta": "e79c8b18d7311747251e3a8a06349d1eb3f3d33a4811b1c8d32646a6cf036b22"
+    "market_scan": "dac15236ec0182a3dafdc6f031689ef070443ebf5da63493207b655119762ae7",
+    "sector_scan": "9a1671df3a0930795b99ffd159e440744bd6765b80ea63956e70de393ab7aa0a",
+    "latest_bars": "a0eb274d1a9e5efe833d66b88cd21ad22074a5c447275334a00477d3bd765d92",
+    "index_recent": "b39bc9051d64a998f0bba32f801dde63d0126b8cce02255d8c701894c6c4c766",
+    "alerts_live": "610ea381d4671168f377c51a7e8f48d1c1285019bc06fed896ad8fbbaa41b672",
+    "alerts_active": "58e9bbbb1173b96d9fda05f4238fc992d89805248b052321dbb435e6ae47f0e1",
+    "alerts_new": "6483aa00efb580f2ef1a3b48ef3024bbbef46d9f562dc272176d9ac4575a5b34",
+    "watchlist_live": "d1bd34b892ac7c5fc23fefa0131868fc9606ea4ffea445e4b7bf082d303c24ec",
+    "alert_engine_meta": "d2f25f91a5ae68a5821cd64df977d47ee9938af928ea1402aa8082fdfe69f564"
   }
 }

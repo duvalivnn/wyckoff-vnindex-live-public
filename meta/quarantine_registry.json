@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.1.2.5c",
+  "status": "QUARANTINE_UNRESOLVED",
+  "decision": "SCOPED_PRODUCTION_WITH_EXPLICIT_EXCLUSIONS_NOT_DATA_CORRECTION",
+  "authority": "2026-09-26 V1.1.2.4a Volume Forensics and V1.1.2.5b scoped shadow preflight",
+  "initial_cutoff": "2026-09-25",
+  "canonical_symbols": 405,
+  "scoped_symbols": 403,
+  "excluded_symbols": ["PGD", "PHC"],
+  "case_status": {"PGD":"BLOCKED_BY_DATA_INTEGRITY","PHC":"BLOCKED_BY_DATA_INTEGRITY"},
+  "quarantine_historical_volume_hash": "f31dfbd17bb00cf6f95b8ff8c2015bad5bf9f7fab92a20354d30eecbdb279724",
+  "quarantine_canonical_rows": {"PGD":1350,"PHC":1426},
+  "volume_conflicts": [
+    {"symbol":"PGD","date":"2026-01-16","canonical_volume":4100,"provider_KBS_volume":4300,"resolution":"UNADJUDICATED"},
+    {"symbol":"PHC","date":"2026-01-16","canonical_volume":85600,"provider_KBS_volume":86600,"resolution":"UNADJUDICATED_IN_CANONICAL"}
+  ],
+  "unresolved_event_keys": [
+    "PGD|2026-09-24|6a5824793711162a7e853a44",
+    "PHC|2026-09-22|6aa8905c03bfaa031b1238bd"
+  ],
+  "publication_behavior": "Exclude from actionable 403-symbol CSV/JSON, scans, alerts, charts, Dashboard and live weekly/daily bridges. Global canonical history remains physically present; global integrity remains FAIL for these two cases.",
+  "immutable_frozen_holdouts": true,
+  "activation_authority": "NOT_GRANTED_BEFORE_SEPARATE_FINAL_QA"
+}
