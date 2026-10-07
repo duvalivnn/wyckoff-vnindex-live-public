@@ -1,13 +1,42 @@
 {
   "schema_version": "alerts_live.v1",
-  "generated_at_utc": "2026-10-07T07:20:05.863701+00:00",
-  "snapshot_generated_at_utc": "2026-10-07T07:20:04.664887+00:00",
+  "engine_status": "BLOCKED",
+  "generated_at_utc": "2026-10-07T08:07:06.634248+00:00",
+  "snapshot_generated_at_utc": "2026-10-07T08:05:56.582280+00:00",
   "source_latest_date": "2026-10-06",
-  "market_status": {
-    "status": "PASS",
-    "source": "canonical_ohlcv_status_check",
-    "source_result": "PASS",
-    "semantics": "market data feed validity; not session open/closed"
+  "engine_gate": {
+    "engine": "PROJECT_OVERLAY_ALERT_ENGINE",
+    "generated_at_utc": "2026-10-07T08:07:05.340877+00:00",
+    "status": "BLOCKED",
+    "publish_allowed": false,
+    "reasons": [
+      "CORPORATE_ACTION_GATE_NO_PROVIDER_ADAPTER"
+    ],
+    "corporate_action_receipt": "C:\\Users\\T14\\Desktop\\DỮ LIỆU OHLCV\\data\\corporate_actions\\2026-10-07.json",
+    "corporate_action_status": "NO_PROVIDER_ADAPTER",
+    "static_validation_result": "PASS",
+    "shadow_receipt": "C:\\Users\\T14\\Desktop\\DỮ LIỆU OHLCV\\runtime\\alert_engine_shadow\\20261007T150558+0700\\shadow_receipt.json",
+    "shadow_counts": {
+      "watchlist": 55,
+      "active": 19,
+      "new": 55
+    },
+    "shadow_market_gate": "FAIL",
+    "policy": "Never publish shadow alerts until CA and integrity gates pass."
   },
-  "alerts": []
+  "market_status": {
+    "status": "BLOCKED",
+    "source": "PROJECT_OVERLAY_ALERT_ENGINE",
+    "source_result": "PASS",
+    "semantics": "Alert Engine publication gate; not session open/closed"
+  },
+  "counts": {
+    "p1_active": null,
+    "p2_active": null,
+    "active": null,
+    "new_alerts": null,
+    "watchlist": null
+  },
+  "alerts": [],
+  "message": "Alert Engine chưa được công bố vì corporate-action/integrity gate chưa đạt."
 }
