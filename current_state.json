@@ -1,21 +1,49 @@
 {
-  "job": "intraday",
-  "session_date": "2026-10-07",
-  "generated_at_utc": "2026-10-07T03:05:04.291559+00:00",
-  "snapshot": "live_snapshots\\live_20261007T100504+0700.csv",
-  "rows": 408,
-  "symbols_with_rows": 408,
+  "job": "publisher",
+  "generated_at_utc": "2026-10-07T03:12:13.327046+00:00",
+  "source_snapshot_generated_at_utc": "2026-10-07T03:12:12.117410+00:00",
   "source_latest_date": "2026-10-06",
-  "snapshot_semantics": "latest canonical daily status rows only",
-  "provider_errors": [],
-  "validation_errors": [],
-  "promotion_effect": "NONE",
-  "provider_capability": {
-    "provider": "KBS",
-    "daily_ohlcv": true,
-    "intraday": false,
-    "status": "UNVERIFIED",
-    "mode": "canonical_ohlcv_status_check_only"
+  "source_job": "intraday",
+  "source_result": "PASS",
+  "publication_mode": "GITHUB_BRIDGE_READY",
+  "source_workspace": "DỮ LIỆU OHLCV",
+  "dashboard_consumer": "wyckoff-vnindex-market-dashboard",
+  "live_snapshot_available": true,
+  "freshness": {
+    "age_minutes": 0,
+    "stale": false,
+    "threshold_minutes": 30
   },
-  "result": "PASS"
+  "files": {
+    "stock_daily_ohlcv.csv": {
+      "bytes": 26830514,
+      "sha256": "475ad448e98fa2fc7c9790a1afc1c3f78f0688fd77386d093a5545b5f93578c2"
+    },
+    "stock_weekly_ohlcv.csv": {
+      "bytes": 9913854,
+      "sha256": "4cfea76724a7ded804578d8fabd6817d769213921aa670c3dab9e08da7540c74"
+    },
+    "index_daily_ohlcv.csv": {
+      "bytes": 189174,
+      "sha256": "44adc78062b20c4ede2a04b20fccacf1c39052a398b3d7667662dcaca2902901"
+    },
+    "index_weekly_ohlcv.csv": {
+      "bytes": 60753,
+      "sha256": "7a1faf80ce3a53315d223e5e515ac25e2c13b526092d7480cf07b7c14e9b4bae"
+    },
+    "sector_classification.csv": {
+      "bytes": 60568,
+      "sha256": "c0cf422ec37423627a272abc7896bd6f91780a03ebf344e3953a6b594651d312"
+    },
+    "vn30_constituents.csv": {
+      "bytes": 3194,
+      "sha256": "b98017616a9b919dfcbac2bb31c5c441187495dfe01da88eccfdab57fe9685ac"
+    }
+  },
+  "result": "PASS",
+  "latest_live_snapshot": {
+    "file": "live_snapshots\\live_20261007T101212+0700.csv",
+    "bytes": 19588,
+    "sha256": "3b29d97be90d642459ed83f1e14b6b54599bff7c9d21c13a85640e38113ce422"
+  }
 }
