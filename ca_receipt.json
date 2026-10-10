@@ -1,0 +1,83 @@
+{
+  "job": "ca_scan",
+  "schema_version": "corporate_actions.daily.v1",
+  "scan_date": "2026-10-09",
+  "week_start": "2026-10-05",
+  "week_end": "2026-10-11",
+  "generated_at_utc": "2026-10-09T10:00:04.828660+00:00",
+  "provider": {
+    "adapter": "VIETSTOCK_FIRST_PARTY_HOSE_EVENT_CALENDAR_V1",
+    "source": "https://finance.vietstock.vn/lich-su-kien.htm"
+  },
+  "source_weekly_receipt": "corporate_actions\\weekly\\2026-10-05_2026-10-11_20261009T100004000779Z.json",
+  "source_weekly_sha256": "a7f75ff1da3e5845d67ab2e12aa64446710cc51d458bbbb60b5c9d026cd4159c",
+  "events": [
+    {
+      "symbol": "HDB",
+      "exchange": "HOSE",
+      "event_type": "Trả cổ tức bằng cổ phiếu",
+      "ex_date": "2026-10-09",
+      "record_date": "2026-10-12",
+      "payment_date": null,
+      "cash_dividend": null,
+      "stock_dividend_ratio": "100:25",
+      "raw_description": "Trả cổ tức năm 2025 bằng cổ phiếu, tỷ lệ 100:25",
+      "source_event_type": "Trả cổ tức bằng cổ phiếu"
+    },
+    {
+      "symbol": "HDB",
+      "exchange": "HOSE",
+      "event_type": "Thưởng cổ phiếu",
+      "ex_date": "2026-10-09",
+      "record_date": "2026-10-12",
+      "payment_date": null,
+      "cash_dividend": null,
+      "stock_dividend_ratio": "100:5",
+      "raw_description": "Thưởng cổ phiếu, tỷ lệ 100:5",
+      "source_event_type": "Thưởng cổ phiếu"
+    },
+    {
+      "symbol": "AGR",
+      "exchange": "HOSE",
+      "event_type": "Trả cổ tức bằng cổ phiếu",
+      "ex_date": "2026-10-09",
+      "record_date": "2026-10-12",
+      "payment_date": null,
+      "cash_dividend": null,
+      "stock_dividend_ratio": "100:6",
+      "raw_description": "Trả cổ tức năm 2025 bằng cổ phiếu, tỷ lệ 100:6",
+      "source_event_type": "Trả cổ tức bằng cổ phiếu"
+    },
+    {
+      "symbol": "BTP",
+      "exchange": "HOSE",
+      "event_type": "Trả cổ tức bằng tiền mặt",
+      "ex_date": "2026-10-09",
+      "record_date": "2026-10-12",
+      "payment_date": "2026-11-11",
+      "cash_dividend": "500",
+      "stock_dividend_ratio": null,
+      "raw_description": "Trả cổ tức năm 2025 bằng tiền, 500 đồng/CP",
+      "source_event_type": "Trả cổ tức bằng tiền mặt"
+    }
+  ],
+  "ca_symbols": [
+    "AGR",
+    "BTP",
+    "HDB"
+  ],
+  "rebase_symbols": [],
+  "rebase_gate_status": "BLOCKED_PRICE_BASIS_UNVERIFIED",
+  "promotion_effect": "NONE",
+  "integrity": {
+    "source_verified": true,
+    "parser_verified": true,
+    "pagination_complete": true,
+    "exchange_scope_verified": true,
+    "ambiguous": [],
+    "unresolved": []
+  },
+  "status": "CA_CONFIRMED_REBASE_BLOCKED",
+  "reason": "Vietstock weekly evidence resolved for the session date.",
+  "receipt": "corporate_actions\\daily\\2026-10-09_20261009T100004830658Z.json"
+}
