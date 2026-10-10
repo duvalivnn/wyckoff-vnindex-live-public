@@ -1,35 +1,36 @@
 {
-  "generated_at_utc": "2026-10-08T13:12:20.251505+00:00",
-  "publisher_generation_id": "2026-10-08T13:12:20.251505+00:00|00fd8dd6753949749b9f91a6d606d8fe",
-  "source_snapshot_generated_at_utc": "2026-10-08T13:12:12.000340+00:00",
-  "source_latest_date": "2026-10-08",
-  "source_job": "publisher",
-  "source_result": "PASS",
+  "generated_at_utc": "2026-10-10T14:32:12.364294+00:00",
+  "publisher_generation_id": "r33-2026-10-09-438d6392c42d0159",
+  "source_snapshot_generated_at_utc": "2026-10-09T10:58:50.689719+00:00",
+  "source_latest_date": "2026-10-09",
+  "source_session_date": "2026-10-09",
+  "source_job": "eod",
+  "source_result": "PASS_WITH_QUARANTINE",
   "publication_mode": "GITHUB_BRIDGE_READY",
   "source_workspace": "DỮ LIỆU OHLCV",
   "dashboard_consumer": "wyckoff-vnindex-market-dashboard",
   "live_snapshot_available": true,
   "freshness": {
-    "age_minutes": 0,
-    "stale": false,
+    "age_minutes": 1653,
+    "stale": true,
     "threshold_minutes": 30
   },
   "files": {
     "stock_daily_ohlcv.csv": {
-      "bytes": 26867798,
-      "sha256": "b36ef078fbe6f527900cf22736f0bcc2535aa696ca14cc7f6489ab2b551f68b9"
+      "bytes": 26354341,
+      "sha256": "db8280bfd8903ba660b24a794d0a6e6c9a3436a61cd3dcf4aeb5537607094a61"
     },
     "stock_weekly_ohlcv.csv": {
-      "bytes": 9915357,
-      "sha256": "a23e76b20243476568d3c95c1671b2349735894e2b9f4ffcea7c2de2492d244d"
+      "bytes": 9800750,
+      "sha256": "08862c27a386b09fd3e5f6cb3b0a292e6a3c0050758d8decb8f5294a24e74277"
     },
     "index_daily_ohlcv.csv": {
-      "bytes": 189437,
-      "sha256": "923688286dc86d9a4191499369fd44c2313207029a8635c9ae67835193d3eea4"
+      "bytes": 186700,
+      "sha256": "44370a9ab684282b50353b6f7ee8911f02664a29bb0a1bf45650096e5a8bf6ea"
     },
     "index_weekly_ohlcv.csv": {
-      "bytes": 60752,
-      "sha256": "d5ba62b471ea7fabfa3c592b321494cd06845ccd8079722cd79d8d4a63864928"
+      "bytes": 60159,
+      "sha256": "0a58702defd14d41db755b46a8d2fd3c93cae45c63ea5a2f441a101d0a6b0584"
     },
     "sector_classification.csv": {
       "bytes": 60568,
@@ -41,10 +42,41 @@
     }
   },
   "result": "PASS",
-  "session_date": "2026-10-08",
+  "data_lane": "KBS_AUTO_CERTIFIED_WITH_RISK",
+  "canonical_certified": true,
+  "analysis_allowed_as_completed": true,
+  "source": "KBS",
+  "source_risk": "OWNER_ACCEPTED_ALL",
+  "certification_mode": "AUTO_CERTIFIED_WITH_RISK",
+  "risk_accepted": true,
+  "publication_policy": {
+    "policy_id": "KBS_PUBLIC_ACCEPTANCE_POLICY_V1",
+    "version": "1.0.0",
+    "enabled": true,
+    "source": "KBS",
+    "certification_mode": "AUTO_CERTIFIED_WITH_RISK",
+    "risk_label": "KBS_ACCEPTED_ALL_PROVIDER_RISKS",
+    "preserved_controls": [
+      "payload_sha256_and_manifest_consistency",
+      "generation_and_session_binding",
+      "github_remote_commit_readback",
+      "live_pointer_readback",
+      "intraday_status_only_no_event_phase_zone_add",
+      "risk_and_quarantine_fields_remain_visible"
+    ],
+    "policy_path": "C:\\Users\\T14\\Desktop\\DỮ LIỆU OHLCV\\runtime\\kbs_public_acceptance_policy_v1.json"
+  },
+  "quarantined_symbols": [
+    "ANT"
+  ],
+  "eligible_scope": "CLEAN_SYMBOLS_ONLY",
+  "market_gate": "FAIL",
+  "canonical_completed_cutoff": null,
+  "observed_date": "2026-10-09",
+  "session_date": "2026-10-09",
   "latest_live_snapshot": {
-    "file": "live_snapshots\\live_20261008T151949+0700.csv",
-    "bytes": 19586,
-    "sha256": "6a1bb1b8a948bd892095ad23bb3ce618465c7c9441e180ff832de52690515263"
+    "file": "live_snapshots\\live_20261009T143003+0700.csv",
+    "bytes": 19185,
+    "sha256": "7af41d10c7417e6827d11e88256216a9957bbf96ea18c405dbe112cbcc5e6166"
   }
 }

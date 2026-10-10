@@ -1,0 +1,36 @@
+{
+  "schema_version": "kbs_public_acceptance_policy.v1",
+  "policy_id": "KBS_PUBLIC_ACCEPTANCE_POLICY_V1",
+  "version": "1.0.0",
+  "enabled": true,
+  "source": "KBS",
+  "effective_from": "2026-10-10T00:00:00+07:00",
+  "certification_mode": "AUTO_CERTIFIED_WITH_RISK",
+  "risk_label": "KBS_ACCEPTED_ALL_PROVIDER_RISKS",
+  "decision": "Public KBS observations are accepted and auto-certified for publication even when CA, hard-integrity, liquidity, or provider warnings exist.",
+  "suppressed_publication_gates": [
+    "corporate_action_gate",
+    "static_validation_gate",
+    "hard_integrity_gate",
+    "liquidity_quarantine_gate"
+  ],
+  "preserved_controls": [
+    "payload_sha256_and_manifest_consistency",
+    "generation_and_session_binding",
+    "github_remote_commit_readback",
+    "live_pointer_readback",
+    "intraday_status_only_no_event_phase_zone_add",
+    "risk_and_quarantine_fields_remain_visible"
+  ],
+  "analysis_semantics": {
+    "canonical_certified": true,
+    "analysis_allowed_as_completed": true,
+    "intraday_overlay_can_replace_eod": false,
+    "intraday_can_authorize_event_phase_zone_add": false
+  },
+  "approval": {
+    "approved_by": "project owner",
+    "approved_at": "2026-10-10",
+    "approval_scope": "KBS data publication to duvalivnn/wyckoff-vnindex-live-public"
+  }
+}
