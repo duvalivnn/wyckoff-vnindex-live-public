@@ -1,0 +1,66 @@
+{
+  "schema_version": "research_hose_history_chain.v2",
+  "authority": {
+    "repository": "duvalivnn/wyckoff-vnindex-live-public",
+    "public_commit": "3a5cf10f55a42528c354a59836fa25b9fe48d01c",
+    "public_canonical_path": "weekly_replace.csv",
+    "public_compatibility_path": "weekly_replace.csv"
+  },
+  "grain": [
+    "symbol",
+    "week_period"
+  ],
+  "selection_policy": {
+    "overlap": "PUBLIC_CANONICAL_WINS",
+    "legacy_only_key": "RETAIN_AS_FALLBACK_ARCHIVE",
+    "invalid_or_empty_public": "PUBLIC_SOURCE_UNAVAILABLE; do not promote the legacy file as a replacement",
+    "intraday": "STATUS_ONLY; never replaces a completed weekly bar"
+  },
+  "legacy_archive": {
+    "path": "02_LEGACY_ARCHIVE/stock_weekly_ohlcv_legacy_2026-10-08.csv",
+    "bytes": 9914888,
+    "sha256": "9339363616f809e07aaac0d6034c25f0898e0dfdd47da1f25974ea7c7e48ecf9",
+    "rows": 114842,
+    "max_week_end": "2026-10-07"
+  },
+  "public_canonical": {
+    "path": "../02_STATIC_CANONICAL/stock_weekly_ohlcv.csv",
+    "bytes": 9800751,
+    "sha256": "f08e6b1e6daca4e0a3f8a867aec9f0c22bd6d09081545f3eff2ae6c169c3ec0b",
+    "rows": 114848,
+    "max_week_end": "2026-10-09"
+  },
+  "merge_evidence": {
+    "legacy_keys": 114842,
+    "public_keys": 114848,
+    "overlap_keys": 114842,
+    "overlap_ohlcv_conflicts_replaced_by_public": 1270,
+    "legacy_only_keys_retained": 0,
+    "chain_rows": 114848
+  },
+  "chain_file": {
+    "path": "stock_weekly_ohlcv_chain.csv",
+    "bytes": 9915600,
+    "sha256": "34f65d9fb93ad7924e98043a69a00cd1ddaa315dbf4e14a8eb140ea876fc8f92",
+    "rows": 114848,
+    "columns": [
+      "symbol",
+      "week_period",
+      "week_start",
+      "week_end",
+      "open",
+      "high",
+      "low",
+      "close",
+      "volume",
+      "trading_days",
+      "is_partial_week"
+    ]
+  },
+  "materialized_from_commit": "3a5cf10f55a42528c354a59836fa25b9fe48d01c",
+  "publication_paths": {
+    "manifest": "history_chain_manifest.json",
+    "payload": "stock_weekly_ohlcv_chain.csv"
+  },
+  "generated_at_utc": "2026-10-11T03:22:30.340888+00:00"
+}

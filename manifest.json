@@ -1,7 +1,6 @@
 {
   "schema_version": "canonical_dashboard_bridge.v1",
   "source_role": "MODEL_READABLE_PUBLIC_STATIC_SNAPSHOT",
-  "generated_at": "2026-10-11T02:29:18.974014+00:00",
   "timezone": "Asia/Ho_Chi_Minh",
   "source_workspace": "DỮ LIỆU OHLCV",
   "bridge_mode": "KBS_OBSERVED_NOT_CERTIFIED",
@@ -65,44 +64,51 @@
       "sha256": "0317c9aad2e28ea48d7e76b04a6f580c7ad9ee72fee9d2935c3b97fbcc9483fe"
     },
     "alert_engine_gate.json": {
-      "bytes": 1858,
-      "sha256": "e88e4fa0fc5e725755d75916a1de42a83a9fdb024a12c16cbdb4297fe0b8ae08"
+      "bytes": 1902,
+      "sha256": "4a90671b996225d96b69fd6c019e5b7654ef54071a5b8ebef197343af7bab5e2"
     },
     "ca_receipt.json": {
-      "bytes": 2855,
-      "sha256": "f0324900b6329aa653b3d13c6233e65ec5668819bf37f163b9d8b04fe5ae88af"
+      "bytes": 2938,
+      "sha256": "db3bdde241b78a3695a40ea84b98723d72d0f73dc3a037ba2605f7e721fd7d16"
     },
     "current_state.json": {
-      "bytes": 14123,
-      "sha256": "6284ce5489b288a318c56864e63b5e96e25b8b2750bcacc8562bd4c1b0de318f"
+      "bytes": 14826,
+      "sha256": "0ff3b6ee6e07434692949282d954e1f51724f5eeeaec5d3c29df2f9b5297a543"
     },
     "eod_receipt.json": {
-      "bytes": 258822,
-      "sha256": "82e9b3eedfea504c5a1355cca9969f088dc1db32aa0c0f753c4cf66f8f578219"
+      "bytes": 267523,
+      "sha256": "3fdb03783f22e80cf8227031c4135d26784ff280c7a2cd6ff2ef7fe597948ad8"
     },
     "intraday_manifest.json": {
-      "bytes": 952,
-      "sha256": "970964f3f108046dfa3aaaabe9e4e62db782e70b10d50ad4eccc4112df20c3bf"
+      "bytes": 979,
+      "sha256": "0da8c3279810e4a9261150d032c85d5dad990609ec1bd9c40e59549e9e9ae1a8"
     },
     "live_manifest.json": {
-      "bytes": 10577,
-      "sha256": "b0d8a512da4c14972c29b6a1cbf621379bc01f647f309ede8383093d81fb8aa8"
+      "bytes": 10887,
+      "sha256": "bad3edc1f31e03bcf66dd0780fe2f9628ea3a4abd4ae6fe6489c62d32204244b"
     },
     "publisher_state.json": {
-      "bytes": 580,
-      "sha256": "3b663e7d53e0b12c419f5a3c27e07f32773fd5298977e0bc9e997db160810b9e"
+      "bytes": 593,
+      "sha256": "ce3dfd12a8b5e3a995c90d964c957285981af9707d8bc7591179f047b8b2ad42"
     },
     "static_refresh_manifest.json": {
-      "bytes": 8519,
-      "sha256": "7ebcc11bb244f2a059331fe2100564c72736502b462702569f6194a4931db664"
+      "bytes": 9046,
+      "sha256": "063e52f8c0989a98f7bcca006a05f11797b1a97b4a6c7f6dd125baa1e8393c53"
     },
     "alerts_live.json": {
-      "bytes": 180795,
-      "sha256": "92338dd0bfb10fd9775db3383b76f6442db4f31c69ef765de56c587b90ce2adb"
+      "bytes": 185726,
+      "sha256": "0c56daf5b2e6a7bd6335cf70190ab3c6055264c9af39e23e60ab12dd3f40deec"
+    },
+    "history_chain_manifest.json": {
+      "bytes": 2116,
+      "sha256": "cdb36d124dfb6002412ffe00d1543519ba1d2828603db8f886d14cfe1ed24b2a"
+    },
+    "stock_weekly_ohlcv_chain.csv": {
+      "bytes": 9915600,
+      "sha256": "34f65d9fb93ad7924e98043a69a00cd1ddaa315dbf4e14a8eb140ea876fc8f92"
     }
   },
   "source_latest_date": "2026-10-09",
-  "live_manifest_generated_at_utc": "2026-10-11T02:29:18.974014+00:00",
   "live_pointer_path": "live_pointer.json",
   "static_refresh": {
     "mode": "weekly",
@@ -123,7 +129,24 @@
     "intraday_manifest.json",
     "live_manifest.json",
     "publisher_state.json",
-    "static_refresh_manifest.json"
+    "static_refresh_manifest.json",
+    "history_chain_manifest.json",
+    "stock_weekly_ohlcv_chain.csv"
   ],
-  "publisher_generation_id": "r33-2026-10-09-c0f7c06e62374187"
+  "publisher_generation_id": "r33-2026-10-09-c0f7c06e62374187",
+  "history_chain": {
+    "manifest": "history_chain_manifest.json",
+    "payload": "stock_weekly_ohlcv_chain.csv",
+    "schema_version": "research_hose_history_chain.v2",
+    "join_key": [
+      "symbol",
+      "week_period"
+    ],
+    "rows": 114848,
+    "symbols": 406,
+    "materialized_from_commit": "3a5cf10f55a42528c354a59836fa25b9fe48d01c",
+    "source_canonical_sha256": "f08e6b1e6daca4e0a3f8a867aec9f0c22bd6d09081545f3eff2ae6c169c3ec0b"
+  },
+  "generated_at": "2026-10-11T02:29:18.974014+00:00",
+  "live_manifest_generated_at_utc": "2026-10-11T02:29:18.974014+00:00"
 }
