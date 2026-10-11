@@ -13,6 +13,6 @@
 5. Nếu một kiểm tra không đạt, dừng Method-Locked audit cho mã/phạm vi chunk đó và báo cáo lỗi cụ thể.
 6. Không dùng compatibility view, cache, attachment hoặc commit cũ để lấp dữ liệu chunk bị thiếu.
 
-Trong gói staging hiện tại, `03_PUBLIC_WEEKLY/authority_receipt.json` chưa có bản hiện hành cùng payload. Vì vậy reader phải trả `PUBLIC_READ_NOT_VERIFIED` cho tới khi publisher phát hành receipt này; tuyệt đối không dùng `04_EVIDENCE/LEGACY_PUBLIC_AUTHORITY_2026-10-11/authority_receipt.json` để thay thế.
+Public payload hiện hành phải có `authority_receipt.json`, `live_pointer.json`, `history_chain_chunks_manifest.json` và `history_chain_chunk_binding_receipt.json` trong cùng lineage. Nếu một file không đọc được hoặc binding không khớp, trả `PUBLIC_READ_NOT_VERIFIED`; không dùng staging, attachment, cache hoặc commit cũ để thay thế. `source_payload_commit` và `previous_projection_source_payload_commit` chỉ là provenance khi binding receipt đã xác nhận quan hệ với payload hiện hành.
 
 Quy tắc này là kiểm tra lineage/đọc dữ liệu cho lịch sử. Nó không phải Data Gate, Corporate Action/price basis gate, Integrity Gate hoặc Market Gate dùng để chặn publication của snapshot hiện hành.

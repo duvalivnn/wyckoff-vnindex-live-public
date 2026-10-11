@@ -10,7 +10,11 @@
     "source_live_manifest_sha256": "b0d8a512da4c14972c29b6a1cbf621379bc01f647f309ede8383093d81fb8aa8",
     "source_pointer_sha256": "d268a3db157c3a6b0f3df107ea23aded8d57decba4d5c4c447ff29b8bf1bd481",
     "projection_mode": "CURRENT_AUTHORITY_PAYLOAD_CONTENT_BOUND_PROJECTION",
-    "previous_source_payload_commit": "6f3b33fdb5e7bf9fcebe907b949b0f12cf2e115b"
+    "previous_source_payload_commit": "6f3b33fdb5e7bf9fcebe907b949b0f12cf2e115b",
+    "current_payload_commit": "64beaa2e74d5ec8d9434b391243f7426c3cb9a84",
+    "previous_projection_source_payload_commit": "6f3b33fdb5e7bf9fcebe907b949b0f12cf2e115b",
+    "binding_receipt": "history_chain_chunk_binding_receipt.json",
+    "binding_status": "VERIFIED_CONTENT_BINDING"
   },
   "source_payloads": {
     "stock_weekly_ohlcv_chain.csv": {
@@ -27,7 +31,7 @@
   "reader_contract": {
     "selection": "Read this manifest first, then read requested symbol chunks.",
     "integrity": "Every requested chunk bytes/sha256/rows/header/symbol/date-key must match.",
-    "lineage": "Chunks are verified projections of canonical files in source_payload_commit; previous_source_payload_commit is retained only as provenance.",
+    "lineage": "Chunks are verified projections of the canonical source payload. current_payload_commit is bound to source_payload_commit by history_chain_chunk_binding_receipt.json; the previous projection commit is provenance only.",
     "intraday": "Intraday remains status-only and never replaces completed EOD or weekly rows.",
     "failure": "Missing, empty, duplicate, or hash-mismatched chunk => PUBLIC_HISTORY_CHUNKS_UNAVAILABLE; source hash mismatch => PUBLIC_LINEAGE_NOT_READY."
   },

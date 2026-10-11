@@ -100,8 +100,8 @@
       "sha256": "92338dd0bfb10fd9775db3383b76f6442db4f31c69ef765de56c587b90ce2adb"
     },
     "history_chain_manifest.json": {
-      "bytes": 2051,
-      "sha256": "70842588bb9971828ee73ba7cd2c4438cbe826e475c3e709c4a84616189090f2"
+      "bytes": 2822,
+      "sha256": "e2b8809ae1fc1b10e2792d4db6b3c1d5e37a81d1f090181f380e7ad5e45b036a"
     },
     "stock_weekly_ohlcv_chain.csv": {
       "bytes": 9800751,
@@ -3364,8 +3364,12 @@
       "sha256": "07353ef67230728a1ffe3ee011ed723a4d35cd38bc42aca139042c5658be46ef"
     },
     "history_chain_chunks_manifest.json": {
-      "bytes": 182077,
-      "sha256": "825dfdb6e32cfd1f36c7014fe31230aea3daf5cda3da8e8855cfd29c602ca9d4"
+      "bytes": 182443,
+      "sha256": "faac70bdcd356596236ca62390ab1660f382ffc5deedf6a3cd88dfe2ffafa635"
+    },
+    "history_chain_chunk_binding_receipt.json": {
+      "bytes": 8740,
+      "sha256": "490561e2bd5647bf296a410b0c1ad4e4f29c8481ea4a93e5900771f00c061597"
     }
   },
   "source_latest_date": "2026-10-09",
@@ -3381,18 +3385,20 @@
     "result": "PASS_WITH_WARNINGS"
   },
   "lineage_files": [
+    "THREAD_CHUNK_READ_COMMAND_V1.md",
     "alert_engine_gate.json",
     "alerts_live.json",
     "ca_receipt.json",
     "current_state.json",
     "eod_receipt.json",
+    "history_chain_chunk_binding_receipt.json",
+    "history_chain_manifest.json",
     "intraday_manifest.json",
     "live_manifest.json",
     "publisher_state.json",
+    "rebase_receipt.json",
     "static_refresh_manifest.json",
-    "history_chain_manifest.json",
-    "stock_weekly_ohlcv_chain.csv",
-    "rebase_receipt.json"
+    "stock_weekly_ohlcv_chain.csv"
   ],
   "publisher_generation_id": "r33-2026-10-09-c0f7c06e62374187",
   "history_chain": {
@@ -3405,16 +3411,22 @@
     ],
     "rows": 114848,
     "symbols": 406,
-    "materialized_from_commit": "3a5cf10f55a42528c354a59836fa25b9fe48d01c",
-    "source_canonical_sha256": "f08e6b1e6daca4e0a3f8a867aec9f0c22bd6d09081545f3eff2ae6c169c3ec0b"
+    "materialized_from_commit": "a9e29e1402692805d476fb46dad3524702c11343",
+    "source_canonical_sha256": "f08e6b1e6daca4e0a3f8a867aec9f0c22bd6d09081545f3eff2ae6c169c3ec0b",
+    "publication_payload_commit": "64beaa2e74d5ec8d9434b391243f7426c3cb9a84",
+    "binding_receipt": "history_chain_chunk_binding_receipt.json",
+    "provenance_status": "CURRENT_PAYLOAD_BOUND_TO_VERIFIED_PROJECTION"
   },
   "generated_at": "2026-10-11T02:29:18.974014+00:00",
   "live_manifest_generated_at_utc": "2026-10-11T02:29:18.974014+00:00",
   "history_reader_bundle": {
     "manifest": "history_chain_chunks_manifest.json",
+    "binding_receipt": "history_chain_chunk_binding_receipt.json",
     "status": "READY_FOR_METHOD_LOCKED_READER",
-    "source_payload_commit": "a9e29e1402692805d476fb46dad3524702c11343",
-    "projection_binding": "VERIFIED_CONTENT_BINDING",
+    "binding_status": "VERIFIED_CONTENT_BINDING",
+    "current_payload_commit": "64beaa2e74d5ec8d9434b391243f7426c3cb9a84",
+    "projection_source_payload_commit": "a9e29e1402692805d476fb46dad3524702c11343",
+    "previous_projection_source_payload_commit": "6f3b33fdb5e7bf9fcebe907b949b0f12cf2e115b",
     "weekly_rows": 114848,
     "daily_rows": 45982,
     "symbols": 406

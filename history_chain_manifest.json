@@ -2,9 +2,13 @@
   "schema_version": "research_hose_history_chain.v2",
   "authority": {
     "repository": "duvalivnn/wyckoff-vnindex-live-public",
-    "public_commit": "3a5cf10f55a42528c354a59836fa25b9fe48d01c",
-    "public_canonical_path": "weekly_replace.csv",
-    "public_compatibility_path": "weekly_replace.csv"
+    "branch": "main",
+    "pointer_commit": "403c71694918bc5fe08f59e5ac9d1e784b01156d",
+    "payload_commit": "64beaa2e74d5ec8d9434b391243f7426c3cb9a84",
+    "source_payload_commit": "a9e29e1402692805d476fb46dad3524702c11343",
+    "public_canonical_path": "stock_weekly_ohlcv_chain.csv",
+    "public_compatibility_path": "stock_weekly_ohlcv_chain.csv",
+    "binding_receipt": "history_chain_chunk_binding_receipt.json"
   },
   "grain": [
     "symbol",
@@ -57,10 +61,18 @@
       "is_partial_week"
     ]
   },
-  "materialized_from_commit": "3a5cf10f55a42528c354a59836fa25b9fe48d01c",
+  "materialized_from_commit": "a9e29e1402692805d476fb46dad3524702c11343",
   "publication_paths": {
     "manifest": "history_chain_manifest.json",
     "payload": "stock_weekly_ohlcv_chain.csv"
   },
-  "generated_at_utc": "2026-10-11T03:22:30.340888+00:00"
+  "generated_at_utc": "2026-10-11T03:22:30.340888+00:00",
+  "provenance": {
+    "source_payload_commit": "a9e29e1402692805d476fb46dad3524702c11343",
+    "previous_projection_source_payload_commit": "6f3b33fdb5e7bf9fcebe907b949b0f12cf2e115b",
+    "legacy_materialized_from_commit": "3a5cf10f55a42528c354a59836fa25b9fe48d01c",
+    "market_data_mutation": "NONE"
+  },
+  "current_payload_commit": "64beaa2e74d5ec8d9434b391243f7426c3cb9a84",
+  "binding_receipt": "history_chain_chunk_binding_receipt.json"
 }
