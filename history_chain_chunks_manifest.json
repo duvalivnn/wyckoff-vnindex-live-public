@@ -1,14 +1,16 @@
 {
   "schema_version": "thread_reader_history_chunks.v1",
-  "generated_at_utc": "2026-10-11T13:19:37.024369+00:00",
+  "generated_at_utc": "2026-10-11T14:28:42.675387+00:00",
   "authority": {
     "repository": "duvalivnn/wyckoff-vnindex-live-public",
-    "source_payload_commit": "6f3b33fdb5e7bf9fcebe907b949b0f12cf2e115b",
+    "source_payload_commit": "a9e29e1402692805d476fb46dad3524702c11343",
     "publisher_generation_id": "r33-2026-10-09-c0f7c06e62374187",
     "source_latest_date": "2026-10-09",
     "canonical_completed_cutoff": "2026-10-09",
     "source_live_manifest_sha256": "b0d8a512da4c14972c29b6a1cbf621379bc01f647f309ede8383093d81fb8aa8",
-    "source_pointer_sha256": "1fe30ee3ea7126705f1cc43ac473486c1dda1ef6fe5d35ac2e942455871c281e"
+    "source_pointer_sha256": "d268a3db157c3a6b0f3df107ea23aded8d57decba4d5c4c447ff29b8bf1bd481",
+    "projection_mode": "CURRENT_AUTHORITY_PAYLOAD_CONTENT_BOUND_PROJECTION",
+    "previous_source_payload_commit": "6f3b33fdb5e7bf9fcebe907b949b0f12cf2e115b"
   },
   "source_payloads": {
     "stock_weekly_ohlcv_chain.csv": {
@@ -25,9 +27,9 @@
   "reader_contract": {
     "selection": "Read this manifest first, then read requested symbol chunks.",
     "integrity": "Every requested chunk bytes/sha256/rows/header/symbol/date-key must match.",
-    "lineage": "All chunks are projections of the public canonical payload hashes and publisher generation above.",
+    "lineage": "Chunks are verified projections of canonical files in source_payload_commit; previous_source_payload_commit is retained only as provenance.",
     "intraday": "Intraday remains status-only and never replaces completed EOD or weekly rows.",
-    "failure": "Missing, empty, duplicate, or hash-mismatched chunk => PUBLIC_HISTORY_CHUNKS_UNAVAILABLE."
+    "failure": "Missing, empty, duplicate, or hash-mismatched chunk => PUBLIC_HISTORY_CHUNKS_UNAVAILABLE; source hash mismatch => PUBLIC_LINEAGE_NOT_READY."
   },
   "universe": {
     "symbols": [
@@ -5343,6 +5345,16 @@
         "sha256": "c35e3d7d754f21c3e10a6519534621d3793e69d1b350315a5c6fded32591f2ed",
         "rows": 124
       }
+    }
+  },
+  "binding": {
+    "status": "VERIFIED_CONTENT_BINDING",
+    "current_source_payload_commit": "a9e29e1402692805d476fb46dad3524702c11343",
+    "previous_projection_source_payload_commit": "6f3b33fdb5e7bf9fcebe907b949b0f12cf2e115b",
+    "market_data_mutation": "NONE",
+    "verified_chunks": {
+      "weekly": 406,
+      "daily": 406
     }
   }
 }
