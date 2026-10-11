@@ -1,9 +1,8 @@
 {
   "schema_version": "canonical_dashboard_bridge.v1",
   "source_role": "MODEL_READABLE_PUBLIC_STATIC_SNAPSHOT",
-  "generated_at": "2026-10-11T02:29:18.974014+00:00",
   "timezone": "Asia/Ho_Chi_Minh",
-  "source_workspace": "DỮ LIỆU OHLCV",
+  "source_workspace": "Dá»® LIá»†U OHLCV",
   "bridge_mode": "KBS_OBSERVED_NOT_CERTIFIED",
   "bridge_start_date": "2026-04-12",
   "bridge_lookback_days": 180,
@@ -68,6 +67,10 @@
       "bytes": 1858,
       "sha256": "e88e4fa0fc5e725755d75916a1de42a83a9fdb024a12c16cbdb4297fe0b8ae08"
     },
+    "ca_receipt.json": {
+      "bytes": 4329,
+      "sha256": "900dcd118e5325b55bf9c58b59d3fffac54be821d715332c580829ee9b726e86"
+    },
     "current_state.json": {
       "bytes": 14123,
       "sha256": "6284ce5489b288a318c56864e63b5e96e25b8b2750bcacc8562bd4c1b0de318f"
@@ -88,10 +91,6 @@
       "bytes": 580,
       "sha256": "3b663e7d53e0b12c419f5a3c27e07f32773fd5298977e0bc9e997db160810b9e"
     },
-    "rebase_receipt.json": {
-      "bytes": 4009,
-      "sha256": "0b7ddb062aa81d899443a973d7233508bc3ddcd34a6134107182585288f6dc8d"
-    },
     "static_refresh_manifest.json": {
       "bytes": 8519,
       "sha256": "7ebcc11bb244f2a059331fe2100564c72736502b462702569f6194a4931db664"
@@ -99,10 +98,21 @@
     "alerts_live.json": {
       "bytes": 180795,
       "sha256": "92338dd0bfb10fd9775db3383b76f6442db4f31c69ef765de56c587b90ce2adb"
+    },
+    "history_chain_manifest.json": {
+      "bytes": 2051,
+      "sha256": "70842588bb9971828ee73ba7cd2c4438cbe826e475c3e709c4a84616189090f2"
+    },
+    "stock_weekly_ohlcv_chain.csv": {
+      "bytes": 9800751,
+      "sha256": "f08e6b1e6daca4e0a3f8a867aec9f0c22bd6d09081545f3eff2ae6c169c3ec0b"
+    },
+    "rebase_receipt.json": {
+      "bytes": 4009,
+      "sha256": "0b7ddb062aa81d899443a973d7233508bc3ddcd34a6134107182585288f6dc8d"
     }
   },
   "source_latest_date": "2026-10-09",
-  "live_manifest_generated_at_utc": "2026-10-11T02:29:18.974014+00:00",
   "live_pointer_path": "live_pointer.json",
   "static_refresh": {
     "mode": "weekly",
@@ -117,13 +127,31 @@
   "lineage_files": [
     "alert_engine_gate.json",
     "alerts_live.json",
+    "ca_receipt.json",
     "current_state.json",
     "eod_receipt.json",
     "intraday_manifest.json",
     "live_manifest.json",
     "publisher_state.json",
-    "rebase_receipt.json",
-    "static_refresh_manifest.json"
+    "static_refresh_manifest.json",
+    "history_chain_manifest.json",
+    "stock_weekly_ohlcv_chain.csv",
+    "rebase_receipt.json"
   ],
-  "publisher_generation_id": "r33-2026-10-09-c0f7c06e62374187"
+  "publisher_generation_id": "r33-2026-10-09-c0f7c06e62374187",
+  "history_chain": {
+    "manifest": "history_chain_manifest.json",
+    "payload": "stock_weekly_ohlcv_chain.csv",
+    "schema_version": "research_hose_history_chain.v2",
+    "join_key": [
+      "symbol",
+      "week_period"
+    ],
+    "rows": 114848,
+    "symbols": 406,
+    "materialized_from_commit": "3a5cf10f55a42528c354a59836fa25b9fe48d01c",
+    "source_canonical_sha256": "f08e6b1e6daca4e0a3f8a867aec9f0c22bd6d09081545f3eff2ae6c169c3ec0b"
+  },
+  "generated_at": "2026-10-11T02:29:18.974014+00:00",
+  "live_manifest_generated_at_utc": "2026-10-11T02:29:18.974014+00:00"
 }
