@@ -1,14 +1,17 @@
 {
+  "schema_version": "canonical_static_replacement.v1",
   "job": "history-refresh-weekly",
   "mode": "weekly",
+  "run_id": "20261011T001555962115Z_d1931305",
   "window_start": "2026-10-05",
   "window_end": "2026-10-09",
-  "run_id": "20261011T001555962115Z_d1931305",
-  "generated_at_utc": "2026-10-11T00:15:55.962115+00:00",
+  "replacement_semantics": "replace_only_window_preserve_outside_window",
+  "source": "KBS",
   "result": "PASS_WITH_WARNINGS",
-  "warnings": [
-    "KBS_SYMBOL_FETCH_WARNINGS"
-  ],
+  "canonical_latest_date": "2026-10-09",
+  "outside_window_preserved": true,
+  "hard_integrity_policy": "WARN_AND_CONTINUE",
+  "hard_integrity_result": "PASS",
   "symbols_refreshed": [
     "AAA",
     "AAM",
@@ -501,203 +504,24 @@
     "TIX",
     "TTE"
   ],
-  "hard_integrity": {
-    "corporate_action_conflicts": 0,
-    "corporate_action_conflict_details": [],
-    "mixed_price_basis_symbols": [],
-    "historical_revision_conflicts": [],
-    "weekly_source": "CANONICAL_DAILY_DETERMINISTIC_REBUILD",
-    "weekly_reconciliation": {
-      "stock_daily_ohlcv.csv": {
-        "daily_file": "stock_daily_ohlcv.csv",
-        "weekly_file": "stock_weekly_ohlcv.csv",
-        "daily_periods": 114848,
-        "weekly_rows": 114848,
-        "missing_or_extra_periods": 0,
-        "value_mismatches": 0,
-        "pass": true
-      },
-      "index_daily_ohlcv.csv": {
-        "daily_file": "index_daily_ohlcv.csv",
-        "weekly_file": "index_weekly_ohlcv.csv",
-        "daily_periods": 596,
-        "weekly_rows": 596,
-        "missing_or_extra_periods": 0,
-        "value_mismatches": 0,
-        "pass": true
-      }
+  "files": {
+    "stock_daily_ohlcv.csv": {
+      "bytes": 26354400,
+      "sha256": "777d234dff1f383e3100170e8bb08a53c26edb004ba7af51e71b4370dde6de05"
     },
-    "hard_integrity_result": "PASS",
-    "hard_integrity_failures": {}
+    "stock_weekly_ohlcv.csv": {
+      "bytes": 9800751,
+      "sha256": "f08e6b1e6daca4e0a3f8a867aec9f0c22bd6d09081545f3eff2ae6c169c3ec0b"
+    },
+    "index_daily_ohlcv.csv": {
+      "bytes": 186700,
+      "sha256": "c53bad84f1509f9d3200e5634bbc468fdc70f313d167de3d928a828f6466e286"
+    },
+    "index_weekly_ohlcv.csv": {
+      "bytes": 60159,
+      "sha256": "c7f4f8e01935683fd841529fc65654ef47d8b0d922d7c091fb523e612a1f0a3d"
+    }
   },
-  "hard_integrity_policy": "WARN_AND_CONTINUE",
-  "post_promotion_hard_integrity": {
-    "corporate_action_conflicts": 0,
-    "corporate_action_conflict_details": [],
-    "mixed_price_basis_symbols": [],
-    "historical_revision_conflicts": [],
-    "weekly_source": "CANONICAL_DAILY_DETERMINISTIC_REBUILD",
-    "weekly_reconciliation": {
-      "stock_daily_ohlcv.csv": {
-        "daily_file": "stock_daily_ohlcv.csv",
-        "weekly_file": "stock_weekly_ohlcv.csv",
-        "daily_periods": 114848,
-        "weekly_rows": 114848,
-        "missing_or_extra_periods": 0,
-        "value_mismatches": 0,
-        "pass": true
-      },
-      "index_daily_ohlcv.csv": {
-        "daily_file": "index_daily_ohlcv.csv",
-        "weekly_file": "index_weekly_ohlcv.csv",
-        "daily_periods": 596,
-        "weekly_rows": 596,
-        "missing_or_extra_periods": 0,
-        "value_mismatches": 0,
-        "pass": true
-      }
-    },
-    "hard_integrity_result": "PASS",
-    "hard_integrity_failures": {},
-    "result": "PASS",
-    "policy": "WARN_AND_CONTINUE",
-    "warning": false
-  },
-  "source_job": "history-refresh-weekly",
-  "session_date": "2026-10-09",
-  "source_latest_date": "2026-10-09",
-  "canonical_cutoff_date": "2026-10-09",
-  "ca_receipt": "corporate_actions\\daily\\2026-10-09_20261009T100004830658Z.json",
-  "refresh_window": {
-    "start": "2026-10-05",
-    "end": "2026-10-09",
-    "outside_window_preserved": true
-  },
-  "canonical_static_replacement": {
-    "status": "PASS",
-    "scope": {
-      "mode": "weekly",
-      "window_start": "2026-10-05",
-      "window_end": "2026-10-09"
-    },
-    "replacement_semantics": "replace_only_window_preserve_outside_window",
-    "source": "KBS",
-    "canonical_latest_date": "2026-10-09",
-    "outside_window_preserved": true,
-    "files": {
-      "stock_daily_ohlcv.csv": {
-        "bytes": 26354400,
-        "sha256": "777d234dff1f383e3100170e8bb08a53c26edb004ba7af51e71b4370dde6de05"
-      },
-      "stock_weekly_ohlcv.csv": {
-        "bytes": 9800751,
-        "sha256": "f08e6b1e6daca4e0a3f8a867aec9f0c22bd6d09081545f3eff2ae6c169c3ec0b"
-      },
-      "index_daily_ohlcv.csv": {
-        "bytes": 186700,
-        "sha256": "c53bad84f1509f9d3200e5634bbc468fdc70f313d167de3d928a828f6466e286"
-      },
-      "index_weekly_ohlcv.csv": {
-        "bytes": 60159,
-        "sha256": "c7f4f8e01935683fd841529fc65654ef47d8b0d922d7c091fb523e612a1f0a3d"
-      }
-    },
-    "backup": "staging\\history_weekly_2026-10-05_2026-10-09_20261011T001555962115Z_d1931305\\backup",
-    "rollback_available": true,
-    "provider_errors": [
-      {
-        "symbol": "CCI",
-        "kind": "TRANSIENT_PROVIDER_OR_NETWORK",
-        "error_type": "RetryError",
-        "error": "RetryError[<Future at 0x1ee19465640 state=finished raised ValueError>]"
-      },
-      {
-        "symbol": "CLW",
-        "kind": "TRANSIENT_PROVIDER_OR_NETWORK",
-        "error_type": "RetryError",
-        "error": "RetryError[<Future at 0x1ee1bf13200 state=finished raised ValueError>]"
-      },
-      {
-        "symbol": "COM",
-        "kind": "TRANSIENT_PROVIDER_OR_NETWORK",
-        "error_type": "RetryError",
-        "error": "RetryError[<Future at 0x1ee1ad51130 state=finished raised ValueError>]"
-      },
-      {
-        "symbol": "DTT",
-        "kind": "TRANSIENT_PROVIDER_OR_NETWORK",
-        "error_type": "RetryError",
-        "error": "RetryError[<Future at 0x1ee1ae19ac0 state=finished raised ValueError>]"
-      },
-      {
-        "symbol": "FDC",
-        "kind": "TRANSIENT_PROVIDER_OR_NETWORK",
-        "error_type": "RetryError",
-        "error": "RetryError[<Future at 0x1ee1c475fd0 state=finished raised ValueError>]"
-      },
-      {
-        "symbol": "L10",
-        "kind": "TRANSIENT_PROVIDER_OR_NETWORK",
-        "error_type": "RetryError",
-        "error": "RetryError[<Future at 0x1ee1c183230 state=finished raised ValueError>]"
-      },
-      {
-        "symbol": "LGC",
-        "kind": "TRANSIENT_PROVIDER_OR_NETWORK",
-        "error_type": "RetryError",
-        "error": "RetryError[<Future at 0x1ee1d8e3e00 state=finished raised ValueError>]"
-      },
-      {
-        "symbol": "LM8",
-        "kind": "TRANSIENT_PROVIDER_OR_NETWORK",
-        "error_type": "RetryError",
-        "error": "RetryError[<Future at 0x1ee1ad72e10 state=finished raised ValueError>]"
-      },
-      {
-        "symbol": "PNC",
-        "kind": "TRANSIENT_PROVIDER_OR_NETWORK",
-        "error_type": "RetryError",
-        "error": "RetryError[<Future at 0x1ee1d8e2270 state=finished raised ValueError>]"
-      },
-      {
-        "symbol": "S4A",
-        "kind": "TRANSIENT_PROVIDER_OR_NETWORK",
-        "error_type": "RetryError",
-        "error": "RetryError[<Future at 0x1ee1c5ca930 state=finished raised ValueError>]"
-      },
-      {
-        "symbol": "SFC",
-        "kind": "TRANSIENT_PROVIDER_OR_NETWORK",
-        "error_type": "RetryError",
-        "error": "RetryError[<Future at 0x1ee1dcef350 state=finished raised ValueError>]"
-      },
-      {
-        "symbol": "TIX",
-        "kind": "TRANSIENT_PROVIDER_OR_NETWORK",
-        "error_type": "RetryError",
-        "error": "RetryError[<Future at 0x1ee1dcec410 state=finished raised ValueError>]"
-      },
-      {
-        "symbol": "TTE",
-        "kind": "TRANSIENT_PROVIDER_OR_NETWORK",
-        "error_type": "RetryError",
-        "error": "RetryError[<Future at 0x1ee1e33d8e0 state=finished raised ValueError>]"
-      }
-    ],
-    "symbols_with_provider_errors": [
-      "CCI",
-      "CLW",
-      "COM",
-      "DTT",
-      "FDC",
-      "L10",
-      "LGC",
-      "LM8",
-      "PNC",
-      "S4A",
-      "SFC",
-      "TIX",
-      "TTE"
-    ]
-  }
+  "backup": "staging\\history_weekly_2026-10-05_2026-10-09_20261011T001555962115Z_d1931305\\backup",
+  "generated_at_utc": "2026-10-11T01:17:05.659529+00:00"
 }
