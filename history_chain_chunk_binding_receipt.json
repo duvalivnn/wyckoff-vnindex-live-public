@@ -1,23 +1,23 @@
 {
-  "schema_version": "history_chain_chunk_binding_receipt.v1",
+  "schema_version": "history_chain_chunk_binding_receipt.v2",
   "status": "PASS",
-  "generated_at_utc": "2026-10-11T14:28:43.778379+00:00",
+  "generated_at_utc": "2026-10-11T23:54:32.503840+00:00",
   "repository": "duvalivnn/wyckoff-vnindex-live-public",
   "branch": "main",
-  "authority": {
-    "pointer_commit": "403c71694918bc5fe08f59e5ac9d1e784b01156d",
-    "payload_commit": "64beaa2e74d5ec8d9434b391243f7426c3cb9a84",
-    "manifest_sha256": "6d3454ecffd7bd4c72cea8b80d9a1f9251b0c64db305639dae5cd676722736fa",
-    "publisher_generation": "r33-2026-10-09-c0f7c06e62374187",
-    "eod_cutoff": "2026-10-09",
-    "source_latest_date": "2026-10-09"
+  "authority_resolution": {
+    "mode": "EXTERNAL_CURRENT_AUTHORITY",
+    "pointer_path": "main/live_pointer.json",
+    "authority_receipt_path": "main/authority_receipt.json",
+    "payload_commit_source": "authority_receipt.payload_commit",
+    "manifest_sha256_source": "authority_receipt.manifest_sha256",
+    "self_reference_policy": "PAYLOAD_MUST_NOT_EMBED_ITS_OWN_COMMIT_SHA",
+    "read_rule": "Resolve the current payload commit from main authority first; then verify this manifest and receipt from that immutable payload."
   },
   "projection": {
     "source_payload_commit": "a9e29e1402692805d476fb46dad3524702c11343",
-    "previous_projection_source_payload_commit": "6f3b33fdb5e7bf9fcebe907b949b0f12cf2e115b",
     "source_live_manifest_sha256": "b0d8a512da4c14972c29b6a1cbf621379bc01f647f309ede8383093d81fb8aa8",
     "source_pointer_sha256": "d268a3db157c3a6b0f3df107ea23aded8d57decba4d5c4c447ff29b8bf1bd481",
-    "method": "Verified canonical source-file bytes and all per-symbol chunks from the immutable source payload before publishing corrected lineage metadata.",
+    "method": "Verified canonical current-payload bytes and every published per-symbol chunk before metadata-only publication.",
     "market_data_mutation": "NONE"
   },
   "source_payload_checks": {
@@ -35,11 +35,34 @@
   "chunk_checks": {
     "weekly": {
       "chunks": 406,
-      "rows": 114848
+      "rows": 114848,
+      "header": [
+        "symbol",
+        "week_period",
+        "week_start",
+        "week_end",
+        "open",
+        "high",
+        "low",
+        "close",
+        "volume",
+        "trading_days",
+        "is_partial_week"
+      ]
     },
     "daily": {
       "chunks": 406,
-      "rows": 45982
+      "rows": 45982,
+      "header": [
+        "symbol",
+        "date",
+        "open",
+        "high",
+        "low",
+        "close",
+        "volume",
+        "is_provisional"
+      ]
     }
   },
   "requested_audit_symbols": [
@@ -310,5 +333,5 @@
       }
     }
   },
-  "binding_statement": "The repaired payload contains unchanged market-data and chunk bytes. The receipt binds the current pointer/payload to the verified chunk projection and retains the prior projection commit only as provenance."
+  "binding_statement": "This receipt is deliberately external-authority based because it is stored inside the payload it describes. It binds source bytes, chunk bytes, row counts and hashes; the current payload commit is resolved only from main/live_pointer.json and main/authority_receipt.json."
 }

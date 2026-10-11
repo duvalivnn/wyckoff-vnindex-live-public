@@ -1,74 +1,8 @@
 {
-  "schema_version": "public_authority_receipt.v1",
-  "status": "PUBLIC_AUTHORITY_VERIFIED",
-  "repository": "duvalivnn/wyckoff-vnindex-live-public",
-  "branch": "main",
-  "pointer_path": "live_pointer.json",
-  "pointer_commit": "05e8225db539f7c3c61404fc4df3026e6e7c4e51",
-  "payload_commit": "610db943b064b527f67c2485a55e49192947f364",
-  "pointer_url": "https://raw.githubusercontent.com/duvalivnn/wyckoff-vnindex-live-public/05e8225db539f7c3c61404fc4df3026e6e7c4e51/live_pointer.json",
-  "payload_base_url": "https://raw.githubusercontent.com/duvalivnn/wyckoff-vnindex-live-public/610db943b064b527f67c2485a55e49192947f364/",
-  "manifest_sha256": "491402a6e4e719a1b9278ca3c4c57a1a6d9c80edbcadeef4d9c3c367de8f5db3",
-  "publisher_generation": "r33-2026-10-09-c0f7c06e62374187",
-  "eod": {
-    "cutoff": "2026-10-09",
-    "session_date": "2026-10-09",
-    "generated_at_utc": "2026-10-09T10:58:50.689719+00:00",
-    "result": "PASS_WITH_QUARANTINE",
-    "source_latest_date": "2026-10-09"
-  },
-  "alerts_lineage": {
-    "publisher_generation": "r33-2026-10-09-c0f7c06e62374187",
-    "generated_at_utc": "2026-10-11T00:15:55.962115+00:00",
-    "source_latest_date": "2026-10-09",
-    "engine_status": "READY_WITH_MARKET_FAIL",
-    "counts": {
-      "watchlist": 60,
-      "active": 20,
-      "new_alerts": 60,
-      "p1_active": 0,
-      "p2_active": 20
-    },
-    "publication_binding": {
-      "manifest_path": "live_manifest.json",
-      "manifest_generated_at_utc": "2026-10-11T02:29:18.974014+00:00",
-      "manifest_publisher_generation_id": "r33-2026-10-09-c0f7c06e62374187",
-      "alerts_snapshot_generated_at_utc": "2026-10-11T00:15:55.962115+00:00",
-      "alerts_snapshot_publisher_generation_id": "r33-2026-10-09-c0f7c06e62374187",
-      "status": "MATCHED"
-    }
-  },
-  "intraday_lineage": {
-    "publisher_generation": "r33-2026-10-09-018114e769fccbcb",
-    "generated_at_utc": "2026-10-10T23:06:41.739628+00:00",
-    "trading_date": "2026-10-11",
-    "source_latest_date": "2026-10-09",
-    "session_mode": "INTRADAY_STATUS_ONLY",
-    "overlay_mode": "INTRADAY_STATUS_ONLY",
-    "result": "PASS",
-    "contract_status": "STATUS_ONLY",
-    "overlay_allowed": false
-  },
-  "required_read_order": [
-    "main/live_pointer.json",
-    "main/authority_receipt.json",
-    "payload_commit/manifest.json",
-    "payload_commit/history_chain_chunks_manifest.json",
-    "payload_commit/history_chain_chunk_binding_receipt.json",
-    "payload_commit/receipts_and_ohlcv"
-  ],
-  "stale_fallback_policy": "DisabledError => PUBLIC_READ_DISABLED; never use attachments or cache as current authority",
-  "manifest_file_count": 833,
-  "history_reader_bundle": {
-    "manifest": "history_chain_chunks_manifest.json",
-    "status": "READY_FOR_METHOD_LOCKED_READER",
-    "binding_receipt": "history_chain_chunk_binding_receipt.json",
-    "binding_status": "VERIFIED_CONTENT_BINDING",
-    "current_payload_commit": "610db943b064b527f67c2485a55e49192947f364",
-    "projection_source_payload_commit": "a9e29e1402692805d476fb46dad3524702c11343",
-    "previous_projection_source_payload_commit": "6f3b33fdb5e7bf9fcebe907b949b0f12cf2e115b",
-    "weekly_rows": 114848,
-    "daily_rows": 45982,
-    "symbols": 406
-  }
+  "schema_version": "public_authority_receipt.payload_copy.v2",
+  "role": "PAYLOAD_EMBEDDED_PROVENANCE_ONLY",
+  "status": "NON_AUTHORITATIVE_COPY",
+  "authoritative_locator": "main/authority_receipt.json",
+  "resolution": "Read the main-branch authority receipt and pointer before reading this payload.",
+  "payload_commit_self_reference": "FORBIDDEN"
 }
