@@ -1,0 +1,314 @@
+{
+  "schema_version": "history_chain_chunk_binding_receipt.v1",
+  "status": "PASS",
+  "generated_at_utc": "2026-10-11T14:28:43.778379+00:00",
+  "repository": "duvalivnn/wyckoff-vnindex-live-public",
+  "branch": "main",
+  "authority": {
+    "pointer_commit": "403c71694918bc5fe08f59e5ac9d1e784b01156d",
+    "payload_commit": "64beaa2e74d5ec8d9434b391243f7426c3cb9a84",
+    "manifest_sha256": "6d3454ecffd7bd4c72cea8b80d9a1f9251b0c64db305639dae5cd676722736fa",
+    "publisher_generation": "r33-2026-10-09-c0f7c06e62374187",
+    "eod_cutoff": "2026-10-09",
+    "source_latest_date": "2026-10-09"
+  },
+  "projection": {
+    "source_payload_commit": "a9e29e1402692805d476fb46dad3524702c11343",
+    "previous_projection_source_payload_commit": "6f3b33fdb5e7bf9fcebe907b949b0f12cf2e115b",
+    "source_live_manifest_sha256": "b0d8a512da4c14972c29b6a1cbf621379bc01f647f309ede8383093d81fb8aa8",
+    "source_pointer_sha256": "d268a3db157c3a6b0f3df107ea23aded8d57decba4d5c4c447ff29b8bf1bd481",
+    "method": "Verified canonical source-file bytes and all per-symbol chunks from the immutable source payload before publishing corrected lineage metadata.",
+    "market_data_mutation": "NONE"
+  },
+  "source_payload_checks": {
+    "stock_weekly_ohlcv_chain.csv": {
+      "bytes": 9800751,
+      "sha256": "f08e6b1e6daca4e0a3f8a867aec9f0c22bd6d09081545f3eff2ae6c169c3ec0b",
+      "rows": 114848
+    },
+    "daily_bridge.csv": {
+      "bytes": 2240661,
+      "sha256": "ab11724f72252dea443befd8dffbc385d55bac2cc06a664cc013457d089ed83f",
+      "rows": 45982
+    }
+  },
+  "chunk_checks": {
+    "weekly": {
+      "chunks": 406,
+      "rows": 114848
+    },
+    "daily": {
+      "chunks": 406,
+      "rows": 45982
+    }
+  },
+  "requested_audit_symbols": [
+    "HCM",
+    "MSN",
+    "PVT",
+    "SSI",
+    "TCB",
+    "VPB"
+  ],
+  "requested_audit_chunks": {
+    "HCM": {
+      "weekly": {
+        "bytes": 26296,
+        "sha256": "e861ff9ba686d70a775b52d7c22c9a242435150865c4977d6d342b21e5d92be8",
+        "rows": 298,
+        "header": [
+          "symbol",
+          "week_period",
+          "week_start",
+          "week_end",
+          "open",
+          "high",
+          "low",
+          "close",
+          "volume",
+          "trading_days",
+          "is_partial_week"
+        ],
+        "symbol": "HCM",
+        "duplicate_key_count": 0,
+        "min_key": "2021-01-02/2021-01-08",
+        "max_key": "2026-10-03/2026-10-09"
+      },
+      "daily": {
+        "bytes": 6455,
+        "sha256": "647dacbd545324aa30934ee52de136e986e7ab232d6d57091531fee84f49597c",
+        "rows": 124,
+        "header": [
+          "symbol",
+          "date",
+          "open",
+          "high",
+          "low",
+          "close",
+          "volume",
+          "is_provisional"
+        ],
+        "symbol": "HCM",
+        "duplicate_key_count": 0,
+        "min_key": "2026-04-13",
+        "max_key": "2026-10-09"
+      }
+    },
+    "MSN": {
+      "weekly": {
+        "bytes": 25804,
+        "sha256": "604b4d1024d9b53656d5f31239f09f2e58bdc5fc4e46c171cd50229547106f93",
+        "rows": 298,
+        "header": [
+          "symbol",
+          "week_period",
+          "week_start",
+          "week_end",
+          "open",
+          "high",
+          "low",
+          "close",
+          "volume",
+          "trading_days",
+          "is_partial_week"
+        ],
+        "symbol": "MSN",
+        "duplicate_key_count": 0,
+        "min_key": "2021-01-02/2021-01-08",
+        "max_key": "2026-10-03/2026-10-09"
+      },
+      "daily": {
+        "bytes": 6134,
+        "sha256": "770dd79d787fac827f315bc5ce81f2094ed57ada1e2953ca9af67d270ec7ab08",
+        "rows": 124,
+        "header": [
+          "symbol",
+          "date",
+          "open",
+          "high",
+          "low",
+          "close",
+          "volume",
+          "is_provisional"
+        ],
+        "symbol": "MSN",
+        "duplicate_key_count": 0,
+        "min_key": "2026-04-13",
+        "max_key": "2026-10-09"
+      }
+    },
+    "PVT": {
+      "weekly": {
+        "bytes": 26334,
+        "sha256": "38d73ce8a9f02d0be2fb968f8ddda8895ecca0b5d0fd25d9a8d958747973e9c0",
+        "rows": 298,
+        "header": [
+          "symbol",
+          "week_period",
+          "week_start",
+          "week_end",
+          "open",
+          "high",
+          "low",
+          "close",
+          "volume",
+          "trading_days",
+          "is_partial_week"
+        ],
+        "symbol": "PVT",
+        "duplicate_key_count": 0,
+        "min_key": "2021-01-02/2021-01-08",
+        "max_key": "2026-10-03/2026-10-09"
+      },
+      "daily": {
+        "bytes": 6426,
+        "sha256": "7287bf2e34a76d6d7d287f1dd9dcc5ad4fd7d4d0b83d37ebc848525746fdac89",
+        "rows": 124,
+        "header": [
+          "symbol",
+          "date",
+          "open",
+          "high",
+          "low",
+          "close",
+          "volume",
+          "is_provisional"
+        ],
+        "symbol": "PVT",
+        "duplicate_key_count": 0,
+        "min_key": "2026-04-13",
+        "max_key": "2026-10-09"
+      }
+    },
+    "SSI": {
+      "weekly": {
+        "bytes": 26502,
+        "sha256": "5b85d77e1b3a2c0347ac0362bd82686f217f01434430cb268bf7f71ec8dd8e4f",
+        "rows": 298,
+        "header": [
+          "symbol",
+          "week_period",
+          "week_start",
+          "week_end",
+          "open",
+          "high",
+          "low",
+          "close",
+          "volume",
+          "trading_days",
+          "is_partial_week"
+        ],
+        "symbol": "SSI",
+        "duplicate_key_count": 0,
+        "min_key": "2021-01-02/2021-01-08",
+        "max_key": "2026-10-03/2026-10-09"
+      },
+      "daily": {
+        "bytes": 6585,
+        "sha256": "204f08e044fb4a462e50720c3381d3f33230dac61684517c4d72dc3b4e9cec79",
+        "rows": 124,
+        "header": [
+          "symbol",
+          "date",
+          "open",
+          "high",
+          "low",
+          "close",
+          "volume",
+          "is_provisional"
+        ],
+        "symbol": "SSI",
+        "duplicate_key_count": 0,
+        "min_key": "2026-04-13",
+        "max_key": "2026-10-09"
+      }
+    },
+    "TCB": {
+      "weekly": {
+        "bytes": 26470,
+        "sha256": "a3b400b3d812f334edd5f3b5ab2749de15e76fc29d51a0643daca38350597578",
+        "rows": 298,
+        "header": [
+          "symbol",
+          "week_period",
+          "week_start",
+          "week_end",
+          "open",
+          "high",
+          "low",
+          "close",
+          "volume",
+          "trading_days",
+          "is_partial_week"
+        ],
+        "symbol": "TCB",
+        "duplicate_key_count": 0,
+        "min_key": "2021-01-02/2021-01-08",
+        "max_key": "2026-10-03/2026-10-09"
+      },
+      "daily": {
+        "bytes": 6481,
+        "sha256": "b0d0d7173319061f1279d98b2179809ab4e4d947fe7b35dc3487d8ef4fe6b722",
+        "rows": 124,
+        "header": [
+          "symbol",
+          "date",
+          "open",
+          "high",
+          "low",
+          "close",
+          "volume",
+          "is_provisional"
+        ],
+        "symbol": "TCB",
+        "duplicate_key_count": 0,
+        "min_key": "2026-04-13",
+        "max_key": "2026-10-09"
+      }
+    },
+    "VPB": {
+      "weekly": {
+        "bytes": 26549,
+        "sha256": "c47726f4e3fedf091bf0e0abef70cabc435ff14293b81e59ee1fbe57d85ad53b",
+        "rows": 298,
+        "header": [
+          "symbol",
+          "week_period",
+          "week_start",
+          "week_end",
+          "open",
+          "high",
+          "low",
+          "close",
+          "volume",
+          "trading_days",
+          "is_partial_week"
+        ],
+        "symbol": "VPB",
+        "duplicate_key_count": 0,
+        "min_key": "2021-01-02/2021-01-08",
+        "max_key": "2026-10-03/2026-10-09"
+      },
+      "daily": {
+        "bytes": 6656,
+        "sha256": "5105c5fc8984b4f8f3d82c656b568a5e95bbe365dc404dbe5ba199c0fca3da68",
+        "rows": 124,
+        "header": [
+          "symbol",
+          "date",
+          "open",
+          "high",
+          "low",
+          "close",
+          "volume",
+          "is_provisional"
+        ],
+        "symbol": "VPB",
+        "duplicate_key_count": 0,
+        "min_key": "2026-04-13",
+        "max_key": "2026-10-09"
+      }
+    }
+  },
+  "binding_statement": "The repaired payload contains unchanged market-data and chunk bytes. The receipt binds the current pointer/payload to the verified chunk projection and retains the prior projection commit only as provenance."
+}
