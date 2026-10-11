@@ -1,0 +1,63 @@
+{
+  "schema_version": "public_authority_receipt.v1",
+  "status": "PUBLIC_AUTHORITY_VERIFIED",
+  "repository": "duvalivnn/wyckoff-vnindex-live-public",
+  "branch": "main",
+  "pointer_path": "live_pointer.json",
+  "pointer_commit": "e5306825bc2053b5c6d3f9e81b68c377efc4632a",
+  "payload_commit": "6f3b33fdb5e7bf9fcebe907b949b0f12cf2e115b",
+  "pointer_url": "https://raw.githubusercontent.com/duvalivnn/wyckoff-vnindex-live-public/e5306825bc2053b5c6d3f9e81b68c377efc4632a/live_pointer.json",
+  "payload_base_url": "https://raw.githubusercontent.com/duvalivnn/wyckoff-vnindex-live-public/6f3b33fdb5e7bf9fcebe907b949b0f12cf2e115b/",
+  "manifest_sha256": "3c85cd21e79e00098d2cce3734fb3b3e73c7e3d8f30be1e117d11214055e2a7b",
+  "publisher_generation": "r33-2026-10-09-c0f7c06e62374187",
+  "eod": {
+    "cutoff": "2026-10-09",
+    "session_date": "2026-10-09",
+    "generated_at_utc": "2026-10-09T10:58:50.689719+00:00",
+    "result": "PASS_WITH_QUARANTINE",
+    "source_latest_date": "2026-10-09"
+  },
+  "alerts_lineage": {
+    "publisher_generation": "r33-2026-10-09-c0f7c06e62374187",
+    "generated_at_utc": "2026-10-11T00:15:55.962115+00:00",
+    "source_latest_date": "2026-10-09",
+    "engine_status": "READY_WITH_MARKET_FAIL",
+    "market_gate": {
+      "status": "FAIL"
+    },
+    "counts": {
+      "watchlist": 60,
+      "active": 20,
+      "new_alerts": 60,
+      "p1_active": 0,
+      "p2_active": 20
+    },
+    "publication_binding": {
+      "manifest_path": "live_manifest.json",
+      "manifest_generated_at_utc": "2026-10-11T02:29:18.974014+00:00",
+      "manifest_publisher_generation_id": "r33-2026-10-09-c0f7c06e62374187",
+      "alerts_snapshot_generated_at_utc": "2026-10-11T00:15:55.962115+00:00",
+      "alerts_snapshot_publisher_generation_id": "r33-2026-10-09-c0f7c06e62374187",
+      "status": "MATCHED"
+    }
+  },
+  "intraday_lineage": {
+    "publisher_generation": "r33-2026-10-09-018114e769fccbcb",
+    "generated_at_utc": "2026-10-10T23:06:41.739628+00:00",
+    "trading_date": "2026-10-11",
+    "source_latest_date": "2026-10-09",
+    "session_mode": "INTRADAY_STATUS_ONLY",
+    "overlay_mode": "INTRADAY_STATUS_ONLY",
+    "result": "PASS",
+    "contract_status": "STATUS_ONLY",
+    "overlay_allowed": false
+  },
+  "required_read_order": [
+    "main/live_pointer.json",
+    "main/authority_receipt.json",
+    "payload_commit/manifest.json",
+    "payload_commit/receipts_and_ohlcv"
+  ],
+  "stale_fallback_policy": "DisabledError => PUBLIC_READ_DISABLED; never use attachments or cache as current authority",
+  "manifest_file_count": 18
+}\n
