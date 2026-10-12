@@ -1,73 +1,20 @@
 {
   "job": "ca_scan",
   "schema_version": "corporate_actions.daily.v1",
-  "scan_date": "2026-10-09",
-  "week_start": "2026-10-05",
-  "week_end": "2026-10-11",
-  "generated_at_utc": "2026-10-09T12:00:04.967070+00:00",
+  "scan_date": "2026-10-12",
+  "week_start": "2026-10-12",
+  "week_end": "2026-10-18",
+  "generated_at_utc": "2026-10-12T01:30:04.685908+00:00",
   "provider": {
     "adapter": "VIETSTOCK_FIRST_PARTY_HOSE_EVENT_CALENDAR_V1",
     "source": "https://finance.vietstock.vn/lich-su-kien.htm"
   },
-  "source_weekly_receipt": "corporate_actions\\weekly\\2026-10-05_2026-10-11_20261009T120004122707Z.json",
-  "source_weekly_sha256": "b10b71d7150951efd9b550fb5f5835e74e8b2e6cefa46d6f7d26705436b7e12c",
-  "events": [
-    {
-      "symbol": "HDB",
-      "exchange": "HOSE",
-      "event_type": "Trả cổ tức bằng cổ phiếu",
-      "ex_date": "2026-10-09",
-      "record_date": "2026-10-12",
-      "payment_date": null,
-      "cash_dividend": null,
-      "stock_dividend_ratio": "100:25",
-      "raw_description": "Trả cổ tức năm 2025 bằng cổ phiếu, tỷ lệ 100:25",
-      "source_event_type": "Trả cổ tức bằng cổ phiếu"
-    },
-    {
-      "symbol": "HDB",
-      "exchange": "HOSE",
-      "event_type": "Thưởng cổ phiếu",
-      "ex_date": "2026-10-09",
-      "record_date": "2026-10-12",
-      "payment_date": null,
-      "cash_dividend": null,
-      "stock_dividend_ratio": "100:5",
-      "raw_description": "Thưởng cổ phiếu, tỷ lệ 100:5",
-      "source_event_type": "Thưởng cổ phiếu"
-    },
-    {
-      "symbol": "AGR",
-      "exchange": "HOSE",
-      "event_type": "Trả cổ tức bằng cổ phiếu",
-      "ex_date": "2026-10-09",
-      "record_date": "2026-10-12",
-      "payment_date": null,
-      "cash_dividend": null,
-      "stock_dividend_ratio": "100:6",
-      "raw_description": "Trả cổ tức năm 2025 bằng cổ phiếu, tỷ lệ 100:6",
-      "source_event_type": "Trả cổ tức bằng cổ phiếu"
-    },
-    {
-      "symbol": "BTP",
-      "exchange": "HOSE",
-      "event_type": "Trả cổ tức bằng tiền mặt",
-      "ex_date": "2026-10-09",
-      "record_date": "2026-10-12",
-      "payment_date": "2026-11-11",
-      "cash_dividend": "500",
-      "stock_dividend_ratio": null,
-      "raw_description": "Trả cổ tức năm 2025 bằng tiền, 500 đồng/CP",
-      "source_event_type": "Trả cổ tức bằng tiền mặt"
-    }
-  ],
-  "ca_symbols": [
-    "AGR",
-    "BTP",
-    "HDB"
-  ],
+  "source_weekly_receipt": "corporate_actions\\weekly\\2026-10-12_2026-10-18_20261012T010005145498Z.json",
+  "source_weekly_sha256": "878c7c3e62ae199ab9e0a7a5b671f6d10c7766a2ce6aa00f917af60d3096239d",
+  "events": [],
+  "ca_symbols": [],
   "rebase_symbols": [],
-  "rebase_gate_status": "PASS",
+  "rebase_gate_status": "PASS_NO_CA",
   "promotion_effect": "NONE",
   "integrity": {
     "source_verified": true,
@@ -79,39 +26,11 @@
   },
   "status": "CERTIFIED",
   "reason": "Vietstock weekly evidence resolved for the session date.",
-  "receipt": "corporate_actions\\daily\\2026-10-09_20261009T120004968031Z.json",
-  "ca_basis_status": "RESOLVED_BY_EOD_FULL_HISTORY_RELOAD",
-  "rebase_receipt": "rebase_receipts\\2026-10-09_20261009T100009103254Z_cc4b81c3.json",
-  "rebase_source_daily_ca_receipt": "corporate_actions\\daily\\2026-10-09_20261009T100004830658Z.json",
-  "ca_receipt_lineage_equivalent": true,
-  "static_refresh_manifest": "runtime\\static_refresh_weekly_manifest.json",
-  "resolution_mode": "EOD_REBASE_PLUS_LATER_STATIC_REFRESH",
-  "publisher_generation_id": "r33-2026-10-09-c0f7c06e62374187",
-  "current_canonical_hashes": {
-    "stock_daily_ohlcv.csv": {
-      "bytes": 26354400,
-      "sha256": "777d234dff1f383e3100170e8bb08a53c26edb004ba7af51e71b4370dde6de05"
-    },
-    "stock_weekly_ohlcv.csv": {
-      "bytes": 9800751,
-      "sha256": "f08e6b1e6daca4e0a3f8a867aec9f0c22bd6d09081545f3eff2ae6c169c3ec0b"
-    },
-    "index_daily_ohlcv.csv": {
-      "bytes": 186700,
-      "sha256": "c53bad84f1509f9d3200e5634bbc468fdc70f313d167de3d928a828f6466e286"
-    },
-    "index_weekly_ohlcv.csv": {
-      "bytes": 60159,
-      "sha256": "c7f4f8e01935683fd841529fc65654ef47d8b0d922d7c091fb523e612a1f0a3d"
-    }
-  },
-  "current_static_refresh": {
-    "status": "PASS",
-    "canonical_latest_date": "2026-10-09",
-    "replacement_semantics": "replace_only_window_preserve_outside_window"
-  },
+  "receipt": "corporate_actions\\daily\\2026-10-12_20261012T013004687881Z.json",
+  "publisher_generation_id": "r33-2026-10-09-b7d4979c1168f491",
   "source_ca_receipt": "corporate_actions\\daily\\2026-10-09_20261009T100004830658Z.json",
+  "ca_basis_status": "RESOLVED_BY_EOD_FULL_HISTORY_RELOAD",
   "resolution_scope": "SYMBOL_SCOPED",
   "resolution_source": "EOD_REBASE_RECEIPT",
-  "resolved_at_utc": "2026-10-11T10:01:36.176545+00:00"
+  "resolved_at_utc": "2026-10-12T02:45:12.489491+00:00"
 }
