@@ -1,27 +1,28 @@
 {
   "schema_version": "canonical_dashboard_bridge.v1",
   "source_role": "MODEL_READABLE_PUBLIC_STATIC_SNAPSHOT",
+  "generated_at": "2026-10-12T12:26:29.354337+00:00",
   "timezone": "Asia/Ho_Chi_Minh",
-  "source_workspace": "Dá»® LIá»†U OHLCV",
+  "source_workspace": "DỮ LIỆU OHLCV",
   "bridge_mode": "KBS_OBSERVED_NOT_CERTIFIED",
-  "bridge_start_date": "2026-04-12",
+  "bridge_start_date": "2026-04-15",
   "bridge_lookback_days": 180,
   "weekly_replace_available_from": "2021-01-02/2021-01-08",
-  "current_data_cutoff": "2026-10-09",
-  "latest_completed_session": "2026-10-09",
-  "canonical_completed_cutoff": "2026-10-09",
-  "observed_date": "2026-10-09",
+  "current_data_cutoff": "2026-10-12",
+  "latest_completed_session": null,
+  "canonical_completed_cutoff": null,
+  "observed_date": "2026-10-12",
   "canonical_certified": true,
-  "data_lane": "KBS_AUTO_CERTIFIED_WITH_RISK",
+  "data_lane": "KBS_PUBLISHED_WITH_RISK",
   "source": "KBS",
   "source_risk": "OWNER_ACCEPTED_ALL",
   "quarantined_symbols": [],
   "analysis_allowed_as_completed": true,
   "provisional_status": "NO",
   "universe_symbols": 406,
-  "daily_bridge_rows": 45982,
-  "weekly_replace_rows": 114848,
-  "index_daily_bridge_rows": 248,
+  "daily_bridge_rows": 45605,
+  "weekly_replace_rows": 115219,
+  "index_daily_bridge_rows": 246,
   "validation_status": "pass",
   "live_snapshot_validation": {
     "result": "pass",
@@ -31,85 +32,65 @@
   "stock_price_unit": "THOUSAND_VND_PER_SHARE",
   "index_unit": "POINT",
   "volume_unit": "SHARE",
-  "ca_receipt": "corporate_actions\\daily\\2026-10-09_20261009T100004830658Z.json",
+  "ca_receipt": null,
   "canonical_sha256": {
-    "stock_daily_ohlcv.csv": "777d234dff1f383e3100170e8bb08a53c26edb004ba7af51e71b4370dde6de05",
-    "stock_weekly_ohlcv.csv": "f08e6b1e6daca4e0a3f8a867aec9f0c22bd6d09081545f3eff2ae6c169c3ec0b",
-    "index_daily_ohlcv.csv": "c53bad84f1509f9d3200e5634bbc468fdc70f313d167de3d928a828f6466e286",
-    "index_weekly_ohlcv.csv": "c7f4f8e01935683fd841529fc65654ef47d8b0d922d7c091fb523e612a1f0a3d"
+    "stock_daily_ohlcv.csv": "18b02f62e4fe123cb84908892293a6155fa30e81f1c11d1c1402845118fc63f2",
+    "stock_weekly_ohlcv.csv": "17e23c2b8e78879fe1e4c71bad20e6918778ede67c6ec1c14e98d9be008647c1",
+    "index_daily_ohlcv.csv": "19bdee3dc476f91a56106a17692f2063813370d1d8e28587ebe53643b5d9d437",
+    "index_weekly_ohlcv.csv": "c7f8c572db0be53083c4ef70ec4e07e16e74877968fa6d686acd85a9b907b18b"
   },
   "files": {
     "daily_bridge.csv": {
-      "bytes": 2240661,
-      "sha256": "ab11724f72252dea443befd8dffbc385d55bac2cc06a664cc013457d089ed83f"
+      "bytes": 2221408,
+      "sha256": "74f456663187893bd95f7eb29e040ed13b564b8ac6dfbf7d53d8bed99f37906b"
     },
     "weekly_replace.csv": {
-      "bytes": 9571034,
-      "sha256": "f7517055069f5853047ecdfb241f0f1a213dc55b27b996ffc592219562cf41fe"
+      "bytes": 9601058,
+      "sha256": "1f9ea02b129a6af7b2b1d3a3892c9c2ae724f581869ecc29a72635e0cd4591c3"
     },
     "index_daily_bridge.csv": {
-      "bytes": 16194,
-      "sha256": "36a7c5d648b26546ea65a8d9e866e0a7b864aa915d59f238b9a7f054f9cb5cef"
+      "bytes": 16064,
+      "sha256": "8928dec0c22d3a526bf21b0ef166d7c888a65c2c64c23d883efe48c6c09fec68"
     },
     "latest_bars.csv": {
-      "bytes": 22856,
-      "sha256": "3d2d8d10d1e1cd1d68dcbf6c54bf41847e6cf6e9f584db1fba255dd1cb52781f"
+      "bytes": 22862,
+      "sha256": "1f9b238be26392b60fd699f814809d18ee702c38b79b2c922d25fa7676887e13"
     },
     "market_scan.csv": {
-      "bytes": 265765,
-      "sha256": "5188166d0559dc44897669fea90e987d79672c755cdc6ed45d7403ae65164463"
+      "bytes": 265449,
+      "sha256": "2a3d34ce796ecaf89e979dae7038844f314d6966830727c36a12884af900c6ec"
     },
     "sector_scan.csv": {
-      "bytes": 5038,
-      "sha256": "0317c9aad2e28ea48d7e76b04a6f580c7ad9ee72fee9d2935c3b97fbcc9483fe"
+      "bytes": 4976,
+      "sha256": "9aab19741b80399fe4bd59926438f89d648a05a337a7516322289a114969aa76"
     },
     "alert_engine_gate.json": {
-      "bytes": 1858,
-      "sha256": "e88e4fa0fc5e725755d75916a1de42a83a9fdb024a12c16cbdb4297fe0b8ae08"
-    },
-    "ca_receipt.json": {
-      "bytes": 4329,
-      "sha256": "900dcd118e5325b55bf9c58b59d3fffac54be821d715332c580829ee9b726e86"
+      "bytes": 798,
+      "sha256": "3b6895ef6311d8cc4be2c5662f0aa6bca3898b5cfd0e25169d30849d17a80061"
     },
     "current_state.json": {
-      "bytes": 14123,
-      "sha256": "6284ce5489b288a318c56864e63b5e96e25b8b2750bcacc8562bd4c1b0de318f"
+      "bytes": 256415,
+      "sha256": "0ba6381335b4d8bb7ac6454b075c535d6e61adb4fb4add4c6a19158cd4346724"
     },
     "eod_receipt.json": {
-      "bytes": 258822,
-      "sha256": "82e9b3eedfea504c5a1355cca9969f088dc1db32aa0c0f753c4cf66f8f578219"
+      "bytes": 256415,
+      "sha256": "83b7ea89b53f3062bc403dd6041b6c41856aa94d52226c4701e1bad7c78ada46"
     },
     "intraday_manifest.json": {
       "bytes": 952,
-      "sha256": "970964f3f108046dfa3aaaabe9e4e62db782e70b10d50ad4eccc4112df20c3bf"
+      "sha256": "be052c665482768fca018a056e36f13eb003fdcebf9b8c8f7bb7205e16928bcf"
     },
     "live_manifest.json": {
-      "bytes": 10577,
-      "sha256": "b0d8a512da4c14972c29b6a1cbf621379bc01f647f309ede8383093d81fb8aa8"
+      "bytes": 3194,
+      "sha256": "244250655ac5178dbaef80080ea938edc01e72dec074c5ee09fc5f1b50788669"
     },
     "publisher_state.json": {
-      "bytes": 580,
-      "sha256": "3b663e7d53e0b12c419f5a3c27e07f32773fd5298977e0bc9e997db160810b9e"
+      "bytes": 575,
+      "sha256": "49c390324aa78fbeb19de9547dc138c8fc45d28dbd0b81f29d8cdaf23e517f92"
     },
-    "static_refresh_manifest.json": {
-      "bytes": 8519,
-      "sha256": "7ebcc11bb244f2a059331fe2100564c72736502b462702569f6194a4931db664"
-    },
-    "alerts_live.json": {
-      "bytes": 180795,
-      "sha256": "92338dd0bfb10fd9775db3383b76f6442db4f31c69ef765de56c587b90ce2adb"
-    },
-    "history_chain_manifest.json": {
-      "bytes": 3489,
-      "sha256": "c4e00c3d279954350b9ae8ac8c31dab2ef9df9729e93b6c5013f7677123f6ed6"
-    },
-    "stock_weekly_ohlcv_chain.csv": {
-      "bytes": 9800751,
-      "sha256": "f08e6b1e6daca4e0a3f8a867aec9f0c22bd6d09081545f3eff2ae6c169c3ec0b"
-    },
-    "rebase_receipt.json": {
-      "bytes": 4009,
-      "sha256": "0b7ddb062aa81d899443a973d7233508bc3ddcd34a6134107182585288f6dc8d"
+    "history_chain_chunks_manifest.json": {
+      "bytes": 239575,
+      "sha256": "7a2d71d60417a4d946dbb23199d05489724e46e8f1f34fed068e0bf4d0a79861"
     },
     "history_chain_chunks/daily/AAA.csv": {
       "bytes": 5990,
@@ -1736,8 +1717,8 @@
       "sha256": "c35e3d7d754f21c3e10a6519534621d3793e69d1b350315a5c6fded32591f2ed"
     },
     "history_chain_chunks/README.md": {
-      "bytes": 103,
-      "sha256": "e91a882f6a25082d6fcdd1fb07af284697e1dc9bb2e7b188c560f2efe552196a"
+      "bytes": 290,
+      "sha256": "31d9f0b68858ab0392206007d5384e4a3eecd8987172d270511ae4e410832289"
     },
     "history_chain_chunks/weekly/AAA.csv": {
       "bytes": 25668,
@@ -3363,90 +3344,28 @@
       "bytes": 25453,
       "sha256": "07353ef67230728a1ffe3ee011ed723a4d35cd38bc42aca139042c5658be46ef"
     },
-    "history_chain_chunks_manifest.json": {
-      "bytes": 178158,
-      "sha256": "90c9f22f0994b180662ab7b0bb819a36bde734933b14ad9f7877e5d8ceb07370"
-    },
-    "history_chain_chunk_binding_receipt.json": {
-      "bytes": 8933,
-      "sha256": "9de8d33b0ae1fefd6d10b7131690a2c2b4cd08960fe56d5bc13881259420fcf6"
+    "alerts_live.json": {
+      "bytes": 57838,
+      "sha256": "5271e10960bb28e91909a6d824d82c266a03cc0d6fe38e445273126c0e39c6e5"
     }
   },
-  "source_latest_date": "2026-10-09",
+  "source_latest_date": "2026-10-12",
+  "live_manifest_generated_at_utc": "2026-10-12T12:26:29.354337+00:00",
   "live_pointer_path": "live_pointer.json",
   "static_refresh": {
-    "mode": "weekly",
-    "manifest_path": "runtime/static_refresh_weekly_manifest.json",
-    "manifest_sha256": "7ebcc11bb244f2a059331fe2100564c72736502b462702569f6194a4931db664",
-    "run_id": "20261011T001555962115Z_d1931305",
-    "window_start": "2026-10-05",
-    "window_end": "2026-10-09",
-    "canonical_latest_date": "2026-10-09",
-    "result": "PASS_WITH_WARNINGS"
+    "active": false,
+    "mode": null,
+    "window": null,
+    "canonical_static_replacement": null
   },
   "lineage_files": [
-    "THREAD_CHUNK_READ_COMMAND_V1.md",
     "alert_engine_gate.json",
     "alerts_live.json",
-    "ca_receipt.json",
     "current_state.json",
     "eod_receipt.json",
-    "history_chain_chunk_binding_receipt.json",
-    "history_chain_manifest.json",
     "intraday_manifest.json",
     "live_manifest.json",
-    "publisher_state.json",
-    "rebase_receipt.json",
-    "static_refresh_manifest.json",
-    "stock_weekly_ohlcv_chain.csv"
+    "publisher_state.json"
   ],
-  "publisher_generation_id": "r33-2026-10-09-c0f7c06e62374187",
-  "history_chain": {
-    "manifest": "history_chain_manifest.json",
-    "payload": "stock_weekly_ohlcv_chain.csv",
-    "schema_version": "research_hose_history_chain.v2",
-    "join_key": [
-      "symbol",
-      "week_period"
-    ],
-    "rows": 114848,
-    "symbols": 406,
-    "materialized_from_commit": "a9e29e1402692805d476fb46dad3524702c11343",
-    "source_canonical_sha256": "f08e6b1e6daca4e0a3f8a867aec9f0c22bd6d09081545f3eff2ae6c169c3ec0b",
-    "binding_receipt": "history_chain_chunk_binding_receipt.json",
-    "provenance_status": "CURRENT_PUBLIC_PAYLOAD_RESOLVED_BY_EXTERNAL_AUTHORITY",
-    "source_payload_commit": "a9e29e1402692805d476fb46dad3524702c11343",
-    "publication_binding": {
-      "mode": "EXTERNAL_CURRENT_AUTHORITY",
-      "pointer_path": "main/live_pointer.json",
-      "authority_receipt_path": "main/authority_receipt.json",
-      "payload_commit_source": "authority_receipt.payload_commit",
-      "manifest_sha256_source": "authority_receipt.manifest_sha256",
-      "self_reference_policy": "PAYLOAD_MUST_NOT_EMBED_ITS_OWN_COMMIT_SHA",
-      "read_rule": "Resolve the current payload commit from main authority first; then verify this manifest and receipt from that immutable payload."
-    }
-  },
-  "generated_at": "2026-10-11T02:29:18.974014+00:00",
-  "live_manifest_generated_at_utc": "2026-10-11T02:29:18.974014+00:00",
-  "history_reader_bundle": {
-    "manifest": "history_chain_chunks_manifest.json",
-    "binding_receipt": "history_chain_chunk_binding_receipt.json",
-    "status": "READY_FOR_METHOD_LOCKED_READER",
-    "binding_status": "VERIFIED_BY_EXTERNAL_CURRENT_AUTHORITY",
-    "projection_source_payload_commit": "a9e29e1402692805d476fb46dad3524702c11343",
-    "previous_projection_source_payload_commit": "6f3b33fdb5e7bf9fcebe907b949b0f12cf2e115b",
-    "weekly_rows": 114848,
-    "daily_rows": 45982,
-    "symbols": 406,
-    "source_payload_commit": "64beaa2e74d5ec8d9434b391243f7426c3cb9a84",
-    "publication_binding": {
-      "mode": "EXTERNAL_CURRENT_AUTHORITY",
-      "pointer_path": "main/live_pointer.json",
-      "authority_receipt_path": "main/authority_receipt.json",
-      "payload_commit_source": "authority_receipt.payload_commit",
-      "manifest_sha256_source": "authority_receipt.manifest_sha256",
-      "self_reference_policy": "PAYLOAD_MUST_NOT_EMBED_ITS_OWN_COMMIT_SHA",
-      "read_rule": "Resolve the current payload commit from main authority first; then verify this manifest and receipt from that immutable payload."
-    }
-  }
+  "publisher_generation_id": "r33-2026-10-12-309b537d8476f6dc"
 }
