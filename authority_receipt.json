@@ -52,6 +52,7 @@
   "required_read_order": [
     "main/live_pointer.json",
     "main/authority_receipt.json",
+    "main/history_chain_independent_verification_receipt.json",
     "payload_commit/manifest.json",
     "payload_commit/history_chain_chunks_manifest.json",
     "payload_commit/history_chain_chunk_binding_receipt.json",
@@ -73,6 +74,56 @@
     "pointer_commit": "a5878b4541ca86fe07a2bafb8b992d20e92562ad",
     "payload_manifest_sha256": "0b2443daced0f7935be74b8e8580dd721841da463565ccd9b7b7a0ae59f90a07",
     "chunk_manifest_sha256": "90c9f22f0994b180662ab7b0bb819a36bde734933b14ad9f7877e5d8ceb07370",
-    "chunk_binding_receipt_sha256": "9de8d33b0ae1fefd6d10b7131690a2c2b4cd08960fe56d5bc13881259420fcf6"
+    "chunk_binding_receipt_sha256": "9de8d33b0ae1fefd6d10b7131690a2c2b4cd08960fe56d5bc13881259420fcf6",
+    "independent_verification_receipt": {
+      "path": "history_chain_independent_verification_receipt.json",
+      "bytes": 532209,
+      "sha256": "2a208317cfd715e826d68ea86b62b867a447a6f2185bf0961f3ed3e3a1855ba3",
+      "status": "PASS",
+      "scope": {
+        "lanes": [
+          "weekly",
+          "daily"
+        ],
+        "all_published_chunks": true,
+        "weekly_chunks": 406,
+        "daily_chunks": 406,
+        "requested_audit_symbols": []
+      },
+      "verifier": {
+        "name": "independent_history_verifier",
+        "version": "history-chunk-verifier.v1",
+        "raw_bytes_read": true,
+        "independent_of_publisher_manifest": true,
+        "independent_of_binding_receipt": true
+      },
+      "pointer_commit": "a5878b4541ca86fe07a2bafb8b992d20e92562ad",
+      "payload_commit": "681294d1382536a235757a35a8657a745febe063"
+    }
+  },
+  "history_chunk_verification": {
+    "path": "history_chain_independent_verification_receipt.json",
+    "bytes": 532209,
+    "sha256": "2a208317cfd715e826d68ea86b62b867a447a6f2185bf0961f3ed3e3a1855ba3",
+    "status": "PASS",
+    "scope": {
+      "lanes": [
+        "weekly",
+        "daily"
+      ],
+      "all_published_chunks": true,
+      "weekly_chunks": 406,
+      "daily_chunks": 406,
+      "requested_audit_symbols": []
+    },
+    "verifier": {
+      "name": "independent_history_verifier",
+      "version": "history-chunk-verifier.v1",
+      "raw_bytes_read": true,
+      "independent_of_publisher_manifest": true,
+      "independent_of_binding_receipt": true
+    },
+    "pointer_commit": "a5878b4541ca86fe07a2bafb8b992d20e92562ad",
+    "payload_commit": "681294d1382536a235757a35a8657a745febe063"
   }
 }
