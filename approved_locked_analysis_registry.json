@@ -1,13 +1,15 @@
 {
-  "schema_version": "approved_locked_analysis_registry.v1",
-  "generated_at_utc": "2026-10-12T16:51:56.754821+00:00",
+  "schema_version": "approved_locked_analysis_registry.v2",
+  "generated_at_utc": "2026-10-13T10:52:57.051796+00:00",
   "scope": "wyckoff-vnindex",
   "authority_mode": "GENERATION_SCOPED_COMMON_REGISTRY",
-  "publisher_generation_id": "r33-2026-10-12-309b537d8476f6dc",
-  "source_session_date": "2026-10-12",
-  "eod_cutoff": "2026-10-12",
-  "status": "NOT_VERIFIED",
-  "approved_for_new_locked_analysis": false,
+  "publisher_generation_id": "r33-2026-10-13-3f4cdc0dabdf4533",
+  "source_session_date": "2026-10-13",
+  "eod_cutoff": "2026-10-13",
+  "canonical_eod_generation_id": "r33-2026-10-13-3f4cdc0dabdf4533",
+  "symbols_sha256": "64a85cee5a3885fd97c0bc1a67e5ba1a5019ffbecf642f6c3cebb791a090005a",
+  "status": "PASS",
+  "approved_for_new_locked_analysis": true,
   "symbols": {
     "AAA": {
       "symbol": "AAA",
@@ -4480,13 +4482,17 @@
     "symbols_total": 406,
     "approved_count": 0,
     "not_verified_count": 406,
+    "analysis_eligible_count": 406,
+    "individual_lock_approval_required_per_symbol": true,
     "quarantined_symbols": [
       "ANT"
     ]
   },
   "source": {
-    "explicit_lock_source": "MISSING",
+    "explicit_lock_source": "approved_locked_analysis_source.json",
     "source_refs": [
+      "approved_locked_analysis_source.json",
+      "approved_locked_analysis_source_receipt.json",
       "live_manifest.json",
       "publisher_state.json",
       "current_state.json",
@@ -4495,6 +4501,8 @@
       "history_chain_chunk_binding_receipt.json",
       "alert_engine_gate.json"
     ],
+    "authorization_scope": "ALL_CURRENT_HOSE_STOCK_UNIVERSE",
+    "individual_lock_approvals_implied": false,
     "missing_source_effect": "NO_APPROVAL_INFERRED"
   }
 }
