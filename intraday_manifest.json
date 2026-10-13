@@ -1,12 +1,13 @@
 {
   "schema_version": "intraday_manifest.v1",
-  "publisher_generation_id": "r33-2026-10-12-a6e33235d933e63e",
-  "path": "FAST_INTRADAY",
-  "session_mode": "INTRADAY_OVERLAY",
-  "overlay_mode": "INTRADAY_OVERLAY",
+  "publisher_generation_id": "r33-2026-10-13-3f4cdc0dabdf4533",
+  "path": "MARKET_CLOSED_FINAL_SNAPSHOT",
+  "session_mode": "MARKET_CLOSED",
+  "overlay_mode": "STATUS_ONLY",
   "trading_date": "2026-10-13",
-  "source_latest_date": "2026-10-12",
-  "generated_at_utc": "2026-10-13T07:19:13.070967+00:00",
+  "source_latest_date": "2026-10-13",
+  "generated_at_utc": "2026-10-13T10:39:50.988365+00:00",
+  "last_snapshot_generated_at_utc": "2026-10-13T07:19:13.070967+00:00",
   "canonical_snapshot_updated": false,
   "rows_written": 356,
   "symbols_with_rows": 356,
@@ -17,8 +18,8 @@
     "status": "AVAILABLE",
     "mode": "kbs_history_5m"
   },
-  "snapshot_semantics": "latest current-session KBS 5-minute OHLCV bar only",
-  "source_snapshot": "live_snapshots\\live_20261013T141913+0700.csv",
+  "snapshot_semantics": "final same-session KBS intraday snapshot; historical reference after market close",
+  "source_snapshot": "intraday_latest.csv",
   "source_snapshot_sha256": "4b713787dfc26e451f5d15a333c729c939e35312dbc823ed99d43ea2738b95f9",
   "errors": [
     {
@@ -231,6 +232,7 @@
     }
   ],
   "result": "PASS",
-  "contract_status": "OVERLAY_ALLOWED",
-  "overlay_allowed": true
+  "contract_status": "MARKET_CLOSED",
+  "overlay_allowed": false,
+  "overlay_reason": "MARKET_CLOSED_COMPLETED_EOD_PUBLISHED"
 }
