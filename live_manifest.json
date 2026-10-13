@@ -1,42 +1,42 @@
 {
-  "generated_at_utc": "2026-10-13T11:33:57.380121+00:00",
-  "publisher_generation_id": "r33-2026-10-13-3f4cdc0dabdf4533",
-  "source_snapshot_generated_at_utc": "2026-10-13T10:39:50.988365+00:00",
+  "generated_at_utc": "2026-10-13T12:01:53.829779+00:00",
+  "publisher_generation_id": "r33-2026-10-13-e8aaca385db56436",
+  "source_snapshot_generated_at_utc": "2026-10-13T11:50:30.047916+00:00",
   "alerts_snapshot_binding": {
     "path": "alerts_live.json",
-    "publisher_generation_id": "r33-2026-10-13-3f4cdc0dabdf4533",
-    "snapshot_generated_at_utc": "2026-10-13T10:39:50.988365+00:00",
+    "publisher_generation_id": "r33-2026-10-13-e8aaca385db56436",
+    "snapshot_generated_at_utc": "2026-10-13T11:50:30.047916+00:00",
     "status": "BRIDGE_MATERIALIZES_ALERTS_PAYLOAD"
   },
   "source_latest_date": "2026-10-13",
   "source_session_date": "2026-10-13",
-  "source_job": "eod",
-  "source_result": "PASS_WITH_QUARANTINE",
+  "source_job": "history-refresh-weekly",
+  "source_result": "PASS_WITH_WARNINGS",
   "publication_mode": "GITHUB_BRIDGE_READY",
   "source_workspace": "DỮ LIỆU OHLCV",
   "dashboard_consumer": "wyckoff-vnindex-market-dashboard",
   "live_snapshot_available": true,
   "freshness": {
-    "age_minutes": 54,
-    "stale": true,
+    "age_minutes": 11,
+    "stale": false,
     "threshold_minutes": 30
   },
   "files": {
     "stock_daily_ohlcv.csv": {
-      "bytes": 26389567,
-      "sha256": "6e0420a50788e32df59015571a370c668d2b429d764b630457f08bdd15ad95e1"
+      "bytes": 26389614,
+      "sha256": "c28b8596f5a46e7984612b16d028c218a3b0f84dc7671a62fde4a825f5b77b1a"
     },
     "stock_weekly_ohlcv.csv": {
-      "bytes": 9831906,
-      "sha256": "82f012100fb3f89fb294d4dcdbf109912293e2c1cc1899798890e80ce755651f"
+      "bytes": 9831907,
+      "sha256": "4e49a08f261b1d0736246cb9c70c605fef8e15bd86108e973586e71311e0c71e"
     },
     "index_daily_ohlcv.csv": {
-      "bytes": 186962,
-      "sha256": "3229dc7aa9be09c078100058f0f071b6605ae6982c0045564fd4ba9676a8c35f"
+      "bytes": 186963,
+      "sha256": "9418f247e91525b0df54f1b4187bb15391fbc8366cf667733804edd67717e30c"
     },
     "index_weekly_ohlcv.csv": {
       "bytes": 60359,
-      "sha256": "af84e07c393ee62c67a3e6eebfe90cf8556ef2db60da5efdd9bd0d246d25a367"
+      "sha256": "19dd88951aa20954422b9bdd72f16cf96bb703b873429cd23cbae020bfc14c4e"
     },
     "sector_classification.csv": {
       "bytes": 60568,
@@ -78,12 +78,217 @@
   "latest_completed_session": "2026-10-13",
   "observed_date": "2026-10-13",
   "static_refresh": {
-    "active": false,
-    "mode": null,
-    "window": null,
-    "canonical_static_replacement": null
+    "mode": "weekly",
+    "manifest_path": "runtime/static_refresh_weekly_manifest.json",
+    "manifest_sha256": "41b14dfdd23b1892a365305321d0ed250d119969722dd47dde517d6e094942d7",
+    "run_id": "20261013T115030047916Z_08793fa4",
+    "window_start": "2026-10-05",
+    "window_end": "2026-10-09",
+    "canonical_latest_date": "2026-10-13",
+    "result": "PASS_WITH_WARNINGS"
   },
   "session_date": "2026-10-13",
+  "provider_errors": [
+    {
+      "symbol": "CCI",
+      "kind": "TRANSIENT_PROVIDER_OR_NETWORK",
+      "error_type": "RetryError",
+      "error": "RetryError[<Future at 0x2504be6d100 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "CLW",
+      "kind": "TRANSIENT_PROVIDER_OR_NETWORK",
+      "error_type": "RetryError",
+      "error": "RetryError[<Future at 0x25049706e70 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "COM",
+      "kind": "TRANSIENT_PROVIDER_OR_NETWORK",
+      "error_type": "RetryError",
+      "error": "RetryError[<Future at 0x2504bf34530 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "DTT",
+      "kind": "TRANSIENT_PROVIDER_OR_NETWORK",
+      "error_type": "RetryError",
+      "error": "RetryError[<Future at 0x2504bfe9f10 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "FDC",
+      "kind": "TRANSIENT_PROVIDER_OR_NETWORK",
+      "error_type": "RetryError",
+      "error": "RetryError[<Future at 0x2504c1bad80 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "L10",
+      "kind": "TRANSIENT_PROVIDER_OR_NETWORK",
+      "error_type": "RetryError",
+      "error": "RetryError[<Future at 0x2504c61f830 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "LGC",
+      "kind": "TRANSIENT_PROVIDER_OR_NETWORK",
+      "error_type": "RetryError",
+      "error": "RetryError[<Future at 0x2504ddc7ec0 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "LM8",
+      "kind": "TRANSIENT_PROVIDER_OR_NETWORK",
+      "error_type": "RetryError",
+      "error": "RetryError[<Future at 0x2504bfeaae0 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "S4A",
+      "kind": "TRANSIENT_PROVIDER_OR_NETWORK",
+      "error_type": "RetryError",
+      "error": "RetryError[<Future at 0x2504e0104a0 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "SFC",
+      "kind": "TRANSIENT_PROVIDER_OR_NETWORK",
+      "error_type": "RetryError",
+      "error": "RetryError[<Future at 0x2504bfa4a40 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "TIX",
+      "kind": "TRANSIENT_PROVIDER_OR_NETWORK",
+      "error_type": "RetryError",
+      "error": "RetryError[<Future at 0x2504c097740 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "TTE",
+      "kind": "TRANSIENT_PROVIDER_OR_NETWORK",
+      "error_type": "RetryError",
+      "error": "RetryError[<Future at 0x2504c1bba40 state=finished raised ValueError>]"
+    }
+  ],
+  "mode": "weekly",
+  "refresh_window": {
+    "start": "2026-10-05",
+    "end": "2026-10-09",
+    "outside_window_preserved": true
+  },
+  "canonical_cutoff_date": "2026-10-13",
+  "canonical_static_replacement": {
+    "status": "PASS",
+    "scope": {
+      "mode": "weekly",
+      "window_start": "2026-10-05",
+      "window_end": "2026-10-09"
+    },
+    "replacement_semantics": "replace_only_window_preserve_outside_window",
+    "source": "KBS",
+    "canonical_latest_date": "2026-10-13",
+    "outside_window_preserved": true,
+    "files": {
+      "stock_daily_ohlcv.csv": {
+        "bytes": 26389614,
+        "sha256": "c28b8596f5a46e7984612b16d028c218a3b0f84dc7671a62fde4a825f5b77b1a"
+      },
+      "stock_weekly_ohlcv.csv": {
+        "bytes": 9831907,
+        "sha256": "4e49a08f261b1d0736246cb9c70c605fef8e15bd86108e973586e71311e0c71e"
+      },
+      "index_daily_ohlcv.csv": {
+        "bytes": 186963,
+        "sha256": "9418f247e91525b0df54f1b4187bb15391fbc8366cf667733804edd67717e30c"
+      },
+      "index_weekly_ohlcv.csv": {
+        "bytes": 60359,
+        "sha256": "19dd88951aa20954422b9bdd72f16cf96bb703b873429cd23cbae020bfc14c4e"
+      }
+    },
+    "backup": "staging\\history_weekly_2026-10-05_2026-10-09_20261013T115030047916Z_08793fa4\\backup",
+    "rollback_available": true,
+    "provider_errors": [
+      {
+        "symbol": "CCI",
+        "kind": "TRANSIENT_PROVIDER_OR_NETWORK",
+        "error_type": "RetryError",
+        "error": "RetryError[<Future at 0x2504be6d100 state=finished raised ValueError>]"
+      },
+      {
+        "symbol": "CLW",
+        "kind": "TRANSIENT_PROVIDER_OR_NETWORK",
+        "error_type": "RetryError",
+        "error": "RetryError[<Future at 0x25049706e70 state=finished raised ValueError>]"
+      },
+      {
+        "symbol": "COM",
+        "kind": "TRANSIENT_PROVIDER_OR_NETWORK",
+        "error_type": "RetryError",
+        "error": "RetryError[<Future at 0x2504bf34530 state=finished raised ValueError>]"
+      },
+      {
+        "symbol": "DTT",
+        "kind": "TRANSIENT_PROVIDER_OR_NETWORK",
+        "error_type": "RetryError",
+        "error": "RetryError[<Future at 0x2504bfe9f10 state=finished raised ValueError>]"
+      },
+      {
+        "symbol": "FDC",
+        "kind": "TRANSIENT_PROVIDER_OR_NETWORK",
+        "error_type": "RetryError",
+        "error": "RetryError[<Future at 0x2504c1bad80 state=finished raised ValueError>]"
+      },
+      {
+        "symbol": "L10",
+        "kind": "TRANSIENT_PROVIDER_OR_NETWORK",
+        "error_type": "RetryError",
+        "error": "RetryError[<Future at 0x2504c61f830 state=finished raised ValueError>]"
+      },
+      {
+        "symbol": "LGC",
+        "kind": "TRANSIENT_PROVIDER_OR_NETWORK",
+        "error_type": "RetryError",
+        "error": "RetryError[<Future at 0x2504ddc7ec0 state=finished raised ValueError>]"
+      },
+      {
+        "symbol": "LM8",
+        "kind": "TRANSIENT_PROVIDER_OR_NETWORK",
+        "error_type": "RetryError",
+        "error": "RetryError[<Future at 0x2504bfeaae0 state=finished raised ValueError>]"
+      },
+      {
+        "symbol": "S4A",
+        "kind": "TRANSIENT_PROVIDER_OR_NETWORK",
+        "error_type": "RetryError",
+        "error": "RetryError[<Future at 0x2504e0104a0 state=finished raised ValueError>]"
+      },
+      {
+        "symbol": "SFC",
+        "kind": "TRANSIENT_PROVIDER_OR_NETWORK",
+        "error_type": "RetryError",
+        "error": "RetryError[<Future at 0x2504bfa4a40 state=finished raised ValueError>]"
+      },
+      {
+        "symbol": "TIX",
+        "kind": "TRANSIENT_PROVIDER_OR_NETWORK",
+        "error_type": "RetryError",
+        "error": "RetryError[<Future at 0x2504c097740 state=finished raised ValueError>]"
+      },
+      {
+        "symbol": "TTE",
+        "kind": "TRANSIENT_PROVIDER_OR_NETWORK",
+        "error_type": "RetryError",
+        "error": "RetryError[<Future at 0x2504c1bba40 state=finished raised ValueError>]"
+      }
+    ],
+    "symbols_with_provider_errors": [
+      "CCI",
+      "CLW",
+      "COM",
+      "DTT",
+      "FDC",
+      "L10",
+      "LGC",
+      "LM8",
+      "S4A",
+      "SFC",
+      "TIX",
+      "TTE"
+    ]
+  },
   "latest_live_snapshot": {
     "file": "live_snapshots\\live_20261013T141913+0700.csv",
     "bytes": 16290,
