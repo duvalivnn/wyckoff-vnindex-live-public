@@ -1,16 +1,16 @@
 {
   "schema_version": "alerts_live.v1",
   "engine_status": "READY",
-  "generated_at_utc": "2026-10-14T03:30:36+00:00",
+  "generated_at_utc": "2026-10-14T04:00:00+00:00",
   "publisher_generation_id": "r33-2026-10-13-ebc20b31af836578",
   "intraday_publisher_generation_id": "r33-2026-10-13-ebc20b31af836578",
-  "intraday_generated_at_utc": "2026-10-14T03:30:29.259004+00:00",
-  "snapshot_generated_at_utc": "2026-10-14T03:30:29.259004+00:00",
+  "intraday_generated_at_utc": "2026-10-14T03:59:52.736778+00:00",
+  "snapshot_generated_at_utc": "2026-10-14T03:59:52.736778+00:00",
   "publication_binding": {
     "manifest_path": "live_manifest.json",
-    "manifest_generated_at_utc": "2026-10-14T03:30:30.661794+00:00",
+    "manifest_generated_at_utc": "2026-10-14T03:59:54.040732+00:00",
     "manifest_publisher_generation_id": "r33-2026-10-13-ebc20b31af836578",
-    "alerts_snapshot_generated_at_utc": "2026-10-14T03:30:29.259004+00:00",
+    "alerts_snapshot_generated_at_utc": "2026-10-14T03:59:52.736778+00:00",
     "alerts_snapshot_publisher_generation_id": "r33-2026-10-13-ebc20b31af836578",
     "status": "MATCHED"
   },
@@ -21,44 +21,20 @@
     "timezone": "Asia/Ho_Chi_Minh",
     "session_date": "2026-10-14",
     "source_latest_date": "2026-10-13",
-    "snapshot_generated_at_utc": "2026-10-14T03:30:29.259004+00:00"
+    "snapshot_generated_at_utc": "2026-10-14T03:59:52.736778+00:00"
   },
   "source_latest_date": "2026-10-13",
   "intraday_overlay": {
-    "status": "LIVE_QUOTES_DISPLAY_ONLY",
-    "rows": 310,
+    "status": "STATUS_ONLY",
+    "rows": 318,
     "as_of": "2026-10-14",
     "overlay_allowed": false,
-    "reason": "EOD_BASIS_NOT_VERIFIED_FOR_ALERT_CALCULATIONS",
-    "display_quotes_allowed": true,
-    "eligible_symbols": [
-      "VN30",
-      "VTP"
-    ],
-    "basis_vs_eod": "NOT_COMPARED; KBS provider-native intraday quote is display-only unless an explicit per-symbol conversion receipt is supplied"
+    "reason": "NO_FRESH_VERIFIED_PER_SYMBOL_BAR",
+    "display_quotes_allowed": false,
+    "eligible_symbols": [],
+    "basis_vs_eod": "NOT_COMPARED; KBS provider-native quote is display-only unless an explicit per-symbol conversion receipt is supplied"
   },
-  "live_quotes": [
-    {
-      "symbol": "VTP",
-      "price": 45.8,
-      "bar_timestamp": "2026-10-14T10:30:00+07:00",
-      "provider": "KBS",
-      "interval": "5m",
-      "price_basis": "KBS_INTRADAY_5M_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "VN30",
-      "price": 1856.63,
-      "bar_timestamp": "2026-10-14T10:30:00+07:00",
-      "provider": "KBS",
-      "interval": "5m",
-      "price_basis": "KBS_INTRADAY_5M_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    }
-  ],
+  "live_quotes": [],
   "alerts_overlay_allowed": false,
   "counts": {
     "watchlist": 69,
@@ -4805,6 +4781,6 @@
       "method_note": "Scanner output cannot CONFIRM LPS/BUEC/Spring/JAC/Phase. Method-Locked review and Action-Test/follow-through remain required."
     }
   ],
-  "message": "Đã công bố 2 quote KBS 5m đủ freshness theo từng mã; giá hiển thị riêng, không trộn vào phép tính EOD khi chưa xác minh price basis.",
+  "message": "Intraday không có quote KBS đủ mới và xác minh theo mã; Alerts giữ STATUS_ONLY.",
   "publication_policy": "PUBLISH_WITH_KBS_DATA_RISK_NO_DATA_CA_OR_INTEGRITY_GATES_V1"
 }
