@@ -1,25 +1,24 @@
 {
-  "generated_at_utc": "2026-10-14T03:01:31.490349+00:00",
+  "generated_at_utc": "2026-10-14T03:30:30.661794+00:00",
   "publisher_generation_id": "r33-2026-10-13-ebc20b31af836578",
-  "source_snapshot_generated_at_utc": "2026-10-14T03:01:30.604922+00:00",
+  "source_snapshot_generated_at_utc": "2026-10-14T03:30:29.259004+00:00",
   "alerts_snapshot_binding": {
     "path": "alerts_live.json",
     "publisher_generation_id": "r33-2026-10-13-ebc20b31af836578",
-    "snapshot_generated_at_utc": "2026-10-14T03:01:30.604922+00:00",
+    "snapshot_generated_at_utc": "2026-10-14T03:30:29.259004+00:00",
     "status": "BRIDGE_MATERIALIZES_ALERTS_PAYLOAD"
   },
   "source_latest_date": "2026-10-13",
   "source_session_date": "2026-10-13",
   "source_job": "intraday",
-  "source_result": "PASS",
+  "source_result": "PASS_WITH_WARNINGS",
   "publication_mode": "GITHUB_BRIDGE_READY",
   "source_workspace": "DỮ LIỆU OHLCV",
   "dashboard_consumer": "wyckoff-vnindex-market-dashboard",
   "live_snapshot_available": true,
   "freshness": {
-    "age_minutes": 0,
-    "stale": false,
-    "threshold_minutes": 30
+    "mode": "PER_SYMBOL_BAR_TIMESTAMP",
+    "threshold_seconds": 300
   },
   "files": {
     "stock_daily_ohlcv.csv": {
@@ -84,10 +83,10 @@
     "canonical_static_replacement": null
   },
   "session_date": "2026-10-14",
-  "snapshot": "live_snapshots\\live_20261014T100130+0700.csv",
-  "rows": 292,
-  "symbols_with_rows": 292,
-  "snapshot_semantics": "latest current-session KBS 5-minute OHLCV bar only",
+  "snapshot": "live_snapshots\\live_20261014T103029+0700.csv",
+  "rows": 310,
+  "symbols_with_rows": 310,
+  "snapshot_semantics": "latest current-session KBS 5-minute OHLCV bar per symbol; source bar timestamp retained",
   "provider_capability": {
     "provider": "KBS",
     "daily_ohlcv": true,
@@ -98,483 +97,1354 @@
   "provider_errors": [
     {
       "symbol": "AAM",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1895252b6e0 state=finished raised ValueError>]"
-    },
-    {
-      "symbol": "AAT",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18953bef1d0 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1f30cd59130 state=finished raised ValueError>]"
     },
     {
       "symbol": "ABR",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18953dee570 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1f30c80d2e0 state=finished raised ValueError>]"
     },
     {
       "symbol": "ACG",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18953def590 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1f30e0db1d0 state=finished raised ValueError>]"
     },
     {
       "symbol": "ACL",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18953b6ffe0 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1f30e0db6e0 state=finished raised ValueError>]"
     },
     {
       "symbol": "ADG",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18953d290d0 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1f30cdd4f20 state=finished raised ValueError>]"
     },
     {
       "symbol": "ADP",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18952b332c0 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1f30e0b5f10 state=finished raised ValueError>]"
     },
     {
       "symbol": "AST",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1895265f950 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1f30e1e56d0 state=finished raised ValueError>]"
     },
     {
       "symbol": "BRC",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18953e5c470 state=finished raised ValueError>]"
-    },
-    {
-      "symbol": "BTP",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18952ac2f30 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1f30bedec90 state=finished raised ValueError>]"
     },
     {
       "symbol": "BTT",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18953e5e210 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1f30e1e4950 state=finished raised ValueError>]"
     },
     {
       "symbol": "C32",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18953e5d280 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1f30e222810 state=finished raised ValueError>]"
     },
     {
       "symbol": "C47",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18953e5fda0 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1f30e0db170 state=finished raised ValueError>]"
     },
     {
       "symbol": "CCC",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1895298b020 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1f30cdd4f20 state=finished raised ValueError>]"
     },
     {
       "symbol": "CCI",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18953c1bb00 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1f30e1e48f0 state=finished raised ValueError>]"
     },
     {
       "symbol": "CHP",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18953e34bc0 state=finished raised ValueError>]"
-    },
-    {
-      "symbol": "CIG",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x189526872c0 state=finished raised ValueError>]"
-    },
-    {
-      "symbol": "CKG",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18953c1b470 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1f30e1e4950 state=finished raised ValueError>]"
     },
     {
       "symbol": "CLC",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18953e36300 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1f30e0db290 state=finished raised ValueError>]"
     },
     {
       "symbol": "CLL",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18953e5e2a0 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1f30e223a70 state=finished raised ValueError>]"
     },
     {
       "symbol": "CLW",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18953cda540 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1f30cd71b20 state=finished raised ValueError>]"
     },
     {
       "symbol": "CMV",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1894e6cfdd0 state=finished raised ValueError>]"
-    },
-    {
-      "symbol": "CMX",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1895296f5c0 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1f37fedd8e0 state=finished raised ValueError>]"
     },
     {
       "symbol": "CNG",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18953e35b50 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1f30b9e45f0 state=finished raised ValueError>]"
     },
     {
       "symbol": "COM",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1895163c950 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1f37e6820f0 state=finished raised ValueError>]"
     },
     {
       "symbol": "CRV",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18953e37530 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1f30df153d0 state=finished raised ValueError>]"
     },
     {
       "symbol": "CVT",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18953dee660 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1f30df14890 state=finished raised ValueError>]"
     },
     {
       "symbol": "DAT",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18953deed80 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1f30e1e7230 state=finished raised ValueError>]"
     },
     {
       "symbol": "DBD",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18951badc70 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1f30e08c530 state=finished raised ValueError>]"
     },
     {
       "symbol": "DBT",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18953e35310 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1f30e1bc920 state=finished raised ValueError>]"
     },
     {
       "symbol": "DHM",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18953d02750 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1f30e2583b0 state=finished raised ValueError>]"
     },
     {
       "symbol": "DMC",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18953e344a0 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1f30e0dade0 state=finished raised ValueError>]"
     },
     {
       "symbol": "DQC",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18953e6ed50 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1f30cbee7e0 state=finished raised ValueError>]"
     },
     {
       "symbol": "DRH",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18953c41850 state=finished raised ValueError>]"
-    },
-    {
-      "symbol": "DSC",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18953e6e660 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1f30e220470 state=finished raised ValueError>]"
     },
     {
       "symbol": "DSN",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18953e6eab0 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1f30e1bc140 state=finished raised ValueError>]"
     },
     {
       "symbol": "DTT",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18953ee00e0 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1f30e24a600 state=finished raised ValueError>]"
     },
     {
       "symbol": "DXV",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18953ee0410 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1f30e1e6a20 state=finished raised ValueError>]"
     },
     {
       "symbol": "ECO",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18953d52270 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1f30c9aeae0 state=finished raised ValueError>]"
     },
     {
       "symbol": "FDC",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18953def350 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1f30e1e5220 state=finished raised ValueError>]"
     },
     {
       "symbol": "GDT",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18953d02450 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1f30b9e57f0 state=finished raised ValueError>]"
     },
     {
       "symbol": "GHC",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18951badc70 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1f30e220b00 state=finished raised ValueError>]"
     },
     {
       "symbol": "GMH",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18953e6c680 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1f30e0daf60 state=finished raised ValueError>]"
     },
     {
       "symbol": "GTA",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18953e6f710 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1f30b9e45f0 state=finished raised ValueError>]"
     },
     {
       "symbol": "HAS",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18953ba2150 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1f30e041fa0 state=finished raised ValueError>]"
     },
     {
       "symbol": "HNA",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18953ecb530 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1f30e259af0 state=finished raised ValueError>]"
     },
     {
       "symbol": "HRC",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18953ecbd10 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1f30e117e60 state=finished raised ValueError>]"
     },
     {
       "symbol": "HTI",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18953dee690 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1f30e220740 state=finished raised ValueError>]"
     },
     {
       "symbol": "HTL",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18953e5f140 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1f30e2855b0 state=finished raised ValueError>]"
     },
     {
       "symbol": "HTV",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18953e5f680 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1f30e248cb0 state=finished raised ValueError>]"
     },
     {
       "symbol": "HU1",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18953ec8710 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1f30e25ab40 state=finished raised ValueError>]"
     },
     {
       "symbol": "ICT",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18953bed670 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1f30e1beb70 state=finished raised ValueError>]"
     },
     {
       "symbol": "ILB",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18953ec9c70 state=finished raised ValueError>]"
-    },
-    {
-      "symbol": "IMP",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18952b32660 state=finished raised ValueError>]"
-    },
-    {
-      "symbol": "ITC",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18953bed670 state=finished raised ValueError>]"
-    },
-    {
-      "symbol": "ITD",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18953e6f950 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1f30e0db3b0 state=finished raised ValueError>]"
     },
     {
       "symbol": "KHP",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18953ecb890 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1f30e1be600 state=finished raised ValueError>]"
     },
     {
       "symbol": "L10",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18953e6fad0 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1f30e1e4b00 state=finished raised ValueError>]"
     },
     {
       "symbol": "LAF",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18953e36a80 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1f30e1e4560 state=finished raised ValueError>]"
     },
     {
       "symbol": "LGC",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18953e5ed20 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1f30e259460 state=finished raised ValueError>]"
     },
     {
       "symbol": "LM8",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18953ee21e0 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1f30e1e52e0 state=finished raised ValueError>]"
     },
     {
       "symbol": "MCM",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18953e34080 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1f30e3d2600 state=finished raised ValueError>]"
     },
     {
       "symbol": "NAV",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18953f00260 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1f30e117ce0 state=finished raised ValueError>]"
     },
     {
       "symbol": "NHT",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18952a96330 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1f30e25a8a0 state=finished raised ValueError>]"
     },
     {
       "symbol": "NSC",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18953f00a70 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1f30e3d3170 state=finished raised ValueError>]"
     },
     {
       "symbol": "NVT",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18953ecb200 state=finished raised ValueError>]"
-    },
-    {
-      "symbol": "OPC",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18953ee06b0 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1f30e3f9280 state=finished raised ValueError>]"
     },
     {
       "symbol": "PGD",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18953f6f470 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1f30e41b4d0 state=finished raised ValueError>]"
     },
     {
       "symbol": "PGI",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18952876300 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1f30e3f9190 state=finished raised ValueError>]"
     },
     {
       "symbol": "PIT",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18953e6d2b0 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1f30e3d0b60 state=finished raised ValueError>]"
     },
     {
       "symbol": "PMG",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18953e36db0 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1f30df57bf0 state=finished raised ValueError>]"
     },
     {
       "symbol": "PNC",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18953deed20 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1f30c9ae6f0 state=finished raised ValueError>]"
     },
     {
       "symbol": "QNP",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18953d02750 state=finished raised ValueError>]"
-    },
-    {
-      "symbol": "RYG",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18953f6d100 state=finished raised ValueError>]"
-    },
-    {
-      "symbol": "S4A",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18953ec85f0 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1f30e1e5220 state=finished raised ValueError>]"
     },
     {
       "symbol": "SAV",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18953d027e0 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1f30e221100 state=finished raised ValueError>]"
     },
     {
       "symbol": "SBA",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18953f02ae0 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1f30e221dc0 state=finished raised ValueError>]"
     },
     {
       "symbol": "SBV",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18952b32660 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1f30e2847d0 state=finished raised ValueError>]"
     },
     {
       "symbol": "SC5",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18953ded5b0 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1f30e259c70 state=finished raised ValueError>]"
     },
     {
       "symbol": "SFC",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18952a96330 state=finished raised ValueError>]"
-    },
-    {
-      "symbol": "SFG",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18952876300 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1f30e4705c0 state=finished raised ValueError>]"
     },
     {
       "symbol": "SFI",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18953f5c4a0 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1f30e440590 state=finished raised ValueError>]"
     },
     {
       "symbol": "SHA",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18953ec8890 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1f30df57bf0 state=finished raised ValueError>]"
     },
     {
       "symbol": "SHP",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18953eca510 state=finished raised ValueError>]"
-    },
-    {
-      "symbol": "SKG",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18953e5f8f0 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1f30c9ae360 state=finished raised ValueError>]"
     },
     {
       "symbol": "SMA",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18953f5cda0 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1f30e419eb0 state=finished raised ValueError>]"
     },
     {
       "symbol": "SMC",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18952b32660 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1f30e116930 state=finished raised ValueError>]"
     },
     {
       "symbol": "SPM",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18953ee1a30 state=finished raised ValueError>]"
-    },
-    {
-      "symbol": "SRC",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18953e36030 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1f30e1bfc50 state=finished raised ValueError>]"
     },
     {
       "symbol": "SSC",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18953e37920 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1f30b055a90 state=finished raised ValueError>]"
     },
     {
       "symbol": "STG",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18953f039b0 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1f30e286870 state=finished raised ValueError>]"
     },
     {
       "symbol": "SVC",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18953f3d070 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1f30e117050 state=finished raised ValueError>]"
     },
     {
       "symbol": "SVD",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18952b32660 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1f30e286d50 state=finished raised ValueError>]"
     },
     {
       "symbol": "SVT",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18953c87a70 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1f30e1be570 state=finished raised ValueError>]"
     },
     {
       "symbol": "TCR",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18953f5f290 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1f30e1bfef0 state=finished raised ValueError>]"
     },
     {
       "symbol": "TCT",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18953c87d40 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1f30e440da0 state=finished raised ValueError>]"
     },
     {
       "symbol": "TDG",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18953e36570 state=finished raised ValueError>]"
-    },
-    {
-      "symbol": "TDM",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18953deed20 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1f30e3f9b20 state=finished raised ValueError>]"
     },
     {
       "symbol": "TDW",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18953f3e0f0 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1f30e442a80 state=finished raised ValueError>]"
     },
     {
       "symbol": "TIX",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18953c1b470 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1f30cd71b20 state=finished raised ValueError>]"
     },
     {
       "symbol": "TMS",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18953e6e3f0 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1f30e418620 state=finished raised ValueError>]"
     },
     {
       "symbol": "TMT",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18953e6e420 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1f30bef7f20 state=finished raised ValueError>]"
     },
     {
       "symbol": "TN1",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18953ee2ed0 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1f30e441e50 state=finished raised ValueError>]"
     },
     {
       "symbol": "TNC",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18953f5d520 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1f30bef7f20 state=finished raised ValueError>]"
     },
     {
       "symbol": "TPC",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18953ff7980 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1f30e2201a0 state=finished raised ValueError>]"
     },
     {
       "symbol": "TTE",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18953ff7230 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1f30e221100 state=finished raised ValueError>]"
     },
     {
       "symbol": "TVT",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18953ff7e30 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1f30e472510 state=finished raised ValueError>]"
     },
     {
       "symbol": "VCA",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18953f6f860 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1f30e443920 state=finished raised ValueError>]"
     },
     {
       "symbol": "VCF",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18953fc25a0 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1f30de9f0b0 state=finished raised ValueError>]"
     },
     {
       "symbol": "VDP",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18953ff56d0 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1f30e0db4a0 state=finished raised ValueError>]"
     },
     {
       "symbol": "VFG",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18953ecafc0 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1f30e1e4a10 state=finished raised ValueError>]"
     },
     {
       "symbol": "VNG",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18950c3a930 state=finished raised ValueError>]"
-    },
-    {
-      "symbol": "VNL",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18953ff45f0 state=finished raised ValueError>]"
-    },
-    {
-      "symbol": "VNS",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18953f6fdd0 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1f30e1bfd70 state=finished raised ValueError>]"
     },
     {
       "symbol": "VSI",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18953f6f080 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1f30e1e46b0 state=finished raised ValueError>]"
     },
     {
       "symbol": "VTB",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x18953ff4650 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x1f30e1bd640 state=finished raised ValueError>]"
     }
   ],
   "validation_errors": [],
   "promotion_effect": "NONE",
   "intraday_latest_date": "2026-10-14",
   "is_provisional": true,
-  "intraday_generation": "intraday-20261014T100130+0700",
+  "intraday_generation": "intraday-20261014T103029+0700",
   "eod_generation": "r33-2026-10-13-ebc20b31af836578",
   "eod_reference_sha256": "88d736c640416a4eaae0f1a2a9497eb776ac6c78b7b0643d6db91de6961e51d8",
-  "quote_timestamp": "2026-10-14T03:01:30.604922+00:00",
+  "quote_timestamp": null,
   "contract_status": "OVERLAY_ALLOWED",
   "overlay_allowed": true,
   "overlay_reason": null,
+  "live_eligibility": {
+    "status": "OVERLAY_ALLOWED",
+    "overlay_allowed": true,
+    "eligible_rows": 2,
+    "eligible_symbols": [
+      "VN30",
+      "VTP"
+    ],
+    "unavailable_symbols": [
+      "AAA",
+      "AAN",
+      "AAT",
+      "ABS",
+      "ABT",
+      "ACB",
+      "ACC",
+      "ADS",
+      "AFX",
+      "AGG",
+      "AGR",
+      "ANT",
+      "ANV",
+      "APG",
+      "APH",
+      "ASG",
+      "ASM",
+      "ASP",
+      "BAF",
+      "BCE",
+      "BCM",
+      "BFC",
+      "BHN",
+      "BIC",
+      "BID",
+      "BKG",
+      "BMC",
+      "BMI",
+      "BMP",
+      "BSI",
+      "BSR",
+      "BTP",
+      "BVB",
+      "BVH",
+      "BWE",
+      "CCL",
+      "CDC",
+      "CIG",
+      "CII",
+      "CKG",
+      "CMG",
+      "CMX",
+      "CRC",
+      "CRE",
+      "CSM",
+      "CSV",
+      "CTD",
+      "CTF",
+      "CTG",
+      "CTI",
+      "CTR",
+      "CTS",
+      "D2D",
+      "DAH",
+      "DBC",
+      "DC4",
+      "DCL",
+      "DCM",
+      "DGC",
+      "DGW",
+      "DHA",
+      "DHC",
+      "DHG",
+      "DIG",
+      "DLG",
+      "DMX",
+      "DPG",
+      "DPM",
+      "DPR",
+      "DRC",
+      "DRL",
+      "DSC",
+      "DSE",
+      "DTA",
+      "DTL",
+      "DVP",
+      "DXG",
+      "DXS",
+      "EIB",
+      "ELC",
+      "EVE",
+      "EVF",
+      "EVG",
+      "FCM",
+      "FCN",
+      "FIR",
+      "FIT",
+      "FMC",
+      "FPT",
+      "FRT",
+      "FTS",
+      "GAS",
+      "GEE",
+      "GEG",
+      "GEL",
+      "GEX",
+      "GIL",
+      "GMD",
+      "GSP",
+      "GVR",
+      "HAG",
+      "HAH",
+      "HAP",
+      "HAR",
+      "HAX",
+      "HCD",
+      "HCM",
+      "HDB",
+      "HDC",
+      "HDG",
+      "HHP",
+      "HHS",
+      "HHV",
+      "HID",
+      "HII",
+      "HMC",
+      "HPA",
+      "HPG",
+      "HPX",
+      "HQC",
+      "HSG",
+      "HSL",
+      "HT1",
+      "HTG",
+      "HTN",
+      "HUB",
+      "HVH",
+      "HVN",
+      "IDI",
+      "IJC",
+      "IMP",
+      "ITC",
+      "ITD",
+      "JVC",
+      "KBC",
+      "KDC",
+      "KDH",
+      "KHG",
+      "KLB",
+      "KMR",
+      "KOS",
+      "KSB",
+      "LBM",
+      "LCG",
+      "LDG",
+      "LGL",
+      "LHG",
+      "LIX",
+      "LPB",
+      "LPS",
+      "LSS",
+      "MBB",
+      "MCH",
+      "MCP",
+      "MDG",
+      "MHC",
+      "MIG",
+      "MSB",
+      "MSH",
+      "MSN",
+      "MWG",
+      "MZG",
+      "NAB",
+      "NAF",
+      "NBB",
+      "NCT",
+      "NHA",
+      "NHH",
+      "NKG",
+      "NLG",
+      "NNC",
+      "NO1",
+      "NT2",
+      "NTC",
+      "NTL",
+      "NVL",
+      "OCB",
+      "OGC",
+      "OPC",
+      "ORS",
+      "PAC",
+      "PAN",
+      "PC1",
+      "PDN",
+      "PDR",
+      "PDV",
+      "PET",
+      "PGC",
+      "PGV",
+      "PHC",
+      "PHR",
+      "PJT",
+      "PLP",
+      "PLX",
+      "PNJ",
+      "POW",
+      "PPC",
+      "PTB",
+      "PTC",
+      "PTL",
+      "PVD",
+      "PVP",
+      "PVT",
+      "QCG",
+      "RAL",
+      "REE",
+      "RYG",
+      "S4A",
+      "SAB",
+      "SAM",
+      "SBG",
+      "SBT",
+      "SCR",
+      "SCS",
+      "SFG",
+      "SGN",
+      "SGR",
+      "SGT",
+      "SHB",
+      "SHI",
+      "SIP",
+      "SJD",
+      "SJS",
+      "SKG",
+      "SMB",
+      "SRC",
+      "SRF",
+      "SSB",
+      "SSI",
+      "ST8",
+      "STB",
+      "STK",
+      "SZC",
+      "SZL",
+      "TAL",
+      "TBC",
+      "TCB",
+      "TCH",
+      "TCI",
+      "TCL",
+      "TCM",
+      "TCO",
+      "TCX",
+      "TDC",
+      "TDH",
+      "TDM",
+      "TDP",
+      "TEG",
+      "THG",
+      "TIP",
+      "TLD",
+      "TLG",
+      "TLH",
+      "TMP",
+      "TNH",
+      "TNI",
+      "TNT",
+      "TPB",
+      "TRA",
+      "TRC",
+      "TSA",
+      "TSC",
+      "TTA",
+      "TTF",
+      "TV2",
+      "TVB",
+      "TVS",
+      "TYA",
+      "UIC",
+      "VAB",
+      "VBB",
+      "VCB",
+      "VCG",
+      "VCI",
+      "VCK",
+      "VDS",
+      "VGC",
+      "VHC",
+      "VHM",
+      "VIB",
+      "VIC",
+      "VID",
+      "VIP",
+      "VIX",
+      "VJC",
+      "VMD",
+      "VND",
+      "VNINDEX",
+      "VNL",
+      "VNM",
+      "VNS",
+      "VOS",
+      "VPB",
+      "VPD",
+      "VPG",
+      "VPH",
+      "VPI",
+      "VPL",
+      "VPS",
+      "VPX",
+      "VRC",
+      "VRE",
+      "VSC",
+      "VSH",
+      "VTO",
+      "VVS",
+      "YBM",
+      "YEG"
+    ],
+    "symbol_status": {
+      "AAA": "LIVE_UNAVAILABLE",
+      "AAN": "LIVE_UNAVAILABLE",
+      "AAT": "LIVE_UNAVAILABLE",
+      "ABS": "LIVE_UNAVAILABLE",
+      "ABT": "LIVE_UNAVAILABLE",
+      "ACB": "LIVE_UNAVAILABLE",
+      "ACC": "LIVE_UNAVAILABLE",
+      "ADS": "LIVE_UNAVAILABLE",
+      "AFX": "LIVE_UNAVAILABLE",
+      "AGG": "LIVE_UNAVAILABLE",
+      "AGR": "LIVE_UNAVAILABLE",
+      "ANT": "LIVE_UNAVAILABLE",
+      "ANV": "LIVE_UNAVAILABLE",
+      "APG": "LIVE_UNAVAILABLE",
+      "APH": "LIVE_UNAVAILABLE",
+      "ASG": "LIVE_UNAVAILABLE",
+      "ASM": "LIVE_UNAVAILABLE",
+      "ASP": "LIVE_UNAVAILABLE",
+      "BAF": "LIVE_UNAVAILABLE",
+      "BCE": "LIVE_UNAVAILABLE",
+      "BCM": "LIVE_UNAVAILABLE",
+      "BFC": "LIVE_UNAVAILABLE",
+      "BHN": "LIVE_UNAVAILABLE",
+      "BIC": "LIVE_UNAVAILABLE",
+      "BID": "LIVE_UNAVAILABLE",
+      "BKG": "LIVE_UNAVAILABLE",
+      "BMC": "LIVE_UNAVAILABLE",
+      "BMI": "LIVE_UNAVAILABLE",
+      "BMP": "LIVE_UNAVAILABLE",
+      "BSI": "LIVE_UNAVAILABLE",
+      "BSR": "LIVE_UNAVAILABLE",
+      "BTP": "LIVE_UNAVAILABLE",
+      "BVB": "LIVE_UNAVAILABLE",
+      "BVH": "LIVE_UNAVAILABLE",
+      "BWE": "LIVE_UNAVAILABLE",
+      "CCL": "LIVE_UNAVAILABLE",
+      "CDC": "LIVE_UNAVAILABLE",
+      "CIG": "LIVE_UNAVAILABLE",
+      "CII": "LIVE_UNAVAILABLE",
+      "CKG": "LIVE_UNAVAILABLE",
+      "CMG": "LIVE_UNAVAILABLE",
+      "CMX": "LIVE_UNAVAILABLE",
+      "CRC": "LIVE_UNAVAILABLE",
+      "CRE": "LIVE_UNAVAILABLE",
+      "CSM": "LIVE_UNAVAILABLE",
+      "CSV": "LIVE_UNAVAILABLE",
+      "CTD": "LIVE_UNAVAILABLE",
+      "CTF": "LIVE_UNAVAILABLE",
+      "CTG": "LIVE_UNAVAILABLE",
+      "CTI": "LIVE_UNAVAILABLE",
+      "CTR": "LIVE_UNAVAILABLE",
+      "CTS": "LIVE_UNAVAILABLE",
+      "D2D": "LIVE_UNAVAILABLE",
+      "DAH": "LIVE_UNAVAILABLE",
+      "DBC": "LIVE_UNAVAILABLE",
+      "DC4": "LIVE_UNAVAILABLE",
+      "DCL": "LIVE_UNAVAILABLE",
+      "DCM": "LIVE_UNAVAILABLE",
+      "DGC": "LIVE_UNAVAILABLE",
+      "DGW": "LIVE_UNAVAILABLE",
+      "DHA": "LIVE_UNAVAILABLE",
+      "DHC": "LIVE_UNAVAILABLE",
+      "DHG": "LIVE_UNAVAILABLE",
+      "DIG": "LIVE_UNAVAILABLE",
+      "DLG": "LIVE_UNAVAILABLE",
+      "DMX": "LIVE_UNAVAILABLE",
+      "DPG": "LIVE_UNAVAILABLE",
+      "DPM": "LIVE_UNAVAILABLE",
+      "DPR": "LIVE_UNAVAILABLE",
+      "DRC": "LIVE_UNAVAILABLE",
+      "DRL": "LIVE_UNAVAILABLE",
+      "DSC": "LIVE_UNAVAILABLE",
+      "DSE": "LIVE_UNAVAILABLE",
+      "DTA": "LIVE_UNAVAILABLE",
+      "DTL": "LIVE_UNAVAILABLE",
+      "DVP": "LIVE_UNAVAILABLE",
+      "DXG": "LIVE_UNAVAILABLE",
+      "DXS": "LIVE_UNAVAILABLE",
+      "EIB": "LIVE_UNAVAILABLE",
+      "ELC": "LIVE_UNAVAILABLE",
+      "EVE": "LIVE_UNAVAILABLE",
+      "EVF": "LIVE_UNAVAILABLE",
+      "EVG": "LIVE_UNAVAILABLE",
+      "FCM": "LIVE_UNAVAILABLE",
+      "FCN": "LIVE_UNAVAILABLE",
+      "FIR": "LIVE_UNAVAILABLE",
+      "FIT": "LIVE_UNAVAILABLE",
+      "FMC": "LIVE_UNAVAILABLE",
+      "FPT": "LIVE_UNAVAILABLE",
+      "FRT": "LIVE_UNAVAILABLE",
+      "FTS": "LIVE_UNAVAILABLE",
+      "GAS": "LIVE_UNAVAILABLE",
+      "GEE": "LIVE_UNAVAILABLE",
+      "GEG": "LIVE_UNAVAILABLE",
+      "GEL": "LIVE_UNAVAILABLE",
+      "GEX": "LIVE_UNAVAILABLE",
+      "GIL": "LIVE_UNAVAILABLE",
+      "GMD": "LIVE_UNAVAILABLE",
+      "GSP": "LIVE_UNAVAILABLE",
+      "GVR": "LIVE_UNAVAILABLE",
+      "HAG": "LIVE_UNAVAILABLE",
+      "HAH": "LIVE_UNAVAILABLE",
+      "HAP": "LIVE_UNAVAILABLE",
+      "HAR": "LIVE_UNAVAILABLE",
+      "HAX": "LIVE_UNAVAILABLE",
+      "HCD": "LIVE_UNAVAILABLE",
+      "HCM": "LIVE_UNAVAILABLE",
+      "HDB": "LIVE_UNAVAILABLE",
+      "HDC": "LIVE_UNAVAILABLE",
+      "HDG": "LIVE_UNAVAILABLE",
+      "HHP": "LIVE_UNAVAILABLE",
+      "HHS": "LIVE_UNAVAILABLE",
+      "HHV": "LIVE_UNAVAILABLE",
+      "HID": "LIVE_UNAVAILABLE",
+      "HII": "LIVE_UNAVAILABLE",
+      "HMC": "LIVE_UNAVAILABLE",
+      "HPA": "LIVE_UNAVAILABLE",
+      "HPG": "LIVE_UNAVAILABLE",
+      "HPX": "LIVE_UNAVAILABLE",
+      "HQC": "LIVE_UNAVAILABLE",
+      "HSG": "LIVE_UNAVAILABLE",
+      "HSL": "LIVE_UNAVAILABLE",
+      "HT1": "LIVE_UNAVAILABLE",
+      "HTG": "LIVE_UNAVAILABLE",
+      "HTN": "LIVE_UNAVAILABLE",
+      "HUB": "LIVE_UNAVAILABLE",
+      "HVH": "LIVE_UNAVAILABLE",
+      "HVN": "LIVE_UNAVAILABLE",
+      "IDI": "LIVE_UNAVAILABLE",
+      "IJC": "LIVE_UNAVAILABLE",
+      "IMP": "LIVE_UNAVAILABLE",
+      "ITC": "LIVE_UNAVAILABLE",
+      "ITD": "LIVE_UNAVAILABLE",
+      "JVC": "LIVE_UNAVAILABLE",
+      "KBC": "LIVE_UNAVAILABLE",
+      "KDC": "LIVE_UNAVAILABLE",
+      "KDH": "LIVE_UNAVAILABLE",
+      "KHG": "LIVE_UNAVAILABLE",
+      "KLB": "LIVE_UNAVAILABLE",
+      "KMR": "LIVE_UNAVAILABLE",
+      "KOS": "LIVE_UNAVAILABLE",
+      "KSB": "LIVE_UNAVAILABLE",
+      "LBM": "LIVE_UNAVAILABLE",
+      "LCG": "LIVE_UNAVAILABLE",
+      "LDG": "LIVE_UNAVAILABLE",
+      "LGL": "LIVE_UNAVAILABLE",
+      "LHG": "LIVE_UNAVAILABLE",
+      "LIX": "LIVE_UNAVAILABLE",
+      "LPB": "LIVE_UNAVAILABLE",
+      "LPS": "LIVE_UNAVAILABLE",
+      "LSS": "LIVE_UNAVAILABLE",
+      "MBB": "LIVE_UNAVAILABLE",
+      "MCH": "LIVE_UNAVAILABLE",
+      "MCP": "LIVE_UNAVAILABLE",
+      "MDG": "LIVE_UNAVAILABLE",
+      "MHC": "LIVE_UNAVAILABLE",
+      "MIG": "LIVE_UNAVAILABLE",
+      "MSB": "LIVE_UNAVAILABLE",
+      "MSH": "LIVE_UNAVAILABLE",
+      "MSN": "LIVE_UNAVAILABLE",
+      "MWG": "LIVE_UNAVAILABLE",
+      "MZG": "LIVE_UNAVAILABLE",
+      "NAB": "LIVE_UNAVAILABLE",
+      "NAF": "LIVE_UNAVAILABLE",
+      "NBB": "LIVE_UNAVAILABLE",
+      "NCT": "LIVE_UNAVAILABLE",
+      "NHA": "LIVE_UNAVAILABLE",
+      "NHH": "LIVE_UNAVAILABLE",
+      "NKG": "LIVE_UNAVAILABLE",
+      "NLG": "LIVE_UNAVAILABLE",
+      "NNC": "LIVE_UNAVAILABLE",
+      "NO1": "LIVE_UNAVAILABLE",
+      "NT2": "LIVE_UNAVAILABLE",
+      "NTC": "LIVE_UNAVAILABLE",
+      "NTL": "LIVE_UNAVAILABLE",
+      "NVL": "LIVE_UNAVAILABLE",
+      "OCB": "LIVE_UNAVAILABLE",
+      "OGC": "LIVE_UNAVAILABLE",
+      "OPC": "LIVE_UNAVAILABLE",
+      "ORS": "LIVE_UNAVAILABLE",
+      "PAC": "LIVE_UNAVAILABLE",
+      "PAN": "LIVE_UNAVAILABLE",
+      "PC1": "LIVE_UNAVAILABLE",
+      "PDN": "LIVE_UNAVAILABLE",
+      "PDR": "LIVE_UNAVAILABLE",
+      "PDV": "LIVE_UNAVAILABLE",
+      "PET": "LIVE_UNAVAILABLE",
+      "PGC": "LIVE_UNAVAILABLE",
+      "PGV": "LIVE_UNAVAILABLE",
+      "PHC": "LIVE_UNAVAILABLE",
+      "PHR": "LIVE_UNAVAILABLE",
+      "PJT": "LIVE_UNAVAILABLE",
+      "PLP": "LIVE_UNAVAILABLE",
+      "PLX": "LIVE_UNAVAILABLE",
+      "PNJ": "LIVE_UNAVAILABLE",
+      "POW": "LIVE_UNAVAILABLE",
+      "PPC": "LIVE_UNAVAILABLE",
+      "PTB": "LIVE_UNAVAILABLE",
+      "PTC": "LIVE_UNAVAILABLE",
+      "PTL": "LIVE_UNAVAILABLE",
+      "PVD": "LIVE_UNAVAILABLE",
+      "PVP": "LIVE_UNAVAILABLE",
+      "PVT": "LIVE_UNAVAILABLE",
+      "QCG": "LIVE_UNAVAILABLE",
+      "RAL": "LIVE_UNAVAILABLE",
+      "REE": "LIVE_UNAVAILABLE",
+      "RYG": "LIVE_UNAVAILABLE",
+      "S4A": "LIVE_UNAVAILABLE",
+      "SAB": "LIVE_UNAVAILABLE",
+      "SAM": "LIVE_UNAVAILABLE",
+      "SBG": "LIVE_UNAVAILABLE",
+      "SBT": "LIVE_UNAVAILABLE",
+      "SCR": "LIVE_UNAVAILABLE",
+      "SCS": "LIVE_UNAVAILABLE",
+      "SFG": "LIVE_UNAVAILABLE",
+      "SGN": "LIVE_UNAVAILABLE",
+      "SGR": "LIVE_UNAVAILABLE",
+      "SGT": "LIVE_UNAVAILABLE",
+      "SHB": "LIVE_UNAVAILABLE",
+      "SHI": "LIVE_UNAVAILABLE",
+      "SIP": "LIVE_UNAVAILABLE",
+      "SJD": "LIVE_UNAVAILABLE",
+      "SJS": "LIVE_UNAVAILABLE",
+      "SKG": "LIVE_UNAVAILABLE",
+      "SMB": "LIVE_UNAVAILABLE",
+      "SRC": "LIVE_UNAVAILABLE",
+      "SRF": "LIVE_UNAVAILABLE",
+      "SSB": "LIVE_UNAVAILABLE",
+      "SSI": "LIVE_UNAVAILABLE",
+      "ST8": "LIVE_UNAVAILABLE",
+      "STB": "LIVE_UNAVAILABLE",
+      "STK": "LIVE_UNAVAILABLE",
+      "SZC": "LIVE_UNAVAILABLE",
+      "SZL": "LIVE_UNAVAILABLE",
+      "TAL": "LIVE_UNAVAILABLE",
+      "TBC": "LIVE_UNAVAILABLE",
+      "TCB": "LIVE_UNAVAILABLE",
+      "TCH": "LIVE_UNAVAILABLE",
+      "TCI": "LIVE_UNAVAILABLE",
+      "TCL": "LIVE_UNAVAILABLE",
+      "TCM": "LIVE_UNAVAILABLE",
+      "TCO": "LIVE_UNAVAILABLE",
+      "TCX": "LIVE_UNAVAILABLE",
+      "TDC": "LIVE_UNAVAILABLE",
+      "TDH": "LIVE_UNAVAILABLE",
+      "TDM": "LIVE_UNAVAILABLE",
+      "TDP": "LIVE_UNAVAILABLE",
+      "TEG": "LIVE_UNAVAILABLE",
+      "THG": "LIVE_UNAVAILABLE",
+      "TIP": "LIVE_UNAVAILABLE",
+      "TLD": "LIVE_UNAVAILABLE",
+      "TLG": "LIVE_UNAVAILABLE",
+      "TLH": "LIVE_UNAVAILABLE",
+      "TMP": "LIVE_UNAVAILABLE",
+      "TNH": "LIVE_UNAVAILABLE",
+      "TNI": "LIVE_UNAVAILABLE",
+      "TNT": "LIVE_UNAVAILABLE",
+      "TPB": "LIVE_UNAVAILABLE",
+      "TRA": "LIVE_UNAVAILABLE",
+      "TRC": "LIVE_UNAVAILABLE",
+      "TSA": "LIVE_UNAVAILABLE",
+      "TSC": "LIVE_UNAVAILABLE",
+      "TTA": "LIVE_UNAVAILABLE",
+      "TTF": "LIVE_UNAVAILABLE",
+      "TV2": "LIVE_UNAVAILABLE",
+      "TVB": "LIVE_UNAVAILABLE",
+      "TVS": "LIVE_UNAVAILABLE",
+      "TYA": "LIVE_UNAVAILABLE",
+      "UIC": "LIVE_UNAVAILABLE",
+      "VAB": "LIVE_UNAVAILABLE",
+      "VBB": "LIVE_UNAVAILABLE",
+      "VCB": "LIVE_UNAVAILABLE",
+      "VCG": "LIVE_UNAVAILABLE",
+      "VCI": "LIVE_UNAVAILABLE",
+      "VCK": "LIVE_UNAVAILABLE",
+      "VDS": "LIVE_UNAVAILABLE",
+      "VGC": "LIVE_UNAVAILABLE",
+      "VHC": "LIVE_UNAVAILABLE",
+      "VHM": "LIVE_UNAVAILABLE",
+      "VIB": "LIVE_UNAVAILABLE",
+      "VIC": "LIVE_UNAVAILABLE",
+      "VID": "LIVE_UNAVAILABLE",
+      "VIP": "LIVE_UNAVAILABLE",
+      "VIX": "LIVE_UNAVAILABLE",
+      "VJC": "LIVE_UNAVAILABLE",
+      "VMD": "LIVE_UNAVAILABLE",
+      "VND": "LIVE_UNAVAILABLE",
+      "VNL": "LIVE_UNAVAILABLE",
+      "VNM": "LIVE_UNAVAILABLE",
+      "VNS": "LIVE_UNAVAILABLE",
+      "VOS": "LIVE_UNAVAILABLE",
+      "VPB": "LIVE_UNAVAILABLE",
+      "VPD": "LIVE_UNAVAILABLE",
+      "VPG": "LIVE_UNAVAILABLE",
+      "VPH": "LIVE_UNAVAILABLE",
+      "VPI": "LIVE_UNAVAILABLE",
+      "VPL": "LIVE_UNAVAILABLE",
+      "VPS": "LIVE_UNAVAILABLE",
+      "VPX": "LIVE_UNAVAILABLE",
+      "VRC": "LIVE_UNAVAILABLE",
+      "VRE": "LIVE_UNAVAILABLE",
+      "VSC": "LIVE_UNAVAILABLE",
+      "VSH": "LIVE_UNAVAILABLE",
+      "VTO": "LIVE_UNAVAILABLE",
+      "VTP": "LIVE_AVAILABLE",
+      "VVS": "LIVE_UNAVAILABLE",
+      "YBM": "LIVE_UNAVAILABLE",
+      "YEG": "LIVE_UNAVAILABLE",
+      "VNINDEX": "LIVE_UNAVAILABLE",
+      "VN30": "LIVE_AVAILABLE"
+    },
+    "symbol_reasons": {
+      "AAA": "BAR_STALE_OVER_5_MINUTES",
+      "AAN": "BAR_STALE_OVER_5_MINUTES",
+      "AAT": "BAR_STALE_OVER_5_MINUTES",
+      "ABS": "BAR_STALE_OVER_5_MINUTES",
+      "ABT": "BAR_STALE_OVER_5_MINUTES",
+      "ACB": "BAR_STALE_OVER_5_MINUTES",
+      "ACC": "BAR_STALE_OVER_5_MINUTES",
+      "ADS": "BAR_STALE_OVER_5_MINUTES",
+      "AFX": "BAR_STALE_OVER_5_MINUTES",
+      "AGG": "BAR_STALE_OVER_5_MINUTES",
+      "AGR": "BAR_STALE_OVER_5_MINUTES",
+      "ANT": "BAR_STALE_OVER_5_MINUTES",
+      "ANV": "BAR_STALE_OVER_5_MINUTES",
+      "APG": "BAR_STALE_OVER_5_MINUTES",
+      "APH": "BAR_STALE_OVER_5_MINUTES",
+      "ASG": "BAR_STALE_OVER_5_MINUTES",
+      "ASM": "BAR_STALE_OVER_5_MINUTES",
+      "ASP": "BAR_STALE_OVER_5_MINUTES",
+      "BAF": "BAR_STALE_OVER_5_MINUTES",
+      "BCE": "BAR_STALE_OVER_5_MINUTES",
+      "BCM": "BAR_STALE_OVER_5_MINUTES",
+      "BFC": "BAR_STALE_OVER_5_MINUTES",
+      "BHN": "BAR_STALE_OVER_5_MINUTES",
+      "BIC": "BAR_STALE_OVER_5_MINUTES",
+      "BID": "BAR_STALE_OVER_5_MINUTES",
+      "BKG": "BAR_STALE_OVER_5_MINUTES",
+      "BMC": "BAR_STALE_OVER_5_MINUTES",
+      "BMI": "BAR_STALE_OVER_5_MINUTES",
+      "BMP": "BAR_STALE_OVER_5_MINUTES",
+      "BSI": "BAR_STALE_OVER_5_MINUTES",
+      "BSR": "BAR_STALE_OVER_5_MINUTES",
+      "BTP": "BAR_STALE_OVER_5_MINUTES",
+      "BVB": "BAR_STALE_OVER_5_MINUTES",
+      "BVH": "BAR_STALE_OVER_5_MINUTES",
+      "BWE": "BAR_STALE_OVER_5_MINUTES",
+      "CCL": "BAR_STALE_OVER_5_MINUTES",
+      "CDC": "BAR_STALE_OVER_5_MINUTES",
+      "CIG": "BAR_STALE_OVER_5_MINUTES",
+      "CII": "BAR_STALE_OVER_5_MINUTES",
+      "CKG": "BAR_STALE_OVER_5_MINUTES",
+      "CMG": "BAR_STALE_OVER_5_MINUTES",
+      "CMX": "BAR_STALE_OVER_5_MINUTES",
+      "CRC": "BAR_STALE_OVER_5_MINUTES",
+      "CRE": "BAR_STALE_OVER_5_MINUTES",
+      "CSM": "BAR_STALE_OVER_5_MINUTES",
+      "CSV": "BAR_STALE_OVER_5_MINUTES",
+      "CTD": "BAR_STALE_OVER_5_MINUTES",
+      "CTF": "BAR_STALE_OVER_5_MINUTES",
+      "CTG": "BAR_STALE_OVER_5_MINUTES",
+      "CTI": "BAR_STALE_OVER_5_MINUTES",
+      "CTR": "BAR_STALE_OVER_5_MINUTES",
+      "CTS": "BAR_STALE_OVER_5_MINUTES",
+      "D2D": "BAR_STALE_OVER_5_MINUTES",
+      "DAH": "BAR_STALE_OVER_5_MINUTES",
+      "DBC": "BAR_STALE_OVER_5_MINUTES",
+      "DC4": "BAR_STALE_OVER_5_MINUTES",
+      "DCL": "BAR_STALE_OVER_5_MINUTES",
+      "DCM": "BAR_STALE_OVER_5_MINUTES",
+      "DGC": "BAR_STALE_OVER_5_MINUTES",
+      "DGW": "BAR_STALE_OVER_5_MINUTES",
+      "DHA": "BAR_STALE_OVER_5_MINUTES",
+      "DHC": "BAR_STALE_OVER_5_MINUTES",
+      "DHG": "BAR_STALE_OVER_5_MINUTES",
+      "DIG": "BAR_STALE_OVER_5_MINUTES",
+      "DLG": "BAR_STALE_OVER_5_MINUTES",
+      "DMX": "BAR_STALE_OVER_5_MINUTES",
+      "DPG": "BAR_STALE_OVER_5_MINUTES",
+      "DPM": "BAR_STALE_OVER_5_MINUTES",
+      "DPR": "BAR_STALE_OVER_5_MINUTES",
+      "DRC": "BAR_STALE_OVER_5_MINUTES",
+      "DRL": "BAR_STALE_OVER_5_MINUTES",
+      "DSC": "BAR_STALE_OVER_5_MINUTES",
+      "DSE": "BAR_STALE_OVER_5_MINUTES",
+      "DTA": "BAR_STALE_OVER_5_MINUTES",
+      "DTL": "BAR_STALE_OVER_5_MINUTES",
+      "DVP": "BAR_STALE_OVER_5_MINUTES",
+      "DXG": "BAR_STALE_OVER_5_MINUTES",
+      "DXS": "BAR_STALE_OVER_5_MINUTES",
+      "EIB": "BAR_STALE_OVER_5_MINUTES",
+      "ELC": "BAR_STALE_OVER_5_MINUTES",
+      "EVE": "BAR_STALE_OVER_5_MINUTES",
+      "EVF": "BAR_STALE_OVER_5_MINUTES",
+      "EVG": "BAR_STALE_OVER_5_MINUTES",
+      "FCM": "BAR_STALE_OVER_5_MINUTES",
+      "FCN": "BAR_STALE_OVER_5_MINUTES",
+      "FIR": "BAR_STALE_OVER_5_MINUTES",
+      "FIT": "BAR_STALE_OVER_5_MINUTES",
+      "FMC": "BAR_STALE_OVER_5_MINUTES",
+      "FPT": "BAR_STALE_OVER_5_MINUTES",
+      "FRT": "BAR_STALE_OVER_5_MINUTES",
+      "FTS": "BAR_STALE_OVER_5_MINUTES",
+      "GAS": "BAR_STALE_OVER_5_MINUTES",
+      "GEE": "BAR_STALE_OVER_5_MINUTES",
+      "GEG": "BAR_STALE_OVER_5_MINUTES",
+      "GEL": "BAR_STALE_OVER_5_MINUTES",
+      "GEX": "BAR_STALE_OVER_5_MINUTES",
+      "GIL": "BAR_STALE_OVER_5_MINUTES",
+      "GMD": "BAR_STALE_OVER_5_MINUTES",
+      "GSP": "BAR_STALE_OVER_5_MINUTES",
+      "GVR": "BAR_STALE_OVER_5_MINUTES",
+      "HAG": "BAR_STALE_OVER_5_MINUTES",
+      "HAH": "BAR_STALE_OVER_5_MINUTES",
+      "HAP": "BAR_STALE_OVER_5_MINUTES",
+      "HAR": "BAR_STALE_OVER_5_MINUTES",
+      "HAX": "BAR_STALE_OVER_5_MINUTES",
+      "HCD": "BAR_STALE_OVER_5_MINUTES",
+      "HCM": "BAR_STALE_OVER_5_MINUTES",
+      "HDB": "BAR_STALE_OVER_5_MINUTES",
+      "HDC": "BAR_STALE_OVER_5_MINUTES",
+      "HDG": "BAR_STALE_OVER_5_MINUTES",
+      "HHP": "BAR_STALE_OVER_5_MINUTES",
+      "HHS": "BAR_STALE_OVER_5_MINUTES",
+      "HHV": "BAR_STALE_OVER_5_MINUTES",
+      "HID": "BAR_STALE_OVER_5_MINUTES",
+      "HII": "BAR_STALE_OVER_5_MINUTES",
+      "HMC": "BAR_STALE_OVER_5_MINUTES",
+      "HPA": "BAR_STALE_OVER_5_MINUTES",
+      "HPG": "BAR_STALE_OVER_5_MINUTES",
+      "HPX": "BAR_STALE_OVER_5_MINUTES",
+      "HQC": "BAR_STALE_OVER_5_MINUTES",
+      "HSG": "BAR_STALE_OVER_5_MINUTES",
+      "HSL": "BAR_STALE_OVER_5_MINUTES",
+      "HT1": "BAR_STALE_OVER_5_MINUTES",
+      "HTG": "BAR_STALE_OVER_5_MINUTES",
+      "HTN": "BAR_STALE_OVER_5_MINUTES",
+      "HUB": "BAR_STALE_OVER_5_MINUTES",
+      "HVH": "BAR_STALE_OVER_5_MINUTES",
+      "HVN": "BAR_STALE_OVER_5_MINUTES",
+      "IDI": "BAR_STALE_OVER_5_MINUTES",
+      "IJC": "BAR_STALE_OVER_5_MINUTES",
+      "IMP": "BAR_STALE_OVER_5_MINUTES",
+      "ITC": "BAR_STALE_OVER_5_MINUTES",
+      "ITD": "BAR_STALE_OVER_5_MINUTES",
+      "JVC": "BAR_STALE_OVER_5_MINUTES",
+      "KBC": "BAR_STALE_OVER_5_MINUTES",
+      "KDC": "BAR_STALE_OVER_5_MINUTES",
+      "KDH": "BAR_STALE_OVER_5_MINUTES",
+      "KHG": "BAR_STALE_OVER_5_MINUTES",
+      "KLB": "BAR_STALE_OVER_5_MINUTES",
+      "KMR": "BAR_STALE_OVER_5_MINUTES",
+      "KOS": "BAR_STALE_OVER_5_MINUTES",
+      "KSB": "BAR_STALE_OVER_5_MINUTES",
+      "LBM": "BAR_STALE_OVER_5_MINUTES",
+      "LCG": "BAR_STALE_OVER_5_MINUTES",
+      "LDG": "BAR_STALE_OVER_5_MINUTES",
+      "LGL": "BAR_STALE_OVER_5_MINUTES",
+      "LHG": "BAR_STALE_OVER_5_MINUTES",
+      "LIX": "BAR_STALE_OVER_5_MINUTES",
+      "LPB": "BAR_STALE_OVER_5_MINUTES",
+      "LPS": "BAR_STALE_OVER_5_MINUTES",
+      "LSS": "BAR_STALE_OVER_5_MINUTES",
+      "MBB": "BAR_STALE_OVER_5_MINUTES",
+      "MCH": "BAR_STALE_OVER_5_MINUTES",
+      "MCP": "BAR_STALE_OVER_5_MINUTES",
+      "MDG": "BAR_STALE_OVER_5_MINUTES",
+      "MHC": "BAR_STALE_OVER_5_MINUTES",
+      "MIG": "BAR_STALE_OVER_5_MINUTES",
+      "MSB": "BAR_STALE_OVER_5_MINUTES",
+      "MSH": "BAR_STALE_OVER_5_MINUTES",
+      "MSN": "BAR_STALE_OVER_5_MINUTES",
+      "MWG": "BAR_STALE_OVER_5_MINUTES",
+      "MZG": "BAR_STALE_OVER_5_MINUTES",
+      "NAB": "BAR_STALE_OVER_5_MINUTES",
+      "NAF": "BAR_STALE_OVER_5_MINUTES",
+      "NBB": "BAR_STALE_OVER_5_MINUTES",
+      "NCT": "BAR_STALE_OVER_5_MINUTES",
+      "NHA": "BAR_STALE_OVER_5_MINUTES",
+      "NHH": "BAR_STALE_OVER_5_MINUTES",
+      "NKG": "BAR_STALE_OVER_5_MINUTES",
+      "NLG": "BAR_STALE_OVER_5_MINUTES",
+      "NNC": "BAR_STALE_OVER_5_MINUTES",
+      "NO1": "BAR_STALE_OVER_5_MINUTES",
+      "NT2": "BAR_STALE_OVER_5_MINUTES",
+      "NTC": "BAR_STALE_OVER_5_MINUTES",
+      "NTL": "BAR_STALE_OVER_5_MINUTES",
+      "NVL": "BAR_STALE_OVER_5_MINUTES",
+      "OCB": "BAR_STALE_OVER_5_MINUTES",
+      "OGC": "BAR_STALE_OVER_5_MINUTES",
+      "OPC": "BAR_STALE_OVER_5_MINUTES",
+      "ORS": "BAR_STALE_OVER_5_MINUTES",
+      "PAC": "BAR_STALE_OVER_5_MINUTES",
+      "PAN": "BAR_STALE_OVER_5_MINUTES",
+      "PC1": "BAR_STALE_OVER_5_MINUTES",
+      "PDN": "BAR_STALE_OVER_5_MINUTES",
+      "PDR": "BAR_STALE_OVER_5_MINUTES",
+      "PDV": "BAR_STALE_OVER_5_MINUTES",
+      "PET": "BAR_STALE_OVER_5_MINUTES",
+      "PGC": "BAR_STALE_OVER_5_MINUTES",
+      "PGV": "BAR_STALE_OVER_5_MINUTES",
+      "PHC": "BAR_STALE_OVER_5_MINUTES",
+      "PHR": "BAR_STALE_OVER_5_MINUTES",
+      "PJT": "BAR_STALE_OVER_5_MINUTES",
+      "PLP": "BAR_STALE_OVER_5_MINUTES",
+      "PLX": "BAR_STALE_OVER_5_MINUTES",
+      "PNJ": "BAR_STALE_OVER_5_MINUTES",
+      "POW": "BAR_STALE_OVER_5_MINUTES",
+      "PPC": "BAR_STALE_OVER_5_MINUTES",
+      "PTB": "BAR_STALE_OVER_5_MINUTES",
+      "PTC": "BAR_STALE_OVER_5_MINUTES",
+      "PTL": "BAR_STALE_OVER_5_MINUTES",
+      "PVD": "BAR_STALE_OVER_5_MINUTES",
+      "PVP": "BAR_STALE_OVER_5_MINUTES",
+      "PVT": "BAR_STALE_OVER_5_MINUTES",
+      "QCG": "BAR_STALE_OVER_5_MINUTES",
+      "RAL": "BAR_STALE_OVER_5_MINUTES",
+      "REE": "BAR_STALE_OVER_5_MINUTES",
+      "RYG": "BAR_STALE_OVER_5_MINUTES",
+      "S4A": "BAR_STALE_OVER_5_MINUTES",
+      "SAB": "BAR_STALE_OVER_5_MINUTES",
+      "SAM": "BAR_STALE_OVER_5_MINUTES",
+      "SBG": "BAR_STALE_OVER_5_MINUTES",
+      "SBT": "BAR_STALE_OVER_5_MINUTES",
+      "SCR": "BAR_STALE_OVER_5_MINUTES",
+      "SCS": "BAR_STALE_OVER_5_MINUTES",
+      "SFG": "BAR_STALE_OVER_5_MINUTES",
+      "SGN": "BAR_STALE_OVER_5_MINUTES",
+      "SGR": "BAR_STALE_OVER_5_MINUTES",
+      "SGT": "BAR_STALE_OVER_5_MINUTES",
+      "SHB": "BAR_STALE_OVER_5_MINUTES",
+      "SHI": "BAR_STALE_OVER_5_MINUTES",
+      "SIP": "BAR_STALE_OVER_5_MINUTES",
+      "SJD": "BAR_STALE_OVER_5_MINUTES",
+      "SJS": "BAR_STALE_OVER_5_MINUTES",
+      "SKG": "BAR_STALE_OVER_5_MINUTES",
+      "SMB": "BAR_STALE_OVER_5_MINUTES",
+      "SRC": "BAR_STALE_OVER_5_MINUTES",
+      "SRF": "BAR_STALE_OVER_5_MINUTES",
+      "SSB": "BAR_STALE_OVER_5_MINUTES",
+      "SSI": "BAR_STALE_OVER_5_MINUTES",
+      "ST8": "BAR_STALE_OVER_5_MINUTES",
+      "STB": "BAR_STALE_OVER_5_MINUTES",
+      "STK": "BAR_STALE_OVER_5_MINUTES",
+      "SZC": "BAR_STALE_OVER_5_MINUTES",
+      "SZL": "BAR_STALE_OVER_5_MINUTES",
+      "TAL": "BAR_STALE_OVER_5_MINUTES",
+      "TBC": "BAR_STALE_OVER_5_MINUTES",
+      "TCB": "BAR_STALE_OVER_5_MINUTES",
+      "TCH": "BAR_STALE_OVER_5_MINUTES",
+      "TCI": "BAR_STALE_OVER_5_MINUTES",
+      "TCL": "BAR_STALE_OVER_5_MINUTES",
+      "TCM": "BAR_STALE_OVER_5_MINUTES",
+      "TCO": "BAR_STALE_OVER_5_MINUTES",
+      "TCX": "BAR_STALE_OVER_5_MINUTES",
+      "TDC": "BAR_STALE_OVER_5_MINUTES",
+      "TDH": "BAR_STALE_OVER_5_MINUTES",
+      "TDM": "BAR_STALE_OVER_5_MINUTES",
+      "TDP": "BAR_STALE_OVER_5_MINUTES",
+      "TEG": "BAR_STALE_OVER_5_MINUTES",
+      "THG": "BAR_STALE_OVER_5_MINUTES",
+      "TIP": "BAR_STALE_OVER_5_MINUTES",
+      "TLD": "BAR_STALE_OVER_5_MINUTES",
+      "TLG": "BAR_STALE_OVER_5_MINUTES",
+      "TLH": "BAR_STALE_OVER_5_MINUTES",
+      "TMP": "BAR_STALE_OVER_5_MINUTES",
+      "TNH": "BAR_STALE_OVER_5_MINUTES",
+      "TNI": "BAR_STALE_OVER_5_MINUTES",
+      "TNT": "BAR_STALE_OVER_5_MINUTES",
+      "TPB": "BAR_STALE_OVER_5_MINUTES",
+      "TRA": "BAR_STALE_OVER_5_MINUTES",
+      "TRC": "BAR_STALE_OVER_5_MINUTES",
+      "TSA": "BAR_STALE_OVER_5_MINUTES",
+      "TSC": "BAR_STALE_OVER_5_MINUTES",
+      "TTA": "BAR_STALE_OVER_5_MINUTES",
+      "TTF": "BAR_STALE_OVER_5_MINUTES",
+      "TV2": "BAR_STALE_OVER_5_MINUTES",
+      "TVB": "BAR_STALE_OVER_5_MINUTES",
+      "TVS": "BAR_STALE_OVER_5_MINUTES",
+      "TYA": "BAR_STALE_OVER_5_MINUTES",
+      "UIC": "BAR_STALE_OVER_5_MINUTES",
+      "VAB": "BAR_STALE_OVER_5_MINUTES",
+      "VBB": "BAR_STALE_OVER_5_MINUTES",
+      "VCB": "BAR_STALE_OVER_5_MINUTES",
+      "VCG": "BAR_STALE_OVER_5_MINUTES",
+      "VCI": "BAR_STALE_OVER_5_MINUTES",
+      "VCK": "BAR_STALE_OVER_5_MINUTES",
+      "VDS": "BAR_STALE_OVER_5_MINUTES",
+      "VGC": "BAR_STALE_OVER_5_MINUTES",
+      "VHC": "BAR_STALE_OVER_5_MINUTES",
+      "VHM": "BAR_STALE_OVER_5_MINUTES",
+      "VIB": "BAR_STALE_OVER_5_MINUTES",
+      "VIC": "BAR_STALE_OVER_5_MINUTES",
+      "VID": "BAR_STALE_OVER_5_MINUTES",
+      "VIP": "BAR_STALE_OVER_5_MINUTES",
+      "VIX": "BAR_STALE_OVER_5_MINUTES",
+      "VJC": "BAR_STALE_OVER_5_MINUTES",
+      "VMD": "BAR_STALE_OVER_5_MINUTES",
+      "VND": "BAR_STALE_OVER_5_MINUTES",
+      "VNL": "BAR_STALE_OVER_5_MINUTES",
+      "VNM": "BAR_STALE_OVER_5_MINUTES",
+      "VNS": "BAR_STALE_OVER_5_MINUTES",
+      "VOS": "BAR_STALE_OVER_5_MINUTES",
+      "VPB": "BAR_STALE_OVER_5_MINUTES",
+      "VPD": "BAR_STALE_OVER_5_MINUTES",
+      "VPG": "BAR_STALE_OVER_5_MINUTES",
+      "VPH": "BAR_STALE_OVER_5_MINUTES",
+      "VPI": "BAR_STALE_OVER_5_MINUTES",
+      "VPL": "BAR_STALE_OVER_5_MINUTES",
+      "VPS": "BAR_STALE_OVER_5_MINUTES",
+      "VPX": "BAR_STALE_OVER_5_MINUTES",
+      "VRC": "BAR_STALE_OVER_5_MINUTES",
+      "VRE": "BAR_STALE_OVER_5_MINUTES",
+      "VSC": "BAR_STALE_OVER_5_MINUTES",
+      "VSH": "BAR_STALE_OVER_5_MINUTES",
+      "VTO": "BAR_STALE_OVER_5_MINUTES",
+      "VVS": "BAR_STALE_OVER_5_MINUTES",
+      "YBM": "BAR_STALE_OVER_5_MINUTES",
+      "YEG": "BAR_STALE_OVER_5_MINUTES",
+      "VNINDEX": "BAR_STALE_OVER_5_MINUTES"
+    },
+    "freshness_seconds": 300,
+    "basis_vs_eod": "NOT_COMPARED; KBS provider-native intraday quote is display-only unless an explicit per-symbol conversion receipt is supplied"
+  },
   "latest_live_snapshot": {
-    "file": "live_snapshots\\live_20261014T100130+0700.csv",
-    "bytes": 13382,
-    "sha256": "e4756d5763991fc1398bcf25bd05211134e21095ace0df1172c5ef4c71741e01"
+    "file": "live_snapshots\\live_20261014T103029+0700.csv",
+    "bytes": 68993,
+    "sha256": "505fa9b4e3013c008573df54ca51e536187ddc812f5bb622ff68b580b20b049f"
   }
 }
