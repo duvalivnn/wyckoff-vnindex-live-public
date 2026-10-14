@@ -1,21 +1,62 @@
 {
   "job": "ca_scan",
   "schema_version": "corporate_actions.daily.v1",
-  "scan_date": "2026-10-13",
+  "scan_date": "2026-10-14",
   "week_start": "2026-10-12",
   "week_end": "2026-10-18",
-  "generated_at_utc": "2026-10-13T10:29:28.127860+00:00",
+  "generated_at_utc": "2026-10-14T10:00:07.950497+00:00",
   "provider": {
     "adapter": "VIETSTOCK_FIRST_PARTY_HOSE_EVENT_CALENDAR_V1",
     "source": "https://finance.vietstock.vn/lich-su-kien.htm"
   },
-  "source_weekly_receipt": "corporate_actions\\weekly\\2026-10-12_2026-10-18_20261013T102927359172Z.json",
-  "source_weekly_sha256": "4c63a51a58d938e80e30a8fcf11130b7dc04fa795d402c262e5f233491dd1368",
+  "source_weekly_receipt": "corporate_actions\\weekly\\2026-10-12_2026-10-18_20261014T100006991284Z.json",
+  "source_weekly_sha256": "465f5edf145c1566d3aab2e4918ca5fc7bfada715c6fdfa08b2155e315ffdb33",
   "weekly_fallback_after_transient_failure": null,
-  "events": [],
-  "ca_symbols": [],
+  "events": [
+    {
+      "symbol": "MZG",
+      "exchange": "HOSE",
+      "event_type": "Phát hành thêm",
+      "ex_date": "2026-10-14",
+      "record_date": "2026-10-15",
+      "payment_date": null,
+      "cash_dividend": "10,000",
+      "stock_dividend_ratio": "4.272:1",
+      "raw_description": "Thực hiện quyền mua cổ phiếu phát hành thêm, tỷ lệ 4.272:1, giá 10,000 đồng/CP",
+      "source_event_type": "Phát hành thêm"
+    },
+    {
+      "symbol": "DRL",
+      "exchange": "HOSE",
+      "event_type": "Trả cổ tức bằng tiền mặt",
+      "ex_date": "2026-10-14",
+      "record_date": "2026-10-15",
+      "payment_date": "2026-10-28",
+      "cash_dividend": "1,500",
+      "stock_dividend_ratio": null,
+      "raw_description": "Trả cổ tức đợt 1/2026 bằng tiền, 1,500 đồng/CP",
+      "source_event_type": "Trả cổ tức bằng tiền mặt"
+    },
+    {
+      "symbol": "TBC",
+      "exchange": "HOSE",
+      "event_type": "Trả cổ tức bằng tiền mặt",
+      "ex_date": "2026-10-14",
+      "record_date": "2026-10-15",
+      "payment_date": "2026-10-30",
+      "cash_dividend": "1,000",
+      "stock_dividend_ratio": null,
+      "raw_description": "Trả cổ tức đợt 1/2026 bằng tiền, 1,000 đồng/CP",
+      "source_event_type": "Trả cổ tức bằng tiền mặt"
+    }
+  ],
+  "ca_symbols": [
+    "DRL",
+    "MZG",
+    "TBC"
+  ],
   "rebase_symbols": [],
-  "rebase_gate_status": "PASS_NO_CA",
+  "rebase_gate_status": "PASS",
   "promotion_effect": "NONE",
   "integrity": {
     "source_verified": true,
@@ -27,34 +68,12 @@
   },
   "status": "CERTIFIED",
   "reason": "Vietstock weekly evidence resolved for the session date.",
-  "receipt": "corporate_actions\\daily\\2026-10-13_20261013T102928127860Z.json",
-  "publisher_generation_id": "r33-2026-10-13-5a5d20d3bd698e79",
-  "current_canonical_hashes": {
-    "stock_daily_ohlcv.csv": {
-      "bytes": 26389662,
-      "sha256": "88d736c640416a4eaae0f1a2a9497eb776ac6c78b7b0643d6db91de6961e51d8"
-    },
-    "stock_weekly_ohlcv.csv": {
-      "bytes": 9831912,
-      "sha256": "5bd2a4779f5be8dc2b0ec0eb4a802f1860b480450eb71a9bef38cd7d2c380259"
-    },
-    "index_daily_ohlcv.csv": {
-      "bytes": 186963,
-      "sha256": "9418f247e91525b0df54f1b4187bb15391fbc8366cf667733804edd67717e30c"
-    },
-    "index_weekly_ohlcv.csv": {
-      "bytes": 60359,
-      "sha256": "19dd88951aa20954422b9bdd72f16cf96bb703b873429cd23cbae020bfc14c4e"
-    }
-  },
-  "current_static_refresh": {
-    "status": "PASS",
-    "canonical_latest_date": "2026-10-13",
-    "replacement_semantics": "replace_only_window_preserve_outside_window"
-  },
-  "source_ca_receipt": "corporate_actions\\daily\\2026-10-13_20261013T102928127860Z.json",
+  "receipt": "corporate_actions\\daily\\2026-10-14_20261014T100007950497Z.json",
   "ca_basis_status": "RESOLVED_BY_EOD_FULL_HISTORY_RELOAD",
+  "rebase_receipt": "rebase_receipts\\2026-10-14_20261014T100016150536Z_fff2dd67.json",
+  "publisher_generation_id": "r33-2026-10-14-858dd4ead1fd9161",
+  "source_ca_receipt": "corporate_actions\\daily\\2026-10-14_20261014T100007950497Z.json",
   "resolution_scope": "SYMBOL_SCOPED",
   "resolution_source": "EOD_REBASE_RECEIPT",
-  "resolved_at_utc": "2026-10-13T12:17:49.887688+00:00"
+  "resolved_at_utc": "2026-10-14T10:13:18.684847+00:00"
 }
