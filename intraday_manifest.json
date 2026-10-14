@@ -1,16 +1,15 @@
 {
   "schema_version": "intraday_manifest.v1",
-  "publisher_generation_id": "r33-2026-10-13-5a5d20d3bd698e79",
-  "path": "MARKET_CLOSED_FINAL_SNAPSHOT",
-  "session_mode": "MARKET_CLOSED",
-  "overlay_mode": "STATUS_ONLY",
-  "trading_date": "2026-10-13",
+  "publisher_generation_id": "r33-2026-10-13-ebc20b31af836578",
+  "path": "FAST_INTRADAY",
+  "session_mode": "INTRADAY_OVERLAY",
+  "overlay_mode": "INTRADAY_OVERLAY",
+  "trading_date": "2026-10-14",
   "source_latest_date": "2026-10-13",
-  "generated_at_utc": "2026-10-13T12:05:48.213161+00:00",
-  "last_snapshot_generated_at_utc": "2026-10-13T07:19:13.070967+00:00",
+  "generated_at_utc": "2026-10-14T02:34:34.509027+00:00",
   "canonical_snapshot_updated": false,
-  "rows_written": 356,
-  "symbols_with_rows": 356,
+  "rows_written": 248,
+  "symbols_with_rows": 248,
   "provider_capability": {
     "provider": "KBS",
     "daily_ohlcv": true,
@@ -18,221 +17,652 @@
     "status": "AVAILABLE",
     "mode": "kbs_history_5m"
   },
-  "snapshot_semantics": "final same-session KBS intraday snapshot; historical reference after market close",
-  "source_snapshot": "intraday_latest.csv",
-  "source_snapshot_sha256": "4b713787dfc26e451f5d15a333c729c939e35312dbc823ed99d43ea2738b95f9",
+  "snapshot_semantics": "latest current-session KBS 5-minute OHLCV bar only",
+  "source_snapshot": "live_snapshots\\live_20261014T093434+0700.csv",
+  "source_snapshot_sha256": "a6ab7f0154fc393c9ebd5ee6650cfefb175660c263f4a8cc3addd0ace175c5b8",
   "errors": [
     {
+      "symbol": "AAA",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x24292e93b00 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "AAM",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x24293239f10 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "AAT",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x24294327bf0 state=finished raised ValueError>]"
+    },
+    {
       "symbol": "ABR",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x21b37dbbd10 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x242943eefc0 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "ABT",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x242942e18b0 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "ACG",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x242944bc7d0 state=finished raised ValueError>]"
     },
     {
       "symbol": "ACL",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x21b37cf0e60 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x2429434e1e0 state=finished raised ValueError>]"
     },
     {
       "symbol": "ADG",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x21b37dbaf00 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x24292f60ad0 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "ADP",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x24294463e60 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "ADS",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x242944bf080 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "ANT",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x242944bf560 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "ASG",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x242944bc260 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "AST",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x24293043bf0 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "BHN",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x242943a31d0 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "BMI",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x242944bcdd0 state=finished raised ValueError>]"
     },
     {
       "symbol": "BRC",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x21b37e0a240 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x242943a27e0 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "BTP",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x242945199a0 state=finished raised ValueError>]"
     },
     {
       "symbol": "BTT",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x21b37e0aba0 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x24293255310 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "C32",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x242944be630 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "C47",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x2429451bda0 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "CCC",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x24294519760 state=finished raised ValueError>]"
     },
     {
       "symbol": "CCI",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x21b369b91f0 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x24294519640 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "CHP",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x2429308b320 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "CIG",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x242943a3080 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "CKG",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x242943eecf0 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "CLC",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x24294519c70 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "CLL",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x242944bef30 state=finished raised ValueError>]"
     },
     {
       "symbol": "CLW",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x21b37e08500 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x2429451a600 state=finished raised ValueError>]"
     },
     {
       "symbol": "CMV",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x21b37e2f1a0 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x242ff88fdd0 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "CMX",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x24291ccc9b0 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "CNG",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x24291ccd100 state=finished raised ValueError>]"
     },
     {
       "symbol": "COM",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x21b355dd3a0 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x24292216ba0 state=finished raised ValueError>]"
     },
     {
       "symbol": "CRV",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x21b37e0ab40 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x242943eefc0 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "CSM",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x2429451ac90 state=finished raised ValueError>]"
     },
     {
       "symbol": "CVT",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x21b37dbbc50 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x2429308b320 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "D2D",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x2429308b320 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "DAH",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x242944bdbb0 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "DAT",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x242943ef2f0 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "DBD",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x242944bcda0 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "DBT",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x242944bf350 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "DHG",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x242944beae0 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "DHM",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x242942e0440 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "DMC",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x24291ccd3a0 state=finished raised ValueError>]"
     },
     {
       "symbol": "DQC",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x21b37e9e1b0 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x242921dc650 state=finished raised ValueError>]"
     },
     {
       "symbol": "DRH",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x21b369b91f0 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x242943a2de0 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "DSC",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x24291ccd3a0 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "DSN",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x242930298e0 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "DTA",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x242943a27e0 state=finished raised ValueError>]"
     },
     {
       "symbol": "DTL",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x21b37e08ec0 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x24294463470 state=finished raised ValueError>]"
     },
     {
       "symbol": "DTT",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x21b37e08aa0 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x24294519550 state=finished raised ValueError>]"
     },
     {
       "symbol": "DXV",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x21b37e08ec0 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x242930298e0 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "ECO",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x242921dc650 state=finished raised ValueError>]"
     },
     {
       "symbol": "FDC",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x21b37b548c0 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x24291ccd3a0 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "FIR",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x242944bf530 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "FMC",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x24294518a40 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "GDT",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x2429453c590 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "GHC",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x24294519d30 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "GIL",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x2429453dd90 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "GMH",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x24293043bc0 state=finished raised ValueError>]"
     },
     {
       "symbol": "GTA",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x21b37e504d0 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x2429451b8f0 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "HAR",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x2429453e510 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "HAS",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x242944bdc10 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "HCD",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x24292217050 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "HNA",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x242945192e0 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "HRC",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x2429453ee10 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "HTG",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x242943a2ed0 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "HTI",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x242942b4e60 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "HTL",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x242921dc650 state=finished raised ValueError>]"
     },
     {
       "symbol": "HTV",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x21b37f0be60 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x24294518440 state=finished raised ValueError>]"
     },
     {
       "symbol": "HU1",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x21b37d236b0 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x24294694470 state=finished raised ValueError>]"
     },
     {
-      "symbol": "HUB",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x21b37e2cfe0 state=finished raised ValueError>]"
+      "symbol": "ICT",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x2429451be30 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "ILB",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x242932724b0 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "IMP",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x24293043bc0 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "ITC",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x242932724b0 state=finished raised ValueError>]"
     },
     {
       "symbol": "ITD",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x21b37e08ce0 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x24291cad400 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "KDC",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x2429457bf50 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "KHP",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x2429453df40 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "KMR",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x24291cccb30 state=finished raised ValueError>]"
     },
     {
       "symbol": "L10",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x21b37effaa0 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x2429453e480 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "LAF",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x24293043bc0 state=finished raised ValueError>]"
     },
     {
       "symbol": "LGC",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x21b37e2e1e0 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x242945961e0 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "LHG",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x2429453eab0 state=finished raised ValueError>]"
     },
     {
       "symbol": "LM8",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x21b35b82b40 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x2429457a090 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "LSS",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x24294696cf0 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "MCM",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x242943a2f30 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "NAV",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x24294519220 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "NBB",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x242946b9b20 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "NHT",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x242921dc650 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "NO1",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x242943a2de0 state=finished raised ValueError>]"
     },
     {
       "symbol": "NSC",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x21b37ef2240 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x242944bcc80 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "NVT",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x242944bf9b0 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "OPC",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x242943ef950 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "PAC",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x24294595a30 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "PDN",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x242945785c0 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "PDV",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x242945795e0 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "PGC",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x2429434e630 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "PGD",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x24294695a00 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "PGI",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x2429453e7e0 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "PIT",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x24294694140 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "PJT",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x242932559a0 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "PLP",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x24294697980 state=finished raised ValueError>]"
     },
     {
       "symbol": "PMG",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x21b37ef0260 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x242944bfc20 state=finished raised ValueError>]"
     },
     {
       "symbol": "PNC",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x21b37cd22d0 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x24294595190 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "PTL",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x242945960f0 state=finished raised ValueError>]"
     },
     {
       "symbol": "QNP",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x21b37efec00 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x24293043bc0 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "RYG",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x242946b8470 state=finished raised ValueError>]"
     },
     {
       "symbol": "S4A",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x21b37e52360 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x242946b9be0 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "SAM",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x24294697140 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "SAV",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x242945784a0 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "SBA",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x24294597e00 state=finished raised ValueError>]"
     },
     {
       "symbol": "SBV",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x21b37dbb980 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x2429453d580 state=finished raised ValueError>]"
     },
     {
       "symbol": "SC5",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x21b37e539e0 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x24294463b90 state=finished raised ValueError>]"
     },
     {
       "symbol": "SFC",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x21b37fe0260 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x242946f40b0 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "SFG",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x242946f40e0 state=finished raised ValueError>]"
     },
     {
       "symbol": "SFI",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x21b36976270 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x2429317f410 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "SGN",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x24294327b90 state=finished raised ValueError>]"
     },
     {
       "symbol": "SHA",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x21b37f604a0 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x242946b9eb0 state=finished raised ValueError>]"
     },
     {
       "symbol": "SHP",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x21b35b82b40 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x24292f612b0 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "SJS",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x2429453cfe0 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "SKG",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x24294463e30 state=finished raised ValueError>]"
     },
     {
       "symbol": "SMA",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x21b37e09b80 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x2429453cfe0 state=finished raised ValueError>]"
     },
     {
-      "symbol": "SMB",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x21b37e9e5a0 state=finished raised ValueError>]"
+      "symbol": "SMC",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x2429453cb30 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "SPM",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x2429451a2d0 state=finished raised ValueError>]"
     },
     {
       "symbol": "SRC",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x21b37e9e5a0 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x24294579c70 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "SRF",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x24292f612b0 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "SSC",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x2429457aea0 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "STG",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x24294695a00 state=finished raised ValueError>]"
     },
     {
       "symbol": "SVC",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x21b37f99760 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x24294518ce0 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "SVD",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x242943a2f90 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "SVT",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x242943a2f90 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "TCR",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x24294578770 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "TCT",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x2429453d280 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "TDC",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x24294712f00 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "TDG",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x2429451aab0 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "TDM",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x24291cccb30 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "TDP",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x24291cccb30 state=finished raised ValueError>]"
     },
     {
       "symbol": "TDW",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x21b37f62f60 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x242944bcda0 state=finished raised ValueError>]"
     },
     {
       "symbol": "TIX",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x21b37f09640 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x24294712330 state=finished raised ValueError>]"
     },
     {
-      "symbol": "TMP",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x21b37e0bef0 state=finished raised ValueError>]"
+      "symbol": "TLD",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x24294713170 state=finished raised ValueError>]"
     },
     {
       "symbol": "TMS",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x21b37e0bef0 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x242944bf440 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "TMT",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x2429453e090 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "TN1",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x242945952b0 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "TNC",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x24291dd93d0 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "TPC",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x242931d7a70 state=finished raised ValueError>]"
     },
     {
       "symbol": "TTE",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x21b37fb75f0 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x242946baf90 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "TVB",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x242931d7a70 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "TVT",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x242942e1880 state=finished raised ValueError>]"
     },
     {
       "symbol": "TYA",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x21b37b9bbf0 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x24293043bc0 state=finished raised ValueError>]"
     },
     {
-      "symbol": "UIC",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x21b36a940e0 state=finished raised ValueError>]"
+      "symbol": "VBB",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x242943ef140 state=finished raised ValueError>]"
     },
     {
       "symbol": "VCA",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x21b37f63bc0 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x242946bb7d0 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "VCF",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x242946f7da0 state=finished raised ValueError>]"
     },
     {
       "symbol": "VDP",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x21b37be48f0 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x2429457be60 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "VFG",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x242943c2150 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "VMD",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x242946bad50 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "VNG",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x242946b9ac0 state=finished raised ValueError>]"
     },
     {
       "symbol": "VNL",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x21b37fb46b0 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x242946f4890 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "VNS",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x24294745c10 state=finished raised ValueError>]"
+    },
+    {
+      "symbol": "VPD",
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x24293162030 state=finished raised ValueError>]"
     },
     {
       "symbol": "VSI",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x21b37ebc380 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x242ffda53d0 state=finished raised ValueError>]"
     },
     {
       "symbol": "VTB",
-      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x21b37ef0590 state=finished raised ValueError>]"
+      "error": "KBS_FETCH_FAILED:RetryError:RetryError[<Future at 0x24294578fe0 state=finished raised ValueError>]"
     }
   ],
   "result": "PASS",
-  "contract_status": "MARKET_CLOSED",
-  "overlay_allowed": false,
-  "overlay_reason": "MARKET_CLOSED_COMPLETED_EOD_PUBLISHED"
+  "contract_status": "OVERLAY_ALLOWED",
+  "overlay_allowed": true
 }
