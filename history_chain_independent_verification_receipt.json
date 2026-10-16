@@ -1,20 +1,20 @@
 {
   "schema_version": "history_chain_independent_verification_receipt.v1",
   "status": "PASS",
-  "generated_at_utc": "2026-10-16T07:31:59.099306+00:00",
+  "generated_at_utc": "2026-10-16T09:16:15.964841+00:00",
   "verifier": {
     "name": "independent_history_verifier",
-    "version": "history-chunk-verifier.v1",
+    "version": "history-chunk-and-index-verifier.v2",
     "raw_bytes_read": true,
     "independent_of_publisher_manifest": true,
     "independent_of_binding_receipt": true
   },
   "authority": {
-    "pointer_commit": "b58ed9871433c6cf4cc858b5b9c03d8d782aadc1",
-    "payload_commit": "5a47717c3bd5a622b298ea0f8c241376f36d52df",
-    "manifest_sha256": "70c69be498aa25306a518d5ec1f215836eb8e96b7ce028a4a9c11b43134855b3",
-    "chunk_manifest_sha256": "aa2b4ef63cb4f356633424241cd1808dc2db43cbb6471baa3cf0adf958c58f7d",
-    "chunk_binding_receipt_sha256": "6c66984a0356254909f6d9bc609804fac41d96342f2fed1f042bf9577f30d1d6",
+    "pointer_commit": "1f279c0cedcb90e10b949114ca68f1225f5ed133",
+    "payload_commit": "fa3a5d652fe83b6fe14370038a48e2c04d9b67be",
+    "manifest_sha256": "c27781ba1e736f709853447a74155fd2f593505a7201e80d9b75f9c0a3fa1e9b",
+    "chunk_manifest_sha256": "ab0e91f2e1f763b7e5243286e288e099d347f10e674787489997f04f1498130c",
+    "chunk_binding_receipt_sha256": "dff69a31caad9c667dfa3f578750b36e45f1a707e9843ebc734b6e06185e3648",
     "publisher_generation": "r33-2026-10-15-53ec80a5f88129e6"
   },
   "scope": {
@@ -18348,5 +18348,90 @@
     }
   },
   "requested_audit_chunks": {},
+  "index_history": {
+    "schema_version": "independent_index_history.v1",
+    "status": "PASS",
+    "cutoff": "2026-10-15",
+    "files": {
+      "index_daily_ohlcv.csv": {
+        "bytes": 187224,
+        "sha256": "5e95788173f6cdbfa2690d0d5ccef5519628c08e75be355d2b0a2665adb3b4d8",
+        "rows": 2876,
+        "header": [
+          "date",
+          "symbol",
+          "open",
+          "high",
+          "low",
+          "close",
+          "volume",
+          "is_provisional"
+        ]
+      },
+      "index_weekly_ohlcv.csv": {
+        "bytes": 60360,
+        "sha256": "64d88f587b2a8d5ec9d1a4de5f2fba0ce163b9821abb8ea8a74b84cde29b1ea0",
+        "rows": 598,
+        "header": [
+          "symbol",
+          "week_period",
+          "week_start",
+          "week_end",
+          "open",
+          "high",
+          "low",
+          "close",
+          "volume",
+          "trading_days",
+          "is_partial_week"
+        ]
+      }
+    },
+    "symbols": {
+      "VNINDEX": {
+        "daily_rows": 1437,
+        "daily_start": "2021-01-04",
+        "daily_end": "2026-10-15",
+        "weekly_rows": 299,
+        "completed_weekly_rows": 298,
+        "partial_weekly_rows": 1,
+        "weekly_start": "2021-01-04",
+        "completed_weekly_end": "2026-10-09",
+        "daily_weekly_matched": 299,
+        "dates_absent_relative_to_other_index": [
+          "2021-12-10",
+          "2023-05-15"
+        ]
+      },
+      "VN30": {
+        "daily_rows": 1439,
+        "daily_start": "2021-01-04",
+        "daily_end": "2026-10-15",
+        "weekly_rows": 299,
+        "completed_weekly_rows": 298,
+        "partial_weekly_rows": 1,
+        "weekly_start": "2021-01-04",
+        "completed_weekly_end": "2026-10-09",
+        "daily_weekly_matched": 299,
+        "dates_absent_relative_to_other_index": []
+      }
+    },
+    "checks": {
+      "sha256": "PASS",
+      "bytes": "PASS",
+      "header": "PASS",
+      "row_count": "PASS",
+      "date_key": "PASS",
+      "duplicate_key": "PASS",
+      "ohlcv": "PASS",
+      "accepted_eod_binding": "PASS",
+      "daily_weekly": "PASS",
+      "bridge_overlap": "PASS",
+      "completed_partial_separation": "PASS"
+    },
+    "coverage_scope": "ALL_PUBLISHED_CANONICAL_ROWS; EXCHANGE_CALENDAR_COMPLETENESS_NOT_CERTIFIED",
+    "volume_semantics": "NOT_CERTIFIED",
+    "market_data_mutation": "NONE"
+  },
   "market_data_mutation": "NONE"
 }
