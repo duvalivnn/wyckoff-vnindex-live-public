@@ -1,16 +1,507 @@
 {
   "schema_version": "intraday_manifest.v1",
-  "publisher_generation_id": "r33-2026-10-15-53ec80a5f88129e6",
-  "path": "MARKET_CLOSED_FINAL_SNAPSHOT",
-  "session_mode": "MARKET_CLOSED",
-  "overlay_mode": "STATUS_ONLY",
-  "trading_date": "2026-10-15",
+  "publisher_generation_id": "r33-2026-10-15-a97af9591925307b",
+  "path": "FAST_INTRADAY",
+  "session_mode": "INTRADAY_OVERLAY",
+  "overlay_mode": "PER_SYMBOL_PARTIAL",
+  "trading_date": "2026-10-16",
   "source_latest_date": "2026-10-15",
-  "generated_at_utc": "2026-10-15T10:10:22.283350+00:00",
-  "last_snapshot_generated_at_utc": "2026-10-15T07:30:07.477621+00:00",
+  "base_eod_date": "2026-10-15",
+  "base_eod_generation": "r33-2026-10-15-53ec80a5f88129e6",
+  "eod_reference_sha256": "e29d7a7607d0957766f8aeba7b6b424310ce375aa4efc66fdaaab3b8fece7312",
+  "intraday_generation": "intraday-20261016T091515+0700",
+  "generated_at_utc": "2026-10-16T02:15:15.966125+00:00",
   "canonical_snapshot_updated": false,
-  "rows_written": 365,
-  "symbols_with_rows": 365,
+  "rows_written": 156,
+  "symbols_with_rows": 156,
+  "live_eligibility": {
+    "status": "OVERLAY_ALLOWED",
+    "overlay_allowed": true,
+    "eligible_rows": 156,
+    "eligible_symbols": [
+      "AAA",
+      "AAT",
+      "ABS",
+      "ACB",
+      "AFX",
+      "ANV",
+      "APH",
+      "ASP",
+      "BAF",
+      "BCE",
+      "BCM",
+      "BIC",
+      "BID",
+      "BKG",
+      "BSI",
+      "BSR",
+      "BVH",
+      "CCL",
+      "CII",
+      "CMG",
+      "CRE",
+      "CSV",
+      "CTD",
+      "CTF",
+      "CTG",
+      "CTI",
+      "CTR",
+      "CTS",
+      "DAH",
+      "DBC",
+      "DBD",
+      "DCL",
+      "DCM",
+      "DGC",
+      "DGW",
+      "DHC",
+      "DHG",
+      "DIG",
+      "DPG",
+      "DPM",
+      "DPR",
+      "DXG",
+      "DXS",
+      "EIB",
+      "ELC",
+      "EVF",
+      "FCN",
+      "FPT",
+      "FRT",
+      "FTS",
+      "GAS",
+      "GEE",
+      "GEL",
+      "GSP",
+      "GVR",
+      "HAH",
+      "HCD",
+      "HCM",
+      "HDB",
+      "HDC",
+      "HDG",
+      "HHS",
+      "HID",
+      "HII",
+      "HMC",
+      "HPG",
+      "HPX",
+      "HQC",
+      "HSG",
+      "HT1",
+      "HTG",
+      "HVH",
+      "HVN",
+      "IDI",
+      "IJC",
+      "JVC",
+      "KBC",
+      "KDH",
+      "L10",
+      "LPB",
+      "MBB",
+      "MCH",
+      "MCP",
+      "MSN",
+      "NAB",
+      "NAF",
+      "NHA",
+      "NHT",
+      "NKG",
+      "NLG",
+      "NNC",
+      "NT2",
+      "NTL",
+      "NVL",
+      "OCB",
+      "OGC",
+      "PAN",
+      "PC1",
+      "PDN",
+      "PDR",
+      "PHR",
+      "PJT",
+      "PLP",
+      "PNJ",
+      "POW",
+      "PTB",
+      "PVD",
+      "PVP",
+      "PVT",
+      "REE",
+      "SAB",
+      "SAM",
+      "SGN",
+      "SGT",
+      "SHB",
+      "SJD",
+      "SSB",
+      "SSI",
+      "SVT",
+      "SZC",
+      "TCB",
+      "TCH",
+      "TCM",
+      "TEG",
+      "THG",
+      "TLD",
+      "TNH",
+      "TPB",
+      "TRA",
+      "TRC",
+      "TSC",
+      "TTA",
+      "TTF",
+      "TV2",
+      "VBB",
+      "VCB",
+      "VCG",
+      "VCI",
+      "VDS",
+      "VGC",
+      "VHM",
+      "VIB",
+      "VIC",
+      "VIP",
+      "VIX",
+      "VJC",
+      "VN30",
+      "VND",
+      "VNM",
+      "VPB",
+      "VPG",
+      "VPI",
+      "VPX",
+      "VSC",
+      "VTO",
+      "YEG"
+    ],
+    "unavailable_symbols": [],
+    "symbol_status": {
+      "HMC": "LIVE_AVAILABLE",
+      "MCP": "LIVE_AVAILABLE",
+      "HTG": "LIVE_AVAILABLE",
+      "DCL": "LIVE_AVAILABLE",
+      "GSP": "LIVE_AVAILABLE",
+      "DAH": "LIVE_AVAILABLE",
+      "PDN": "LIVE_AVAILABLE",
+      "PJT": "LIVE_AVAILABLE",
+      "HCD": "LIVE_AVAILABLE",
+      "SAM": "LIVE_AVAILABLE",
+      "VIP": "LIVE_AVAILABLE",
+      "BCE": "LIVE_AVAILABLE",
+      "THG": "LIVE_AVAILABLE",
+      "SJD": "LIVE_AVAILABLE",
+      "NHT": "LIVE_AVAILABLE",
+      "APH": "LIVE_AVAILABLE",
+      "CRE": "LIVE_AVAILABLE",
+      "PTB": "LIVE_AVAILABLE",
+      "SVT": "LIVE_AVAILABLE",
+      "PHR": "LIVE_AVAILABLE",
+      "DPR": "LIVE_AVAILABLE",
+      "GEL": "LIVE_AVAILABLE",
+      "CCL": "LIVE_AVAILABLE",
+      "TLD": "LIVE_AVAILABLE",
+      "L10": "LIVE_AVAILABLE",
+      "IDI": "LIVE_AVAILABLE",
+      "CTI": "LIVE_AVAILABLE",
+      "TRA": "LIVE_AVAILABLE",
+      "TNH": "LIVE_AVAILABLE",
+      "BIC": "LIVE_AVAILABLE",
+      "HVH": "LIVE_AVAILABLE",
+      "TEG": "LIVE_AVAILABLE",
+      "SGT": "LIVE_AVAILABLE",
+      "VBB": "LIVE_AVAILABLE",
+      "NNC": "LIVE_AVAILABLE",
+      "VPG": "LIVE_AVAILABLE",
+      "TSC": "LIVE_AVAILABLE",
+      "ASP": "LIVE_AVAILABLE",
+      "TTA": "LIVE_AVAILABLE",
+      "REE": "LIVE_AVAILABLE",
+      "PLP": "LIVE_AVAILABLE",
+      "CTR": "LIVE_AVAILABLE",
+      "SGN": "LIVE_AVAILABLE",
+      "AAT": "LIVE_AVAILABLE",
+      "HT1": "LIVE_AVAILABLE",
+      "HVN": "LIVE_AVAILABLE",
+      "TRC": "LIVE_AVAILABLE",
+      "DGW": "LIVE_AVAILABLE",
+      "OGC": "LIVE_AVAILABLE",
+      "EVF": "LIVE_AVAILABLE",
+      "NHA": "LIVE_AVAILABLE",
+      "ANV": "LIVE_AVAILABLE",
+      "CMG": "LIVE_AVAILABLE",
+      "PAN": "LIVE_AVAILABLE",
+      "HID": "LIVE_AVAILABLE",
+      "VPI": "LIVE_AVAILABLE",
+      "EIB": "LIVE_AVAILABLE",
+      "VTO": "LIVE_AVAILABLE",
+      "HSG": "LIVE_AVAILABLE",
+      "DPM": "LIVE_AVAILABLE",
+      "VCB": "LIVE_AVAILABLE",
+      "PC1": "LIVE_AVAILABLE",
+      "NAF": "LIVE_AVAILABLE",
+      "BKG": "LIVE_AVAILABLE",
+      "HCM": "LIVE_AVAILABLE",
+      "JVC": "LIVE_AVAILABLE",
+      "TTF": "LIVE_AVAILABLE",
+      "HQC": "LIVE_AVAILABLE",
+      "HDG": "LIVE_AVAILABLE",
+      "OCB": "LIVE_AVAILABLE",
+      "FCN": "LIVE_AVAILABLE",
+      "TCM": "LIVE_AVAILABLE",
+      "KBC": "LIVE_AVAILABLE",
+      "VDS": "LIVE_AVAILABLE",
+      "HPG": "LIVE_AVAILABLE",
+      "TV2": "LIVE_AVAILABLE",
+      "MSN": "LIVE_AVAILABLE",
+      "DIG": "LIVE_AVAILABLE",
+      "PDR": "LIVE_AVAILABLE",
+      "ELC": "LIVE_AVAILABLE",
+      "TPB": "LIVE_AVAILABLE",
+      "NAB": "LIVE_AVAILABLE",
+      "FRT": "LIVE_AVAILABLE",
+      "HDC": "LIVE_AVAILABLE",
+      "KDH": "LIVE_AVAILABLE",
+      "VNM": "LIVE_AVAILABLE",
+      "VND": "LIVE_AVAILABLE",
+      "ABS": "LIVE_AVAILABLE",
+      "HPX": "LIVE_AVAILABLE",
+      "YEG": "LIVE_AVAILABLE",
+      "CTS": "LIVE_AVAILABLE",
+      "NLG": "LIVE_AVAILABLE",
+      "VPX": "LIVE_AVAILABLE",
+      "VIB": "LIVE_AVAILABLE",
+      "DBD": "LIVE_AVAILABLE",
+      "BVH": "LIVE_AVAILABLE",
+      "HHS": "LIVE_AVAILABLE",
+      "DXG": "LIVE_AVAILABLE",
+      "NTL": "LIVE_AVAILABLE",
+      "MCH": "LIVE_AVAILABLE",
+      "NT2": "LIVE_AVAILABLE",
+      "VPB": "LIVE_AVAILABLE",
+      "VCI": "LIVE_AVAILABLE",
+      "SSI": "LIVE_AVAILABLE",
+      "CSV": "LIVE_AVAILABLE",
+      "DGC": "LIVE_AVAILABLE",
+      "CTF": "LIVE_AVAILABLE",
+      "BAF": "LIVE_AVAILABLE",
+      "FTS": "LIVE_AVAILABLE",
+      "LPB": "LIVE_AVAILABLE",
+      "PVD": "LIVE_AVAILABLE",
+      "DBC": "LIVE_AVAILABLE",
+      "PVP": "LIVE_AVAILABLE",
+      "POW": "LIVE_AVAILABLE",
+      "HAH": "LIVE_AVAILABLE",
+      "VGC": "LIVE_AVAILABLE",
+      "CII": "LIVE_AVAILABLE",
+      "NKG": "LIVE_AVAILABLE",
+      "AAA": "LIVE_AVAILABLE",
+      "CTG": "LIVE_AVAILABLE",
+      "VIC": "LIVE_AVAILABLE",
+      "BCM": "LIVE_AVAILABLE",
+      "SSB": "LIVE_AVAILABLE",
+      "BSR": "LIVE_AVAILABLE",
+      "DPG": "LIVE_AVAILABLE",
+      "ACB": "LIVE_AVAILABLE",
+      "PVT": "LIVE_AVAILABLE",
+      "VJC": "LIVE_AVAILABLE",
+      "FPT": "LIVE_AVAILABLE",
+      "GEE": "LIVE_AVAILABLE",
+      "IJC": "LIVE_AVAILABLE",
+      "AFX": "LIVE_AVAILABLE",
+      "VSC": "LIVE_AVAILABLE",
+      "VHM": "LIVE_AVAILABLE",
+      "NVL": "LIVE_AVAILABLE",
+      "HII": "LIVE_AVAILABLE",
+      "DCM": "LIVE_AVAILABLE",
+      "GAS": "LIVE_AVAILABLE",
+      "DXS": "LIVE_AVAILABLE",
+      "GVR": "LIVE_AVAILABLE",
+      "DHC": "LIVE_AVAILABLE",
+      "DHG": "LIVE_AVAILABLE",
+      "PNJ": "LIVE_AVAILABLE",
+      "VIX": "LIVE_AVAILABLE",
+      "BSI": "LIVE_AVAILABLE",
+      "CTD": "LIVE_AVAILABLE",
+      "MBB": "LIVE_AVAILABLE",
+      "TCH": "LIVE_AVAILABLE",
+      "TCB": "LIVE_AVAILABLE",
+      "HDB": "LIVE_AVAILABLE",
+      "SHB": "LIVE_AVAILABLE",
+      "VCG": "LIVE_AVAILABLE",
+      "SZC": "LIVE_AVAILABLE",
+      "SAB": "LIVE_AVAILABLE",
+      "BID": "LIVE_AVAILABLE",
+      "VN30": "LIVE_AVAILABLE"
+    },
+    "symbol_reasons": {},
+    "freshness_seconds": 900,
+    "basis_vs_eod": "NOT_COMPARED; KBS provider-native quote is display-only unless an explicit per-symbol conversion receipt is supplied"
+  },
+  "eligible_symbols": [
+    "AAA",
+    "AAT",
+    "ABS",
+    "ACB",
+    "AFX",
+    "ANV",
+    "APH",
+    "ASP",
+    "BAF",
+    "BCE",
+    "BCM",
+    "BIC",
+    "BID",
+    "BKG",
+    "BSI",
+    "BSR",
+    "BVH",
+    "CCL",
+    "CII",
+    "CMG",
+    "CRE",
+    "CSV",
+    "CTD",
+    "CTF",
+    "CTG",
+    "CTI",
+    "CTR",
+    "CTS",
+    "DAH",
+    "DBC",
+    "DBD",
+    "DCL",
+    "DCM",
+    "DGC",
+    "DGW",
+    "DHC",
+    "DHG",
+    "DIG",
+    "DPG",
+    "DPM",
+    "DPR",
+    "DXG",
+    "DXS",
+    "EIB",
+    "ELC",
+    "EVF",
+    "FCN",
+    "FPT",
+    "FRT",
+    "FTS",
+    "GAS",
+    "GEE",
+    "GEL",
+    "GSP",
+    "GVR",
+    "HAH",
+    "HCD",
+    "HCM",
+    "HDB",
+    "HDC",
+    "HDG",
+    "HHS",
+    "HID",
+    "HII",
+    "HMC",
+    "HPG",
+    "HPX",
+    "HQC",
+    "HSG",
+    "HT1",
+    "HTG",
+    "HVH",
+    "HVN",
+    "IDI",
+    "IJC",
+    "JVC",
+    "KBC",
+    "KDH",
+    "L10",
+    "LPB",
+    "MBB",
+    "MCH",
+    "MCP",
+    "MSN",
+    "NAB",
+    "NAF",
+    "NHA",
+    "NHT",
+    "NKG",
+    "NLG",
+    "NNC",
+    "NT2",
+    "NTL",
+    "NVL",
+    "OCB",
+    "OGC",
+    "PAN",
+    "PC1",
+    "PDN",
+    "PDR",
+    "PHR",
+    "PJT",
+    "PLP",
+    "PNJ",
+    "POW",
+    "PTB",
+    "PVD",
+    "PVP",
+    "PVT",
+    "REE",
+    "SAB",
+    "SAM",
+    "SGN",
+    "SGT",
+    "SHB",
+    "SJD",
+    "SSB",
+    "SSI",
+    "SVT",
+    "SZC",
+    "TCB",
+    "TCH",
+    "TCM",
+    "TEG",
+    "THG",
+    "TLD",
+    "TNH",
+    "TPB",
+    "TRA",
+    "TRC",
+    "TSC",
+    "TTA",
+    "TTF",
+    "TV2",
+    "VBB",
+    "VCB",
+    "VCG",
+    "VCI",
+    "VDS",
+    "VGC",
+    "VHM",
+    "VIB",
+    "VIC",
+    "VIP",
+    "VIX",
+    "VJC",
+    "VN30",
+    "VND",
+    "VNM",
+    "VPB",
+    "VPG",
+    "VPI",
+    "VPX",
+    "VSC",
+    "VTO",
+    "YEG"
+  ],
+  "unavailable_symbols": [],
+  "basis_vs_eod": "NOT_COMPARED; KBS provider-native quote is display-only unless an explicit per-symbol conversion receipt is supplied",
+  "quote_timestamp_semantics": "per-symbol provider timestamp from KBS equity quote board or latest KBS index 5m bar; generated_at_utc is collection time only",
+  "quote_snapshot_type": "KBS_EQUITY_QUOTE_BOARD_PLUS_INDEX_5M",
+  "alerts_overlay_allowed": false,
   "provider_capability": {
     "provider": "KBS",
     "daily_ohlcv": false,
@@ -20,12 +511,64 @@
     "status": "AVAILABLE",
     "mode": "kbs_stock_quote_board_plus_index_5m"
   },
-  "snapshot_semantics": "final same-session KBS intraday snapshot; historical reference after market close",
-  "source_snapshot": "intraday_latest.csv",
-  "source_snapshot_sha256": "5c6a89846522b270a45ed286d25f2d531d285fda397dde6d5eba82bd04e886c3",
+  "snapshot_semantics": "current KBS equity quote-board observation plus latest same-session KBS 5m index bar; provider timestamp retained per symbol",
+  "source_snapshot": "live_snapshots\\live_20261016T091515+0700.csv",
+  "source_snapshot_sha256": "cedfece7f61bc387b6d7d9495d702c078194e568e3ccde772f5c6be69b935c67",
   "errors": [
     {
+      "symbol": "AAM",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "AAN",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
       "symbol": "ABR",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "ABT",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "ACC",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "ACG",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "ACL",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "ADG",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "ADP",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "ADS",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "AGG",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "AGR",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "ANT",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "APG",
       "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     },
     {
@@ -33,11 +576,91 @@
       "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     },
     {
+      "symbol": "ASM",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "AST",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "BFC",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "BHN",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "BMC",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "BMI",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "BMP",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "BRC",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "BTP",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
       "symbol": "BTT",
       "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     },
     {
+      "symbol": "BVB",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "BWE",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "C32",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "C47",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "CCC",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
       "symbol": "CCI",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "CDC",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "CHP",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "CIG",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "CKG",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "CLC",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "CLL",
       "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     },
     {
@@ -49,7 +672,19 @@
       "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     },
     {
+      "symbol": "CMX",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "CNG",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
       "symbol": "COM",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "CRC",
       "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     },
     {
@@ -57,7 +692,15 @@
       "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     },
     {
+      "symbol": "CSM",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
       "symbol": "CVT",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "D2D",
       "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     },
     {
@@ -65,7 +708,67 @@
       "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     },
     {
+      "symbol": "DBT",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "DC4",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "DHA",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "DHM",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "DLG",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "DMC",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "DMX",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "DQC",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "DRC",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
       "symbol": "DRH",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "DRL",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "DSC",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "DSE",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "DSN",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "DTA",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "DTL",
       "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     },
     {
@@ -73,11 +776,67 @@
       "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     },
     {
+      "symbol": "DVP",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
       "symbol": "DXV",
       "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     },
     {
+      "symbol": "ECO",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "EVE",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "EVG",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "FCM",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
       "symbol": "FDC",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "FIR",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "FIT",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "FMC",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "GDT",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "GEG",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "GEX",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "GHC",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "GIL",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "GMD",
       "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     },
     {
@@ -89,7 +848,63 @@
       "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     },
     {
+      "symbol": "HAG",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "HAP",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "HAR",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "HAS",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "HAX",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "HHP",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "HHV",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
       "symbol": "HNA",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "HPA",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "HRC",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "HSL",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "HTI",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "HTL",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "HTN",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "HTV",
       "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     },
     {
@@ -97,7 +912,71 @@
       "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     },
     {
+      "symbol": "HUB",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
       "symbol": "ICT",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "ILB",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "IMP",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "ITC",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "ITD",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "KDC",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "KHG",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "KHP",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "KLB",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "KMR",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "KOS",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "KSB",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "LAF",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "LBM",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "LCG",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "LDG",
       "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     },
     {
@@ -105,7 +984,87 @@
       "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     },
     {
+      "symbol": "LGL",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "LHG",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "LIX",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "LM8",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "LPS",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "LSS",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "MCM",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "MDG",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "MHC",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "MIG",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "MSB",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "MSH",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "MWG",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "MZG",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "NAV",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "NBB",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "NCT",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "NHH",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "NO1",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
       "symbol": "NSC",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "NTC",
       "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     },
     {
@@ -113,11 +1072,51 @@
       "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     },
     {
-      "symbol": "PDN",
+      "symbol": "OPC",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "ORS",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "PAC",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "PDV",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "PET",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "PGC",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "PGD",
       "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     },
     {
       "symbol": "PGI",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "PGV",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "PHC",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "PIT",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "PLX",
       "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     },
     {
@@ -129,7 +1128,55 @@
       "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     },
     {
+      "symbol": "PPC",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "PTC",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "PTL",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "QCG",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "QNP",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "RAL",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "RYG",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
       "symbol": "S4A",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "SAV",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "SBA",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "SBG",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "SBT",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "SBV",
       "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     },
     {
@@ -137,11 +1184,63 @@
       "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     },
     {
+      "symbol": "SCR",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "SCS",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
       "symbol": "SFC",
       "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     },
     {
+      "symbol": "SFG",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
       "symbol": "SFI",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "SGR",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "SHA",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "SHI",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "SHP",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "SIP",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "SJS",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "SKG",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "SMA",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "SMB",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "SMC",
       "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     },
     {
@@ -153,7 +1252,19 @@
       "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     },
     {
+      "symbol": "SRF",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
       "symbol": "SSC",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "ST8",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "STB",
       "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     },
     {
@@ -161,7 +1272,79 @@
       "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     },
     {
+      "symbol": "STK",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "SVC",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "SVD",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "SZL",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "TAL",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "TBC",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "TCI",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "TCL",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "TCO",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "TCR",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "TCT",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "TCX",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "TDC",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "TDG",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "TDH",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "TDM",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "TDP",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
       "symbol": "TDW",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "TIP",
       "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     },
     {
@@ -169,11 +1352,75 @@
       "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     },
     {
+      "symbol": "TLG",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "TLH",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "TMP",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "TMS",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "TMT",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "TN1",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "TNC",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "TNI",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "TNT",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "TPC",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "TSA",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
       "symbol": "TTE",
       "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     },
     {
+      "symbol": "TVB",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "TVS",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "TVT",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "TYA",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
       "symbol": "UIC",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "VAB",
       "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     },
     {
@@ -185,7 +1432,71 @@
       "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     },
     {
+      "symbol": "VCK",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "VDP",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "VFG",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "VHC",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
       "symbol": "VID",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "VMD",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "VNG",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "VNL",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "VNS",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "VOS",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "VPD",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "VPH",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "VPL",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "VPS",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "VRC",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "VRE",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "VSH",
       "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     },
     {
@@ -195,10 +1506,26 @@
     {
       "symbol": "VTB",
       "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "VTP",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "VVS",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "YBM",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "VNINDEX",
+      "error": "KBS_INDEX_5M_FETCH_FAILED:RetryError",
+      "detail": "RetryError[<Future at 0x2c17cf2cd40 state=finished raised ValueError>]"
     }
   ],
-  "result": "PASS",
-  "contract_status": "MARKET_CLOSED",
-  "overlay_allowed": false,
-  "overlay_reason": "MARKET_CLOSED_COMPLETED_EOD_PUBLISHED"
+  "result": "PASS_WITH_WARNINGS",
+  "contract_status": "OVERLAY_ALLOWED",
+  "overlay_allowed": true
 }
