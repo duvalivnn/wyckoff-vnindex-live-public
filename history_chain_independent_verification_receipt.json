@@ -1,7 +1,7 @@
 {
   "schema_version": "history_chain_independent_verification_receipt.v1",
   "status": "PASS",
-  "generated_at_utc": "2026-10-16T10:14:49.121575+00:00",
+  "generated_at_utc": "2026-10-17T07:40:18.843359+00:00",
   "verifier": {
     "name": "independent_history_verifier",
     "version": "history-chunk-and-index-verifier.v2",
@@ -10,9 +10,9 @@
     "independent_of_binding_receipt": true
   },
   "authority": {
-    "pointer_commit": "240eefd3ee6327f2a6d6e5a00bac78a0f5fefaf7",
-    "payload_commit": "07b2ef5b6b5eeb019c659588c05064bafd885cce",
-    "manifest_sha256": "987a600d110bfe56f55c1ccaf6955a5016c44805c74220e8b25e8d0007c7982f",
+    "pointer_commit": "5d9ab6eed67f2614769eb417cb51db828fc77346",
+    "payload_commit": "f3f434e0c2faf05a0c2f2a19ee46d1a72addfa75",
+    "manifest_sha256": "019525467c2434378e79695528b16d1090487886f2469e83f52f6543536c2411",
     "chunk_manifest_sha256": "3ec472586d3cd134a79c0e5df4bcf21e20cbf50ef50bf7b2be0a0fdac01fd97a",
     "chunk_binding_receipt_sha256": "0c330c56782abf14cfebd7c6bf16819ee74717bfcb10d05717ff67b82ab1193a",
     "publisher_generation": "r33-2026-10-16-dc91fa0cf7b8ae50"
@@ -18432,6 +18432,293 @@
     "coverage_scope": "ALL_PUBLISHED_CANONICAL_ROWS; EXCHANGE_CALENDAR_COMPLETENESS_NOT_CERTIFIED",
     "volume_semantics": "NOT_CERTIFIED",
     "market_data_mutation": "NONE"
+  },
+  "index_volume": {
+    "schema_version": "independent_index_volume.v1",
+    "status": "PASS",
+    "cutoff": "2026-10-16",
+    "publisher_generation_id": "r33-2026-10-16-dc91fa0cf7b8ae50",
+    "receipt_sha256": "6fa2c5b86d4bf82105361ed6ff6d366f2d81a3a1d28bcbba791b66cbc7a34f8b",
+    "files": {
+      "index_volume_verification_receipt.json": {
+        "bytes": 11430,
+        "sha256": "6fa2c5b86d4bf82105361ed6ff6d366f2d81a3a1d28bcbba791b66cbc7a34f8b"
+      },
+      "index_analysis_daily_ohlcv.csv": {
+        "bytes": 187171,
+        "sha256": "aebc7fdb5c7e39e7ac7cd8bc33c44d87ce42a8aa0400707e95d5493426d29182"
+      },
+      "index_analysis_weekly_ohlcv.csv": {
+        "bytes": 60325,
+        "sha256": "bd180db5889b4fae31fbcc36a581924ec6aa811689bf068e94b738d61029c7ff"
+      }
+    },
+    "symbols": {
+      "VNINDEX": {
+        "status": "VERIFIED",
+        "source": "KBS",
+        "unit": "SHARE",
+        "daily_semantics": "PER_SESSION_TRADED_SHARES",
+        "definition": "Khối lượng giao dịch từng phiên do KBS công bố cho chính chỉ số, trường v của data_day; giữ nguyên số cổ phiếu, không chia 10/1000 và không dựng từ rổ hiện tại.",
+        "scope": "PROVIDER_REPORTED_INDEX_VOLUME",
+        "limitations": "Không chứng nhận exchange volume; chưa chứng minh phân tách khớp lệnh/thỏa thuận/lô lẻ. Volume chỉ là một phần evidence, không tự xác nhận Event/Phase.",
+        "references": [
+          "https://www.vnstocks.com/docs/vnstock/thi-truong-market#31-ohlcv",
+          "https://github.com/thinh-vu/vnstock/blob/main/vnstock/explorer/kbs/const.py"
+        ],
+        "symbol": "VNINDEX",
+        "daily_rows": 1438,
+        "daily_start": "2021-01-04",
+        "daily_end": "2026-10-16",
+        "weekly_rows": 299,
+        "completed_weekly_rows": 299,
+        "revisions": [
+          {
+            "date": "2026-10-12",
+            "changes": {
+              "open": {
+                "previous": "1735.77",
+                "current": "1736.2"
+              },
+              "low": {
+                "previous": "1716.85",
+                "current": "1719.86"
+              },
+              "volume": {
+                "previous": "578727890",
+                "current": "470350947"
+              }
+            },
+            "reason": "KBS_POST_EOD_PROVIDER_REVISION_TWO_PULLS_MATCH"
+          },
+          {
+            "date": "2026-10-13",
+            "changes": {
+              "open": {
+                "previous": "1718.84",
+                "current": "1716.87"
+              },
+              "volume": {
+                "previous": "560876017",
+                "current": "459797307"
+              }
+            },
+            "reason": "KBS_POST_EOD_PROVIDER_REVISION_TWO_PULLS_MATCH"
+          },
+          {
+            "date": "2026-10-14",
+            "changes": {
+              "open": {
+                "previous": "1718.0",
+                "current": "1720.91"
+              },
+              "low": {
+                "previous": "1699.23",
+                "current": "1700.74"
+              },
+              "volume": {
+                "previous": "584041036",
+                "current": "446355129"
+              }
+            },
+            "reason": "KBS_POST_EOD_PROVIDER_REVISION_TWO_PULLS_MATCH"
+          },
+          {
+            "date": "2026-10-15",
+            "changes": {
+              "open": {
+                "previous": "1701.77",
+                "current": "1701.2"
+              },
+              "low": {
+                "previous": "1690.56",
+                "current": "1694.77"
+              },
+              "volume": {
+                "previous": "684777807",
+                "current": "635720836"
+              }
+            },
+            "reason": "KBS_POST_EOD_PROVIDER_REVISION_TWO_PULLS_MATCH"
+          }
+        ],
+        "additional_provider_dates": [],
+        "quarantined_provider_rows": [
+          {
+            "date": "2023-05-15",
+            "reason": "PROVIDER_OHLC_GEOMETRY_INVALID",
+            "values": {
+              "open": "1074.82",
+              "high": "1076.32",
+              "low": "1067.15",
+              "close": "1065.71",
+              "volume": "791524900"
+            }
+          },
+          {
+            "date": "2021-12-10",
+            "reason": "PROVIDER_OHLC_GEOMETRY_INVALID",
+            "values": {
+              "open": "1469.83",
+              "high": "1475.85",
+              "low": "1469.68",
+              "close": "1463.54",
+              "volume": "780120100"
+            }
+          },
+          {
+            "date": "2021-02-17",
+            "reason": "PROVIDER_OHLC_GEOMETRY_INVALID",
+            "values": {
+              "open": "1127.46",
+              "high": "1151.54",
+              "low": "1127.46",
+              "close": "1155.78",
+              "volume": "459215000"
+            }
+          }
+        ],
+        "last_volume": 509780773,
+        "calendar_coverage": "NOT_EXCHANGE_CALENDAR_CERTIFIED",
+        "checks": {
+          "native_index_identity": "PASS",
+          "two_pulls": "PASS",
+          "unit": "PASS",
+          "integer_volume": "PASS",
+          "ohlcv": "PASS",
+          "date_key": "PASS",
+          "duplicate_key": "PASS",
+          "cutoff": "PASS",
+          "canonical_coverage": "PASS",
+          "latest_eod_price_basis": "PASS",
+          "daily_weekly": "PASS"
+        }
+      },
+      "VN30": {
+        "status": "VERIFIED",
+        "source": "KBS",
+        "unit": "SHARE",
+        "daily_semantics": "PER_SESSION_TRADED_SHARES",
+        "definition": "Khối lượng giao dịch từng phiên do KBS công bố cho chính chỉ số, trường v của data_day; giữ nguyên số cổ phiếu, không chia 10/1000 và không dựng từ rổ hiện tại.",
+        "scope": "PROVIDER_REPORTED_INDEX_VOLUME",
+        "limitations": "Không chứng nhận exchange volume; chưa chứng minh phân tách khớp lệnh/thỏa thuận/lô lẻ. Volume chỉ là một phần evidence, không tự xác nhận Event/Phase.",
+        "references": [
+          "https://www.vnstocks.com/docs/vnstock/thi-truong-market#31-ohlcv",
+          "https://github.com/thinh-vu/vnstock/blob/main/vnstock/explorer/kbs/const.py"
+        ],
+        "symbol": "VN30",
+        "daily_rows": 1440,
+        "daily_start": "2021-01-04",
+        "daily_end": "2026-10-16",
+        "weekly_rows": 299,
+        "completed_weekly_rows": 299,
+        "revisions": [
+          {
+            "date": "2026-10-12",
+            "changes": {
+              "open": {
+                "previous": "1876.28",
+                "current": "1877.75"
+              },
+              "low": {
+                "previous": "1865.06",
+                "current": "1867.06"
+              },
+              "volume": {
+                "previous": "283570401",
+                "current": "230096037"
+              }
+            },
+            "reason": "KBS_POST_EOD_PROVIDER_REVISION_TWO_PULLS_MATCH"
+          },
+          {
+            "date": "2026-10-13",
+            "changes": {
+              "open": {
+                "previous": "1867.46",
+                "current": "1865.44"
+              },
+              "low": {
+                "previous": "1854.89",
+                "current": "1856.44"
+              },
+              "volume": {
+                "previous": "268737702",
+                "current": "227053255"
+              }
+            },
+            "reason": "KBS_POST_EOD_PROVIDER_REVISION_TWO_PULLS_MATCH"
+          },
+          {
+            "date": "2026-10-14",
+            "changes": {
+              "open": {
+                "previous": "1860.99",
+                "current": "1863.17"
+              },
+              "low": {
+                "previous": "1845.04",
+                "current": "1847.5"
+              },
+              "volume": {
+                "previous": "250146200",
+                "current": "204405251"
+              }
+            },
+            "reason": "KBS_POST_EOD_PROVIDER_REVISION_TWO_PULLS_MATCH"
+          },
+          {
+            "date": "2026-10-15",
+            "changes": {
+              "open": {
+                "previous": "1847.35",
+                "current": "1847.79"
+              },
+              "low": {
+                "previous": "1834.82",
+                "current": "1836.56"
+              },
+              "volume": {
+                "previous": "294235211",
+                "current": "273979729"
+              }
+            },
+            "reason": "KBS_POST_EOD_PROVIDER_REVISION_TWO_PULLS_MATCH"
+          }
+        ],
+        "additional_provider_dates": [],
+        "quarantined_provider_rows": [
+          {
+            "date": "2021-02-17",
+            "reason": "PROVIDER_OHLC_GEOMETRY_INVALID",
+            "values": {
+              "open": "1129.49",
+              "high": "1169.88",
+              "low": "1129.49",
+              "close": "1174.91",
+              "volume": "155280800"
+            }
+          }
+        ],
+        "last_volume": 224296185,
+        "calendar_coverage": "NOT_EXCHANGE_CALENDAR_CERTIFIED",
+        "checks": {
+          "native_index_identity": "PASS",
+          "two_pulls": "PASS",
+          "unit": "PASS",
+          "integer_volume": "PASS",
+          "ohlcv": "PASS",
+          "date_key": "PASS",
+          "duplicate_key": "PASS",
+          "cutoff": "PASS",
+          "canonical_coverage": "PASS",
+          "latest_eod_price_basis": "PASS",
+          "daily_weekly": "PASS"
+        }
+      }
+    },
+    "verification_scope": "TWO_NATIVE_KBS_PULLS_AND_COMPLETE_PUBLISHED_RESEARCH_ROWS; PROVIDER_REPORTED_VOLUME; NO_EXCHANGE_CERTIFICATION",
+    "canonical_mutation": "NONE"
   },
   "market_data_mutation": "NONE"
 }
