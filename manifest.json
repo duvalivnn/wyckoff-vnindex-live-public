@@ -3428,6 +3428,59 @@
     "publisher_receipts/r33-2026-10-16-dc91fa0cf7b8ae50.json": {
       "bytes": 448,
       "sha256": "8614379c1424d31c10438f5334c77e3ef356438ab4bdbd37b5e211335b0819f7"
+    },
+    "index_volume_VNINDEX_pull1.bin": {
+      "bytes": 124823,
+      "sha256": "9d0aaf95686aa74966fb38d747327ef779c1629c5dc7fedbabde394bdb6c3594"
+    },
+    "index_volume_VNINDEX_pull2.bin": {
+      "bytes": 124823,
+      "sha256": "9d0aaf95686aa74966fb38d747327ef779c1629c5dc7fedbabde394bdb6c3594"
+    },
+    "index_volume_VN30_pull1.bin": {
+      "bytes": 124605,
+      "sha256": "c1da09f3be97236e81cecdb9d2515826e0d4c4295763ee019c101c72187c1bd4"
+    },
+    "index_volume_VN30_pull2.bin": {
+      "bytes": 124605,
+      "sha256": "c1da09f3be97236e81cecdb9d2515826e0d4c4295763ee019c101c72187c1bd4"
+    },
+    "index_analysis_daily_ohlcv.csv": {
+      "bytes": 187171,
+      "sha256": "aebc7fdb5c7e39e7ac7cd8bc33c44d87ce42a8aa0400707e95d5493426d29182",
+      "rows": 2878,
+      "header": [
+        "date",
+        "symbol",
+        "open",
+        "high",
+        "low",
+        "close",
+        "volume",
+        "is_provisional"
+      ]
+    },
+    "index_analysis_weekly_ohlcv.csv": {
+      "bytes": 60325,
+      "sha256": "bd180db5889b4fae31fbcc36a581924ec6aa811689bf068e94b738d61029c7ff",
+      "rows": 598,
+      "header": [
+        "symbol",
+        "week_period",
+        "week_start",
+        "week_end",
+        "open",
+        "high",
+        "low",
+        "close",
+        "volume",
+        "trading_days",
+        "is_partial_week"
+      ]
+    },
+    "index_volume_verification_receipt.json": {
+      "bytes": 11430,
+      "sha256": "6fa2c5b86d4bf82105361ed6ff6d366f2d81a3a1d28bcbba791b66cbc7a34f8b"
     }
   },
   "source_latest_date": "2026-10-16",
@@ -4288,5 +4341,17 @@
     "approved_locked_analysis_source_receipt": "approved_locked_analysis_source_receipt.json",
     "approved_locked_analysis_registry": "approved_locked_analysis_registry.json",
     "market_gate_receipt": "market_gate_receipt.json"
+  },
+  "index_volume_contract": {
+    "VNINDEX": {
+      "status": "VERIFIED",
+      "receipt": "index_volume_verification_receipt.json",
+      "analysis_lane": "KBS_REVISED_COMPLETED_INDEX_RESEARCH"
+    },
+    "VN30": {
+      "status": "VERIFIED",
+      "receipt": "index_volume_verification_receipt.json",
+      "analysis_lane": "KBS_REVISED_COMPLETED_INDEX_RESEARCH"
+    }
   }
 }
