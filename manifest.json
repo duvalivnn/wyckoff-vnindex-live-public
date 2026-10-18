@@ -1,7 +1,7 @@
 {
   "schema_version": "canonical_dashboard_bridge.v1",
   "source_role": "MODEL_READABLE_PUBLIC_STATIC_SNAPSHOT",
-  "generated_at": "2026-10-16T10:10:51.310108+00:00",
+  "generated_at": "2026-10-18T10:11:14.640648+00:00",
   "timezone": "Asia/Ho_Chi_Minh",
   "source_workspace": "DỮ LIỆU OHLCV",
   "bridge_mode": "FULL_CANONICAL_REPLACE",
@@ -20,8 +20,8 @@
   "analysis_allowed_as_completed": true,
   "provisional_status": "NO",
   "universe_symbols": 406,
-  "daily_bridge_rows": 45911,
-  "weekly_replace_rows": 115239,
+  "daily_bridge_rows": 45915,
+  "weekly_replace_rows": 115240,
   "index_daily_bridge_rows": 248,
   "validation_status": "pass",
   "live_snapshot_validation": {
@@ -34,39 +34,39 @@
   "volume_unit": "SHARE",
   "ca_receipt": null,
   "canonical_sha256": {
-    "stock_daily_ohlcv.csv": "63a1f070c1281b311874d2d91b8a41c8340d25a329ac0930b9e515aac8e06857",
-    "stock_weekly_ohlcv.csv": "5e511f42235541431ab2a04d08274c1103071fadd8823ff8cabb92b1da3ea915",
-    "index_daily_ohlcv.csv": "7f0bcf1e4e1bd932bc8244124d294762d3202bcc885c6c557530eb620a991c48",
-    "index_weekly_ohlcv.csv": "47bacb5cbc3684f8f78d48ceb52cecb2344f1a938cf43c7b914a36c3ed404adc"
+    "stock_daily_ohlcv.csv": "065e0d0cbea382bfc6a45ddf9372e16d0074cc82759978b27ccb24ac030ee9ba",
+    "stock_weekly_ohlcv.csv": "48877d412df2a875fe9353de3a276c48cf522a4efb6b2d1cb27826745419ac5e",
+    "index_daily_ohlcv.csv": "61def4ad32ea01124f6c483c4aeb69f8e19b10e6f8cbc38cfe55ddd853a29a4b",
+    "index_weekly_ohlcv.csv": "a1999cbd734862211e5d7d1fc0237cba668c70f1ee62538256e7cbeb5a630bea"
   },
   "files": {
     "daily_bridge.csv": {
-      "bytes": 2235519,
-      "sha256": "a6cc952ddd537549950a7763246424b97bfc0e3f4cf74b56c5b3549ef56ebba1"
+      "bytes": 2235711,
+      "sha256": "3f7a6cd23355bde16ff4aadca7292e1b99e7b91433743a893f8053e47cc6a951"
     },
     "weekly_replace.csv": {
-      "bytes": 9603157,
-      "sha256": "a1784d3306639724d85a3397c7d8f27b7cd45e64c350476bd7c536e8c791655b"
+      "bytes": 9603238,
+      "sha256": "8bfac3bbca0b4c73c21d447c326b3883ebada0eef22aac8356628d7d343aa007"
     },
     "index_daily_bridge.csv": {
-      "bytes": 16197,
-      "sha256": "8a62ffc0b223640d1952e4428e19a8780807e5d8ca14930c69ee6eb26e670a42"
+      "bytes": 16195,
+      "sha256": "54abcaaed293f020bc3f48863eb1014e557fac44d8936abf2ba588e757ca004d"
     },
     "latest_bars.csv": {
-      "bytes": 22864,
-      "sha256": "98d1d55e3c4ec036b9a965b0dc009a88fb93da1c791e487f1d2c21b7c171d6b7"
+      "bytes": 22863,
+      "sha256": "b0e71e29019addfe0d0ef40d488102a1af830ddd56b2951986b682237c0bf5d9"
     },
     "market_scan.csv": {
-      "bytes": 266002,
-      "sha256": "b7b221f5c602a3b485c85622424f6378ba2647c0dd8407edf70103e42cb9adaa"
+      "bytes": 265994,
+      "sha256": "55440de62ef35bba9dbc49caeec9c71c53908eab4edbcd6a9b25d3014ff8722f"
     },
     "sector_scan.csv": {
       "bytes": 5029,
       "sha256": "d3cfd1129dde2b34f0153b516f794990650974a6c900e67de40817027feff69d"
     },
     "index_daily_ohlcv.csv": {
-      "bytes": 187355,
-      "sha256": "7f0bcf1e4e1bd932bc8244124d294762d3202bcc885c6c557530eb620a991c48",
+      "bytes": 187353,
+      "sha256": "61def4ad32ea01124f6c483c4aeb69f8e19b10e6f8cbc38cfe55ddd853a29a4b",
       "rows": 2878,
       "header": [
         "date",
@@ -80,9 +80,27 @@
       ]
     },
     "index_weekly_ohlcv.csv": {
-      "bytes": 60362,
-      "sha256": "47bacb5cbc3684f8f78d48ceb52cecb2344f1a938cf43c7b914a36c3ed404adc",
+      "bytes": 60361,
+      "sha256": "a1999cbd734862211e5d7d1fc0237cba668c70f1ee62538256e7cbeb5a630bea",
       "rows": 598,
+      "header": [
+        "symbol",
+        "week_period",
+        "week_start",
+        "week_end",
+        "open",
+        "high",
+        "low",
+        "close",
+        "volume",
+        "trading_days",
+        "is_partial_week"
+      ]
+    },
+    "stock_weekly_ohlcv.csv": {
+      "bytes": 9833739,
+      "sha256": "48877d412df2a875fe9353de3a276c48cf522a4efb6b2d1cb27826745419ac5e",
+      "rows": 115240,
       "header": [
         "symbol",
         "week_period",
@@ -99,35 +117,92 @@
     },
     "alert_engine_gate.json": {
       "bytes": 817,
-      "sha256": "031fb3fa802aca62a8c710683815c780e17700769ea68a9498325f4855d9a715"
+      "sha256": "ca983fe82318ea1a31b38ca92c39fac200093ae2b24157336fe8e9784da8c1c2"
     },
     "current_state.json": {
-      "bytes": 256525,
-      "sha256": "51fca24f142b2da9d95694e461e0acad543fe17e49736bbdd5a3b88819cad32e"
+      "bytes": 16441,
+      "sha256": "6f81077edeca531ba855a794f587d461738baf3181ec7747967bbf3ad3119b97"
     },
     "eod_receipt.json": {
-      "bytes": 256525,
-      "sha256": "380ba6b47639152bfd57f00fb72be370e6a30b860633bd1f016acdcc46711a81"
+      "bytes": 265906,
+      "sha256": "b1652b6d43de2bb65e74fc97b846271b693b5b0f9be026ed784d74b4a3fb8931"
     },
     "live_manifest.json": {
-      "bytes": 3245,
-      "sha256": "521b0efcae4bb4462e2806cef318df6adfa7c7d2ad5a980209dd709a016c86a6"
+      "bytes": 12769,
+      "sha256": "1ebde20fd111a7712abcba80b1d8ce241343e46d2919d28bef63ffd5acff5d8e"
     },
     "publisher_state.json": {
       "bytes": 575,
-      "sha256": "669737ad6a241818bd99b7fbec53286d1fbe6cea27e384b7167557fe6b4d1aac"
+      "sha256": "a35d23970508b79836bdebc04cd2c3b5744877688c5189bbec57ab22b31e2748"
     },
     "rebase_receipt.json": {
       "bytes": 3157,
       "sha256": "4a19f2106c67719af0ccff70c1ac5e10d2dc148c648ee6192987e1f2c8f4e4e8"
     },
+    "static_refresh_manifest.json": {
+      "bytes": 9687,
+      "sha256": "1e734f195200645a0bccf8b8d77ca8a1612679b2b0f927867ab23d1fd42c4ff5"
+    },
+    "index_volume_VNINDEX_pull1.bin": {
+      "bytes": 124823,
+      "sha256": "9d0aaf95686aa74966fb38d747327ef779c1629c5dc7fedbabde394bdb6c3594"
+    },
+    "index_volume_VNINDEX_pull2.bin": {
+      "bytes": 124823,
+      "sha256": "9d0aaf95686aa74966fb38d747327ef779c1629c5dc7fedbabde394bdb6c3594"
+    },
+    "index_volume_VN30_pull1.bin": {
+      "bytes": 124605,
+      "sha256": "c1da09f3be97236e81cecdb9d2515826e0d4c4295763ee019c101c72187c1bd4"
+    },
+    "index_volume_VN30_pull2.bin": {
+      "bytes": 124518,
+      "sha256": "b4d827b419e592b74b328db81cf5ea831129b0d63cd5cb58ae5ea85214a780bf"
+    },
+    "index_analysis_daily_ohlcv.csv": {
+      "bytes": 95813,
+      "sha256": "e3470482fc6efcaa00711ad129d0ced55fd7d375922c3631b330f25ee4807f70",
+      "rows": 1438,
+      "header": [
+        "date",
+        "symbol",
+        "open",
+        "high",
+        "low",
+        "close",
+        "volume",
+        "is_provisional"
+      ]
+    },
+    "index_analysis_weekly_ohlcv.csv": {
+      "bytes": 30714,
+      "sha256": "55ab0b1057ab1014402f1d60aabb40fae3bd0957bb3cb2ac69a01702d5db07ec",
+      "rows": 299,
+      "header": [
+        "symbol",
+        "week_period",
+        "week_start",
+        "week_end",
+        "open",
+        "high",
+        "low",
+        "close",
+        "volume",
+        "trading_days",
+        "is_partial_week"
+      ]
+    },
+    "index_volume_verification_receipt.json": {
+      "bytes": 5001,
+      "sha256": "a1a421c5100ec2b7a1f3fe7f8259c759420a0e45495b5dab12a0db2c4c0b4186"
+    },
     "history_chain_chunks_manifest.json": {
       "bytes": 239655,
-      "sha256": "8f23f955890dbe833569433ac1b9920017704c0e439423f657936411a652bd59"
+      "sha256": "ef602a7efb21c468f02130ac66382a1d28eee45bc220467c9126af34e7ee5da4"
     },
     "history_chain_chunk_binding_receipt.json": {
       "bytes": 1671,
-      "sha256": "d0afb9769149848b128b73c07ed727f1ec3c49101fff23eacc4374ec3c846e5d"
+      "sha256": "a383c82eb5782d3dbcf6c0806e9a05088ec608203e3340ebd98be8702b44d6f8"
     },
     "history_chain_chunks/daily/AAA.csv": {
       "bytes": 5986,
@@ -198,8 +273,8 @@
       "sha256": "adae91a7f61054a76bf6698b92893ba7856824ec85856c94bff362cf0554d3b6"
     },
     "history_chain_chunks/daily/ANT.csv": {
-      "bytes": 5850,
-      "sha256": "a794e6c253217ca4564f7e5a9e661c7a502d92784117f1dac30f873971cb751a"
+      "bytes": 6042,
+      "sha256": "58ef6fbb5c04b946ca72db9e72e170c278358a08ed1bd1bb2e99d6f9410664cf"
     },
     "history_chain_chunks/daily/ANV.csv": {
       "bytes": 6226,
@@ -1822,8 +1897,8 @@
       "sha256": "de0b58deb4e9f36ea97007d126e8a3e7a326447c07098025cd7a552a5fc028c9"
     },
     "history_chain_chunks/weekly/ANT.csv": {
-      "bytes": 24801,
-      "sha256": "e4a4bcf2969e52385f00a8a461a5827eae8ac9aa426b3b5ab039008669e8298a"
+      "bytes": 24884,
+      "sha256": "063ddb6a34aa52093bc6b917aa46581a292ab26b1cf76a5d9978fef7c0057c22"
     },
     "history_chain_chunks/weekly/ANV.csv": {
       "bytes": 26181,
@@ -3378,12 +3453,12 @@
       "sha256": "47c02874438e7b8eefd8dfa6e3ee32da308e89c4c77e885e098428c41427bd93"
     },
     "alerts_live.json": {
-      "bytes": 48360,
-      "sha256": "2a9318e0cbd474da66ba54d2d6efa04feb05f572bac791b61a336ee9509f96a9"
+      "bytes": 179285,
+      "sha256": "ab6da8a98f85203382c040b647e92d77492857bd34fa7e84198fe812828bdd6d"
     },
     "ca_receipt.json": {
-      "bytes": 2477,
-      "sha256": "dcc0188de766be4a759325cd3e7549211cd7faec1d046c154b9265e98a111c30"
+      "bytes": 3431,
+      "sha256": "9ca194fe9f5c790d62dfb5075bbdfb1a22e64b51df51cee1f6c484bede364a80"
     },
     "kbs_public_acceptance_policy_v1.json": {
       "bytes": 1306,
@@ -3394,16 +3469,16 @@
       "sha256": "f151bf855278c6899e28ce81ccfd999f0b947a21d78b3454d5e1d4d67edd7fb7"
     },
     "approved_locked_analysis_source_receipt.json": {
-      "bytes": 1567,
-      "sha256": "d7aa5bcb8d9d538732ba8e362556f02f7ab5bf8903dd6e23633797b9665def5f"
+      "bytes": 1568,
+      "sha256": "fd8952d345500d26a6de12c9249d6e3eb27f358399fd28451038d2e9f5c91822"
     },
     "approved_locked_analysis_registry.json": {
-      "bytes": 174021,
-      "sha256": "f7e5fb8a515bc57699e2a19ea38cd4ecd5da3f98d5cdc0d35f7f6f770d14847a"
+      "bytes": 174004,
+      "sha256": "8f9f19df7db99ddeb6a610f840105e0121b833e2d8bd67c7b3d55966a7e9307f"
     },
     "market_gate_receipt.json": {
       "bytes": 1007,
-      "sha256": "0bc205a7aee4fc4605bf3fcb69df527d1708d55fc95b14a15747d8b12bf2a32f"
+      "sha256": "ef58f0b3c01bd6495729f0a63d984ab364c4147a920480a391811da69aa6c03c"
     },
     "publisher_receipts/r33-2026-10-13-3f4cdc0dabdf4533.json": {
       "bytes": 448,
@@ -3425,90 +3500,27 @@
       "bytes": 448,
       "sha256": "62655084797689b67cae5975c476922a1ffe26d45c98a3c73f8656be6dd9eeba"
     },
+    "publisher_receipts/r33-2026-10-16-37696f464370ce16.json": {
+      "bytes": 481,
+      "sha256": "c24774ef8ecfa0383dc8b647f1f3f46ba956f633d83f1417529e5f41099686ca"
+    },
     "publisher_receipts/r33-2026-10-16-dc91fa0cf7b8ae50.json": {
       "bytes": 448,
       "sha256": "8614379c1424d31c10438f5334c77e3ef356438ab4bdbd37b5e211335b0819f7"
-    },
-    "index_volume_VNINDEX_pull1.bin": {
-      "bytes": 124823,
-      "sha256": "9d0aaf95686aa74966fb38d747327ef779c1629c5dc7fedbabde394bdb6c3594"
-    },
-    "index_volume_VNINDEX_pull2.bin": {
-      "bytes": 124823,
-      "sha256": "9d0aaf95686aa74966fb38d747327ef779c1629c5dc7fedbabde394bdb6c3594"
-    },
-    "index_volume_VN30_pull1.bin": {
-      "bytes": 124605,
-      "sha256": "c1da09f3be97236e81cecdb9d2515826e0d4c4295763ee019c101c72187c1bd4"
-    },
-    "index_volume_VN30_pull2.bin": {
-      "bytes": 124605,
-      "sha256": "c1da09f3be97236e81cecdb9d2515826e0d4c4295763ee019c101c72187c1bd4"
-    },
-    "index_analysis_daily_ohlcv.csv": {
-      "bytes": 187171,
-      "sha256": "aebc7fdb5c7e39e7ac7cd8bc33c44d87ce42a8aa0400707e95d5493426d29182",
-      "rows": 2878,
-      "header": [
-        "date",
-        "symbol",
-        "open",
-        "high",
-        "low",
-        "close",
-        "volume",
-        "is_provisional"
-      ]
-    },
-    "index_analysis_weekly_ohlcv.csv": {
-      "bytes": 60325,
-      "sha256": "bd180db5889b4fae31fbcc36a581924ec6aa811689bf068e94b738d61029c7ff",
-      "rows": 598,
-      "header": [
-        "symbol",
-        "week_period",
-        "week_start",
-        "week_end",
-        "open",
-        "high",
-        "low",
-        "close",
-        "volume",
-        "trading_days",
-        "is_partial_week"
-      ]
-    },
-    "index_volume_verification_receipt.json": {
-      "bytes": 11430,
-      "sha256": "6fa2c5b86d4bf82105361ed6ff6d366f2d81a3a1d28bcbba791b66cbc7a34f8b"
-    },
-    "stock_weekly_ohlcv.csv": {
-      "bytes": 9833656,
-      "sha256": "5e511f42235541431ab2a04d08274c1103071fadd8823ff8cabb92b1da3ea915",
-      "rows": 115239,
-      "header": [
-        "symbol",
-        "week_period",
-        "week_start",
-        "week_end",
-        "open",
-        "high",
-        "low",
-        "close",
-        "volume",
-        "trading_days",
-        "is_partial_week"
-      ]
     }
   },
   "source_latest_date": "2026-10-16",
-  "live_manifest_generated_at_utc": "2026-10-16T10:10:51.310108+00:00",
+  "live_manifest_generated_at_utc": "2026-10-18T10:11:14.640648+00:00",
   "live_pointer_path": "live_pointer.json",
   "static_refresh": {
-    "active": false,
-    "mode": null,
-    "window": null,
-    "canonical_static_replacement": null
+    "mode": "weekly",
+    "manifest_path": "runtime/static_refresh_weekly_manifest.json",
+    "manifest_sha256": "1e734f195200645a0bccf8b8d77ca8a1612679b2b0f927867ab23d1fd42c4ff5",
+    "run_id": "20261018T100011920574Z_e4b2a5e7",
+    "window_start": "2026-10-12",
+    "window_end": "2026-10-16",
+    "canonical_latest_date": "2026-10-16",
+    "result": "PASS_WITH_WARNINGS"
   },
   "lineage_files": [
     "alert_engine_gate.json",
@@ -3518,14 +3530,23 @@
     "live_manifest.json",
     "publisher_state.json",
     "rebase_receipt.json",
+    "static_refresh_manifest.json",
     "ca_receipt.json",
     "daily_bridge.csv",
+    "index_analysis_daily_ohlcv.csv",
+    "index_analysis_weekly_ohlcv.csv",
     "index_daily_bridge.csv",
     "index_daily_ohlcv.csv",
+    "index_volume_verification_receipt.json",
+    "index_volume_VN30_pull1.bin",
+    "index_volume_VN30_pull2.bin",
+    "index_volume_VNINDEX_pull1.bin",
+    "index_volume_VNINDEX_pull2.bin",
     "index_weekly_ohlcv.csv",
     "latest_bars.csv",
     "market_scan.csv",
     "sector_scan.csv",
+    "stock_weekly_ohlcv.csv",
     "weekly_replace.csv",
     "kbs_public_acceptance_policy_v1.json",
     "history_chain_chunks_manifest.json",
@@ -4351,15 +4372,10 @@
     "publisher_receipts/r33-2026-10-13-e8aaca385db56436.json",
     "publisher_receipts/r33-2026-10-14-858dd4ead1fd9161.json",
     "publisher_receipts/r33-2026-10-15-53ec80a5f88129e6.json",
+    "publisher_receipts/r33-2026-10-16-37696f464370ce16.json",
     "publisher_receipts/r33-2026-10-16-dc91fa0cf7b8ae50.json"
   ],
-  "publisher_generation_id": "r33-2026-10-16-dc91fa0cf7b8ae50",
-  "governance_receipts": {
-    "approved_locked_analysis_source": "approved_locked_analysis_source.json",
-    "approved_locked_analysis_source_receipt": "approved_locked_analysis_source_receipt.json",
-    "approved_locked_analysis_registry": "approved_locked_analysis_registry.json",
-    "market_gate_receipt": "market_gate_receipt.json"
-  },
+  "publisher_generation_id": "r33-2026-10-16-37696f464370ce16",
   "index_volume_contract": {
     "VNINDEX": {
       "status": "VERIFIED",
@@ -4367,9 +4383,15 @@
       "analysis_lane": "KBS_REVISED_COMPLETED_INDEX_RESEARCH"
     },
     "VN30": {
-      "status": "VERIFIED",
+      "status": "NOT_VERIFIED",
       "receipt": "index_volume_verification_receipt.json",
       "analysis_lane": "KBS_REVISED_COMPLETED_INDEX_RESEARCH"
     }
+  },
+  "governance_receipts": {
+    "approved_locked_analysis_source": "approved_locked_analysis_source.json",
+    "approved_locked_analysis_source_receipt": "approved_locked_analysis_source_receipt.json",
+    "approved_locked_analysis_registry": "approved_locked_analysis_registry.json",
+    "market_gate_receipt": "market_gate_receipt.json"
   }
 }
