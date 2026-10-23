@@ -1,10 +1,10 @@
 {
   "schema_version": "index_volume_verification.v1",
   "status": "VERIFIED",
-  "generated_at_utc": "2026-10-22T10:11:10.915792+00:00",
-  "publisher_generation_id": "r33-2026-10-22-fd7196f43e0e94b8",
-  "cutoff": "2026-10-22",
-  "canonical_index_daily_sha256": "f1e2860e1153825f02159e1acd43cd2de0cce79571a12c98c3387a9e587d49b7",
+  "generated_at_utc": "2026-10-23T10:11:01.950183+00:00",
+  "publisher_generation_id": "r33-2026-10-23-fde60be33107c779",
+  "cutoff": "2026-10-23",
+  "canonical_index_daily_sha256": "9394b67b9abef8b71555cf5ea3d2e82deccb72b5280ff3e0788d5deaab011791",
   "canonical_mutation": "NONE",
   "analysis_lane": "KBS_REVISED_COMPLETED_INDEX_RESEARCH",
   "symbols": {
@@ -21,11 +21,11 @@
         "https://github.com/thinh-vu/vnstock/blob/main/vnstock/explorer/kbs/const.py"
       ],
       "symbol": "VNINDEX",
-      "daily_rows": 1442,
+      "daily_rows": 1443,
       "daily_start": "2021-01-04",
-      "daily_end": "2026-10-22",
+      "daily_end": "2026-10-23",
       "weekly_rows": 300,
-      "completed_weekly_rows": 299,
+      "completed_weekly_rows": 300,
       "revisions": [
         {
           "date": "2026-10-16",
@@ -86,6 +86,20 @@
             }
           },
           "reason": "KBS_POST_EOD_PROVIDER_REVISION_TWO_PULLS_MATCH"
+        },
+        {
+          "date": "2026-10-22",
+          "changes": {
+            "open": {
+              "previous": "1744.55",
+              "current": "1746.15"
+            },
+            "volume": {
+              "previous": "672074209",
+              "current": "571952962"
+            }
+          },
+          "reason": "KBS_POST_EOD_PROVIDER_REVISION_TWO_PULLS_MATCH"
         }
       ],
       "additional_provider_dates": [],
@@ -124,7 +138,7 @@
           }
         }
       ],
-      "last_volume": 672074209,
+      "last_volume": 777197613,
       "calendar_coverage": "NOT_EXCHANGE_CALENDAR_CERTIFIED",
       "checks": {
         "native_index_identity": "PASS",
@@ -139,7 +153,7 @@
         "latest_eod_price_basis": "PASS",
         "daily_weekly": "PASS"
       },
-      "endpoint": "https://kbbuddywts.kbsec.com.vn/iis-server/investment/index/VNINDEX/data_day?sdate=04-01-2021&edate=22-10-2026",
+      "endpoint": "https://kbbuddywts.kbsec.com.vn/iis-server/investment/index/VNINDEX/data_day?sdate=04-01-2021&edate=23-10-2026",
       "raw_paths": [
         "index_volume_VNINDEX_pull1.bin",
         "index_volume_VNINDEX_pull2.bin"
@@ -149,8 +163,8 @@
           "attempt": 1,
           "status": "PASS",
           "raw_sha256": [
-            "eddf3ddbf48a215a0984de29c7d6f5295c1cd5953118d01da5f0643633e823c1",
-            "eddf3ddbf48a215a0984de29c7d6f5295c1cd5953118d01da5f0643633e823c1"
+            "8ca9ad0049bf997119846448410312b66ee9b08105e44bc34d2a2c1c73654a03",
+            "8ca9ad0049bf997119846448410312b66ee9b08105e44bc34d2a2c1c73654a03"
           ]
         }
       ]
@@ -168,11 +182,11 @@
         "https://github.com/thinh-vu/vnstock/blob/main/vnstock/explorer/kbs/const.py"
       ],
       "symbol": "VN30",
-      "daily_rows": 1444,
+      "daily_rows": 1445,
       "daily_start": "2021-01-04",
-      "daily_end": "2026-10-22",
+      "daily_end": "2026-10-23",
       "weekly_rows": 300,
-      "completed_weekly_rows": 299,
+      "completed_weekly_rows": 300,
       "revisions": [
         {
           "date": "2026-10-16",
@@ -237,6 +251,20 @@
             }
           },
           "reason": "KBS_POST_EOD_PROVIDER_REVISION_TWO_PULLS_MATCH"
+        },
+        {
+          "date": "2026-10-22",
+          "changes": {
+            "open": {
+              "previous": "1889.29",
+              "current": "1888.15"
+            },
+            "volume": {
+              "previous": "262110706",
+              "current": "218883964"
+            }
+          },
+          "reason": "KBS_POST_EOD_PROVIDER_REVISION_TWO_PULLS_MATCH"
         }
       ],
       "additional_provider_dates": [],
@@ -253,7 +281,7 @@
           }
         }
       ],
-      "last_volume": 262110706,
+      "last_volume": 309623531,
       "calendar_coverage": "NOT_EXCHANGE_CALENDAR_CERTIFIED",
       "checks": {
         "native_index_identity": "PASS",
@@ -268,7 +296,7 @@
         "latest_eod_price_basis": "PASS",
         "daily_weekly": "PASS"
       },
-      "endpoint": "https://kbbuddywts.kbsec.com.vn/iis-server/investment/index/VN30/data_day?sdate=04-01-2021&edate=22-10-2026",
+      "endpoint": "https://kbbuddywts.kbsec.com.vn/iis-server/investment/index/VN30/data_day?sdate=04-01-2021&edate=23-10-2026",
       "raw_paths": [
         "index_volume_VN30_pull1.bin",
         "index_volume_VN30_pull2.bin"
@@ -276,10 +304,19 @@
       "source_attempts": [
         {
           "attempt": 1,
+          "status": "REJECTED",
+          "reason": "INDEX_VOLUME_CANONICAL_COVERAGE:VN30",
+          "raw_sha256": [
+            "a55bb060c3f036f005b6fafae4dbfbb0cffb336f9c5262d8e60e4b190e8c5afc",
+            "a55bb060c3f036f005b6fafae4dbfbb0cffb336f9c5262d8e60e4b190e8c5afc"
+          ]
+        },
+        {
+          "attempt": 2,
           "status": "PASS",
           "raw_sha256": [
-            "2b71d7b4e572feaaa40c8edfce6c9b4575726d67aee5d65df13a43ae344fc6d0",
-            "2b71d7b4e572feaaa40c8edfce6c9b4575726d67aee5d65df13a43ae344fc6d0"
+            "c542fd7052046e38e35d6d084e454de9c016b20691aa3d3601727ae620944581",
+            "c542fd7052046e38e35d6d084e454de9c016b20691aa3d3601727ae620944581"
           ]
         }
       ]
@@ -287,25 +324,25 @@
   },
   "files": {
     "index_volume_VNINDEX_pull1.bin": {
-      "bytes": 125171,
-      "sha256": "eddf3ddbf48a215a0984de29c7d6f5295c1cd5953118d01da5f0643633e823c1"
+      "bytes": 125258,
+      "sha256": "8ca9ad0049bf997119846448410312b66ee9b08105e44bc34d2a2c1c73654a03"
     },
     "index_volume_VNINDEX_pull2.bin": {
-      "bytes": 125171,
-      "sha256": "eddf3ddbf48a215a0984de29c7d6f5295c1cd5953118d01da5f0643633e823c1"
+      "bytes": 125258,
+      "sha256": "8ca9ad0049bf997119846448410312b66ee9b08105e44bc34d2a2c1c73654a03"
     },
     "index_volume_VN30_pull1.bin": {
-      "bytes": 124953,
-      "sha256": "2b71d7b4e572feaaa40c8edfce6c9b4575726d67aee5d65df13a43ae344fc6d0"
+      "bytes": 125040,
+      "sha256": "c542fd7052046e38e35d6d084e454de9c016b20691aa3d3601727ae620944581"
     },
     "index_volume_VN30_pull2.bin": {
-      "bytes": 124953,
-      "sha256": "2b71d7b4e572feaaa40c8edfce6c9b4575726d67aee5d65df13a43ae344fc6d0"
+      "bytes": 125040,
+      "sha256": "c542fd7052046e38e35d6d084e454de9c016b20691aa3d3601727ae620944581"
     },
     "index_analysis_daily_ohlcv.csv": {
-      "bytes": 187695,
-      "sha256": "80ac0ff0780a84ecf42ca30216599a322e421c6de4f3484c6cb435cf73a631e5",
-      "rows": 2886,
+      "bytes": 187826,
+      "sha256": "d879ccfd0b8e89bd06149b7eadc82de7a340262d4bcb333700ddf6fd6e82e6d2",
+      "rows": 2888,
       "header": [
         "date",
         "symbol",
@@ -318,8 +355,8 @@
       ]
     },
     "index_analysis_weekly_ohlcv.csv": {
-      "bytes": 60525,
-      "sha256": "a213e2660dbb847d76ad537389058614af0a726470d3fa1667a1bd26cdfc39c3",
+      "bytes": 60528,
+      "sha256": "de2a2741fd14b5a899684bcffb2dee17d03a3d306f8d319ad23e1ac0c23d16d9",
       "rows": 600,
       "header": [
         "symbol",

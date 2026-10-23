@@ -1,36 +1,49 @@
 {
   "job": "ca_scan",
   "schema_version": "corporate_actions.daily.v1",
-  "scan_date": "2026-10-22",
+  "scan_date": "2026-10-23",
   "week_start": "2026-10-19",
   "week_end": "2026-10-25",
-  "generated_at_utc": "2026-10-22T10:00:07.306624+00:00",
+  "generated_at_utc": "2026-10-23T10:00:06.825114+00:00",
   "provider": {
     "adapter": "VIETSTOCK_FIRST_PARTY_HOSE_EVENT_CALENDAR_V1",
     "source": "https://finance.vietstock.vn/lich-su-kien.htm"
   },
-  "source_weekly_receipt": "corporate_actions\\weekly\\2026-10-19_2026-10-25_20261022T100005765358Z.json",
-  "source_weekly_sha256": "4bac292461fc97c4b0c0954ea6bf7fae0bea2a5a197b130a9a791bff962f67a2",
+  "source_weekly_receipt": "corporate_actions\\weekly\\2026-10-19_2026-10-25_20261023T100005536916Z.json",
+  "source_weekly_sha256": "4cd5eca90993d8ca5cd790b6a0c4fd9ee8718eb3f0874b30c056d8051275abea",
   "weekly_fallback_after_transient_failure": null,
   "events": [
     {
-      "symbol": "MCP",
+      "symbol": "VMD",
       "exchange": "HOSE",
       "event_type": "Trả cổ tức bằng tiền mặt",
-      "ex_date": "2026-10-22",
-      "record_date": "2026-10-23",
-      "payment_date": "2026-12-25",
-      "cash_dividend": "400",
+      "ex_date": "2026-10-23",
+      "record_date": "2026-10-26",
+      "payment_date": "2026-11-09",
+      "cash_dividend": "2,000",
       "stock_dividend_ratio": null,
-      "raw_description": "Trả cổ tức năm 2025 bằng tiền, 400 đồng/CP",
+      "raw_description": "Trả cổ tức năm 2025 bằng tiền, 2,000 đồng/CP",
+      "source_event_type": "Trả cổ tức bằng tiền mặt"
+    },
+    {
+      "symbol": "NTC",
+      "exchange": "HOSE",
+      "event_type": "Trả cổ tức bằng tiền mặt",
+      "ex_date": "2026-10-23",
+      "record_date": "2026-10-26",
+      "payment_date": "2026-11-20",
+      "cash_dividend": "6,000",
+      "stock_dividend_ratio": null,
+      "raw_description": "Trả cổ tức năm 2025 bằng tiền, 6,000 đồng/CP",
       "source_event_type": "Trả cổ tức bằng tiền mặt"
     }
   ],
   "ca_symbols": [
-    "MCP"
+    "NTC",
+    "VMD"
   ],
   "rebase_symbols": [],
-  "rebase_gate_status": "PASS",
+  "rebase_gate_status": "BLOCKED_PRICE_BASIS_UNVERIFIED",
   "promotion_effect": "NONE",
   "integrity": {
     "source_verified": true,
@@ -40,14 +53,7 @@
     "ambiguous": [],
     "unresolved": []
   },
-  "status": "CERTIFIED",
+  "status": "CA_CONFIRMED_REBASE_BLOCKED",
   "reason": "Vietstock weekly evidence resolved for the session date.",
-  "receipt": "corporate_actions\\daily\\2026-10-22_20261022T100007306624Z.json",
-  "ca_basis_status": "RESOLVED_BY_EOD_FULL_HISTORY_RELOAD",
-  "rebase_receipt": "rebase_receipts\\2026-10-22_20261022T100014190589Z_e4150aa6.json",
-  "publisher_generation_id": "r33-2026-10-22-fd7196f43e0e94b8",
-  "source_ca_receipt": "corporate_actions\\daily\\2026-10-22_20261022T100007306624Z.json",
-  "resolution_scope": "SYMBOL_SCOPED",
-  "resolution_source": "EOD_REBASE_RECEIPT",
-  "resolved_at_utc": "2026-10-22T10:11:29.714545+00:00"
+  "receipt": "corporate_actions\\daily\\2026-10-23_20261023T100006825114Z.json"
 }
