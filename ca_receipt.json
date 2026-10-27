@@ -1,21 +1,36 @@
 {
   "job": "ca_scan",
   "schema_version": "corporate_actions.daily.v1",
-  "scan_date": "2026-10-26",
+  "scan_date": "2026-10-27",
   "week_start": "2026-10-26",
   "week_end": "2026-11-01",
-  "generated_at_utc": "2026-10-26T10:00:06.548262+00:00",
+  "generated_at_utc": "2026-10-27T10:00:03.922748+00:00",
   "provider": {
     "adapter": "VIETSTOCK_FIRST_PARTY_HOSE_EVENT_CALENDAR_V1",
     "source": "https://finance.vietstock.vn/lich-su-kien.htm"
   },
-  "source_weekly_receipt": "corporate_actions\\weekly\\2026-10-26_2026-11-01_20261026T100005251979Z.json",
-  "source_weekly_sha256": "9152424b42535808ae1d47242f46a2d383a4f003947b2f27995cb261fc1b01d6",
+  "source_weekly_receipt": "corporate_actions\\weekly\\2026-10-26_2026-11-01_20261027T100002957823Z.json",
+  "source_weekly_sha256": "d19e735c9a0d004893a7b9b27e07c4894b870d037bdc0922d4dd3da60eab874c",
   "weekly_fallback_after_transient_failure": null,
-  "events": [],
-  "ca_symbols": [],
+  "events": [
+    {
+      "symbol": "BAF",
+      "exchange": "HOSE",
+      "event_type": "Phát hành thêm",
+      "ex_date": "2026-10-27",
+      "record_date": "2026-10-28",
+      "payment_date": null,
+      "cash_dividend": "15,000",
+      "stock_dividend_ratio": "9:1",
+      "raw_description": "Thực hiện quyền mua cổ phiếu phát hành thêm, tỷ lệ 9:1, giá 15,000 đồng/CP",
+      "source_event_type": "Phát hành thêm"
+    }
+  ],
+  "ca_symbols": [
+    "BAF"
+  ],
   "rebase_symbols": [],
-  "rebase_gate_status": "PASS_NO_CA",
+  "rebase_gate_status": "PASS",
   "promotion_effect": "NONE",
   "integrity": {
     "source_verified": true,
@@ -27,11 +42,12 @@
   },
   "status": "CERTIFIED",
   "reason": "Vietstock weekly evidence resolved for the session date.",
-  "receipt": "corporate_actions\\daily\\2026-10-26_20261026T100006549267Z.json",
-  "publisher_generation_id": "r33-2026-10-26-64b26d79801bf887",
-  "source_ca_receipt": "corporate_actions\\daily\\2026-10-26_20261026T100006549267Z.json",
+  "receipt": "corporate_actions\\daily\\2026-10-27_20261027T100003922748Z.json",
   "ca_basis_status": "RESOLVED_BY_EOD_FULL_HISTORY_RELOAD",
+  "rebase_receipt": "rebase_receipts\\2026-10-27_20261027T100008208467Z_3f65b258.json",
+  "publisher_generation_id": "r33-2026-10-27-4095bb719676c40f",
+  "source_ca_receipt": "corporate_actions\\daily\\2026-10-27_20261027T100003922748Z.json",
   "resolution_scope": "SYMBOL_SCOPED",
   "resolution_source": "EOD_REBASE_RECEIPT",
-  "resolved_at_utc": "2026-10-26T10:12:39.827500+00:00"
+  "resolved_at_utc": "2026-10-27T10:11:45.274569+00:00"
 }
