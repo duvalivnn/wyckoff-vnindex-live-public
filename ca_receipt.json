@@ -1,36 +1,87 @@
 {
   "job": "ca_scan",
   "schema_version": "corporate_actions.daily.v1",
-  "scan_date": "2026-10-28",
+  "scan_date": "2026-10-29",
   "week_start": "2026-10-26",
   "week_end": "2026-11-01",
-  "generated_at_utc": "2026-10-28T12:00:20.590957+00:00",
+  "generated_at_utc": "2026-10-29T10:00:06.516799+00:00",
   "provider": {
     "adapter": "VIETSTOCK_FIRST_PARTY_HOSE_EVENT_CALENDAR_V1",
     "source": "https://finance.vietstock.vn/lich-su-kien.htm"
   },
-  "source_weekly_receipt": "corporate_actions\\weekly\\2026-10-26_2026-11-01_20261028T120015693029Z.json",
-  "source_weekly_sha256": "70ad48b177915dd1a95ecb262b0c51ba043b49920115e48065af42f2453f2e5a",
+  "source_weekly_receipt": "corporate_actions\\weekly\\2026-10-26_2026-11-01_20261029T100004823979Z.json",
+  "source_weekly_sha256": "a8e5ed15f13a43b18fa00d28432f666ac0dd4fa2066a2e1d786189d9db6c45ab",
   "weekly_fallback_after_transient_failure": null,
   "events": [
     {
-      "symbol": "DSH",
+      "symbol": "NT2",
+      "exchange": "HOSE",
+      "event_type": "Trả cổ tức bằng tiền mặt",
+      "ex_date": "2026-10-29",
+      "record_date": "2026-10-30",
+      "payment_date": "2026-11-16",
+      "cash_dividend": "1,000",
+      "stock_dividend_ratio": null,
+      "raw_description": "Trả cổ tức năm 2025 bằng tiền, 1,000 đồng/CP",
+      "source_event_type": "Trả cổ tức bằng tiền mặt"
+    },
+    {
+      "symbol": "GHC",
+      "exchange": "HOSE",
+      "event_type": "Trả cổ tức bằng tiền mặt",
+      "ex_date": "2026-10-29",
+      "record_date": "2026-10-30",
+      "payment_date": "2026-11-10",
+      "cash_dividend": "2,000",
+      "stock_dividend_ratio": null,
+      "raw_description": "Trả cổ tức đợt 1/2026 bằng tiền, 2,000 đồng/CP",
+      "source_event_type": "Trả cổ tức bằng tiền mặt"
+    },
+    {
+      "symbol": "ANV",
+      "exchange": "HOSE",
+      "event_type": "Trả cổ tức bằng tiền mặt",
+      "ex_date": "2026-10-29",
+      "record_date": "2026-10-30",
+      "payment_date": "2026-12-15",
+      "cash_dividend": "500",
+      "stock_dividend_ratio": null,
+      "raw_description": "Trả cổ tức năm 2025 bằng tiền, 500 đồng/CP",
+      "source_event_type": "Trả cổ tức bằng tiền mặt"
+    },
+    {
+      "symbol": "ANV",
+      "exchange": "HOSE",
+      "event_type": "Trả cổ tức bằng tiền mặt",
+      "ex_date": "2026-10-29",
+      "record_date": "2026-10-30",
+      "payment_date": "2026-12-15",
+      "cash_dividend": "500",
+      "stock_dividend_ratio": null,
+      "raw_description": "Trả cổ tức năm 2026 bằng tiền, 500 đồng/CP",
+      "source_event_type": "Trả cổ tức bằng tiền mặt"
+    },
+    {
+      "symbol": "TCB",
       "exchange": "HOSE",
       "event_type": "Trả cổ tức bằng cổ phiếu",
-      "ex_date": "2026-10-28",
-      "record_date": "2026-10-29",
+      "ex_date": "2026-10-29",
+      "record_date": "2026-10-30",
       "payment_date": null,
       "cash_dividend": null,
-      "stock_dividend_ratio": "100:12",
-      "raw_description": "Trả cổ tức năm 2025 bằng cổ phiếu, tỷ lệ 100:12",
+      "stock_dividend_ratio": "100:50",
+      "raw_description": "Trả cổ tức bằng cổ phiếu, tỷ lệ 100:50",
       "source_event_type": "Trả cổ tức bằng cổ phiếu"
     }
   ],
   "ca_symbols": [
-    "DSH"
+    "ANV",
+    "GHC",
+    "NT2",
+    "TCB"
   ],
   "rebase_symbols": [],
-  "rebase_gate_status": "PASS",
+  "rebase_gate_status": "BLOCKED_PRICE_BASIS_UNVERIFIED",
   "promotion_effect": "NONE",
   "integrity": {
     "source_verified": true,
@@ -40,14 +91,7 @@
     "ambiguous": [],
     "unresolved": []
   },
-  "status": "CERTIFIED",
+  "status": "CA_CONFIRMED_REBASE_BLOCKED",
   "reason": "Vietstock weekly evidence resolved for the session date.",
-  "receipt": "corporate_actions\\daily\\2026-10-28_20261028T120020597957Z.json",
-  "ca_basis_status": "RESOLVED_BY_EOD_FULL_HISTORY_RELOAD",
-  "rebase_receipt": "rebase_receipts\\2026-10-28_20261028T235429247885Z_532a405a.json",
-  "publisher_generation_id": "r33-2026-10-28-19b6dd81b1c9f859",
-  "source_ca_receipt": "corporate_actions\\daily\\2026-10-28_20261028T120020597957Z.json",
-  "resolution_scope": "SYMBOL_SCOPED",
-  "resolution_source": "EOD_REBASE_RECEIPT",
-  "resolved_at_utc": "2026-10-29T00:17:49.986089+00:00"
+  "receipt": "corporate_actions\\daily\\2026-10-29_20261029T100006516799Z.json"
 }
