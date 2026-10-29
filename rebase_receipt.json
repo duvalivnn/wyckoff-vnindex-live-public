@@ -1,33 +1,34 @@
 {
   "schema_version": "eod_rebase.v1",
   "result": "PASS",
-  "session_date": "2026-10-27",
-  "run_id": "20261027T100008208467Z_3f65b258",
-  "daily_ca_receipt": "corporate_actions\\daily\\2026-10-27_20261027T100003922748Z.json",
-  "daily_ca_sha256": "fc7d589f48af305660afbe7d2d0b9b67414a8b828810bd01ade808ae93c1a8f0",
+  "session_date": "2026-10-28",
+  "run_id": "20261028T235429247885Z_532a405a",
+  "daily_ca_receipt": "corporate_actions\\daily\\2026-10-28_20261028T120020597957Z.json",
+  "daily_ca_sha256": "914255b88559a8363282c68d0d050b1cc517727c12fbd439f6837cdd47877efb",
   "symbols": [
-    "BAF"
+    "DSH"
   ],
   "quarantined_symbols": [],
   "proofs": [
     {
-      "symbol": "BAF",
-      "old_rows": 1218,
-      "fresh_rows": 1219,
-      "historical_rows_checked": 1218,
-      "historical_ohlc_changed_rows": 1218,
-      "historical_volume_changed_rows": 0,
+      "symbol": "DSH",
+      "mode": "BOOTSTRAP_NEW_LISTING_NO_PRIOR_CANONICAL",
+      "old_rows": 0,
+      "fresh_rows": 347,
       "two_pulls_equal": true,
-      "old_daily_sha256": "022d23583a7c3e1ad9bc251788a4e2afc95a7628c0d7d1527600f0a1b3f2196e",
-      "low_price_ca_exemption": false,
-      "low_price_evidence": {
-        "eligible": false,
-        "session_close_thousand_vnd": 29.95,
-        "session_close_vnd": 29950.0,
-        "threshold_vnd": 5000,
-        "price_unit": "THOUSAND_VND_PER_SHARE",
-        "reason": "NORMAL_CA_REBASE_REQUIRED"
-      }
+      "historical_ohlc_changed_rows": null,
+      "historical_volume_changed_rows": null,
+      "volume_check": "TWO_FRESH_SDK_PULLS_AND_STAGED_SOURCE_EQUAL;NO_OLD_COMPARATOR",
+      "admission_receipt": "runtime\\evidence\\listing-onboarding\\DSH-admission-20261028T214556Z\\ADMISSION.json",
+      "admission_sha256": "b56fc03d52766693f73fa0ec515cf24352f0d3f2eea214bc275268b48b3dd7f6",
+      "provider": {
+        "identity_sha256": "2d1fe70a3435db9d28b94f7b42224ff3c7b9e6f41c048adccb8e281dc5b48c26",
+        "probe_sha256": "92a85746f49b4ef44b28c22876ed298b8b849eaba9c9368cd9a99f650ccff325",
+        "price_basis": "KBS_ADJUSTED_OBSERVED",
+        "volume_unit": "SHARES",
+        "initial_load_comparator": "NO_PRIOR_CANONICAL"
+      },
+      "history_lineage": "SINGLE_KBS_SECURITY_SERIES;VSDC_TRANSFER_SAME_ISIN;PRIOR_UPCOM_HISTORY_RETAINED"
     }
   ],
   "price_basis_evidence": {
@@ -39,13 +40,13 @@
     "runtime_version": "4.0.7"
   },
   "files": {
-    "stock_daily_ohlcv.csv": "ae8ea8ae75190b9ec4f21929b9a43ee8236a29dc74ef17c667e50d0bb2b1aee7",
-    "stock_weekly_ohlcv.csv": "a636e1b0a5057e6564f1283c2972210011c3a9fe996b93d58b30edb4a992c282",
-    "index_daily_ohlcv.csv": "3b9548f8f120001da4886b8531af0636dcb9f67596a04fe23e406484491a0357",
-    "index_weekly_ohlcv.csv": "7c4972fb4f72f4902a86d493968aabdbf407e9c88ed6a057806220821b7078f0",
-    "validation_report.json": "80c677287bbcff3e12694794c53f043bc63d54b1b0253f0ab422ac5e6f4c2b59",
-    "stocks_daily\\BAF.csv": "b984e4d20368709360702edfa51b0f2864a9bc5c77104925762fa06fa2b44c14",
-    "stocks_weekly\\BAF.csv": "32bcf74d37baa85711c8defe2e9ef0df3a04cc997a0449a876c154eb755db90d"
+    "stock_daily_ohlcv.csv": "88923f2a4b013c538a87d5389ef2f596293558c96102c35a45dc8bfbf5368473",
+    "stock_weekly_ohlcv.csv": "1d44c987fe051c5e05e7897aaa2fe62816d927a7dbf79f1ef0bfd4edecc80b55",
+    "index_daily_ohlcv.csv": "6a300850b0a051a77b4eb6e94ddb207e0922f6873875ea28bf3dcbd90b7906af",
+    "index_weekly_ohlcv.csv": "357f6c4a7dbd4d1857a249cdf10dee44f058681baca44e05aac565b528e5ee38",
+    "validation_report.json": "56a900d2863a919e64ea3f76a03c01a420eb1e8bb6d64362d73c8fd9c0d73f8f",
+    "stocks_daily\\DSH.csv": "46e069c5d88db407bff034c307fd773d25665dd21e44cdea58e97905472a2959",
+    "stocks_weekly\\DSH.csv": "c689b5aca8320fc97b709088c65c3a4b1c4034557a6405e91aba849ad192aeef"
   },
-  "generated_at_utc": "2026-10-27T10:10:15.596343+00:00"
+  "generated_at_utc": "2026-10-28T23:56:18.880492+00:00"
 }
