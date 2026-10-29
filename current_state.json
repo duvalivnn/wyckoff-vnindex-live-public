@@ -1,3570 +1,1701 @@
 {
-  "job": "eod",
-  "session_date": "2026-10-28",
-  "run_id": "20261028T235429247885Z_532a405a",
-  "generated_at_utc": "2026-10-28T23:56:18.886131+00:00",
-  "dry_run": false,
-  "request_pacing": {
-    "interval_seconds": 1.1,
-    "target_requests_per_minute": 54.55,
-    "policy": "COMMUNITY_SAFE_BAND_50_55_RPM"
-  },
-  "result": "PASS_WITH_QUARANTINE",
-  "ca_symbols": [
-    "DSH"
-  ],
-  "rebase_symbols": [
-    "DSH"
-  ],
-  "ca_rebase_pending": [],
-  "symbols_promoted": 357,
-  "quarantined_symbols": [
-    "ANT",
+  "job": "intraday",
+  "session_date": "2026-10-29",
+  "generated_at_utc": "2026-10-29T02:15:14.174382+00:00",
+  "snapshot": "live_snapshots\\live_20261029T091514+0700.csv",
+  "rows": 227,
+  "symbols_with_rows": 227,
+  "source_latest_date": "2026-10-28",
+  "intraday_latest_date": "2026-10-29",
+  "snapshot_semantics": "current KBS equity quote-board observation plus latest same-session KBS 5m index bar; provider timestamp retained per symbol",
+  "intraday_source": "KBS equity quote board plus per-index KBS 5m OHLCV bars",
+  "requested_symbols": 409,
+  "fetched_symbols": [
+    "AAA",
+    "AAM",
+    "AAN",
+    "ACB",
+    "ACC",
+    "ACL",
+    "AFX",
+    "AGG",
+    "AGR",
+    "ANV",
+    "APG",
+    "APH",
+    "ASP",
+    "BAF",
+    "BCE",
+    "BCM",
+    "BFC",
+    "BID",
+    "BMC",
+    "BMI",
+    "BSI",
+    "BSR",
+    "BVB",
+    "BVH",
+    "BWE",
+    "CDC",
+    "CII",
+    "CMG",
+    "CMX",
+    "CRE",
+    "CSM",
+    "CTD",
+    "CTF",
+    "CTG",
+    "CTI",
+    "CTR",
+    "CTS",
+    "D2D",
+    "DBC",
+    "DC4",
+    "DCL",
+    "DCM",
+    "DGC",
+    "DGW",
+    "DHC",
+    "DHG",
+    "DHM",
+    "DIG",
+    "DLG",
+    "DMX",
+    "DPG",
+    "DPM",
+    "DPR",
+    "DRC",
+    "DSE",
+    "DVP",
+    "DXG",
+    "DXS",
+    "EIB",
+    "ELC",
+    "EVF",
+    "EVG",
+    "FCN",
+    "FIR",
+    "FIT",
+    "FMC",
+    "FPT",
+    "FRT",
+    "FTS",
+    "GAS",
+    "GEE",
+    "GEG",
+    "GEL",
+    "GEX",
+    "GHC",
+    "GIL",
+    "GMD",
+    "GSP",
+    "GVR",
+    "HAG",
+    "HAH",
+    "HAR",
+    "HAX",
+    "HCD",
+    "HCM",
+    "HDB",
+    "HDC",
+    "HDG",
+    "HHP",
+    "HHS",
+    "HHV",
+    "HID",
+    "HII",
+    "HPA",
+    "HPG",
+    "HPX",
+    "HQC",
+    "HSG",
+    "HT1",
+    "HVN",
+    "IJC",
+    "ITC",
+    "KBC",
+    "KDH",
+    "KHG",
+    "KHP",
+    "KOS",
+    "KSB",
+    "LCG",
+    "LHG",
+    "LIX",
+    "LPB",
+    "LPS",
+    "LSS",
+    "MBB",
+    "MCH",
+    "MCM",
+    "MCP",
+    "MDG",
+    "MSB",
+    "MSH",
+    "MSN",
+    "MWG",
+    "MZG",
+    "NAB",
+    "NAF",
+    "NHA",
+    "NKG",
+    "NLG",
+    "NNC",
+    "NO1",
+    "NT2",
+    "NVL",
+    "OCB",
+    "ORS",
+    "PAC",
+    "PAN",
+    "PC1",
+    "PDR",
+    "PDV",
+    "PET",
+    "PGV",
+    "PHC",
+    "PHR",
+    "PJT",
     "PLP",
-    "VMD"
+    "PLX",
+    "PNJ",
+    "POW",
+    "PPC",
+    "PTB",
+    "PVD",
+    "PVP",
+    "PVT",
+    "REE",
+    "RYG",
+    "SAB",
+    "SAM",
+    "SBA",
+    "SBG",
+    "SBT",
+    "SCR",
+    "SCS",
+    "SGN",
+    "SGR",
+    "SHB",
+    "SHI",
+    "SHP",
+    "SIP",
+    "SJD",
+    "SKG",
+    "SMC",
+    "SSB",
+    "SSI",
+    "STB",
+    "STK",
+    "SZC",
+    "TCB",
+    "TCH",
+    "TCL",
+    "TCM",
+    "TCO",
+    "TCT",
+    "TCX",
+    "TDC",
+    "TLD",
+    "TLG",
+    "TLH",
+    "TPB",
+    "TRA",
+    "TRC",
+    "TSC",
+    "TTA",
+    "TTF",
+    "TV2",
+    "TVS",
+    "VAB",
+    "VCB",
+    "VCG",
+    "VCI",
+    "VCK",
+    "VDS",
+    "VFG",
+    "VGC",
+    "VHM",
+    "VIB",
+    "VIC",
+    "VIX",
+    "VJC",
+    "VMD",
+    "VN30",
+    "VND",
+    "VNINDEX",
+    "VNL",
+    "VNM",
+    "VNS",
+    "VOS",
+    "VPB",
+    "VPG",
+    "VPI",
+    "VPL",
+    "VPX",
+    "VRE",
+    "VSC",
+    "VTO",
+    "VVS",
+    "YEG"
   ],
-  "errors": [],
-  "staging": "staging\\eod_2026-10-28_20261028T235429247885Z_532a405a",
-  "ca_receipt": "corporate_actions\\daily\\2026-10-28_20261028T120020597957Z.json",
-  "index_source_selection": {
-    "path": "runtime\\evidence\\eod28-row2-release-20261028T234250Z\\index-selection\\RECEIPT.json",
-    "sha256": "25a1862e5ea9b3d3c87f35d235909e52273cc58c1d6677054ad6cc2ee86cdfdb",
-    "authority": "PROJECT_OWNER_EXPLICIT_INSTRUCTION",
-    "cutoff": "2026-10-28",
-    "reason_attribution": "OWNER_REPORTED_KBS_POST_CLOSE_CORRECTION",
-    "provider_official_notice_independently_verified": false,
-    "selected_rows": {
-      "VNINDEX": {
-        "open": "1762.64",
-        "high": "1767.35",
-        "low": "1753.95",
-        "close": "1766.65",
-        "volume": "512485970"
-      },
-      "VN30": {
-        "open": "1890.27",
-        "high": "1893.05",
-        "low": "1877.77",
-        "close": "1890.22",
-        "volume": "212402691"
-      }
-    }
+  "live_eligibility": {
+    "status": "OVERLAY_ALLOWED",
+    "overlay_allowed": true,
+    "eligible_rows": 227,
+    "eligible_symbols": [
+      "AAA",
+      "AAM",
+      "AAN",
+      "ACB",
+      "ACC",
+      "ACL",
+      "AFX",
+      "AGG",
+      "AGR",
+      "ANV",
+      "APG",
+      "APH",
+      "ASP",
+      "BAF",
+      "BCE",
+      "BCM",
+      "BFC",
+      "BID",
+      "BMC",
+      "BMI",
+      "BSI",
+      "BSR",
+      "BVB",
+      "BVH",
+      "BWE",
+      "CDC",
+      "CII",
+      "CMG",
+      "CMX",
+      "CRE",
+      "CSM",
+      "CTD",
+      "CTF",
+      "CTG",
+      "CTI",
+      "CTR",
+      "CTS",
+      "D2D",
+      "DBC",
+      "DC4",
+      "DCL",
+      "DCM",
+      "DGC",
+      "DGW",
+      "DHC",
+      "DHG",
+      "DHM",
+      "DIG",
+      "DLG",
+      "DMX",
+      "DPG",
+      "DPM",
+      "DPR",
+      "DRC",
+      "DSE",
+      "DVP",
+      "DXG",
+      "DXS",
+      "EIB",
+      "ELC",
+      "EVF",
+      "EVG",
+      "FCN",
+      "FIR",
+      "FIT",
+      "FMC",
+      "FPT",
+      "FRT",
+      "FTS",
+      "GAS",
+      "GEE",
+      "GEG",
+      "GEL",
+      "GEX",
+      "GHC",
+      "GIL",
+      "GMD",
+      "GSP",
+      "GVR",
+      "HAG",
+      "HAH",
+      "HAR",
+      "HAX",
+      "HCD",
+      "HCM",
+      "HDB",
+      "HDC",
+      "HDG",
+      "HHP",
+      "HHS",
+      "HHV",
+      "HID",
+      "HII",
+      "HPA",
+      "HPG",
+      "HPX",
+      "HQC",
+      "HSG",
+      "HT1",
+      "HVN",
+      "IJC",
+      "ITC",
+      "KBC",
+      "KDH",
+      "KHG",
+      "KHP",
+      "KOS",
+      "KSB",
+      "LCG",
+      "LHG",
+      "LIX",
+      "LPB",
+      "LPS",
+      "LSS",
+      "MBB",
+      "MCH",
+      "MCM",
+      "MCP",
+      "MDG",
+      "MSB",
+      "MSH",
+      "MSN",
+      "MWG",
+      "MZG",
+      "NAB",
+      "NAF",
+      "NHA",
+      "NKG",
+      "NLG",
+      "NNC",
+      "NO1",
+      "NT2",
+      "NVL",
+      "OCB",
+      "ORS",
+      "PAC",
+      "PAN",
+      "PC1",
+      "PDR",
+      "PDV",
+      "PET",
+      "PGV",
+      "PHC",
+      "PHR",
+      "PJT",
+      "PLP",
+      "PLX",
+      "PNJ",
+      "POW",
+      "PPC",
+      "PTB",
+      "PVD",
+      "PVP",
+      "PVT",
+      "REE",
+      "RYG",
+      "SAB",
+      "SAM",
+      "SBA",
+      "SBG",
+      "SBT",
+      "SCR",
+      "SCS",
+      "SGN",
+      "SGR",
+      "SHB",
+      "SHI",
+      "SHP",
+      "SIP",
+      "SJD",
+      "SKG",
+      "SMC",
+      "SSB",
+      "SSI",
+      "STB",
+      "STK",
+      "SZC",
+      "TCB",
+      "TCH",
+      "TCL",
+      "TCM",
+      "TCO",
+      "TCT",
+      "TCX",
+      "TDC",
+      "TLD",
+      "TLG",
+      "TLH",
+      "TPB",
+      "TRA",
+      "TRC",
+      "TSC",
+      "TTA",
+      "TTF",
+      "TV2",
+      "TVS",
+      "VAB",
+      "VCB",
+      "VCG",
+      "VCI",
+      "VCK",
+      "VDS",
+      "VFG",
+      "VGC",
+      "VHM",
+      "VIB",
+      "VIC",
+      "VIX",
+      "VJC",
+      "VMD",
+      "VN30",
+      "VND",
+      "VNINDEX",
+      "VNL",
+      "VNM",
+      "VNS",
+      "VOS",
+      "VPB",
+      "VPG",
+      "VPI",
+      "VPL",
+      "VPX",
+      "VRE",
+      "VSC",
+      "VTO",
+      "VVS",
+      "YEG"
+    ],
+    "unavailable_symbols": [],
+    "symbol_status": {
+      "GEG": "LIVE_AVAILABLE",
+      "SBG": "LIVE_AVAILABLE",
+      "ACL": "LIVE_AVAILABLE",
+      "CRE": "LIVE_AVAILABLE",
+      "GHC": "LIVE_AVAILABLE",
+      "FIT": "LIVE_AVAILABLE",
+      "SGN": "LIVE_AVAILABLE",
+      "TCL": "LIVE_AVAILABLE",
+      "FIR": "LIVE_AVAILABLE",
+      "PHR": "LIVE_AVAILABLE",
+      "LSS": "LIVE_AVAILABLE",
+      "MCM": "LIVE_AVAILABLE",
+      "BMC": "LIVE_AVAILABLE",
+      "NO1": "LIVE_AVAILABLE",
+      "AAN": "LIVE_AVAILABLE",
+      "LCG": "LIVE_AVAILABLE",
+      "AGR": "LIVE_AVAILABLE",
+      "TLD": "LIVE_AVAILABLE",
+      "PET": "LIVE_AVAILABLE",
+      "MCP": "LIVE_AVAILABLE",
+      "LHG": "LIVE_AVAILABLE",
+      "STK": "LIVE_AVAILABLE",
+      "PAC": "LIVE_AVAILABLE",
+      "BWE": "LIVE_AVAILABLE",
+      "PDV": "LIVE_AVAILABLE",
+      "DCL": "LIVE_AVAILABLE",
+      "GSP": "LIVE_AVAILABLE",
+      "CMX": "LIVE_AVAILABLE",
+      "VNL": "LIVE_AVAILABLE",
+      "KOS": "LIVE_AVAILABLE",
+      "AAM": "LIVE_AVAILABLE",
+      "PJT": "LIVE_AVAILABLE",
+      "HAX": "LIVE_AVAILABLE",
+      "DHG": "LIVE_AVAILABLE",
+      "DLG": "LIVE_AVAILABLE",
+      "SKG": "LIVE_AVAILABLE",
+      "SGR": "LIVE_AVAILABLE",
+      "SAM": "LIVE_AVAILABLE",
+      "DVP": "LIVE_AVAILABLE",
+      "TRA": "LIVE_AVAILABLE",
+      "CSM": "LIVE_AVAILABLE",
+      "AFX": "LIVE_AVAILABLE",
+      "NHA": "LIVE_AVAILABLE",
+      "MDG": "LIVE_AVAILABLE",
+      "BCE": "LIVE_AVAILABLE",
+      "PHC": "LIVE_AVAILABLE",
+      "CTR": "LIVE_AVAILABLE",
+      "SJD": "LIVE_AVAILABLE",
+      "HPA": "LIVE_AVAILABLE",
+      "VMD": "LIVE_AVAILABLE",
+      "PLP": "LIVE_AVAILABLE",
+      "BFC": "LIVE_AVAILABLE",
+      "ACC": "LIVE_AVAILABLE",
+      "ITC": "LIVE_AVAILABLE",
+      "D2D": "LIVE_AVAILABLE",
+      "BMI": "LIVE_AVAILABLE",
+      "TTA": "LIVE_AVAILABLE",
+      "SIP": "LIVE_AVAILABLE",
+      "APG": "LIVE_AVAILABLE",
+      "DHC": "LIVE_AVAILABLE",
+      "VFG": "LIVE_AVAILABLE",
+      "TDC": "LIVE_AVAILABLE",
+      "PPC": "LIVE_AVAILABLE",
+      "DBC": "LIVE_AVAILABLE",
+      "PVP": "LIVE_AVAILABLE",
+      "PC1": "LIVE_AVAILABLE",
+      "KHP": "LIVE_AVAILABLE",
+      "SAB": "LIVE_AVAILABLE",
+      "NNC": "LIVE_AVAILABLE",
+      "HT1": "LIVE_AVAILABLE",
+      "VPG": "LIVE_AVAILABLE",
+      "LPS": "LIVE_AVAILABLE",
+      "LIX": "LIVE_AVAILABLE",
+      "ASP": "LIVE_AVAILABLE",
+      "NAB": "LIVE_AVAILABLE",
+      "HHS": "LIVE_AVAILABLE",
+      "EVF": "LIVE_AVAILABLE",
+      "PLX": "LIVE_AVAILABLE",
+      "HAR": "LIVE_AVAILABLE",
+      "KHG": "LIVE_AVAILABLE",
+      "STB": "LIVE_AVAILABLE",
+      "VGC": "LIVE_AVAILABLE",
+      "VCK": "LIVE_AVAILABLE",
+      "BSI": "LIVE_AVAILABLE",
+      "VNS": "LIVE_AVAILABLE",
+      "DC4": "LIVE_AVAILABLE",
+      "VCG": "LIVE_AVAILABLE",
+      "SCS": "LIVE_AVAILABLE",
+      "HID": "LIVE_AVAILABLE",
+      "POW": "LIVE_AVAILABLE",
+      "CII": "LIVE_AVAILABLE",
+      "OCB": "LIVE_AVAILABLE",
+      "CTG": "LIVE_AVAILABLE",
+      "DMX": "LIVE_AVAILABLE",
+      "NLG": "LIVE_AVAILABLE",
+      "HHV": "LIVE_AVAILABLE",
+      "BCM": "LIVE_AVAILABLE",
+      "DPG": "LIVE_AVAILABLE",
+      "DPM": "LIVE_AVAILABLE",
+      "HDB": "LIVE_AVAILABLE",
+      "EVG": "LIVE_AVAILABLE",
+      "CTS": "LIVE_AVAILABLE",
+      "DSE": "LIVE_AVAILABLE",
+      "DGW": "LIVE_AVAILABLE",
+      "TCM": "LIVE_AVAILABLE",
+      "HCD": "LIVE_AVAILABLE",
+      "VAB": "LIVE_AVAILABLE",
+      "RYG": "LIVE_AVAILABLE",
+      "FRT": "LIVE_AVAILABLE",
+      "GMD": "LIVE_AVAILABLE",
+      "VSC": "LIVE_AVAILABLE",
+      "SCR": "LIVE_AVAILABLE",
+      "DHM": "LIVE_AVAILABLE",
+      "FTS": "LIVE_AVAILABLE",
+      "SBA": "LIVE_AVAILABLE",
+      "DRC": "LIVE_AVAILABLE",
+      "TV2": "LIVE_AVAILABLE",
+      "SHP": "LIVE_AVAILABLE",
+      "VCI": "LIVE_AVAILABLE",
+      "FMC": "LIVE_AVAILABLE",
+      "SMC": "LIVE_AVAILABLE",
+      "TVS": "LIVE_AVAILABLE",
+      "HAG": "LIVE_AVAILABLE",
+      "GIL": "LIVE_AVAILABLE",
+      "HPG": "LIVE_AVAILABLE",
+      "SBT": "LIVE_AVAILABLE",
+      "KDH": "LIVE_AVAILABLE",
+      "VPI": "LIVE_AVAILABLE",
+      "YEG": "LIVE_AVAILABLE",
+      "NKG": "LIVE_AVAILABLE",
+      "TCT": "LIVE_AVAILABLE",
+      "VJC": "LIVE_AVAILABLE",
+      "HDC": "LIVE_AVAILABLE",
+      "BAF": "LIVE_AVAILABLE",
+      "BVH": "LIVE_AVAILABLE",
+      "CTI": "LIVE_AVAILABLE",
+      "IJC": "LIVE_AVAILABLE",
+      "TTF": "LIVE_AVAILABLE",
+      "PTB": "LIVE_AVAILABLE",
+      "TCO": "LIVE_AVAILABLE",
+      "MBB": "LIVE_AVAILABLE",
+      "VCB": "LIVE_AVAILABLE",
+      "KSB": "LIVE_AVAILABLE",
+      "VPL": "LIVE_AVAILABLE",
+      "KBC": "LIVE_AVAILABLE",
+      "DGC": "LIVE_AVAILABLE",
+      "HVN": "LIVE_AVAILABLE",
+      "MSH": "LIVE_AVAILABLE",
+      "CMG": "LIVE_AVAILABLE",
+      "PAN": "LIVE_AVAILABLE",
+      "PNJ": "LIVE_AVAILABLE",
+      "TRC": "LIVE_AVAILABLE",
+      "EIB": "LIVE_AVAILABLE",
+      "PDR": "LIVE_AVAILABLE",
+      "VOS": "LIVE_AVAILABLE",
+      "PGV": "LIVE_AVAILABLE",
+      "TSC": "LIVE_AVAILABLE",
+      "CTD": "LIVE_AVAILABLE",
+      "HSG": "LIVE_AVAILABLE",
+      "CDC": "LIVE_AVAILABLE",
+      "CTF": "LIVE_AVAILABLE",
+      "REE": "LIVE_AVAILABLE",
+      "BVB": "LIVE_AVAILABLE",
+      "LPB": "LIVE_AVAILABLE",
+      "PVD": "LIVE_AVAILABLE",
+      "APH": "LIVE_AVAILABLE",
+      "NT2": "LIVE_AVAILABLE",
+      "ELC": "LIVE_AVAILABLE",
+      "SSB": "LIVE_AVAILABLE",
+      "SZC": "LIVE_AVAILABLE",
+      "DXG": "LIVE_AVAILABLE",
+      "SHB": "LIVE_AVAILABLE",
+      "AGG": "LIVE_AVAILABLE",
+      "HII": "LIVE_AVAILABLE",
+      "DXS": "LIVE_AVAILABLE",
+      "MSB": "LIVE_AVAILABLE",
+      "MSN": "LIVE_AVAILABLE",
+      "AAA": "LIVE_AVAILABLE",
+      "GEL": "LIVE_AVAILABLE",
+      "TLG": "LIVE_AVAILABLE",
+      "HHP": "LIVE_AVAILABLE",
+      "DCM": "LIVE_AVAILABLE",
+      "MWG": "LIVE_AVAILABLE",
+      "VIX": "LIVE_AVAILABLE",
+      "NAF": "LIVE_AVAILABLE",
+      "VPB": "LIVE_AVAILABLE",
+      "VTO": "LIVE_AVAILABLE",
+      "BID": "LIVE_AVAILABLE",
+      "HCM": "LIVE_AVAILABLE",
+      "TCH": "LIVE_AVAILABLE",
+      "ACB": "LIVE_AVAILABLE",
+      "VHM": "LIVE_AVAILABLE",
+      "GAS": "LIVE_AVAILABLE",
+      "VVS": "LIVE_AVAILABLE",
+      "MZG": "LIVE_AVAILABLE",
+      "VDS": "LIVE_AVAILABLE",
+      "MCH": "LIVE_AVAILABLE",
+      "HPX": "LIVE_AVAILABLE",
+      "TCX": "LIVE_AVAILABLE",
+      "GEX": "LIVE_AVAILABLE",
+      "VRE": "LIVE_AVAILABLE",
+      "HAH": "LIVE_AVAILABLE",
+      "DIG": "LIVE_AVAILABLE",
+      "HDG": "LIVE_AVAILABLE",
+      "SSI": "LIVE_AVAILABLE",
+      "TLH": "LIVE_AVAILABLE",
+      "DPR": "LIVE_AVAILABLE",
+      "VIC": "LIVE_AVAILABLE",
+      "FCN": "LIVE_AVAILABLE",
+      "VPX": "LIVE_AVAILABLE",
+      "BSR": "LIVE_AVAILABLE",
+      "VIB": "LIVE_AVAILABLE",
+      "SHI": "LIVE_AVAILABLE",
+      "ORS": "LIVE_AVAILABLE",
+      "TCB": "LIVE_AVAILABLE",
+      "PVT": "LIVE_AVAILABLE",
+      "GEE": "LIVE_AVAILABLE",
+      "NVL": "LIVE_AVAILABLE",
+      "ANV": "LIVE_AVAILABLE",
+      "VNM": "LIVE_AVAILABLE",
+      "VND": "LIVE_AVAILABLE",
+      "GVR": "LIVE_AVAILABLE",
+      "HQC": "LIVE_AVAILABLE",
+      "TPB": "LIVE_AVAILABLE",
+      "FPT": "LIVE_AVAILABLE",
+      "VNINDEX": "LIVE_AVAILABLE",
+      "VN30": "LIVE_AVAILABLE"
+    },
+    "symbol_reasons": {},
+    "freshness_seconds": 900,
+    "basis_vs_eod": "NOT_COMPARED; KBS provider-native quote is display-only unless an explicit per-symbol conversion receipt is supplied"
   },
-  "listing_admission": {
-    "path": "runtime\\evidence\\listing-onboarding\\DSH-admission-20261028T214556Z\\ADMISSION.json",
-    "sha256": "b56fc03d52766693f73fa0ec515cf24352f0d3f2eea214bc275268b48b3dd7f6",
-    "symbol": "DSH",
-    "mode": "INITIAL_LOAD_NO_PRIOR_CANONICAL",
-    "history_lineage": "SINGLE_KBS_SECURITY_SERIES;VSDC_TRANSFER_SAME_ISIN;PRIOR_UPCOM_HISTORY_RETAINED",
-    "metadata_observed_at": "2026-10-28T17:48:57.875421+00:00"
-  },
-  "liquidity_retry_queue": [
+  "missing_symbols": [
+    "AAT",
+    "ABR",
+    "ABS",
+    "ABT",
+    "ACG",
+    "ADG",
+    "ADP",
+    "ADS",
     "ANT",
-    "VMD"
-  ],
-  "price_basis_evidence": {
-    "identity_receipt": "corporate_actions\\price_basis\\kbs_price_basis_runtime_identity_20261007T132130Z.json",
-    "identity_sha256": "2d1fe70a3435db9d28b94f7b42224ff3c7b9e6f41c048adccb8e281dc5b48c26",
-    "probe_receipt": "corporate_actions\\price_basis\\kbs_price_basis_probe_20261007T132053Z.json",
-    "probe_sha256": "92a85746f49b4ef44b28c22876ed298b8b849eaba9c9368cd9a99f650ccff325",
-    "price_basis": "KBS_ADJUSTED_OBSERVED",
-    "runtime_version": "4.0.7"
-  },
-  "symbols_requested": 407,
-  "resume_source_stage": "staging\\eod_2026-10-28_20261028T235124865639Z_2640d0b8",
-  "resume_scope": "PINNED_STOCK_CANDIDATES;INDICES_RECOMPUTED_WITH_OWNER_SELECTION",
-  "resumed_symbols": 407,
-  "session_coverage": {
-    "requested_symbols": 407,
-    "skipped_no_session": 47,
-    "eligible_symbols": 360,
-    "candidate_symbols": 357,
-    "quarantined_symbols": 3,
-    "ratio": 0.991667,
-    "minimum_ratio": 0.9,
-    "minimum_candidate_symbols": 324,
-    "denominator_policy": "REQUESTED_UNIVERSE_MINUS_SKIPPED_NO_SESSION;QUARANTINE_REMAINS_ELIGIBLE"
-  },
-  "symbols_staged": 357,
-  "skipped_no_session": [
     "ASG",
+    "ASM",
+    "AST",
+    "BHN",
+    "BIC",
+    "BKG",
+    "BMP",
+    "BRC",
+    "BTP",
+    "BTT",
     "C32",
+    "C47",
+    "CCC",
     "CCI",
+    "CCL",
+    "CHP",
+    "CIG",
+    "CKG",
+    "CLC",
+    "CLL",
     "CLW",
     "CMV",
+    "CNG",
     "COM",
+    "CRC",
     "CRV",
+    "CSV",
     "CVT",
+    "DAH",
     "DAT",
-    "DHM",
+    "DBD",
+    "DBT",
+    "DHA",
     "DMC",
+    "DQC",
     "DRH",
+    "DRL",
+    "DSC",
+    "DSH",
+    "DSN",
+    "DTA",
+    "DTL",
     "DTT",
     "DXV",
+    "ECO",
+    "EVE",
+    "FCM",
     "FDC",
+    "GDT",
+    "GMH",
     "GTA",
+    "HAP",
+    "HAS",
     "HMC",
+    "HNA",
     "HRC",
+    "HSL",
+    "HTG",
+    "HTI",
+    "HTL",
+    "HTN",
+    "HTV",
     "HU1",
+    "HUB",
+    "HVH",
     "ICT",
+    "IDI",
+    "ILB",
+    "IMP",
     "ITD",
+    "JVC",
+    "KDC",
+    "KLB",
+    "KMR",
+    "L10",
+    "LAF",
+    "LBM",
+    "LDG",
     "LGC",
+    "LGL",
     "LM8",
+    "MHC",
+    "MIG",
+    "NAV",
+    "NBB",
+    "NCT",
+    "NHH",
+    "NHT",
     "NSC",
+    "NTC",
+    "NTL",
     "NVT",
-    "PJT",
+    "OGC",
+    "OPC",
+    "PDN",
+    "PGC",
+    "PGD",
+    "PGI",
+    "PIT",
     "PMG",
     "PNC",
+    "PTC",
+    "PTL",
+    "QCG",
+    "QNP",
     "RAL",
     "S4A",
+    "SAV",
     "SBV",
     "SC5",
     "SFC",
     "SFG",
     "SFI",
+    "SGT",
+    "SHA",
+    "SJS",
+    "SMA",
+    "SMB",
     "SPM",
     "SRC",
+    "SRF",
+    "SSC",
+    "ST8",
     "STG",
     "SVC",
+    "SVD",
+    "SVT",
+    "SZL",
+    "TAL",
+    "TBC",
+    "TCI",
     "TCR",
-    "TCT",
+    "TDG",
+    "TDH",
     "TDM",
+    "TDP",
+    "TDW",
+    "TEG",
+    "THG",
+    "TIP",
+    "TIX",
+    "TMP",
+    "TMS",
+    "TMT",
+    "TN1",
     "TNC",
+    "TNH",
+    "TNI",
+    "TNT",
+    "TPC",
+    "TSA",
     "TTE",
+    "TVB",
+    "TVT",
+    "TYA",
+    "UIC",
+    "VBB",
+    "VCA",
     "VCF",
+    "VDP",
+    "VHC",
+    "VID",
+    "VIP",
     "VNG",
-    "VPS"
+    "VPD",
+    "VPH",
+    "VPS",
+    "VRC",
+    "VSH",
+    "VSI",
+    "VTB",
+    "VTP",
+    "YBM"
   ],
-  "rebase_proofs": [
+  "provider_errors": [
     {
-      "symbol": "DSH",
-      "mode": "BOOTSTRAP_NEW_LISTING_NO_PRIOR_CANONICAL",
-      "old_rows": 0,
-      "fresh_rows": 347,
-      "two_pulls_equal": true,
-      "historical_ohlc_changed_rows": null,
-      "historical_volume_changed_rows": null,
-      "volume_check": "TWO_FRESH_SDK_PULLS_AND_STAGED_SOURCE_EQUAL;NO_OLD_COMPARATOR",
-      "admission_receipt": "runtime\\evidence\\listing-onboarding\\DSH-admission-20261028T214556Z\\ADMISSION.json",
-      "admission_sha256": "b56fc03d52766693f73fa0ec515cf24352f0d3f2eea214bc275268b48b3dd7f6",
-      "provider": {
-        "identity_sha256": "2d1fe70a3435db9d28b94f7b42224ff3c7b9e6f41c048adccb8e281dc5b48c26",
-        "probe_sha256": "92a85746f49b4ef44b28c22876ed298b8b849eaba9c9368cd9a99f650ccff325",
-        "price_basis": "KBS_ADJUSTED_OBSERVED",
-        "volume_unit": "SHARES",
-        "initial_load_comparator": "NO_PRIOR_CANONICAL"
-      },
-      "history_lineage": "SINGLE_KBS_SECURITY_SERIES;VSDC_TRANSFER_SAME_ISIN;PRIOR_UPCOM_HISTORY_RETAINED"
-    }
-  ],
-  "staged_validation_result": "PASS",
-  "hard_integrity_policy": "WARN_AND_CONTINUE",
-  "liquidity_metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS",
-  "liquidity_assessments": {
-    "AAA": {
-      "symbol": "AAA",
-      "adv20": 1161255.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "AAM": {
-      "symbol": "AAM",
-      "adv20": 4000.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "AAN": {
-      "symbol": "AAN",
-      "adv20": 217540.0,
-      "band": "MEDIUM",
-      "ca_policy": "NO_CA",
-      "failure_action": "FLAG_AND_RETRY_FULL_HISTORY_NEXT_EOD",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "AAT": {
       "symbol": "AAT",
-      "adv20": 31645.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     },
-    "ABR": {
+    {
       "symbol": "ABR",
-      "adv20": 675.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     },
-    "ABS": {
+    {
       "symbol": "ABS",
-      "adv20": 144475.0,
-      "band": "MEDIUM",
-      "ca_policy": "NO_CA",
-      "failure_action": "FLAG_AND_RETRY_FULL_HISTORY_NEXT_EOD",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     },
-    "ABT": {
+    {
       "symbol": "ABT",
-      "adv20": 4225.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     },
-    "ACB": {
-      "symbol": "ACB",
-      "adv20": 8737665.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "ACC": {
-      "symbol": "ACC",
-      "adv20": 184330.0,
-      "band": "MEDIUM",
-      "ca_policy": "NO_CA",
-      "failure_action": "FLAG_AND_RETRY_FULL_HISTORY_NEXT_EOD",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "ACG": {
+    {
       "symbol": "ACG",
-      "adv20": 2010.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     },
-    "ACL": {
-      "symbol": "ACL",
-      "adv20": 3960.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "ADG": {
+    {
       "symbol": "ADG",
-      "adv20": 2725.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     },
-    "ADP": {
+    {
       "symbol": "ADP",
-      "adv20": 2945.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     },
-    "ADS": {
+    {
       "symbol": "ADS",
-      "adv20": 24935.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     },
-    "AFX": {
-      "symbol": "AFX",
-      "adv20": 151060.0,
-      "band": "MEDIUM",
-      "ca_policy": "NO_CA",
-      "failure_action": "FLAG_AND_RETRY_FULL_HISTORY_NEXT_EOD",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "AGG": {
-      "symbol": "AGG",
-      "adv20": 150440.0,
-      "band": "MEDIUM",
-      "ca_policy": "NO_CA",
-      "failure_action": "FLAG_AND_RETRY_FULL_HISTORY_NEXT_EOD",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "AGR": {
-      "symbol": "AGR",
-      "adv20": 219295.0,
-      "band": "MEDIUM",
-      "ca_policy": "NO_CA",
-      "failure_action": "FLAG_AND_RETRY_FULL_HISTORY_NEXT_EOD",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "ANT": {
+    {
       "symbol": "ANT",
-      "adv20": 21645.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     },
-    "ANV": {
-      "symbol": "ANV",
-      "adv20": 1494140.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "APG": {
-      "symbol": "APG",
-      "adv20": 138520.0,
-      "band": "MEDIUM",
-      "ca_policy": "NO_CA",
-      "failure_action": "FLAG_AND_RETRY_FULL_HISTORY_NEXT_EOD",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "APH": {
-      "symbol": "APH",
-      "adv20": 346850.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "ASG": {
+    {
       "symbol": "ASG",
-      "adv20": 390.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     },
-    "ASM": {
+    {
       "symbol": "ASM",
-      "adv20": 395150.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     },
-    "ASP": {
-      "symbol": "ASP",
-      "adv20": 172600.0,
-      "band": "MEDIUM",
-      "ca_policy": "NO_CA",
-      "failure_action": "FLAG_AND_RETRY_FULL_HISTORY_NEXT_EOD",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "AST": {
+    {
       "symbol": "AST",
-      "adv20": 6715.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     },
-    "BAF": {
-      "symbol": "BAF",
-      "adv20": 1915385.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "BCE": {
-      "symbol": "BCE",
-      "adv20": 105805.0,
-      "band": "MEDIUM",
-      "ca_policy": "NO_CA",
-      "failure_action": "FLAG_AND_RETRY_FULL_HISTORY_NEXT_EOD",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "BCM": {
-      "symbol": "BCM",
-      "adv20": 561645.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "BFC": {
-      "symbol": "BFC",
-      "adv20": 209600.0,
-      "band": "MEDIUM",
-      "ca_policy": "NO_CA",
-      "failure_action": "FLAG_AND_RETRY_FULL_HISTORY_NEXT_EOD",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "BHN": {
+    {
       "symbol": "BHN",
-      "adv20": 1125.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     },
-    "BIC": {
+    {
       "symbol": "BIC",
-      "adv20": 24875.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     },
-    "BID": {
-      "symbol": "BID",
-      "adv20": 3024440.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "BKG": {
+    {
       "symbol": "BKG",
-      "adv20": 303330.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     },
-    "BMC": {
-      "symbol": "BMC",
-      "adv20": 24615.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "BMI": {
-      "symbol": "BMI",
-      "adv20": 82200.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "BMP": {
+    {
       "symbol": "BMP",
-      "adv20": 61760.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     },
-    "BRC": {
+    {
       "symbol": "BRC",
-      "adv20": 1365.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     },
-    "BSI": {
-      "symbol": "BSI",
-      "adv20": 374910.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "BSR": {
-      "symbol": "BSR",
-      "adv20": 9237460.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "BTP": {
+    {
       "symbol": "BTP",
-      "adv20": 24800.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     },
-    "BTT": {
+    {
       "symbol": "BTT",
-      "adv20": 405.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     },
-    "BVB": {
-      "symbol": "BVB",
-      "adv20": 1364765.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "BVH": {
-      "symbol": "BVH",
-      "adv20": 911810.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "BWE": {
-      "symbol": "BWE",
-      "adv20": 69090.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "C32": {
+    {
       "symbol": "C32",
-      "adv20": 4965.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     },
-    "C47": {
+    {
       "symbol": "C47",
-      "adv20": 9220.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     },
-    "CCC": {
+    {
       "symbol": "CCC",
-      "adv20": 2185.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     },
-    "CCI": {
+    {
       "symbol": "CCI",
-      "adv20": 945.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     },
-    "CCL": {
+    {
       "symbol": "CCL",
-      "adv20": 46730.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     },
-    "CDC": {
-      "symbol": "CDC",
-      "adv20": 263525.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "CHP": {
+    {
       "symbol": "CHP",
-      "adv20": 4285.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     },
-    "CIG": {
+    {
       "symbol": "CIG",
-      "adv20": 126085.0,
-      "band": "MEDIUM",
-      "ca_policy": "NO_CA",
-      "failure_action": "FLAG_AND_RETRY_FULL_HISTORY_NEXT_EOD",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     },
-    "CII": {
-      "symbol": "CII",
-      "adv20": 9159840.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "CKG": {
+    {
       "symbol": "CKG",
-      "adv20": 19185.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     },
-    "CLC": {
+    {
       "symbol": "CLC",
-      "adv20": 1585.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     },
-    "CLL": {
+    {
       "symbol": "CLL",
-      "adv20": 3360.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     },
-    "CLW": {
+    {
       "symbol": "CLW",
-      "adv20": 325.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     },
-    "CMG": {
-      "symbol": "CMG",
-      "adv20": 253225.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "CMV": {
+    {
       "symbol": "CMV",
-      "adv20": 1845.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     },
-    "CMX": {
-      "symbol": "CMX",
-      "adv20": 53425.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "CNG": {
+    {
       "symbol": "CNG",
-      "adv20": 4450.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     },
-    "COM": {
+    {
       "symbol": "COM",
-      "adv20": 345.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     },
-    "CRC": {
+    {
       "symbol": "CRC",
-      "adv20": 312035.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     },
-    "CRE": {
-      "symbol": "CRE",
-      "adv20": 289935.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "CRV": {
+    {
       "symbol": "CRV",
-      "adv20": 1010.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     },
-    "CSM": {
-      "symbol": "CSM",
-      "adv20": 81995.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "CSV": {
+    {
       "symbol": "CSV",
-      "adv20": 653950.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     },
-    "CTD": {
-      "symbol": "CTD",
-      "adv20": 454845.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "CTF": {
-      "symbol": "CTF",
-      "adv20": 220045.0,
-      "band": "MEDIUM",
-      "ca_policy": "NO_CA",
-      "failure_action": "FLAG_AND_RETRY_FULL_HISTORY_NEXT_EOD",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "CTG": {
-      "symbol": "CTG",
-      "adv20": 6915895.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "CTI": {
-      "symbol": "CTI",
-      "adv20": 269050.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "CTR": {
-      "symbol": "CTR",
-      "adv20": 172060.0,
-      "band": "MEDIUM",
-      "ca_policy": "NO_CA",
-      "failure_action": "FLAG_AND_RETRY_FULL_HISTORY_NEXT_EOD",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "CTS": {
-      "symbol": "CTS",
-      "adv20": 1408255.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "CVT": {
+    {
       "symbol": "CVT",
-      "adv20": 2210.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     },
-    "D2D": {
-      "symbol": "D2D",
-      "adv20": 53565.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "DAH": {
+    {
       "symbol": "DAH",
-      "adv20": 215130.0,
-      "band": "MEDIUM",
-      "ca_policy": "NO_CA",
-      "failure_action": "FLAG_AND_RETRY_FULL_HISTORY_NEXT_EOD",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     },
-    "DAT": {
+    {
       "symbol": "DAT",
-      "adv20": 2340.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     },
-    "DBC": {
-      "symbol": "DBC",
-      "adv20": 1754490.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "DBD": {
+    {
       "symbol": "DBD",
-      "adv20": 13955.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     },
-    "DBT": {
+    {
       "symbol": "DBT",
-      "adv20": 3080.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     },
-    "DC4": {
-      "symbol": "DC4",
-      "adv20": 111725.0,
-      "band": "MEDIUM",
-      "ca_policy": "NO_CA",
-      "failure_action": "FLAG_AND_RETRY_FULL_HISTORY_NEXT_EOD",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "DCL": {
-      "symbol": "DCL",
-      "adv20": 679400.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "DCM": {
-      "symbol": "DCM",
-      "adv20": 2243285.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "DGC": {
-      "symbol": "DGC",
-      "adv20": 450940.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "DGW": {
-      "symbol": "DGW",
-      "adv20": 1519055.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "DHA": {
+    {
       "symbol": "DHA",
-      "adv20": 21605.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     },
-    "DHC": {
-      "symbol": "DHC",
-      "adv20": 452175.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "DHG": {
-      "symbol": "DHG",
-      "adv20": 8735.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "DHM": {
-      "symbol": "DHM",
-      "adv20": 2505.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "DIG": {
-      "symbol": "DIG",
-      "adv20": 5020490.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "DLG": {
-      "symbol": "DLG",
-      "adv20": 404480.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "DMC": {
+    {
       "symbol": "DMC",
-      "adv20": 1150.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     },
-    "DMX": {
-      "symbol": "DMX",
-      "adv20": 192500.0,
-      "band": "MEDIUM",
-      "ca_policy": "NO_CA",
-      "failure_action": "FLAG_AND_RETRY_FULL_HISTORY_NEXT_EOD",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "DPG": {
-      "symbol": "DPG",
-      "adv20": 475905.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "DPM": {
-      "symbol": "DPM",
-      "adv20": 2127525.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "DPR": {
-      "symbol": "DPR",
-      "adv20": 438480.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "DQC": {
+    {
       "symbol": "DQC",
-      "adv20": 6165.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     },
-    "DRC": {
-      "symbol": "DRC",
-      "adv20": 237650.0,
-      "band": "MEDIUM",
-      "ca_policy": "NO_CA",
-      "failure_action": "FLAG_AND_RETRY_FULL_HISTORY_NEXT_EOD",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "DRH": {
+    {
       "symbol": "DRH",
-      "adv20": 423310.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     },
-    "DRL": {
+    {
       "symbol": "DRL",
-      "adv20": 5050.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     },
-    "DSC": {
+    {
       "symbol": "DSC",
-      "adv20": 7930.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     },
-    "DSE": {
-      "symbol": "DSE",
-      "adv20": 546770.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "DSN": {
-      "symbol": "DSN",
-      "adv20": 2740.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "DTA": {
-      "symbol": "DTA",
-      "adv20": 11590.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "DTL": {
-      "symbol": "DTL",
-      "adv20": 795.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "DTT": {
-      "symbol": "DTT",
-      "adv20": 355.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "DVP": {
-      "symbol": "DVP",
-      "adv20": 12290.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "DXG": {
-      "symbol": "DXG",
-      "adv20": 9450525.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "DXS": {
-      "symbol": "DXS",
-      "adv20": 2076965.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "DXV": {
-      "symbol": "DXV",
-      "adv20": 745.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "ECO": {
-      "symbol": "ECO",
-      "adv20": 1260.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "EIB": {
-      "symbol": "EIB",
-      "adv20": 4812300.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "ELC": {
-      "symbol": "ELC",
-      "adv20": 575090.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "EVE": {
-      "symbol": "EVE",
-      "adv20": 13335.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "EVF": {
-      "symbol": "EVF",
-      "adv20": 1269565.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "EVG": {
-      "symbol": "EVG",
-      "adv20": 551020.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "FCM": {
-      "symbol": "FCM",
-      "adv20": 17485.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "FCN": {
-      "symbol": "FCN",
-      "adv20": 589335.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "FDC": {
-      "symbol": "FDC",
-      "adv20": 375.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "FIR": {
-      "symbol": "FIR",
-      "adv20": 79885.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "FIT": {
-      "symbol": "FIT",
-      "adv20": 517110.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "FMC": {
-      "symbol": "FMC",
-      "adv20": 39460.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "FPT": {
-      "symbol": "FPT",
-      "adv20": 6206220.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "FRT": {
-      "symbol": "FRT",
-      "adv20": 586545.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "FTS": {
-      "symbol": "FTS",
-      "adv20": 767840.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "GAS": {
-      "symbol": "GAS",
-      "adv20": 935960.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "GDT": {
-      "symbol": "GDT",
-      "adv20": 7075.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "GEE": {
-      "symbol": "GEE",
-      "adv20": 1537805.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "GEG": {
-      "symbol": "GEG",
-      "adv20": 114615.0,
-      "band": "MEDIUM",
-      "ca_policy": "NO_CA",
-      "failure_action": "FLAG_AND_RETRY_FULL_HISTORY_NEXT_EOD",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "GEL": {
-      "symbol": "GEL",
-      "adv20": 1525140.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "GEX": {
-      "symbol": "GEX",
-      "adv20": 7787080.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "GHC": {
-      "symbol": "GHC",
-      "adv20": 7220.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "GIL": {
-      "symbol": "GIL",
-      "adv20": 136060.0,
-      "band": "MEDIUM",
-      "ca_policy": "NO_CA",
-      "failure_action": "FLAG_AND_RETRY_FULL_HISTORY_NEXT_EOD",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "GMD": {
-      "symbol": "GMD",
-      "adv20": 1733180.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "GMH": {
-      "symbol": "GMH",
-      "adv20": 2605.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "GSP": {
-      "symbol": "GSP",
-      "adv20": 157745.0,
-      "band": "MEDIUM",
-      "ca_policy": "NO_CA",
-      "failure_action": "FLAG_AND_RETRY_FULL_HISTORY_NEXT_EOD",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "GTA": {
-      "symbol": "GTA",
-      "adv20": 1700.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "GVR": {
-      "symbol": "GVR",
-      "adv20": 2268040.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "HAG": {
-      "symbol": "HAG",
-      "adv20": 2515710.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "HAH": {
-      "symbol": "HAH",
-      "adv20": 941475.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "HAP": {
-      "symbol": "HAP",
-      "adv20": 6320.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "HAR": {
-      "symbol": "HAR",
-      "adv20": 69540.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "HAS": {
-      "symbol": "HAS",
-      "adv20": 3510.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "HAX": {
-      "symbol": "HAX",
-      "adv20": 68990.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "HCD": {
-      "symbol": "HCD",
-      "adv20": 21490.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "HCM": {
-      "symbol": "HCM",
-      "adv20": 2648595.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "HDB": {
-      "symbol": "HDB",
-      "adv20": 16314590.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "HDC": {
-      "symbol": "HDC",
-      "adv20": 1669845.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "HDG": {
-      "symbol": "HDG",
-      "adv20": 774220.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "HHP": {
-      "symbol": "HHP",
-      "adv20": 1314360.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "HHS": {
-      "symbol": "HHS",
-      "adv20": 1150875.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "HHV": {
-      "symbol": "HHV",
-      "adv20": 3046830.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "HID": {
-      "symbol": "HID",
-      "adv20": 563765.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "HII": {
-      "symbol": "HII",
-      "adv20": 532565.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "HMC": {
-      "symbol": "HMC",
-      "adv20": 71915.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "HNA": {
-      "symbol": "HNA",
-      "adv20": 6785.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "HPA": {
-      "symbol": "HPA",
-      "adv20": 61295.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "HPG": {
-      "symbol": "HPG",
-      "adv20": 17836935.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "HPX": {
-      "symbol": "HPX",
-      "adv20": 953455.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "HQC": {
-      "symbol": "HQC",
-      "adv20": 2284015.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "HRC": {
-      "symbol": "HRC",
-      "adv20": 1495.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "HSG": {
-      "symbol": "HSG",
-      "adv20": 3232055.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "HSL": {
-      "symbol": "HSL",
-      "adv20": 993980.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "HT1": {
-      "symbol": "HT1",
-      "adv20": 541925.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "HTG": {
-      "symbol": "HTG",
-      "adv20": 7280.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "HTI": {
-      "symbol": "HTI",
-      "adv20": 8970.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "HTL": {
-      "symbol": "HTL",
-      "adv20": 1700.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "HTN": {
-      "symbol": "HTN",
-      "adv20": 441815.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "HTV": {
-      "symbol": "HTV",
-      "adv20": 3440.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "HU1": {
-      "symbol": "HU1",
-      "adv20": 575.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "HUB": {
-      "symbol": "HUB",
-      "adv20": 13440.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "HVH": {
-      "symbol": "HVH",
-      "adv20": 247720.0,
-      "band": "MEDIUM",
-      "ca_policy": "NO_CA",
-      "failure_action": "FLAG_AND_RETRY_FULL_HISTORY_NEXT_EOD",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "HVN": {
-      "symbol": "HVN",
-      "adv20": 548945.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "ICT": {
-      "symbol": "ICT",
-      "adv20": 9925.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "IDI": {
-      "symbol": "IDI",
-      "adv20": 552200.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "IJC": {
-      "symbol": "IJC",
-      "adv20": 1195405.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "ILB": {
-      "symbol": "ILB",
-      "adv20": 21320.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "IMP": {
-      "symbol": "IMP",
-      "adv20": 4745.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "ITC": {
-      "symbol": "ITC",
-      "adv20": 41500.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "ITD": {
-      "symbol": "ITD",
-      "adv20": 24715.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "JVC": {
-      "symbol": "JVC",
-      "adv20": 147905.0,
-      "band": "MEDIUM",
-      "ca_policy": "NO_CA",
-      "failure_action": "FLAG_AND_RETRY_FULL_HISTORY_NEXT_EOD",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "KBC": {
-      "symbol": "KBC",
-      "adv20": 1271530.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "KDC": {
-      "symbol": "KDC",
-      "adv20": 69040.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "KDH": {
-      "symbol": "KDH",
-      "adv20": 4430810.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "KHG": {
-      "symbol": "KHG",
-      "adv20": 2709945.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "KHP": {
-      "symbol": "KHP",
-      "adv20": 6295.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "KLB": {
-      "symbol": "KLB",
-      "adv20": 214600.0,
-      "band": "MEDIUM",
-      "ca_policy": "NO_CA",
-      "failure_action": "FLAG_AND_RETRY_FULL_HISTORY_NEXT_EOD",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "KMR": {
-      "symbol": "KMR",
-      "adv20": 2915.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "KOS": {
-      "symbol": "KOS",
-      "adv20": 251510.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "KSB": {
-      "symbol": "KSB",
-      "adv20": 758790.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "L10": {
-      "symbol": "L10",
-      "adv20": 1865.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "LAF": {
-      "symbol": "LAF",
-      "adv20": 1690.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "LBM": {
-      "symbol": "LBM",
-      "adv20": 13280.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "LCG": {
-      "symbol": "LCG",
-      "adv20": 839495.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "LDG": {
-      "symbol": "LDG",
-      "adv20": 603985.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "LGC": {
-      "symbol": "LGC",
-      "adv20": 1720.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "LGL": {
-      "symbol": "LGL",
-      "adv20": 30020.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "LHG": {
-      "symbol": "LHG",
-      "adv20": 43945.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "LIX": {
-      "symbol": "LIX",
-      "adv20": 22800.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "LM8": {
-      "symbol": "LM8",
-      "adv20": 14145.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "LPB": {
-      "symbol": "LPB",
-      "adv20": 2052445.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "LPS": {
-      "symbol": "LPS",
-      "adv20": 911895.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "LSS": {
-      "symbol": "LSS",
-      "adv20": 60950.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "MBB": {
-      "symbol": "MBB",
-      "adv20": 11460220.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "MCH": {
-      "symbol": "MCH",
-      "adv20": 611695.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "MCM": {
-      "symbol": "MCM",
-      "adv20": 35790.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "MCP": {
-      "symbol": "MCP",
-      "adv20": 32595.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "MDG": {
-      "symbol": "MDG",
-      "adv20": 12330.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "MHC": {
-      "symbol": "MHC",
-      "adv20": 7770.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "MIG": {
-      "symbol": "MIG",
-      "adv20": 114465.0,
-      "band": "MEDIUM",
-      "ca_policy": "NO_CA",
-      "failure_action": "FLAG_AND_RETRY_FULL_HISTORY_NEXT_EOD",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "MSB": {
-      "symbol": "MSB",
-      "adv20": 10470395.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "MSH": {
-      "symbol": "MSH",
-      "adv20": 134060.0,
-      "band": "MEDIUM",
-      "ca_policy": "NO_CA",
-      "failure_action": "FLAG_AND_RETRY_FULL_HISTORY_NEXT_EOD",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "MSN": {
-      "symbol": "MSN",
-      "adv20": 5561930.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "MWG": {
-      "symbol": "MWG",
-      "adv20": 2901475.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "MZG": {
-      "symbol": "MZG",
-      "adv20": 1092835.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "NAB": {
-      "symbol": "NAB",
-      "adv20": 2504535.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "NAF": {
-      "symbol": "NAF",
-      "adv20": 258710.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "NAV": {
-      "symbol": "NAV",
-      "adv20": 1095.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "NBB": {
-      "symbol": "NBB",
-      "adv20": 20885.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "NCT": {
-      "symbol": "NCT",
-      "adv20": 12920.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "NHA": {
-      "symbol": "NHA",
-      "adv20": 200365.0,
-      "band": "MEDIUM",
-      "ca_policy": "NO_CA",
-      "failure_action": "FLAG_AND_RETRY_FULL_HISTORY_NEXT_EOD",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "NHH": {
-      "symbol": "NHH",
-      "adv20": 16065.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "NHT": {
-      "symbol": "NHT",
-      "adv20": 2185.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "NKG": {
-      "symbol": "NKG",
-      "adv20": 4031660.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "NLG": {
-      "symbol": "NLG",
-      "adv20": 1507560.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "NNC": {
-      "symbol": "NNC",
-      "adv20": 30425.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "NO1": {
-      "symbol": "NO1",
-      "adv20": 25410.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "NSC": {
-      "symbol": "NSC",
-      "adv20": 1100.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "NT2": {
-      "symbol": "NT2",
-      "adv20": 1421935.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "NTC": {
-      "symbol": "NTC",
-      "adv20": 8290.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "NTL": {
-      "symbol": "NTL",
-      "adv20": 328790.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "NVL": {
-      "symbol": "NVL",
-      "adv20": 28392730.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "NVT": {
-      "symbol": "NVT",
-      "adv20": 1365.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "OCB": {
-      "symbol": "OCB",
-      "adv20": 1972600.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "OGC": {
-      "symbol": "OGC",
-      "adv20": 315415.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "OPC": {
-      "symbol": "OPC",
-      "adv20": 8515.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "ORS": {
-      "symbol": "ORS",
-      "adv20": 4121190.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "PAC": {
-      "symbol": "PAC",
-      "adv20": 230460.0,
-      "band": "MEDIUM",
-      "ca_policy": "NO_CA",
-      "failure_action": "FLAG_AND_RETRY_FULL_HISTORY_NEXT_EOD",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "PAN": {
-      "symbol": "PAN",
-      "adv20": 965705.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "PC1": {
-      "symbol": "PC1",
-      "adv20": 1012965.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "PDN": {
-      "symbol": "PDN",
-      "adv20": 3125.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "PDR": {
-      "symbol": "PDR",
-      "adv20": 5169765.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "PDV": {
-      "symbol": "PDV",
-      "adv20": 55020.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "PET": {
-      "symbol": "PET",
-      "adv20": 680025.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "PGC": {
-      "symbol": "PGC",
-      "adv20": 83720.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "PGD": {
-      "symbol": "PGD",
-      "adv20": 3380.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "PGI": {
-      "symbol": "PGI",
-      "adv20": 1215.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "PGV": {
-      "symbol": "PGV",
-      "adv20": 11595.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "PHC": {
-      "symbol": "PHC",
-      "adv20": 17905.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "PHR": {
-      "symbol": "PHR",
-      "adv20": 452380.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "PIT": {
-      "symbol": "PIT",
-      "adv20": 5435.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "PJT": {
-      "symbol": "PJT",
-      "adv20": 1150.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "PLP": {
-      "symbol": "PLP",
-      "adv20": 81400.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "PLX": {
-      "symbol": "PLX",
-      "adv20": 3784700.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "PMG": {
-      "symbol": "PMG",
-      "adv20": 2765.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "PNC": {
-      "symbol": "PNC",
-      "adv20": 330.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "PNJ": {
-      "symbol": "PNJ",
-      "adv20": 16296555.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "POW": {
-      "symbol": "POW",
-      "adv20": 5618245.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "PPC": {
-      "symbol": "PPC",
-      "adv20": 102445.0,
-      "band": "MEDIUM",
-      "ca_policy": "NO_CA",
-      "failure_action": "FLAG_AND_RETRY_FULL_HISTORY_NEXT_EOD",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "PTB": {
-      "symbol": "PTB",
-      "adv20": 132760.0,
-      "band": "MEDIUM",
-      "ca_policy": "NO_CA",
-      "failure_action": "FLAG_AND_RETRY_FULL_HISTORY_NEXT_EOD",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "PTC": {
-      "symbol": "PTC",
-      "adv20": 16930.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "PTL": {
-      "symbol": "PTL",
-      "adv20": 36615.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "PVD": {
-      "symbol": "PVD",
-      "adv20": 3701735.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "PVP": {
-      "symbol": "PVP",
-      "adv20": 1463025.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "PVT": {
-      "symbol": "PVT",
-      "adv20": 7262130.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "QCG": {
-      "symbol": "QCG",
-      "adv20": 204690.0,
-      "band": "MEDIUM",
-      "ca_policy": "NO_CA",
-      "failure_action": "FLAG_AND_RETRY_FULL_HISTORY_NEXT_EOD",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "QNP": {
-      "symbol": "QNP",
-      "adv20": 2395.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "RAL": {
-      "symbol": "RAL",
-      "adv20": 2095.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "REE": {
-      "symbol": "REE",
-      "adv20": 388970.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "RYG": {
-      "symbol": "RYG",
-      "adv20": 162375.0,
-      "band": "MEDIUM",
-      "ca_policy": "NO_CA",
-      "failure_action": "FLAG_AND_RETRY_FULL_HISTORY_NEXT_EOD",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "S4A": {
-      "symbol": "S4A",
-      "adv20": 1180.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "SAB": {
-      "symbol": "SAB",
-      "adv20": 306570.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "SAM": {
-      "symbol": "SAM",
-      "adv20": 71330.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "SAV": {
-      "symbol": "SAV",
-      "adv20": 2285.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "SBA": {
-      "symbol": "SBA",
-      "adv20": 4560.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "SBG": {
-      "symbol": "SBG",
-      "adv20": 187435.0,
-      "band": "MEDIUM",
-      "ca_policy": "NO_CA",
-      "failure_action": "FLAG_AND_RETRY_FULL_HISTORY_NEXT_EOD",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "SBT": {
-      "symbol": "SBT",
-      "adv20": 1271575.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "SBV": {
-      "symbol": "SBV",
-      "adv20": 610.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "SC5": {
-      "symbol": "SC5",
-      "adv20": 2730.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "SCR": {
-      "symbol": "SCR",
-      "adv20": 1260970.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "SCS": {
-      "symbol": "SCS",
-      "adv20": 166340.0,
-      "band": "MEDIUM",
-      "ca_policy": "NO_CA",
-      "failure_action": "FLAG_AND_RETRY_FULL_HISTORY_NEXT_EOD",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "SFC": {
-      "symbol": "SFC",
-      "adv20": 510.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "SFG": {
-      "symbol": "SFG",
-      "adv20": 1650.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "SFI": {
-      "symbol": "SFI",
-      "adv20": 1225.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "SGN": {
-      "symbol": "SGN",
-      "adv20": 7415.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "SGR": {
-      "symbol": "SGR",
-      "adv20": 45635.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "SGT": {
-      "symbol": "SGT",
-      "adv20": 18185.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "SHA": {
-      "symbol": "SHA",
-      "adv20": 3380.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "SHB": {
-      "symbol": "SHB",
-      "adv20": 43555290.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "SHI": {
-      "symbol": "SHI",
-      "adv20": 224470.0,
-      "band": "MEDIUM",
-      "ca_policy": "NO_CA",
-      "failure_action": "FLAG_AND_RETRY_FULL_HISTORY_NEXT_EOD",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "SHP": {
-      "symbol": "SHP",
-      "adv20": 2255.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "SIP": {
-      "symbol": "SIP",
-      "adv20": 81315.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "SJD": {
-      "symbol": "SJD",
-      "adv20": 51990.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "SJS": {
-      "symbol": "SJS",
-      "adv20": 19065.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "SKG": {
-      "symbol": "SKG",
-      "adv20": 33260.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "SMA": {
-      "symbol": "SMA",
-      "adv20": 1220.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "SMB": {
-      "symbol": "SMB",
-      "adv20": 2975.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "SMC": {
-      "symbol": "SMC",
-      "adv20": 114630.0,
-      "band": "MEDIUM",
-      "ca_policy": "NO_CA",
-      "failure_action": "FLAG_AND_RETRY_FULL_HISTORY_NEXT_EOD",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "SPM": {
-      "symbol": "SPM",
-      "adv20": 3625.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "SRC": {
-      "symbol": "SRC",
-      "adv20": 2475.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "SRF": {
-      "symbol": "SRF",
-      "adv20": 16565.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "SSB": {
-      "symbol": "SSB",
-      "adv20": 2260250.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "SSC": {
-      "symbol": "SSC",
-      "adv20": 355.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "SSI": {
-      "symbol": "SSI",
-      "adv20": 18700615.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "ST8": {
-      "symbol": "ST8",
-      "adv20": 153440.0,
-      "band": "MEDIUM",
-      "ca_policy": "NO_CA",
-      "failure_action": "FLAG_AND_RETRY_FULL_HISTORY_NEXT_EOD",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "STB": {
-      "symbol": "STB",
-      "adv20": 3532580.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "STG": {
-      "symbol": "STG",
-      "adv20": 925.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "STK": {
-      "symbol": "STK",
-      "adv20": 5675.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "SVC": {
-      "symbol": "SVC",
-      "adv20": 4520.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "SVD": {
-      "symbol": "SVD",
-      "adv20": 2300.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "SVT": {
-      "symbol": "SVT",
-      "adv20": 2940.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "SZC": {
-      "symbol": "SZC",
-      "adv20": 486455.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "SZL": {
-      "symbol": "SZL",
-      "adv20": 17345.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "TAL": {
-      "symbol": "TAL",
-      "adv20": 234515.0,
-      "band": "MEDIUM",
-      "ca_policy": "NO_CA",
-      "failure_action": "FLAG_AND_RETRY_FULL_HISTORY_NEXT_EOD",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "TBC": {
-      "symbol": "TBC",
-      "adv20": 2040.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "TCB": {
-      "symbol": "TCB",
-      "adv20": 17767130.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "TCH": {
-      "symbol": "TCH",
-      "adv20": 5144015.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "TCI": {
-      "symbol": "TCI",
-      "adv20": 128635.0,
-      "band": "MEDIUM",
-      "ca_policy": "NO_CA",
-      "failure_action": "FLAG_AND_RETRY_FULL_HISTORY_NEXT_EOD",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "TCL": {
-      "symbol": "TCL",
-      "adv20": 17065.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "TCM": {
-      "symbol": "TCM",
-      "adv20": 724185.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "TCO": {
-      "symbol": "TCO",
-      "adv20": 236715.0,
-      "band": "MEDIUM",
-      "ca_policy": "NO_CA",
-      "failure_action": "FLAG_AND_RETRY_FULL_HISTORY_NEXT_EOD",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "TCR": {
-      "symbol": "TCR",
-      "adv20": 2090.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "TCT": {
-      "symbol": "TCT",
-      "adv20": 2155.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "TCX": {
-      "symbol": "TCX",
-      "adv20": 2936810.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "TDC": {
-      "symbol": "TDC",
-      "adv20": 110970.0,
-      "band": "MEDIUM",
-      "ca_policy": "NO_CA",
-      "failure_action": "FLAG_AND_RETRY_FULL_HISTORY_NEXT_EOD",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "TDG": {
-      "symbol": "TDG",
-      "adv20": 17245.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "TDH": {
-      "symbol": "TDH",
-      "adv20": 28575.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "TDM": {
-      "symbol": "TDM",
-      "adv20": 7040.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "TDP": {
-      "symbol": "TDP",
-      "adv20": 273560.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "TDW": {
-      "symbol": "TDW",
-      "adv20": 900.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "TEG": {
-      "symbol": "TEG",
-      "adv20": 100495.0,
-      "band": "MEDIUM",
-      "ca_policy": "NO_CA",
-      "failure_action": "FLAG_AND_RETRY_FULL_HISTORY_NEXT_EOD",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "THG": {
-      "symbol": "THG",
-      "adv20": 18895.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "TIP": {
-      "symbol": "TIP",
-      "adv20": 17745.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "TIX": {
-      "symbol": "TIX",
-      "adv20": 2000.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "TLD": {
-      "symbol": "TLD",
-      "adv20": 158065.0,
-      "band": "MEDIUM",
-      "ca_policy": "NO_CA",
-      "failure_action": "FLAG_AND_RETRY_FULL_HISTORY_NEXT_EOD",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "TLG": {
-      "symbol": "TLG",
-      "adv20": 236050.0,
-      "band": "MEDIUM",
-      "ca_policy": "NO_CA",
-      "failure_action": "FLAG_AND_RETRY_FULL_HISTORY_NEXT_EOD",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "TLH": {
-      "symbol": "TLH",
-      "adv20": 128105.0,
-      "band": "MEDIUM",
-      "ca_policy": "NO_CA",
-      "failure_action": "FLAG_AND_RETRY_FULL_HISTORY_NEXT_EOD",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "TMP": {
-      "symbol": "TMP",
-      "adv20": 380.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "TMS": {
-      "symbol": "TMS",
-      "adv20": 1175.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "TMT": {
-      "symbol": "TMT",
-      "adv20": 7345.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "TN1": {
-      "symbol": "TN1",
-      "adv20": 2265.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "TNC": {
-      "symbol": "TNC",
-      "adv20": 1305.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "TNH": {
-      "symbol": "TNH",
-      "adv20": 215500.0,
-      "band": "MEDIUM",
-      "ca_policy": "NO_CA",
-      "failure_action": "FLAG_AND_RETRY_FULL_HISTORY_NEXT_EOD",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "TNI": {
-      "symbol": "TNI",
-      "adv20": 94910.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "TNT": {
-      "symbol": "TNT",
-      "adv20": 20315.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "TPB": {
-      "symbol": "TPB",
-      "adv20": 13118910.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "TPC": {
-      "symbol": "TPC",
-      "adv20": 62105.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "TRA": {
-      "symbol": "TRA",
-      "adv20": 3285.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "TRC": {
-      "symbol": "TRC",
-      "adv20": 251180.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "TSA": {
-      "symbol": "TSA",
-      "adv20": 5870.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "TSC": {
-      "symbol": "TSC",
-      "adv20": 125170.0,
-      "band": "MEDIUM",
-      "ca_policy": "NO_CA",
-      "failure_action": "FLAG_AND_RETRY_FULL_HISTORY_NEXT_EOD",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "TTA": {
-      "symbol": "TTA",
-      "adv20": 150630.0,
-      "band": "MEDIUM",
-      "ca_policy": "NO_CA",
-      "failure_action": "FLAG_AND_RETRY_FULL_HISTORY_NEXT_EOD",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "TTE": {
-      "symbol": "TTE",
-      "adv20": 285.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "TTF": {
-      "symbol": "TTF",
-      "adv20": 939985.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "TV2": {
-      "symbol": "TV2",
-      "adv20": 129835.0,
-      "band": "MEDIUM",
-      "ca_policy": "NO_CA",
-      "failure_action": "FLAG_AND_RETRY_FULL_HISTORY_NEXT_EOD",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "TVB": {
-      "symbol": "TVB",
-      "adv20": 8100.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "TVS": {
-      "symbol": "TVS",
-      "adv20": 98275.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "TVT": {
-      "symbol": "TVT",
-      "adv20": 3815.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "TYA": {
-      "symbol": "TYA",
-      "adv20": 5260.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "UIC": {
-      "symbol": "UIC",
-      "adv20": 1010.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "VAB": {
-      "symbol": "VAB",
-      "adv20": 440260.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "VBB": {
-      "symbol": "VBB",
-      "adv20": 107330.0,
-      "band": "MEDIUM",
-      "ca_policy": "NO_CA",
-      "failure_action": "FLAG_AND_RETRY_FULL_HISTORY_NEXT_EOD",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "VCA": {
-      "symbol": "VCA",
-      "adv20": 4270.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "VCB": {
-      "symbol": "VCB",
-      "adv20": 2978715.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "VCF": {
-      "symbol": "VCF",
-      "adv20": 335.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "VCG": {
-      "symbol": "VCG",
-      "adv20": 2285960.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "VCI": {
-      "symbol": "VCI",
-      "adv20": 7685635.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "VCK": {
-      "symbol": "VCK",
-      "adv20": 1679640.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "VDP": {
-      "symbol": "VDP",
-      "adv20": 2005.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "VDS": {
-      "symbol": "VDS",
-      "adv20": 560100.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "VFG": {
-      "symbol": "VFG",
-      "adv20": 3345.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "VGC": {
-      "symbol": "VGC",
-      "adv20": 847825.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "VHC": {
-      "symbol": "VHC",
-      "adv20": 314185.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "VHM": {
-      "symbol": "VHM",
-      "adv20": 7955280.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "VIB": {
-      "symbol": "VIB",
-      "adv20": 6251825.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "VIC": {
-      "symbol": "VIC",
-      "adv20": 2797780.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "VID": {
-      "symbol": "VID",
-      "adv20": 1370.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "VIP": {
-      "symbol": "VIP",
-      "adv20": 70430.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "VIX": {
-      "symbol": "VIX",
-      "adv20": 30090345.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "VJC": {
-      "symbol": "VJC",
-      "adv20": 933245.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "VMD": {
-      "symbol": "VMD",
-      "adv20": 3765.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "VND": {
-      "symbol": "VND",
-      "adv20": 9678375.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "VNG": {
-      "symbol": "VNG",
-      "adv20": 1075.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "VNL": {
-      "symbol": "VNL",
-      "adv20": 7565.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "VNM": {
-      "symbol": "VNM",
-      "adv20": 1918020.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "VNS": {
-      "symbol": "VNS",
-      "adv20": 16190.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "VOS": {
-      "symbol": "VOS",
-      "adv20": 1318715.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "VPB": {
-      "symbol": "VPB",
-      "adv20": 15819040.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "VPD": {
-      "symbol": "VPD",
-      "adv20": 4495.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "VPG": {
-      "symbol": "VPG",
-      "adv20": 323415.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "VPH": {
-      "symbol": "VPH",
-      "adv20": 13880.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "VPI": {
-      "symbol": "VPI",
-      "adv20": 1926765.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "VPL": {
-      "symbol": "VPL",
-      "adv20": 833245.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "VPS": {
-      "symbol": "VPS",
-      "adv20": 3965.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "VPX": {
-      "symbol": "VPX",
-      "adv20": 726820.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "VRC": {
-      "symbol": "VRC",
-      "adv20": 199925.0,
-      "band": "MEDIUM",
-      "ca_policy": "NO_CA",
-      "failure_action": "FLAG_AND_RETRY_FULL_HISTORY_NEXT_EOD",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "VRE": {
-      "symbol": "VRE",
-      "adv20": 3370390.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "VSC": {
-      "symbol": "VSC",
-      "adv20": 10338525.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "VSH": {
-      "symbol": "VSH",
-      "adv20": 5325.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "VSI": {
-      "symbol": "VSI",
-      "adv20": 530.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "VTB": {
-      "symbol": "VTB",
-      "adv20": 3035.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "VTO": {
-      "symbol": "VTO",
-      "adv20": 775400.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "VTP": {
-      "symbol": "VTP",
-      "adv20": 591885.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "VVS": {
-      "symbol": "VVS",
-      "adv20": 189675.0,
-      "band": "MEDIUM",
-      "ca_policy": "NO_CA",
-      "failure_action": "FLAG_AND_RETRY_FULL_HISTORY_NEXT_EOD",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "YBM": {
-      "symbol": "YBM",
-      "adv20": 3130.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "YEG": {
-      "symbol": "YEG",
-      "adv20": 849680.0,
-      "band": "HIGH",
-      "ca_policy": "NO_CA",
-      "failure_action": "RETRY_FULL_HISTORY_NOW_AND_BLOCK_IF_STILL_FAIL",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    },
-    "DSH": {
+    {
       "symbol": "DSH",
-      "adv20": 85865.0,
-      "band": "LOW",
-      "ca_policy": "CA_MINIMUM_LINEAGE_REQUIRED",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS"
-    }
-  },
-  "normalization_audits": {
-    "VNINDEX": [
-      {
-        "pull": "index_eod_selected",
-        "symbol": "VNINDEX",
-        "result": "PASS_OWNER_SELECTED_KBS_REVISION",
-        "raw_payload_sha256": "09a2ab6ca3813efdb2c9c9578dfd74a69ed21fc25de4de1a59375168d64d808d",
-        "raw_rows": 2,
-        "rows_after_date_filter": 2,
-        "rows_after_normalize": 1,
-        "duplicate_days": [],
-        "duplicate_rows_removed": 1,
-        "duplicate_volume_min_selected": 0,
-        "owner_source_revision": {
-          "authority": "PROJECT_OWNER_EXPLICIT_INSTRUCTION",
-          "receipt": "runtime\\evidence\\eod28-row2-release-20261028T234250Z\\index-selection\\RECEIPT.json",
-          "receipt_sha256": "25a1862e5ea9b3d3c87f35d235909e52273cc58c1d6677054ad6cc2ee86cdfdb",
-          "date": "2026-10-28",
-          "source_row_number": 2,
-          "source_sha256": [
-            "442859f76a97951b5c00f0b4adc2fc39ace2f13723a878b967ba3c7dc3d349dd",
-            "442859f76a97951b5c00f0b4adc2fc39ace2f13723a878b967ba3c7dc3d349dd"
-          ],
-          "selected_whole_bar": {
-            "open": "1762.64",
-            "high": "1767.35",
-            "low": "1753.95",
-            "close": "1766.65",
-            "volume": "512485970"
-          },
-          "rejected_bars": [
-            {
-              "open": "1762.18",
-              "high": "1767.48",
-              "low": "1753.95",
-              "close": "1766.65",
-              "volume": "659298240"
-            }
-          ],
-          "rows_removed": 1,
-          "field_merging": false,
-          "volume_selection": "OWNER_SELECTED_WHOLE_KBS_BAR",
-          "provider_correction_claim": "OWNER_REPORTED_NOT_INDEPENDENTLY_CERTIFIED"
-        }
-      }
-    ],
-    "VN30": [
-      {
-        "pull": "index_eod_selected",
-        "symbol": "VN30",
-        "result": "PASS_OWNER_SELECTED_KBS_REVISION",
-        "raw_payload_sha256": "d4e5b7076e85f1dd4dd44f5704894ec956e3c792f34e330284eb46ff7cd25913",
-        "raw_rows": 2,
-        "rows_after_date_filter": 2,
-        "rows_after_normalize": 1,
-        "duplicate_days": [],
-        "duplicate_rows_removed": 1,
-        "duplicate_volume_min_selected": 0,
-        "owner_source_revision": {
-          "authority": "PROJECT_OWNER_EXPLICIT_INSTRUCTION",
-          "receipt": "runtime\\evidence\\eod28-row2-release-20261028T234250Z\\index-selection\\RECEIPT.json",
-          "receipt_sha256": "25a1862e5ea9b3d3c87f35d235909e52273cc58c1d6677054ad6cc2ee86cdfdb",
-          "date": "2026-10-28",
-          "source_row_number": 2,
-          "source_sha256": [
-            "52b67e3734aa4b39682be5deb2267c63c53a983d625d09c60b76f7a86ac0927e",
-            "52b67e3734aa4b39682be5deb2267c63c53a983d625d09c60b76f7a86ac0927e"
-          ],
-          "selected_whole_bar": {
-            "open": "1890.27",
-            "high": "1893.05",
-            "low": "1877.77",
-            "close": "1890.22",
-            "volume": "212402691"
-          },
-          "rejected_bars": [
-            {
-              "open": "1890.61",
-              "high": "1893.05",
-              "low": "1877.77",
-              "close": "1890.22",
-              "volume": "302630960"
-            }
-          ],
-          "rows_removed": 1,
-          "field_merging": false,
-          "volume_selection": "OWNER_SELECTED_WHOLE_KBS_BAR",
-          "provider_correction_claim": "OWNER_REPORTED_NOT_INDEPENDENTLY_CERTIFIED"
-        }
-      }
-    ]
-  },
-  "liquidity_quarantine": [
-    {
-      "symbol": "ANT",
-      "adv20": 21645.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS",
-      "has_ca": false,
-      "reason": "ANT: PROVIDER_INVALID_HISTORY:['invalid_ohlcv_geometry']",
-      "retry_next_eod_full_history": false,
-      "ca_rebase_pending": false,
-      "retained_previous_history": true
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     },
     {
-      "symbol": "PLP",
-      "adv20": 81400.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS",
-      "has_ca": false,
-      "reason": "PLP: PROVIDER_CONFLICTING_DUPLICATE_DATE:{\"duplicate_days\": [{\"date\": \"2026-10-28\", \"identical_ohlc\": false, \"rows_before\": 2, \"rows_removed\": 1, \"volume_values\": [10800, 10800]}], \"duplicate_rows_removed\": 0, \"raw_columns\": [\"time\", \"open\", \"high\", \"low\", \"close\", \"volume\"], \"raw_payload_sha256\": \"fb59f748c082bcd8b86699159121946051b60d13e3f98b34f37fe452c3f20100\", \"raw_rows\": 2, \"result\": \"BLOCKED_CONFLICTING_DUPLICATES\", \"symbol\": \"PLP\"}",
-      "retry_next_eod_full_history": false,
-      "ca_rebase_pending": false,
-      "retained_previous_history": true
+      "symbol": "DSN",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     },
     {
-      "symbol": "VMD",
-      "adv20": 3765.0,
-      "band": "LOW",
-      "ca_policy": "NO_CA",
-      "failure_action": "QUARANTINE_AND_CONTINUE",
-      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS",
-      "has_ca": false,
-      "reason": "VMD: PROVIDER_INVALID_HISTORY:['invalid_ohlcv_geometry']",
-      "retry_next_eod_full_history": false,
-      "ca_rebase_pending": false,
-      "retained_previous_history": true
+      "symbol": "DTA",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "DTL",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "DTT",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "DXV",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "ECO",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "EVE",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "FCM",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "FDC",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "GDT",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "GMH",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "GTA",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "HAP",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "HAS",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "HMC",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "HNA",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "HRC",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "HSL",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "HTG",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "HTI",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "HTL",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "HTN",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "HTV",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "HU1",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "HUB",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "HVH",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "ICT",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "IDI",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "ILB",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "IMP",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "ITD",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "JVC",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "KDC",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "KLB",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "KMR",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "L10",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "LAF",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "LBM",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "LDG",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "LGC",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "LGL",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "LM8",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "MHC",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "MIG",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "NAV",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "NBB",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "NCT",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "NHH",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "NHT",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "NSC",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "NTC",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "NTL",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "NVT",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "OGC",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "OPC",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "PDN",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "PGC",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "PGD",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "PGI",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "PIT",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "PMG",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "PNC",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "PTC",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "PTL",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "QCG",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "QNP",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "RAL",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "S4A",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "SAV",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "SBV",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "SC5",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "SFC",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "SFG",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "SFI",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "SGT",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "SHA",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "SJS",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "SMA",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "SMB",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "SPM",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "SRC",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "SRF",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "SSC",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "ST8",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "STG",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "SVC",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "SVD",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "SVT",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "SZL",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "TAL",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "TBC",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "TCI",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "TCR",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "TDG",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "TDH",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "TDM",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "TDP",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "TDW",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "TEG",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "THG",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "TIP",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "TIX",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "TMP",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "TMS",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "TMT",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "TN1",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "TNC",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "TNH",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "TNI",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "TNT",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "TPC",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "TSA",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "TTE",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "TVB",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "TVT",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "TYA",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "UIC",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "VBB",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "VCA",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "VCF",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "VDP",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "VHC",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "VID",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "VIP",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "VNG",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "VPD",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "VPH",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "VPS",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "VRC",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "VSH",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "VSI",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "VTB",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "VTP",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "YBM",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     }
   ],
-  "backup": "C:\\Users\\T14\\Desktop\\DỮ LIỆU OHLCV\\data\\staging\\eod_2026-10-28_20261028T235429247885Z_532a405a\\backup",
-  "source_latest_date": "2026-10-28",
-  "validation_result": "PASS",
-  "newly_onboarded_symbols": [
-    "DSH"
-  ],
-  "metadata_sha256": {
-    "universe.csv": "ae7f819568b80c645844ca25439d33cec45d0c7bce265477540fe4df9d7fa9f5",
-    "sector_classification.csv": "ccc5b15e679e87034ebdf48ab0ef6db82b9068ebeaf1d7fa2f4e968f6894585b",
-    "vn30_constituents.csv": "b98017616a9b919dfcbac2bb31c5c441187495dfe01da88eccfdab57fe9685ac"
+  "provider_diagnostics": {
+    "equity_quote_board": {
+      "response_rows": 407,
+      "response_columns": [
+        "symbol",
+        "time",
+        "exchange",
+        "ceiling_price",
+        "floor_price",
+        "reference_price",
+        "open_price",
+        "high_price",
+        "low_price",
+        "close_price",
+        "average_price",
+        "volume_accumulated",
+        "total_value",
+        "price_change",
+        "percent_change",
+        "bid_price_1",
+        "bid_vol_1",
+        "bid_price_2",
+        "bid_vol_2",
+        "bid_price_3",
+        "bid_vol_3",
+        "ask_price_1",
+        "ask_vol_1",
+        "ask_price_2",
+        "ask_vol_2",
+        "ask_price_3",
+        "ask_vol_3",
+        "foreign_buy_volume",
+        "foreign_sell_volume",
+        "foreign_room"
+      ],
+      "messages": []
+    },
+    "index_5m": {
+      "requested_symbols": [
+        "VNINDEX",
+        "VN30"
+      ],
+      "rows": 2,
+      "errors": []
+    }
   },
-  "hard_integrity_warning": false,
-  "rebase_receipt": "rebase_receipts\\2026-10-28_20261028T235429247885Z_532a405a.json",
-  "stock_daily_sha256": "88923f2a4b013c538a87d5389ef2f596293558c96102c35a45dc8bfbf5368473",
-  "index_daily_sha256": "6a300850b0a051a77b4eb6e94ddb207e0922f6873875ea28bf3dcbd90b7906af",
-  "daily_sha256": "88923f2a4b013c538a87d5389ef2f596293558c96102c35a45dc8bfbf5368473"
+  "request_pacing": {
+    "request_count": 3,
+    "mode": "ONE_BULK_STOCK_REQUEST_PLUS_ONE_KBS_5M_REQUEST_PER_INDEX"
+  },
+  "validation_errors": [],
+  "promotion_effect": "NONE",
+  "is_provisional": true,
+  "intraday_generation": "intraday-20261029T091514+0700",
+  "eod_generation": "r33-2026-10-28-19b6dd81b1c9f859",
+  "eod_reference_sha256": "88923f2a4b013c538a87d5389ef2f596293558c96102c35a45dc8bfbf5368473",
+  "quote_timestamp": null,
+  "freshness": {
+    "mode": "PER_SYMBOL_PROVIDER_QUOTE_TIMESTAMP",
+    "threshold_seconds": 900
+  },
+  "provider_capability": {
+    "provider": "KBS",
+    "daily_ohlcv": false,
+    "quote_board": true,
+    "intraday": true,
+    "index_5m": true,
+    "status": "AVAILABLE",
+    "mode": "kbs_stock_quote_board_plus_index_5m"
+  },
+  "contract_status": "OVERLAY_ALLOWED",
+  "overlay_allowed": true,
+  "alerts_overlay_allowed": false,
+  "basis_vs_eod": "NOT_COMPARED",
+  "quote_timestamp_semantics": "equity quote timestamp or index 5m bar timestamp from KBS per symbol; fetched_at_utc and generated_at_utc are collection metadata only",
+  "overlay_reason": null,
+  "result": "PASS_WITH_WARNINGS",
+  "publisher_generation_id": "r33-2026-10-28-981864705439bd0c"
 }
