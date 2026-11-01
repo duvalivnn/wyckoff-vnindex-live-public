@@ -2,13 +2,13 @@
   "schema_version": "canonical_static_replacement.v1",
   "job": "history-refresh-weekly",
   "mode": "weekly",
-  "run_id": "20261025T100015642217Z_36ceeb73",
-  "window_start": "2026-10-19",
-  "window_end": "2026-10-23",
+  "run_id": "20261101T100010439178Z_dc4848e0",
+  "window_start": "2026-10-26",
+  "window_end": "2026-10-30",
   "replacement_semantics": "replace_only_window_preserve_outside_window",
   "source": "KBS",
   "result": "PASS_WITH_WARNINGS",
-  "canonical_latest_date": "2026-10-23",
+  "canonical_latest_date": "2026-10-30",
   "outside_window_preserved": true,
   "hard_integrity_policy": "WARN_AND_CONTINUE",
   "hard_integrity_result": "PASS",
@@ -69,14 +69,12 @@
     "CKG",
     "CLC",
     "CLL",
-    "CLW",
     "CMG",
     "CMX",
     "CNG",
     "COM",
     "CRC",
     "CRE",
-    "CRV",
     "CSM",
     "CSV",
     "CTD",
@@ -85,8 +83,10 @@
     "CTI",
     "CTR",
     "CTS",
+    "CVT",
     "D2D",
     "DAH",
+    "DAT",
     "DBC",
     "DBD",
     "DBT",
@@ -145,6 +145,7 @@
     "GMD",
     "GMH",
     "GSP",
+    "GTA",
     "GVR",
     "HAG",
     "HAH",
@@ -177,7 +178,6 @@
     "HTL",
     "HTN",
     "HTV",
-    "HU1",
     "HUB",
     "HVH",
     "HVN",
@@ -286,6 +286,7 @@
     "SC5",
     "SCR",
     "SCS",
+    "SFC",
     "SFG",
     "SFI",
     "SGN",
@@ -337,6 +338,7 @@
     "TEG",
     "THG",
     "TIP",
+    "TIX",
     "TLD",
     "TLG",
     "TLH",
@@ -344,7 +346,6 @@
     "TMS",
     "TMT",
     "TN1",
-    "TNC",
     "TNH",
     "TNI",
     "TNT",
@@ -408,110 +409,104 @@
     "VVS",
     "YBM",
     "YEG",
+    "DSH",
     "VNINDEX",
     "VN30"
   ],
   "provider_errors": [
     {
+      "symbol": "CLW",
+      "kind": "TRANSIENT_PROVIDER_OR_NETWORK",
+      "error_type": "RetryError",
+      "error": "RetryError[<Future at 0x130a254e3f0 state=finished raised ValueError>]"
+    },
+    {
       "symbol": "CMV",
       "kind": "TRANSIENT_PROVIDER_OR_NETWORK",
       "error_type": "RetryError",
-      "error": "RetryError[<Future at 0x20aca475a60 state=finished raised ValueError>]"
+      "error": "RetryError[<Future at 0x130a254fd70 state=finished raised ValueError>]"
     },
     {
-      "symbol": "CVT",
+      "symbol": "CRV",
       "kind": "TRANSIENT_PROVIDER_OR_NETWORK",
       "error_type": "RetryError",
-      "error": "RetryError[<Future at 0x20aca0b3080 state=finished raised ValueError>]"
-    },
-    {
-      "symbol": "DAT",
-      "kind": "TRANSIENT_PROVIDER_OR_NETWORK",
-      "error_type": "RetryError",
-      "error": "RetryError[<Future at 0x20ac7a74620 state=finished raised ValueError>]"
+      "error": "RetryError[<Future at 0x130a2437410 state=finished raised ValueError>]"
     },
     {
       "symbol": "DRH",
       "kind": "TRANSIENT_PROVIDER_OR_NETWORK",
       "error_type": "RetryError",
-      "error": "RetryError[<Future at 0x20aca54c530 state=finished raised ValueError>]"
+      "error": "RetryError[<Future at 0x130a2937410 state=finished raised ValueError>]"
     },
     {
-      "symbol": "GTA",
+      "symbol": "HU1",
       "kind": "TRANSIENT_PROVIDER_OR_NETWORK",
       "error_type": "RetryError",
-      "error": "RetryError[<Future at 0x20aca337cb0 state=finished raised ValueError>]"
+      "error": "RetryError[<Future at 0x130a2873a40 state=finished raised ValueError>]"
     },
     {
       "symbol": "LGC",
       "kind": "TRANSIENT_PROVIDER_OR_NETWORK",
       "error_type": "RetryError",
-      "error": "RetryError[<Future at 0x20aca23f740 state=finished raised ValueError>]"
+      "error": "RetryError[<Future at 0x130a254c290 state=finished raised ValueError>]"
     },
     {
       "symbol": "LM8",
       "kind": "TRANSIENT_PROVIDER_OR_NETWORK",
       "error_type": "RetryError",
-      "error": "RetryError[<Future at 0x20acbffe4b0 state=finished raised ValueError>]"
+      "error": "RetryError[<Future at 0x130a3d53a10 state=finished raised ValueError>]"
     },
     {
       "symbol": "PNC",
       "kind": "TRANSIENT_PROVIDER_OR_NETWORK",
       "error_type": "RetryError",
-      "error": "RetryError[<Future at 0x20acb9f8ce0 state=finished raised ValueError>]"
+      "error": "RetryError[<Future at 0x130a435b2f0 state=finished raised ValueError>]"
     },
     {
-      "symbol": "SFC",
+      "symbol": "TNC",
       "kind": "TRANSIENT_PROVIDER_OR_NETWORK",
       "error_type": "RetryError",
-      "error": "RetryError[<Future at 0x20acc318350 state=finished raised ValueError>]"
-    },
-    {
-      "symbol": "TIX",
-      "kind": "TRANSIENT_PROVIDER_OR_NETWORK",
-      "error_type": "RetryError",
-      "error": "RetryError[<Future at 0x20aca23f5f0 state=finished raised ValueError>]"
+      "error": "RetryError[<Future at 0x130a402f170 state=finished raised ValueError>]"
     },
     {
       "symbol": "TTE",
       "kind": "TRANSIENT_PROVIDER_OR_NETWORK",
       "error_type": "RetryError",
-      "error": "RetryError[<Future at 0x20acbd560f0 state=finished raised ValueError>]"
+      "error": "RetryError[<Future at 0x130a254c7a0 state=finished raised ValueError>]"
     }
   ],
   "symbols_with_provider_errors": [
+    "CLW",
     "CMV",
-    "CVT",
-    "DAT",
+    "CRV",
     "DRH",
-    "GTA",
+    "HU1",
     "LGC",
     "LM8",
     "PNC",
-    "SFC",
-    "TIX",
+    "TNC",
     "TTE"
   ],
   "files": {
     "stock_daily_ohlcv.csv": {
-      "bytes": 26534546,
-      "sha256": "f6916961d3461e3aa84d61644ca35ac219e69c48ff90945d535c32a4f552f274"
+      "bytes": 26640708,
+      "sha256": "dd78a1d1509998ada4a4eaeb17754b9e33b98fb1680a4d9cd44bb66eaf13800e"
     },
     "stock_weekly_ohlcv.csv": {
-      "bytes": 9867395,
-      "sha256": "25c2cd9b98567b22f2663db9d5474fae0ad3074d1c0aec682bc8774f89230df3"
+      "bytes": 9907225,
+      "sha256": "c22bef00fc915ab38d484d99321afd1e15548e6dff6dcf128be077bd22e2dd07"
     },
     "index_daily_ohlcv.csv": {
-      "bytes": 188008,
-      "sha256": "7ea4902291a3ebc20294f30f5c5290084a71a993f95f8663ea0e092064b41628"
+      "bytes": 188661,
+      "sha256": "010a95559af86351d72933dd7142e168307793da7d97c392cd7509ebabd7f018"
     },
     "index_weekly_ohlcv.csv": {
-      "bytes": 60564,
-      "sha256": "a3949a07e7dbefbb7c91ba1dfb7cdffa512858b82bf7b8f8b19d5197aac9cddc"
+      "bytes": 60766,
+      "sha256": "11ae82e15695519201f7761660ba9fcab9e97c85971a4099d2e16bb7269fb2ac"
     }
   },
-  "backup": "staging\\history_weekly_2026-10-19_2026-10-23_20261025T100015642217Z_36ceeb73\\backup",
-  "generated_at_utc": "2026-10-25T10:12:14.037131+00:00",
+  "backup": "staging\\history_weekly_2026-10-26_2026-10-30_20261101T100010439178Z_dc4848e0\\backup",
+  "generated_at_utc": "2026-11-01T10:11:18.634438+00:00",
   "request_pacing": {
     "interval_seconds": 1.1,
     "target_requests_per_minute": 54.55,
