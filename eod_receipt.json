@@ -1,8 +1,8 @@
 {
   "job": "eod",
   "session_date": "2026-11-04",
-  "run_id": "20261104T100008776846Z_012b4257",
-  "generated_at_utc": "2026-11-04T10:09:45.013984+00:00",
+  "run_id": "20261104T120009121631Z_c17c7176",
+  "generated_at_utc": "2026-11-04T12:09:42.602878+00:00",
   "dry_run": false,
   "request_pacing": {
     "interval_seconds": 1.1,
@@ -15,25 +15,26 @@
     "PC1",
     "SGN"
   ],
-  "rebase_symbols": [
+  "rebase_symbols": [],
+  "ca_rebase_pending": [
     "CCC",
+    "PC1",
     "SGN"
   ],
-  "ca_rebase_pending": [
-    "PC1"
-  ],
-  "symbols_promoted": 374,
+  "symbols_promoted": 372,
   "quarantined_symbols": [
     "ANT",
+    "CCC",
     "CLW",
     "GHC",
     "PC1",
+    "SGN",
     "SMC",
     "VMD"
   ],
   "errors": [],
-  "staging": "staging\\eod_2026-11-04_20261104T100008776846Z_012b4257",
-  "ca_receipt": "corporate_actions\\daily\\2026-11-04_20261104T100003730175Z.json",
+  "staging": "staging\\eod_2026-11-04_20261104T120009121631Z_c17c7176",
+  "ca_receipt": "corporate_actions\\daily\\2026-11-04_20261104T120004131647Z.json",
   "liquidity_retry_queue": [
     "ANT",
     "CLW",
@@ -55,14 +56,14 @@
     "requested_symbols": 407,
     "skipped_no_session": 27,
     "eligible_symbols": 380,
-    "candidate_symbols": 374,
-    "quarantined_symbols": 6,
-    "ratio": 0.984211,
+    "candidate_symbols": 372,
+    "quarantined_symbols": 8,
+    "ratio": 0.978947,
     "minimum_ratio": 0.9,
     "minimum_candidate_symbols": 342,
     "denominator_policy": "REQUESTED_UNIVERSE_MINUS_SKIPPED_NO_SESSION;QUARANTINE_REMAINS_ELIGIBLE"
   },
-  "symbols_staged": 374,
+  "symbols_staged": 372,
   "skipped_no_session": [
     "ASG",
     "BRC",
@@ -92,46 +93,7 @@
     "VDP",
     "VSI"
   ],
-  "rebase_proofs": [
-    {
-      "symbol": "CCC",
-      "old_rows": 363,
-      "fresh_rows": 364,
-      "historical_rows_checked": 363,
-      "historical_ohlc_changed_rows": 363,
-      "historical_volume_changed_rows": 0,
-      "two_pulls_equal": true,
-      "old_daily_sha256": "55d7e6a09b0580a35c87622acc527d2161c9f6367cb6d416a86b3eb84aad0b4b",
-      "low_price_ca_exemption": false,
-      "low_price_evidence": {
-        "eligible": false,
-        "session_close_thousand_vnd": 5.69,
-        "session_close_vnd": 5690.0,
-        "threshold_vnd": 5000,
-        "price_unit": "THOUSAND_VND_PER_SHARE",
-        "reason": "NORMAL_CA_REBASE_REQUIRED"
-      }
-    },
-    {
-      "symbol": "SGN",
-      "old_rows": 1436,
-      "fresh_rows": 1437,
-      "historical_rows_checked": 1436,
-      "historical_ohlc_changed_rows": 1436,
-      "historical_volume_changed_rows": 0,
-      "two_pulls_equal": true,
-      "old_daily_sha256": "f769d0b498e4c470bef6c443c1eaf0b6daedaa92d478ed38dc97ee319ba218bb",
-      "low_price_ca_exemption": false,
-      "low_price_evidence": {
-        "eligible": false,
-        "session_close_thousand_vnd": 60.1,
-        "session_close_vnd": 60100.0,
-        "threshold_vnd": 5000,
-        "price_unit": "THOUSAND_VND_PER_SHARE",
-        "reason": "NORMAL_CA_REBASE_REQUIRED"
-      }
-    }
-  ],
+  "rebase_proofs": [],
   "staged_validation_result": "PASS",
   "hard_integrity_policy": "WARN_AND_CONTINUE",
   "liquidity_metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS",
@@ -8823,6 +8785,19 @@
       "retained_previous_history": true
     },
     {
+      "symbol": "CCC",
+      "adv20": 1960.0,
+      "band": "LOW",
+      "ca_policy": "CA_MINIMUM_LINEAGE_REQUIRED",
+      "failure_action": "QUARANTINE_AND_CONTINUE",
+      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS",
+      "has_ca": true,
+      "reason": "CCC: CA_ADJUSTED_HISTORY_NOT_OBSERVED",
+      "retry_next_eod_full_history": true,
+      "ca_rebase_pending": true,
+      "retained_previous_history": true
+    },
+    {
       "symbol": "CLW",
       "adv20": 325.0,
       "band": "LOW",
@@ -8862,6 +8837,19 @@
       "retained_previous_history": true
     },
     {
+      "symbol": "SGN",
+      "adv20": 21740.0,
+      "band": "LOW",
+      "ca_policy": "CA_MINIMUM_LINEAGE_REQUIRED",
+      "failure_action": "QUARANTINE_AND_CONTINUE",
+      "metric": "ADV20_PREVIOUS_COMPLETED_SESSIONS",
+      "has_ca": true,
+      "reason": "SGN: CA_ADJUSTED_HISTORY_NOT_OBSERVED",
+      "retry_next_eod_full_history": true,
+      "ca_rebase_pending": true,
+      "retained_previous_history": true
+    },
+    {
       "symbol": "SMC",
       "adv20": 131380.0,
       "band": "MEDIUM",
@@ -8888,11 +8876,11 @@
       "retained_previous_history": true
     }
   ],
-  "backup": "C:\\Users\\T14\\Desktop\\DỮ LIỆU OHLCV\\data\\staging\\eod_2026-11-04_20261104T100008776846Z_012b4257\\backup",
+  "backup": "C:\\Users\\T14\\Desktop\\DỮ LIỆU OHLCV\\data\\staging\\eod_2026-11-04_20261104T120009121631Z_c17c7176\\backup",
   "source_latest_date": "2026-11-04",
   "validation_result": "PASS",
   "hard_integrity_warning": false,
-  "rebase_receipt": "rebase_receipts\\2026-11-04_20261104T100008776846Z_012b4257.json",
+  "rebase_receipt": "rebase_receipts\\2026-11-04_20261104T120009121631Z_c17c7176.json",
   "stock_daily_sha256": "e589270c3bb3a3751562944c2d5fac39931430f07fb9a12ad6a04e25930b6b85",
   "index_daily_sha256": "da91ce9d6907a7ad7c2d967ed7a451db2b7c82373e9f3ef936287a2ba56e0bf0",
   "daily_sha256": "e589270c3bb3a3751562944c2d5fac39931430f07fb9a12ad6a04e25930b6b85"
