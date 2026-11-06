@@ -1,21 +1,38 @@
 {
   "job": "ca_scan",
   "schema_version": "corporate_actions.daily.v1",
-  "scan_date": "2026-11-06",
+  "scan_date": "2026-11-05",
   "week_start": "2026-11-02",
   "week_end": "2026-11-08",
-  "generated_at_utc": "2026-11-06T01:30:05.241543+00:00",
+  "generated_at_utc": "2026-11-05T12:00:06.504018+00:00",
   "provider": {
     "adapter": "VIETSTOCK_FIRST_PARTY_HOSE_EVENT_CALENDAR_V1",
     "source": "https://finance.vietstock.vn/lich-su-kien.htm"
   },
-  "source_weekly_receipt": "corporate_actions\\weekly\\2026-11-02_2026-11-08_20261106T013005208184Z.json",
-  "source_weekly_sha256": "7b2adc24944090dd66af0b4df451221a9a07a9d9d6f359c76e1a29609022029c",
+  "source_weekly_receipt": "corporate_actions\\weekly\\2026-11-02_2026-11-08_20261105T120005104391Z.json",
+  "source_weekly_sha256": "651a7759baeedc9464d6347c350bd05d7b8078274c8f032b0099d695d62cf8e2",
   "weekly_fallback_after_transient_failure": null,
-  "events": [],
-  "ca_symbols": [],
+  "events": [
+    {
+      "symbol": "ECO",
+      "exchange": "HOSE",
+      "event_type": "Trả cổ tức bằng cổ phiếu",
+      "ex_date": "2026-11-05",
+      "record_date": "2026-11-06",
+      "payment_date": null,
+      "cash_dividend": null,
+      "stock_dividend_ratio": "50:3",
+      "subscription_price": null,
+      "rights_ratio": null,
+      "raw_description": "Trả cổ tức năm 2025 bằng cổ phiếu, tỷ lệ 50:3",
+      "source_event_type": "Trả cổ tức bằng cổ phiếu"
+    }
+  ],
+  "ca_symbols": [
+    "ECO"
+  ],
   "rebase_symbols": [],
-  "rebase_gate_status": "PASS_NO_CA",
+  "rebase_gate_status": "BLOCKED_PRICE_BASIS_UNVERIFIED",
   "promotion_effect": "NONE",
   "integrity": {
     "source_verified": true,
@@ -25,13 +42,7 @@
     "ambiguous": [],
     "unresolved": []
   },
-  "status": "CERTIFIED",
+  "status": "CA_CONFIRMED_REBASE_BLOCKED",
   "reason": "Vietstock weekly evidence resolved for the session date.",
-  "receipt": "corporate_actions\\daily\\2026-11-06_20261106T013005243293Z.json",
-  "publisher_generation_id": "r33-2026-11-04-c0acb9864337fffb",
-  "source_ca_receipt": "corporate_actions\\daily\\2026-11-04_20261104T120004131647Z.json",
-  "ca_basis_status": "RESOLVED_BY_EOD_FULL_HISTORY_RELOAD",
-  "resolution_scope": "SYMBOL_SCOPED",
-  "resolution_source": "EOD_REBASE_RECEIPT",
-  "resolved_at_utc": "2026-11-06T02:41:19.736385+00:00"
+  "receipt": "corporate_actions\\daily\\2026-11-05_20261105T120006504018Z.json"
 }
