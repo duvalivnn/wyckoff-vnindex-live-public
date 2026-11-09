@@ -1,25 +1,24 @@
 {
-  "generated_at_utc": "2026-11-08T10:11:40.539176+00:00",
-  "publisher_generation_id": "r33-2026-11-05-db265bb7529cf5a5",
-  "source_snapshot_generated_at_utc": "2026-11-08T10:00:12.217410+00:00",
+  "generated_at_utc": "2026-11-09T02:15:16.954800+00:00",
+  "publisher_generation_id": "r33-2026-11-05-a54bbd80c6fa9600",
+  "source_snapshot_generated_at_utc": "2026-11-09T02:15:15.027157+00:00",
   "alerts_snapshot_binding": {
     "path": "alerts_live.json",
-    "publisher_generation_id": "r33-2026-11-05-db265bb7529cf5a5",
-    "snapshot_generated_at_utc": "2026-11-08T10:00:12.217410+00:00",
+    "publisher_generation_id": "r33-2026-11-05-a54bbd80c6fa9600",
+    "snapshot_generated_at_utc": "2026-11-09T02:15:15.027157+00:00",
     "status": "BRIDGE_MATERIALIZES_ALERTS_PAYLOAD"
   },
   "source_latest_date": "2026-11-05",
   "source_session_date": "2026-11-05",
-  "source_job": "history-refresh-weekly",
+  "source_job": "intraday",
   "source_result": "PASS_WITH_WARNINGS",
   "publication_mode": "GITHUB_BRIDGE_READY",
   "source_workspace": "DỮ LIỆU OHLCV",
   "dashboard_consumer": "wyckoff-vnindex-market-dashboard",
   "live_snapshot_available": true,
   "freshness": {
-    "age_minutes": 11,
-    "stale": false,
-    "threshold_minutes": 30
+    "mode": "PER_SYMBOL_PROVIDER_QUOTE_TIMESTAMP",
+    "threshold_seconds": 900
   },
   "files": {
     "stock_daily_ohlcv.csv": {
@@ -78,233 +77,1219 @@
   "latest_completed_session": "2026-11-05",
   "observed_date": "2026-11-05",
   "static_refresh": {
-    "mode": "weekly",
-    "manifest_path": "runtime/static_refresh_weekly_manifest.json",
-    "manifest_sha256": "22a28c10eb88bd78f8326c5643468fea09dfd20fb9682ecb7e59f4ba70e6c70e",
-    "run_id": "20261108T100012217410Z_542adde9",
-    "window_start": "2026-11-02",
-    "window_end": "2026-11-06",
-    "canonical_latest_date": "2026-11-05",
-    "result": "PASS_WITH_WARNINGS"
+    "active": false,
+    "mode": null,
+    "window": null,
+    "canonical_static_replacement": null
   },
-  "session_date": "2026-11-05",
+  "session_date": "2026-11-09",
+  "snapshot": "live_snapshots\\live_20261109T091515+0700.csv",
+  "rows": 237,
+  "symbols_with_rows": 237,
+  "snapshot_semantics": "current KBS equity quote-board observation plus latest same-session KBS 5m index bar; provider timestamp retained per symbol",
+  "provider_capability": {
+    "provider": "KBS",
+    "daily_ohlcv": false,
+    "quote_board": true,
+    "intraday": true,
+    "index_5m": true,
+    "status": "AVAILABLE",
+    "mode": "kbs_stock_quote_board_plus_index_5m"
+  },
   "provider_errors": [
     {
+      "symbol": "ABR",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "ABS",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "ABT",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "ACG",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "ACL",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "ADG",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "ADS",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "ANT",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "ASG",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "AST",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "BFC",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "BHN",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "BKG",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "BMC",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "BTP",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
       "symbol": "BTT",
-      "kind": "TRANSIENT_PROVIDER_OR_NETWORK",
-      "error_type": "RetryError",
-      "error": "RetryError[<Future at 0x25122a063f0 state=finished raised ValueError>]"
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "BWE",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "C32",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "C47",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "CCC",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "CCI",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "CCL",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "CHP",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "CIG",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "CKG",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "CLC",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "CLL",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     },
     {
       "symbol": "CLW",
-      "kind": "TRANSIENT_PROVIDER_OR_NETWORK",
-      "error_type": "RetryError",
-      "error": "RetryError[<Future at 0x25123da2c00 state=finished raised ValueError>]"
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "CMV",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "CMX",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "CNG",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "COM",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "CRC",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "CRV",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "CSM",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     },
     {
       "symbol": "CVT",
-      "kind": "TRANSIENT_PROVIDER_OR_NETWORK",
-      "error_type": "RetryError",
-      "error": "RetryError[<Future at 0x25122810fe0 state=finished raised ValueError>]"
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "DAT",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "DBD",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "DBT",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "DHA",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "DHM",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "DMC",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "DQC",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     },
     {
       "symbol": "DRH",
-      "kind": "TRANSIENT_PROVIDER_OR_NETWORK",
-      "error_type": "RetryError",
-      "error": "RetryError[<Future at 0x251213eb560 state=finished raised ValueError>]"
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "DRL",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "DSC",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "DSN",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "DTL",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     },
     {
       "symbol": "DTT",
-      "kind": "TRANSIENT_PROVIDER_OR_NETWORK",
-      "error_type": "RetryError",
-      "error": "RetryError[<Future at 0x25123b59610 state=finished raised ValueError>]"
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "DVP",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "DXV",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "EVE",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "FDC",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "FIR",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "FMC",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "GDT",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "GHC",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "GMH",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "GTA",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "HAP",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "HAR",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "HAS",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "HII",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "HMC",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "HNA",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "HRC",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "HTG",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "HTI",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "HTL",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "HTN",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "HTV",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "HUB",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "ICT",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "ILB",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "IMP",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "KHP",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "L10",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "LAF",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "LBM",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     },
     {
       "symbol": "LGC",
-      "kind": "TRANSIENT_PROVIDER_OR_NETWORK",
-      "error_type": "RetryError",
-      "error": "RetryError[<Future at 0x25120e363f0 state=finished raised ValueError>]"
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "LGL",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "LIX",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     },
     {
       "symbol": "LM8",
-      "kind": "TRANSIENT_PROVIDER_OR_NETWORK",
-      "error_type": "RetryError",
-      "error": "RetryError[<Future at 0x25123ccf5c0 state=finished raised ValueError>]"
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "LSS",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "MCM",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "MDG",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "MHC",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "NAV",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "NBB",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "NHT",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "NNC",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "NSC",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "NTC",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "NVT",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "OPC",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "PDN",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "PDV",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "PGC",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "PGD",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "PIT",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "PLP",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "PMG",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     },
     {
       "symbol": "PNC",
-      "kind": "TRANSIENT_PROVIDER_OR_NETWORK",
-      "error_type": "RetryError",
-      "error": "RetryError[<Future at 0x25123e59130 state=finished raised ValueError>]"
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "PTB",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "PTC",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "QNP",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "RAL",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "RYG",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "S4A",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "SAV",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "SBA",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "SBV",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     },
     {
       "symbol": "SC5",
-      "kind": "TRANSIENT_PROVIDER_OR_NETWORK",
-      "error_type": "RetryError",
-      "error": "RetryError[<Future at 0x25123e300e0 state=finished raised ValueError>]"
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "SFC",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "SFG",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "SFI",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "SGR",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "SGT",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "SHA",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "SHP",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "SJS",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "SKG",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "SMB",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "SPM",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "SRC",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "SSC",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "ST8",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "STG",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "STK",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "SVC",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "SVD",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "SVT",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "SZL",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "TBC",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "TCI",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "TCL",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "TCO",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "TCR",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "TCT",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "TDM",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "TDP",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "TDW",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "TEG",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "THG",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "TIP",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     },
     {
       "symbol": "TIX",
-      "kind": "TRANSIENT_PROVIDER_OR_NETWORK",
-      "error_type": "RetryError",
-      "error": "RetryError[<Future at 0x25123e4e3f0 state=finished raised ValueError>]"
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "TMP",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "TMS",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "TMT",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "TN1",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "TNC",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "TNI",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "TPC",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "TRA",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "TTA",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     },
     {
       "symbol": "TTE",
-      "kind": "TRANSIENT_PROVIDER_OR_NETWORK",
-      "error_type": "RetryError",
-      "error": "RetryError[<Future at 0x25123e42c60 state=finished raised ValueError>]"
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "TVT",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "TYA",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "UIC",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     },
     {
       "symbol": "VCF",
-      "kind": "TRANSIENT_PROVIDER_OR_NETWORK",
-      "error_type": "RetryError",
-      "error": "RetryError[<Future at 0x25127a6d4f0 state=finished raised ValueError>]"
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "VDP",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "VFG",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "VID",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "VMD",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "VNG",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "VPG",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "VPH",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "VPS",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "VRC",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "VSH",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     },
     {
       "symbol": "VSI",
-      "kind": "TRANSIENT_PROVIDER_OR_NETWORK",
-      "error_type": "RetryError",
-      "error": "RetryError[<Future at 0x25123e2be60 state=finished raised ValueError>]"
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+    },
+    {
+      "symbol": "VTB",
+      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
     }
   ],
-  "mode": "weekly",
-  "refresh_window": {
-    "start": "2026-11-02",
-    "end": "2026-11-06",
-    "outside_window_preserved": true
-  },
-  "canonical_cutoff_date": "2026-11-05",
-  "canonical_static_replacement": {
-    "status": "PASS",
-    "scope": {
-      "mode": "weekly",
-      "window_start": "2026-11-02",
-      "window_end": "2026-11-06"
-    },
-    "replacement_semantics": "replace_only_window_preserve_outside_window",
-    "source": "KBS",
-    "canonical_latest_date": "2026-11-05",
-    "outside_window_preserved": true,
-    "files": {
-      "stock_daily_ohlcv.csv": {
-        "bytes": 26713212,
-        "sha256": "1c35e3d599efd1e00e818e329723cae64889c7b4c53c43ffaf555234e1000e82"
-      },
-      "stock_weekly_ohlcv.csv": {
-        "bytes": 9939969,
-        "sha256": "4946529cfa35105202f1f18a5e5a5caa562420c46bfa98f6ac5fd738c48b2738"
-      },
-      "index_daily_ohlcv.csv": {
-        "bytes": 189181,
-        "sha256": "0486256e22d84c0dd0a5cdee2c728c1ad4a984fa0fc95c3c7737e2e093774198"
-      },
-      "index_weekly_ohlcv.csv": {
-        "bytes": 60965,
-        "sha256": "1e651462e8660a4ad9381a794eedb95831f3ef887381a34d01079201f2cfe6e2"
-      }
-    },
-    "backup": "staging\\history_weekly_2026-11-02_2026-11-06_20261108T100012217410Z_542adde9\\backup",
-    "rollback_available": true,
-    "provider_errors": [
-      {
-        "symbol": "BTT",
-        "kind": "TRANSIENT_PROVIDER_OR_NETWORK",
-        "error_type": "RetryError",
-        "error": "RetryError[<Future at 0x25122a063f0 state=finished raised ValueError>]"
-      },
-      {
-        "symbol": "CLW",
-        "kind": "TRANSIENT_PROVIDER_OR_NETWORK",
-        "error_type": "RetryError",
-        "error": "RetryError[<Future at 0x25123da2c00 state=finished raised ValueError>]"
-      },
-      {
-        "symbol": "CVT",
-        "kind": "TRANSIENT_PROVIDER_OR_NETWORK",
-        "error_type": "RetryError",
-        "error": "RetryError[<Future at 0x25122810fe0 state=finished raised ValueError>]"
-      },
-      {
-        "symbol": "DRH",
-        "kind": "TRANSIENT_PROVIDER_OR_NETWORK",
-        "error_type": "RetryError",
-        "error": "RetryError[<Future at 0x251213eb560 state=finished raised ValueError>]"
-      },
-      {
-        "symbol": "DTT",
-        "kind": "TRANSIENT_PROVIDER_OR_NETWORK",
-        "error_type": "RetryError",
-        "error": "RetryError[<Future at 0x25123b59610 state=finished raised ValueError>]"
-      },
-      {
-        "symbol": "LGC",
-        "kind": "TRANSIENT_PROVIDER_OR_NETWORK",
-        "error_type": "RetryError",
-        "error": "RetryError[<Future at 0x25120e363f0 state=finished raised ValueError>]"
-      },
-      {
-        "symbol": "LM8",
-        "kind": "TRANSIENT_PROVIDER_OR_NETWORK",
-        "error_type": "RetryError",
-        "error": "RetryError[<Future at 0x25123ccf5c0 state=finished raised ValueError>]"
-      },
-      {
-        "symbol": "PNC",
-        "kind": "TRANSIENT_PROVIDER_OR_NETWORK",
-        "error_type": "RetryError",
-        "error": "RetryError[<Future at 0x25123e59130 state=finished raised ValueError>]"
-      },
-      {
-        "symbol": "SC5",
-        "kind": "TRANSIENT_PROVIDER_OR_NETWORK",
-        "error_type": "RetryError",
-        "error": "RetryError[<Future at 0x25123e300e0 state=finished raised ValueError>]"
-      },
-      {
-        "symbol": "TIX",
-        "kind": "TRANSIENT_PROVIDER_OR_NETWORK",
-        "error_type": "RetryError",
-        "error": "RetryError[<Future at 0x25123e4e3f0 state=finished raised ValueError>]"
-      },
-      {
-        "symbol": "TTE",
-        "kind": "TRANSIENT_PROVIDER_OR_NETWORK",
-        "error_type": "RetryError",
-        "error": "RetryError[<Future at 0x25123e42c60 state=finished raised ValueError>]"
-      },
-      {
-        "symbol": "VCF",
-        "kind": "TRANSIENT_PROVIDER_OR_NETWORK",
-        "error_type": "RetryError",
-        "error": "RetryError[<Future at 0x25127a6d4f0 state=finished raised ValueError>]"
-      },
-      {
-        "symbol": "VSI",
-        "kind": "TRANSIENT_PROVIDER_OR_NETWORK",
-        "error_type": "RetryError",
-        "error": "RetryError[<Future at 0x25123e2be60 state=finished raised ValueError>]"
-      }
+  "validation_errors": [],
+  "promotion_effect": "NONE",
+  "intraday_latest_date": "2026-11-09",
+  "is_provisional": true,
+  "intraday_generation": "intraday-20261109T091515+0700",
+  "eod_generation": "r33-2026-11-05-db265bb7529cf5a5",
+  "eod_reference_sha256": "1c35e3d599efd1e00e818e329723cae64889c7b4c53c43ffaf555234e1000e82",
+  "quote_timestamp": null,
+  "contract_status": "OVERLAY_ALLOWED",
+  "overlay_allowed": true,
+  "overlay_reason": null,
+  "live_eligibility": {
+    "status": "OVERLAY_ALLOWED",
+    "overlay_allowed": true,
+    "eligible_rows": 237,
+    "eligible_symbols": [
+      "AAA",
+      "AAM",
+      "AAN",
+      "AAT",
+      "ACB",
+      "ACC",
+      "ADP",
+      "AFX",
+      "AGG",
+      "AGR",
+      "ANV",
+      "APG",
+      "APH",
+      "ASM",
+      "ASP",
+      "BAF",
+      "BCE",
+      "BCM",
+      "BIC",
+      "BID",
+      "BMI",
+      "BMP",
+      "BRC",
+      "BSI",
+      "BSR",
+      "BVB",
+      "BVH",
+      "CDC",
+      "CII",
+      "CMG",
+      "CRE",
+      "CSV",
+      "CTD",
+      "CTF",
+      "CTG",
+      "CTI",
+      "CTR",
+      "CTS",
+      "D2D",
+      "DAH",
+      "DBC",
+      "DC4",
+      "DCL",
+      "DCM",
+      "DGC",
+      "DGW",
+      "DHC",
+      "DHG",
+      "DIG",
+      "DLG",
+      "DMX",
+      "DPG",
+      "DPM",
+      "DPR",
+      "DRC",
+      "DSE",
+      "DSH",
+      "DTA",
+      "DXG",
+      "DXS",
+      "ECO",
+      "EIB",
+      "ELC",
+      "EVF",
+      "EVG",
+      "FCM",
+      "FCN",
+      "FIT",
+      "FPT",
+      "FRT",
+      "FTS",
+      "GAS",
+      "GEE",
+      "GEG",
+      "GEL",
+      "GEX",
+      "GIL",
+      "GMD",
+      "GSP",
+      "GVR",
+      "HAG",
+      "HAH",
+      "HAX",
+      "HCD",
+      "HCM",
+      "HDB",
+      "HDC",
+      "HDG",
+      "HHP",
+      "HHS",
+      "HHV",
+      "HID",
+      "HPA",
+      "HPG",
+      "HPX",
+      "HQC",
+      "HSG",
+      "HSL",
+      "HT1",
+      "HU1",
+      "HVH",
+      "HVN",
+      "IDI",
+      "IJC",
+      "ITC",
+      "ITD",
+      "JVC",
+      "KBC",
+      "KDC",
+      "KDH",
+      "KHG",
+      "KLB",
+      "KMR",
+      "KOS",
+      "KSB",
+      "LCG",
+      "LDG",
+      "LHG",
+      "LPB",
+      "LPS",
+      "MBB",
+      "MCH",
+      "MCP",
+      "MIG",
+      "MSB",
+      "MSH",
+      "MSN",
+      "MWG",
+      "MZG",
+      "NAB",
+      "NAF",
+      "NCT",
+      "NHA",
+      "NHH",
+      "NKG",
+      "NLG",
+      "NO1",
+      "NT2",
+      "NTL",
+      "NVL",
+      "OCB",
+      "OGC",
+      "ORS",
+      "PAC",
+      "PAN",
+      "PC1",
+      "PDR",
+      "PET",
+      "PGI",
+      "PGV",
+      "PHC",
+      "PHR",
+      "PJT",
+      "PLX",
+      "PNJ",
+      "POW",
+      "PPC",
+      "PTL",
+      "PVD",
+      "PVP",
+      "PVT",
+      "QCG",
+      "REE",
+      "SAB",
+      "SAM",
+      "SBG",
+      "SBT",
+      "SCR",
+      "SCS",
+      "SGN",
+      "SHB",
+      "SHI",
+      "SIP",
+      "SJD",
+      "SMA",
+      "SMC",
+      "SRF",
+      "SSB",
+      "SSI",
+      "STB",
+      "SZC",
+      "TAL",
+      "TCB",
+      "TCH",
+      "TCM",
+      "TCX",
+      "TDC",
+      "TDG",
+      "TDH",
+      "TLD",
+      "TLG",
+      "TLH",
+      "TNH",
+      "TNT",
+      "TPB",
+      "TRC",
+      "TSA",
+      "TSC",
+      "TTF",
+      "TV2",
+      "TVB",
+      "TVS",
+      "VAB",
+      "VBB",
+      "VCA",
+      "VCB",
+      "VCG",
+      "VCI",
+      "VCK",
+      "VDS",
+      "VGC",
+      "VHC",
+      "VHM",
+      "VIB",
+      "VIC",
+      "VIP",
+      "VIX",
+      "VJC",
+      "VN30",
+      "VND",
+      "VNINDEX",
+      "VNL",
+      "VNM",
+      "VNS",
+      "VOS",
+      "VPB",
+      "VPD",
+      "VPI",
+      "VPL",
+      "VPX",
+      "VRE",
+      "VSC",
+      "VTO",
+      "VTP",
+      "VVS",
+      "YBM",
+      "YEG"
     ],
-    "symbols_with_provider_errors": [
-      "BTT",
-      "CLW",
-      "CVT",
-      "DRH",
-      "DTT",
-      "LGC",
-      "LM8",
-      "PNC",
-      "SC5",
-      "TIX",
-      "TTE",
-      "VCF",
-      "VSI"
-    ]
+    "unavailable_symbols": [],
+    "symbol_status": {
+      "FIT": "LIVE_AVAILABLE",
+      "SGN": "LIVE_AVAILABLE",
+      "ACC": "LIVE_AVAILABLE",
+      "HU1": "LIVE_AVAILABLE",
+      "DSE": "LIVE_AVAILABLE",
+      "NHH": "LIVE_AVAILABLE",
+      "KLB": "LIVE_AVAILABLE",
+      "AAN": "LIVE_AVAILABLE",
+      "HSL": "LIVE_AVAILABLE",
+      "MCP": "LIVE_AVAILABLE",
+      "LHG": "LIVE_AVAILABLE",
+      "DCL": "LIVE_AVAILABLE",
+      "GSP": "LIVE_AVAILABLE",
+      "ASP": "LIVE_AVAILABLE",
+      "FCM": "LIVE_AVAILABLE",
+      "PJT": "LIVE_AVAILABLE",
+      "HAX": "LIVE_AVAILABLE",
+      "ECO": "LIVE_AVAILABLE",
+      "HCD": "LIVE_AVAILABLE",
+      "QCG": "LIVE_AVAILABLE",
+      "VIP": "LIVE_AVAILABLE",
+      "VCA": "LIVE_AVAILABLE",
+      "SMA": "LIVE_AVAILABLE",
+      "DC4": "LIVE_AVAILABLE",
+      "BCE": "LIVE_AVAILABLE",
+      "TDC": "LIVE_AVAILABLE",
+      "SJD": "LIVE_AVAILABLE",
+      "APH": "LIVE_AVAILABLE",
+      "NO1": "LIVE_AVAILABLE",
+      "D2D": "LIVE_AVAILABLE",
+      "TLD": "LIVE_AVAILABLE",
+      "PET": "LIVE_AVAILABLE",
+      "ITD": "LIVE_AVAILABLE",
+      "SMC": "LIVE_AVAILABLE",
+      "PAC": "LIVE_AVAILABLE",
+      "TVS": "LIVE_AVAILABLE",
+      "VNL": "LIVE_AVAILABLE",
+      "SRF": "LIVE_AVAILABLE",
+      "TVB": "LIVE_AVAILABLE",
+      "TDG": "LIVE_AVAILABLE",
+      "DHG": "LIVE_AVAILABLE",
+      "IDI": "LIVE_AVAILABLE",
+      "DLG": "LIVE_AVAILABLE",
+      "PGI": "LIVE_AVAILABLE",
+      "JVC": "LIVE_AVAILABLE",
+      "VPD": "LIVE_AVAILABLE",
+      "DTA": "LIVE_AVAILABLE",
+      "BRC": "LIVE_AVAILABLE",
+      "VNS": "LIVE_AVAILABLE",
+      "AFX": "LIVE_AVAILABLE",
+      "AGG": "LIVE_AVAILABLE",
+      "BIC": "LIVE_AVAILABLE",
+      "PHC": "LIVE_AVAILABLE",
+      "KMR": "LIVE_AVAILABLE",
+      "TTF": "LIVE_AVAILABLE",
+      "TDH": "LIVE_AVAILABLE",
+      "VBB": "LIVE_AVAILABLE",
+      "TNT": "LIVE_AVAILABLE",
+      "VTO": "LIVE_AVAILABLE",
+      "AAT": "LIVE_AVAILABLE",
+      "DAH": "LIVE_AVAILABLE",
+      "SAM": "LIVE_AVAILABLE",
+      "ADP": "LIVE_AVAILABLE",
+      "DRC": "LIVE_AVAILABLE",
+      "ASM": "LIVE_AVAILABLE",
+      "GEL": "LIVE_AVAILABLE",
+      "DSH": "LIVE_AVAILABLE",
+      "CTI": "LIVE_AVAILABLE",
+      "GEE": "LIVE_AVAILABLE",
+      "NT2": "LIVE_AVAILABLE",
+      "BMI": "LIVE_AVAILABLE",
+      "FCN": "LIVE_AVAILABLE",
+      "AAM": "LIVE_AVAILABLE",
+      "PVD": "LIVE_AVAILABLE",
+      "HPA": "LIVE_AVAILABLE",
+      "TV2": "LIVE_AVAILABLE",
+      "HAH": "LIVE_AVAILABLE",
+      "TLH": "LIVE_AVAILABLE",
+      "BCM": "LIVE_AVAILABLE",
+      "CDC": "LIVE_AVAILABLE",
+      "APG": "LIVE_AVAILABLE",
+      "TRC": "LIVE_AVAILABLE",
+      "DPR": "LIVE_AVAILABLE",
+      "SBT": "LIVE_AVAILABLE",
+      "YBM": "LIVE_AVAILABLE",
+      "HVN": "LIVE_AVAILABLE",
+      "KSB": "LIVE_AVAILABLE",
+      "NAB": "LIVE_AVAILABLE",
+      "VCG": "LIVE_AVAILABLE",
+      "ITC": "LIVE_AVAILABLE",
+      "HT1": "LIVE_AVAILABLE",
+      "HQC": "LIVE_AVAILABLE",
+      "AGR": "LIVE_AVAILABLE",
+      "LPS": "LIVE_AVAILABLE",
+      "VPX": "LIVE_AVAILABLE",
+      "HHP": "LIVE_AVAILABLE",
+      "GEG": "LIVE_AVAILABLE",
+      "HSG": "LIVE_AVAILABLE",
+      "EVF": "LIVE_AVAILABLE",
+      "REE": "LIVE_AVAILABLE",
+      "PC1": "LIVE_AVAILABLE",
+      "SBG": "LIVE_AVAILABLE",
+      "VGC": "LIVE_AVAILABLE",
+      "VOS": "LIVE_AVAILABLE",
+      "VCK": "LIVE_AVAILABLE",
+      "HHV": "LIVE_AVAILABLE",
+      "HAG": "LIVE_AVAILABLE",
+      "TLG": "LIVE_AVAILABLE",
+      "ORS": "LIVE_AVAILABLE",
+      "SIP": "LIVE_AVAILABLE",
+      "VAB": "LIVE_AVAILABLE",
+      "TNH": "LIVE_AVAILABLE",
+      "IJC": "LIVE_AVAILABLE",
+      "HDC": "LIVE_AVAILABLE",
+      "PLX": "LIVE_AVAILABLE",
+      "VVS": "LIVE_AVAILABLE",
+      "MZG": "LIVE_AVAILABLE",
+      "LDG": "LIVE_AVAILABLE",
+      "EVG": "LIVE_AVAILABLE",
+      "CTS": "LIVE_AVAILABLE",
+      "DGW": "LIVE_AVAILABLE",
+      "SHI": "LIVE_AVAILABLE",
+      "BSI": "LIVE_AVAILABLE",
+      "KBC": "LIVE_AVAILABLE",
+      "SZC": "LIVE_AVAILABLE",
+      "GMD": "LIVE_AVAILABLE",
+      "GIL": "LIVE_AVAILABLE",
+      "NHA": "LIVE_AVAILABLE",
+      "SCR": "LIVE_AVAILABLE",
+      "CMG": "LIVE_AVAILABLE",
+      "VDS": "LIVE_AVAILABLE",
+      "DIG": "LIVE_AVAILABLE",
+      "PHR": "LIVE_AVAILABLE",
+      "LCG": "LIVE_AVAILABLE",
+      "YEG": "LIVE_AVAILABLE",
+      "TSC": "LIVE_AVAILABLE",
+      "CTD": "LIVE_AVAILABLE",
+      "HHS": "LIVE_AVAILABLE",
+      "NTL": "LIVE_AVAILABLE",
+      "MSH": "LIVE_AVAILABLE",
+      "TAL": "LIVE_AVAILABLE",
+      "FTS": "LIVE_AVAILABLE",
+      "BVB": "LIVE_AVAILABLE",
+      "LPB": "LIVE_AVAILABLE",
+      "PVP": "LIVE_AVAILABLE",
+      "KHG": "LIVE_AVAILABLE",
+      "CRE": "LIVE_AVAILABLE",
+      "MSN": "LIVE_AVAILABLE",
+      "NCT": "LIVE_AVAILABLE",
+      "ELC": "LIVE_AVAILABLE",
+      "BSR": "LIVE_AVAILABLE",
+      "DHC": "LIVE_AVAILABLE",
+      "GAS": "LIVE_AVAILABLE",
+      "KDH": "LIVE_AVAILABLE",
+      "HVH": "LIVE_AVAILABLE",
+      "VHC": "LIVE_AVAILABLE",
+      "TCB": "LIVE_AVAILABLE",
+      "HDB": "LIVE_AVAILABLE",
+      "ANV": "LIVE_AVAILABLE",
+      "DBC": "LIVE_AVAILABLE",
+      "VIC": "LIVE_AVAILABLE",
+      "PTL": "LIVE_AVAILABLE",
+      "HDG": "LIVE_AVAILABLE",
+      "EIB": "LIVE_AVAILABLE",
+      "DXG": "LIVE_AVAILABLE",
+      "TCX": "LIVE_AVAILABLE",
+      "AAA": "LIVE_AVAILABLE",
+      "DXS": "LIVE_AVAILABLE",
+      "MCH": "LIVE_AVAILABLE",
+      "HPX": "LIVE_AVAILABLE",
+      "BMP": "LIVE_AVAILABLE",
+      "DMX": "LIVE_AVAILABLE",
+      "NLG": "LIVE_AVAILABLE",
+      "VIB": "LIVE_AVAILABLE",
+      "BVH": "LIVE_AVAILABLE",
+      "OGC": "LIVE_AVAILABLE",
+      "MSB": "LIVE_AVAILABLE",
+      "GEX": "LIVE_AVAILABLE",
+      "VTP": "LIVE_AVAILABLE",
+      "HCM": "LIVE_AVAILABLE",
+      "VPL": "LIVE_AVAILABLE",
+      "TPB": "LIVE_AVAILABLE",
+      "FRT": "LIVE_AVAILABLE",
+      "TSA": "LIVE_AVAILABLE",
+      "VHM": "LIVE_AVAILABLE",
+      "NVL": "LIVE_AVAILABLE",
+      "CTR": "LIVE_AVAILABLE",
+      "KOS": "LIVE_AVAILABLE",
+      "SHB": "LIVE_AVAILABLE",
+      "HPG": "LIVE_AVAILABLE",
+      "NAF": "LIVE_AVAILABLE",
+      "PDR": "LIVE_AVAILABLE",
+      "DPG": "LIVE_AVAILABLE",
+      "FPT": "LIVE_AVAILABLE",
+      "VSC": "LIVE_AVAILABLE",
+      "PPC": "LIVE_AVAILABLE",
+      "VND": "LIVE_AVAILABLE",
+      "MIG": "LIVE_AVAILABLE",
+      "MBB": "LIVE_AVAILABLE",
+      "CTG": "LIVE_AVAILABLE",
+      "VJC": "LIVE_AVAILABLE",
+      "GVR": "LIVE_AVAILABLE",
+      "PNJ": "LIVE_AVAILABLE",
+      "STB": "LIVE_AVAILABLE",
+      "VPB": "LIVE_AVAILABLE",
+      "VCI": "LIVE_AVAILABLE",
+      "SSI": "LIVE_AVAILABLE",
+      "OCB": "LIVE_AVAILABLE",
+      "SCS": "LIVE_AVAILABLE",
+      "TCM": "LIVE_AVAILABLE",
+      "KDC": "LIVE_AVAILABLE",
+      "TCH": "LIVE_AVAILABLE",
+      "CSV": "LIVE_AVAILABLE",
+      "VCB": "LIVE_AVAILABLE",
+      "DGC": "LIVE_AVAILABLE",
+      "CTF": "LIVE_AVAILABLE",
+      "BAF": "LIVE_AVAILABLE",
+      "PAN": "LIVE_AVAILABLE",
+      "MWG": "LIVE_AVAILABLE",
+      "POW": "LIVE_AVAILABLE",
+      "VRE": "LIVE_AVAILABLE",
+      "CII": "LIVE_AVAILABLE",
+      "SAB": "LIVE_AVAILABLE",
+      "NKG": "LIVE_AVAILABLE",
+      "BID": "LIVE_AVAILABLE",
+      "PGV": "LIVE_AVAILABLE",
+      "HID": "LIVE_AVAILABLE",
+      "SSB": "LIVE_AVAILABLE",
+      "PVT": "LIVE_AVAILABLE",
+      "VNM": "LIVE_AVAILABLE",
+      "VIX": "LIVE_AVAILABLE",
+      "VPI": "LIVE_AVAILABLE",
+      "DPM": "LIVE_AVAILABLE",
+      "DCM": "LIVE_AVAILABLE",
+      "ACB": "LIVE_AVAILABLE",
+      "VNINDEX": "LIVE_AVAILABLE",
+      "VN30": "LIVE_AVAILABLE"
+    },
+    "symbol_reasons": {},
+    "freshness_seconds": 900,
+    "basis_vs_eod": "NOT_COMPARED; KBS provider-native quote is display-only unless an explicit per-symbol conversion receipt is supplied"
   },
+  "basis_vs_eod": "NOT_COMPARED",
+  "quote_timestamp_semantics": "equity quote timestamp or index 5m bar timestamp from KBS per symbol; fetched_at_utc and generated_at_utc are collection metadata only",
+  "alerts_overlay_allowed": false,
   "latest_live_snapshot": {
-    "file": "live_snapshots\\live_20261106T143008+0700.csv",
-    "bytes": 93589,
-    "sha256": "4626a2442545347b33e48d63b4b1ad67523ccba83db2de429eaf049019722949"
+    "file": "live_snapshots\\live_20261109T091515+0700.csv",
+    "bytes": 60595,
+    "sha256": "ae1ec0650b4e018cec9f6ca88cfa7e1f900854901e6b9d4afa55c8f962a3c600"
   }
 }
