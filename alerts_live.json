@@ -1,16 +1,16 @@
 {
   "schema_version": "alerts_live.v1",
   "engine_status": "READY",
-  "generated_at_utc": "2026-11-09T06:05:15+00:00",
+  "generated_at_utc": "2026-11-09T06:10:19+00:00",
   "publisher_generation_id": "r33-2026-11-05-a54bbd80c6fa9600",
   "intraday_publisher_generation_id": "r33-2026-11-05-a54bbd80c6fa9600",
-  "intraday_generated_at_utc": "2026-11-09T06:05:08.387906+00:00",
-  "snapshot_generated_at_utc": "2026-11-09T06:05:08.387906+00:00",
+  "intraday_generated_at_utc": "2026-11-09T06:10:11.222136+00:00",
+  "snapshot_generated_at_utc": "2026-11-09T06:10:11.222136+00:00",
   "publication_binding": {
     "manifest_path": "live_manifest.json",
-    "manifest_generated_at_utc": "2026-11-09T06:05:09.827077+00:00",
+    "manifest_generated_at_utc": "2026-11-09T06:10:12.942615+00:00",
     "manifest_publisher_generation_id": "r33-2026-11-05-a54bbd80c6fa9600",
-    "alerts_snapshot_generated_at_utc": "2026-11-09T06:05:08.387906+00:00",
+    "alerts_snapshot_generated_at_utc": "2026-11-09T06:10:11.222136+00:00",
     "alerts_snapshot_publisher_generation_id": "r33-2026-11-05-a54bbd80c6fa9600",
     "status": "MATCHED"
   },
@@ -21,7 +21,7 @@
     "timezone": "Asia/Ho_Chi_Minh",
     "session_date": "2026-11-09",
     "source_latest_date": "2026-11-05",
-    "snapshot_generated_at_utc": "2026-11-09T06:05:08.387906+00:00"
+    "snapshot_generated_at_utc": "2026-11-09T06:10:11.222136+00:00"
   },
   "source_latest_date": "2026-11-05",
   "intraday_overlay": {
@@ -38,9 +38,11 @@
       "ABT",
       "ACB",
       "ACC",
+      "ACG",
       "ACL",
       "ADP",
       "ADS",
+      "AFX",
       "AGG",
       "AGR",
       "ANT",
@@ -99,6 +101,7 @@
       "DCM",
       "DGC",
       "DGW",
+      "DHA",
       "DHC",
       "DHG",
       "DIG",
@@ -118,6 +121,7 @@
       "DVP",
       "DXG",
       "DXS",
+      "DXV",
       "EIB",
       "ELC",
       "EVE",
@@ -125,6 +129,7 @@
       "EVG",
       "FCM",
       "FCN",
+      "FIR",
       "FIT",
       "FMC",
       "FPT",
@@ -251,6 +256,7 @@
       "PVP",
       "PVT",
       "QCG",
+      "RAL",
       "REE",
       "RYG",
       "SAB",
@@ -280,6 +286,7 @@
       "ST8",
       "STB",
       "STK",
+      "SVC",
       "SVD",
       "SZC",
       "SZL",
@@ -296,11 +303,13 @@
       "TDH",
       "TDM",
       "TDP",
+      "TEG",
       "THG",
       "TIP",
       "TLD",
       "TLG",
       "TLH",
+      "TMP",
       "TN1",
       "TNH",
       "TNI",
@@ -337,6 +346,7 @@
       "VNINDEX",
       "VNL",
       "VNM",
+      "VNS",
       "VOS",
       "VPB",
       "VPD",
@@ -356,15 +366,10 @@
       "YEG"
     ],
     "unavailable_symbols": [
-      "ACG",
-      "AFX",
       "AST",
       "BTT",
       "CLW",
-      "DHA",
-      "DXV",
       "ECO",
-      "FIR",
       "HAS",
       "HNA",
       "HTV",
@@ -373,49 +378,24 @@
       "NVT",
       "OPC",
       "PJT",
-      "RAL",
       "SFG",
       "SHP",
       "SMA",
-      "SVC",
       "SVT",
       "TBC",
-      "TEG",
       "TIX",
-      "TMP",
       "TMT",
       "TNC",
       "TVB",
       "UIC",
       "VCA",
       "VDP",
-      "VNS",
       "YBM"
     ],
     "reason": "EOD_BASIS_NOT_VERIFIED_FOR_ALERT_CALCULATIONS",
     "basis_vs_eod": "NOT_COMPARED; KBS provider-native quote is display-only unless an explicit per-symbol conversion receipt is supplied"
   },
   "live_quotes": [
-    {
-      "symbol": "TLD",
-      "price": 7.84,
-      "quote_timestamp": "2026-11-09T13:00:05.673000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "PDV",
-      "price": 8.5,
-      "quote_timestamp": "2026-11-09T13:00:05.718000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
     {
       "symbol": "SBV",
       "price": 5.98,
@@ -507,39 +487,9 @@
       "live_eligible": true
     },
     {
-      "symbol": "PGI",
-      "price": 23.2,
-      "quote_timestamp": "2026-11-09T13:00:13.836000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "NNC",
-      "price": 47.2,
-      "quote_timestamp": "2026-11-09T13:00:15.543000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
       "symbol": "PTC",
       "price": 5.17,
       "quote_timestamp": "2026-11-09T13:00:15.551000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "HTL",
-      "price": 19.5,
-      "quote_timestamp": "2026-11-09T13:00:16.502000+07:00",
       "provider": "KBS",
       "interval": "KBS_QUOTE_BOARD",
       "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
@@ -577,16 +527,6 @@
       "live_eligible": true
     },
     {
-      "symbol": "VNG",
-      "price": 5.07,
-      "quote_timestamp": "2026-11-09T13:00:16.697000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
       "symbol": "ACL",
       "price": 10.75,
       "quote_timestamp": "2026-11-09T13:00:16.722000+07:00",
@@ -597,109 +537,9 @@
       "live_eligible": true
     },
     {
-      "symbol": "DRL",
-      "price": 40.7,
-      "quote_timestamp": "2026-11-09T13:00:17.673000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "PLP",
-      "price": 3.36,
-      "quote_timestamp": "2026-11-09T13:00:17.717000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "RYG",
-      "price": 7.84,
-      "quote_timestamp": "2026-11-09T13:00:18.070000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "DSH",
-      "price": 11.0,
-      "quote_timestamp": "2026-11-09T13:00:18.665000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "DAH",
-      "price": 2.34,
-      "quote_timestamp": "2026-11-09T13:00:18.863000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "PIT",
-      "price": 8.83,
-      "quote_timestamp": "2026-11-09T13:00:18.896000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "VRC",
-      "price": 11.6,
-      "quote_timestamp": "2026-11-09T13:00:18.920000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
       "symbol": "CMV",
       "price": 7.89,
       "quote_timestamp": "2026-11-09T13:00:18.940000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "CIG",
-      "price": 6.04,
-      "quote_timestamp": "2026-11-09T13:00:19.584000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "SKG",
-      "price": 7.28,
-      "quote_timestamp": "2026-11-09T13:00:20.163000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "TCI",
-      "price": 9.47,
-      "quote_timestamp": "2026-11-09T13:00:20.346000+07:00",
       "provider": "KBS",
       "interval": "KBS_QUOTE_BOARD",
       "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
@@ -797,16 +637,6 @@
       "live_eligible": true
     },
     {
-      "symbol": "BTP",
-      "price": 6.5,
-      "quote_timestamp": "2026-11-09T13:00:24.061000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
       "symbol": "ADP",
       "price": 24.05,
       "quote_timestamp": "2026-11-09T13:00:24.297000+07:00",
@@ -847,16 +677,6 @@
       "live_eligible": true
     },
     {
-      "symbol": "LIX",
-      "price": 24.8,
-      "quote_timestamp": "2026-11-09T13:00:26.731000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
       "symbol": "GDT",
       "price": 15.95,
       "quote_timestamp": "2026-11-09T13:00:26.923000+07:00",
@@ -880,16 +700,6 @@
       "symbol": "BRC",
       "price": 11.4,
       "quote_timestamp": "2026-11-09T13:00:27.340000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "PHC",
-      "price": 3.6,
-      "quote_timestamp": "2026-11-09T13:00:27.640000+07:00",
       "provider": "KBS",
       "interval": "KBS_QUOTE_BOARD",
       "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
@@ -927,79 +737,9 @@
       "live_eligible": true
     },
     {
-      "symbol": "LBM",
-      "price": 28.1,
-      "quote_timestamp": "2026-11-09T13:00:28.454000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "AAT",
-      "price": 1.81,
-      "quote_timestamp": "2026-11-09T13:00:28.741000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
       "symbol": "TSA",
       "price": 10.0,
       "quote_timestamp": "2026-11-09T13:00:30.365000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "CTF",
-      "price": 18.7,
-      "quote_timestamp": "2026-11-09T13:00:31.781000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "ABT",
-      "price": 56.6,
-      "quote_timestamp": "2026-11-09T13:00:32.087000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "KHP",
-      "price": 9.27,
-      "quote_timestamp": "2026-11-09T13:00:41.357000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "ST8",
-      "price": 2.05,
-      "quote_timestamp": "2026-11-09T13:00:42.549000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "DQC",
-      "price": 9.22,
-      "quote_timestamp": "2026-11-09T13:00:50.667000+07:00",
       "provider": "KBS",
       "interval": "KBS_QUOTE_BOARD",
       "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
@@ -1027,56 +767,6 @@
       "live_eligible": true
     },
     {
-      "symbol": "THG",
-      "price": 25.25,
-      "quote_timestamp": "2026-11-09T13:01:03.539000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "FMC",
-      "price": 34.6,
-      "quote_timestamp": "2026-11-09T13:01:07.770000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "SGN",
-      "price": 58.6,
-      "quote_timestamp": "2026-11-09T13:01:08.634000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "HTN",
-      "price": 7.31,
-      "quote_timestamp": "2026-11-09T13:01:11.991000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "NCT",
-      "price": 80.8,
-      "quote_timestamp": "2026-11-09T13:01:15.575000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
       "symbol": "VBB",
       "price": 11.8,
       "quote_timestamp": "2026-11-09T13:01:23.676000+07:00",
@@ -1097,29 +787,9 @@
       "live_eligible": true
     },
     {
-      "symbol": "IMP",
-      "price": 35.2,
-      "quote_timestamp": "2026-11-09T13:01:29.966000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
       "symbol": "TNT",
       "price": 9.3,
       "quote_timestamp": "2026-11-09T13:01:31.437000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "BCE",
-      "price": 6.11,
-      "quote_timestamp": "2026-11-09T13:01:35.053000+07:00",
       "provider": "KBS",
       "interval": "KBS_QUOTE_BOARD",
       "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
@@ -1147,16 +817,6 @@
       "live_eligible": true
     },
     {
-      "symbol": "SJS",
-      "price": 54.1,
-      "quote_timestamp": "2026-11-09T13:01:44.036000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
       "symbol": "TYA",
       "price": 16.4,
       "quote_timestamp": "2026-11-09T13:01:45.548000+07:00",
@@ -1177,16 +837,6 @@
       "live_eligible": true
     },
     {
-      "symbol": "TDC",
-      "price": 6.45,
-      "quote_timestamp": "2026-11-09T13:01:53.658000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
       "symbol": "CKG",
       "price": 5.02,
       "quote_timestamp": "2026-11-09T13:01:54.270000+07:00",
@@ -1197,59 +847,9 @@
       "live_eligible": true
     },
     {
-      "symbol": "LAF",
-      "price": 18.0,
-      "quote_timestamp": "2026-11-09T13:01:58.160000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "PGC",
-      "price": 14.0,
-      "quote_timestamp": "2026-11-09T13:01:59.044000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
       "symbol": "SGT",
       "price": 11.0,
       "quote_timestamp": "2026-11-09T13:01:59.644000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "BMP",
-      "price": 137.5,
-      "quote_timestamp": "2026-11-09T13:02:00.244000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "DHG",
-      "price": 84.8,
-      "quote_timestamp": "2026-11-09T13:02:18.287000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "PPC",
-      "price": 8.71,
-      "quote_timestamp": "2026-11-09T13:02:21+07:00",
       "provider": "KBS",
       "interval": "KBS_QUOTE_BOARD",
       "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
@@ -1277,179 +877,9 @@
       "live_eligible": true
     },
     {
-      "symbol": "SZL",
-      "price": 27.7,
-      "quote_timestamp": "2026-11-09T13:02:35.680000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
       "symbol": "KMR",
       "price": 2.18,
       "quote_timestamp": "2026-11-09T13:02:35.995000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "DLG",
-      "price": 1.89,
-      "quote_timestamp": "2026-11-09T13:02:39.582000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "TTA",
-      "price": 10.35,
-      "quote_timestamp": "2026-11-09T13:02:39.867000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "ELC",
-      "price": 10.45,
-      "quote_timestamp": "2026-11-09T13:02:42.586000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "HAR",
-      "price": 2.53,
-      "quote_timestamp": "2026-11-09T13:02:50.405000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "CCL",
-      "price": 2.98,
-      "quote_timestamp": "2026-11-09T13:02:51.895000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "LGL",
-      "price": 4.03,
-      "quote_timestamp": "2026-11-09T13:02:57.273000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "PAC",
-      "price": 14.4,
-      "quote_timestamp": "2026-11-09T13:02:58.806000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "TLH",
-      "price": 3.26,
-      "quote_timestamp": "2026-11-09T13:02:59.408000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "GHC",
-      "price": 22.7,
-      "quote_timestamp": "2026-11-09T13:03:02.069000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "BMC",
-      "price": 9.62,
-      "quote_timestamp": "2026-11-09T13:03:02.967000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "TVS",
-      "price": 12.2,
-      "quote_timestamp": "2026-11-09T13:03:02.995000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "BFC",
-      "price": 57.2,
-      "quote_timestamp": "2026-11-09T13:03:04.167000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "LDG",
-      "price": 2.36,
-      "quote_timestamp": "2026-11-09T13:03:07.520000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "HMC",
-      "price": 10.75,
-      "quote_timestamp": "2026-11-09T13:03:28.173000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "SRF",
-      "price": 7.25,
-      "quote_timestamp": "2026-11-09T13:03:33.911000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "BWE",
-      "price": 42.1,
-      "quote_timestamp": "2026-11-09T13:03:35.680000+07:00",
       "provider": "KBS",
       "interval": "KBS_QUOTE_BOARD",
       "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
@@ -1467,159 +897,9 @@
       "live_eligible": true
     },
     {
-      "symbol": "DAT",
-      "price": 8.07,
-      "quote_timestamp": "2026-11-09T13:03:39.293000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "HAX",
-      "price": 8.29,
-      "quote_timestamp": "2026-11-09T13:03:39.617000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "ABS",
-      "price": 2.86,
-      "quote_timestamp": "2026-11-09T13:03:41.074000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "TCL",
-      "price": 28.65,
-      "quote_timestamp": "2026-11-09T13:03:41.974000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "BMI",
-      "price": 13.65,
-      "quote_timestamp": "2026-11-09T13:03:42.578000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "SJD",
-      "price": 14.0,
-      "quote_timestamp": "2026-11-09T13:03:42.594000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "SCR",
-      "price": 3.9,
-      "quote_timestamp": "2026-11-09T13:03:44.694000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "VPS",
-      "price": 8.29,
-      "quote_timestamp": "2026-11-09T13:03:45.901000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "HPA",
-      "price": 27.6,
-      "quote_timestamp": "2026-11-09T13:03:47.396000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
       "symbol": "SVD",
       "price": 5.01,
       "quote_timestamp": "2026-11-09T13:03:49.208000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "TV2",
-      "price": 27.35,
-      "quote_timestamp": "2026-11-09T13:03:50.094000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "HCD",
-      "price": 5.96,
-      "quote_timestamp": "2026-11-09T13:03:50.986000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "VPG",
-      "price": 0.96,
-      "quote_timestamp": "2026-11-09T13:03:51.301000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "MIG",
-      "price": 15.0,
-      "quote_timestamp": "2026-11-09T13:03:55.484000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "JVC",
-      "price": 2.79,
-      "quote_timestamp": "2026-11-09T13:03:55.522000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "ANT",
-      "price": 15.7,
-      "quote_timestamp": "2026-11-09T13:03:58.488000+07:00",
       "provider": "KBS",
       "interval": "KBS_QUOTE_BOARD",
       "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
@@ -1637,219 +917,9 @@
       "live_eligible": true
     },
     {
-      "symbol": "KLB",
-      "price": 10.3,
-      "quote_timestamp": "2026-11-09T13:04:04.495000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "DC4",
-      "price": 5.98,
-      "quote_timestamp": "2026-11-09T13:04:05.092000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "LHG",
-      "price": 26.55,
-      "quote_timestamp": "2026-11-09T13:04:05.389000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
       "symbol": "CNG",
       "price": 19.0,
       "quote_timestamp": "2026-11-09T13:04:06.305000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "ACC",
-      "price": 3.46,
-      "quote_timestamp": "2026-11-09T13:04:06.583000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "HSL",
-      "price": 7.1,
-      "quote_timestamp": "2026-11-09T13:04:11.433000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "KDC",
-      "price": 49.5,
-      "quote_timestamp": "2026-11-09T13:04:12.625000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "PAN",
-      "price": 16.95,
-      "quote_timestamp": "2026-11-09T13:04:16.802000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "TCO",
-      "price": 9.6,
-      "quote_timestamp": "2026-11-09T13:04:18.013000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "EVG",
-      "price": 3.66,
-      "quote_timestamp": "2026-11-09T13:04:18.884000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "FCM",
-      "price": 2.6,
-      "quote_timestamp": "2026-11-09T13:04:18.887000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "SBG",
-      "price": 14.45,
-      "quote_timestamp": "2026-11-09T13:04:19.235000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "SBT",
-      "price": 20.9,
-      "quote_timestamp": "2026-11-09T13:04:19.235000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "ADS",
-      "price": 7.75,
-      "quote_timestamp": "2026-11-09T13:04:19.512000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "BVB",
-      "price": 10.35,
-      "quote_timestamp": "2026-11-09T13:04:19.806000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "HT1",
-      "price": 12.6,
-      "quote_timestamp": "2026-11-09T13:04:19.814000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "SIP",
-      "price": 49.8,
-      "quote_timestamp": "2026-11-09T13:04:20.129000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "SHI",
-      "price": 14.05,
-      "quote_timestamp": "2026-11-09T13:04:20.129000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "VTO",
-      "price": 10.25,
-      "quote_timestamp": "2026-11-09T13:04:21.296000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "EVF",
-      "price": 11.6,
-      "quote_timestamp": "2026-11-09T13:04:22.800000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "APG",
-      "price": 3.85,
-      "quote_timestamp": "2026-11-09T13:04:23.416000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "HAH",
-      "price": 47.9,
-      "quote_timestamp": "2026-11-09T13:04:27.902000+07:00",
       "provider": "KBS",
       "interval": "KBS_QUOTE_BOARD",
       "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
@@ -1867,229 +937,9 @@
       "live_eligible": true
     },
     {
-      "symbol": "MSH",
-      "price": 34.55,
-      "quote_timestamp": "2026-11-09T13:04:29.402000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "PTB",
-      "price": 29.0,
-      "quote_timestamp": "2026-11-09T13:04:30.323000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "TNH",
-      "price": 6.83,
-      "quote_timestamp": "2026-11-09T13:04:30.355000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "DGC",
-      "price": 33.0,
-      "quote_timestamp": "2026-11-09T13:04:32.126000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "LCG",
-      "price": 6.56,
-      "quote_timestamp": "2026-11-09T13:04:32.713000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "KHG",
-      "price": 4.54,
-      "quote_timestamp": "2026-11-09T13:04:34.216000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "ITC",
-      "price": 8.5,
-      "quote_timestamp": "2026-11-09T13:04:34.805000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "DCL",
-      "price": 44.0,
-      "quote_timestamp": "2026-11-09T13:04:35.099000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "PHR",
-      "price": 29.7,
-      "quote_timestamp": "2026-11-09T13:04:35.108000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "MCM",
-      "price": 25.7,
-      "quote_timestamp": "2026-11-09T13:04:35.430000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "TDH",
-      "price": 2.63,
-      "quote_timestamp": "2026-11-09T13:04:36.593000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "SAM",
-      "price": 6.21,
-      "quote_timestamp": "2026-11-09T13:04:36.912000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "CDC",
-      "price": 22.6,
-      "quote_timestamp": "2026-11-09T13:04:37.207000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
       "symbol": "AAM",
       "price": 7.5,
       "quote_timestamp": "2026-11-09T13:04:37.501000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "TTF",
-      "price": 1.02,
-      "quote_timestamp": "2026-11-09T13:04:37.840000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "NHA",
-      "price": 7.66,
-      "quote_timestamp": "2026-11-09T13:04:39.306000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "DRC",
-      "price": 8.91,
-      "quote_timestamp": "2026-11-09T13:04:39.314000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "VHC",
-      "price": 48.95,
-      "quote_timestamp": "2026-11-09T13:04:41.752000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "OCB",
-      "price": 10.6,
-      "quote_timestamp": "2026-11-09T13:04:43.199000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "TN1",
-      "price": 11.65,
-      "quote_timestamp": "2026-11-09T13:04:43.806000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "NT2",
-      "price": 22.2,
-      "quote_timestamp": "2026-11-09T13:04:44.699000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "IDI",
-      "price": 4.89,
-      "quote_timestamp": "2026-11-09T13:04:44.757000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "DSE",
-      "price": 19.75,
-      "quote_timestamp": "2026-11-09T13:04:45.299000+07:00",
       "provider": "KBS",
       "interval": "KBS_QUOTE_BOARD",
       "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
@@ -2107,279 +957,9 @@
       "live_eligible": true
     },
     {
-      "symbol": "SAB",
-      "price": 42.75,
-      "quote_timestamp": "2026-11-09T13:04:46.811000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "HVN",
-      "price": 21.35,
-      "quote_timestamp": "2026-11-09T13:04:46.829000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "VPH",
-      "price": 2.54,
-      "quote_timestamp": "2026-11-09T13:04:47.396000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "GIL",
-      "price": 9.25,
-      "quote_timestamp": "2026-11-09T13:04:47.705000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "GEG",
-      "price": 11.65,
-      "quote_timestamp": "2026-11-09T13:04:48.298000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "VOS",
-      "price": 10.7,
-      "quote_timestamp": "2026-11-09T13:04:49.821000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "AGR",
-      "price": 11.55,
-      "quote_timestamp": "2026-11-09T13:04:50.103000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
       "symbol": "D2D",
       "price": 20.1,
       "quote_timestamp": "2026-11-09T13:04:50.122000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "HAG",
-      "price": 13.5,
-      "quote_timestamp": "2026-11-09T13:04:50.129000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "TRA",
-      "price": 34.2,
-      "quote_timestamp": "2026-11-09T13:04:50.133000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "CRE",
-      "price": 4.08,
-      "quote_timestamp": "2026-11-09T13:04:51.034000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "ASP",
-      "price": 13.75,
-      "quote_timestamp": "2026-11-09T13:04:51.913000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "MZG",
-      "price": 10.5,
-      "quote_timestamp": "2026-11-09T13:04:51.942000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "LPS",
-      "price": 15.35,
-      "quote_timestamp": "2026-11-09T13:04:53.102000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "CTI",
-      "price": 16.9,
-      "quote_timestamp": "2026-11-09T13:04:55.558000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "VAB",
-      "price": 8.97,
-      "quote_timestamp": "2026-11-09T13:04:55.559000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "TIP",
-      "price": 15.7,
-      "quote_timestamp": "2026-11-09T13:04:56.108000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "VPX",
-      "price": 23.05,
-      "quote_timestamp": "2026-11-09T13:04:56.111000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "VCK",
-      "price": 28.0,
-      "quote_timestamp": "2026-11-09T13:04:56.133000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "VVS",
-      "price": 70.5,
-      "quote_timestamp": "2026-11-09T13:04:56.155000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "TCM",
-      "price": 14.9,
-      "quote_timestamp": "2026-11-09T13:04:56.405000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "ASM",
-      "price": 4.48,
-      "quote_timestamp": "2026-11-09T13:04:56.729000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "TLG",
-      "price": 54.5,
-      "quote_timestamp": "2026-11-09T13:04:56.740000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "ORS",
-      "price": 14.1,
-      "quote_timestamp": "2026-11-09T13:04:56.745000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "TAL",
-      "price": 23.35,
-      "quote_timestamp": "2026-11-09T13:04:57.315000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "AGG",
-      "price": 8.86,
-      "quote_timestamp": "2026-11-09T13:04:57.352000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "CSV",
-      "price": 22.55,
-      "quote_timestamp": "2026-11-09T13:04:57.611000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "GMD",
-      "price": 53.0,
-      "quote_timestamp": "2026-11-09T13:04:57.617000+07:00",
       "provider": "KBS",
       "interval": "KBS_QUOTE_BOARD",
       "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
@@ -2397,939 +977,9 @@
       "live_eligible": true
     },
     {
-      "symbol": "NTL",
-      "price": 12.05,
-      "quote_timestamp": "2026-11-09T13:04:58.228000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "PVD",
-      "price": 17.25,
-      "quote_timestamp": "2026-11-09T13:04:58.511000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "YEG",
-      "price": 7.59,
-      "quote_timestamp": "2026-11-09T13:04:58.799000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "HHS",
-      "price": 9.82,
-      "quote_timestamp": "2026-11-09T13:04:58.809000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "DXS",
-      "price": 4.94,
-      "quote_timestamp": "2026-11-09T13:04:58.845000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "SCS",
-      "price": 39.8,
-      "quote_timestamp": "2026-11-09T13:04:59.109000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "APH",
-      "price": 7.14,
-      "quote_timestamp": "2026-11-09T13:04:59.126000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "OGC",
-      "price": 2.4,
-      "quote_timestamp": "2026-11-09T13:04:59.730000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "HDC",
-      "price": 12.95,
-      "quote_timestamp": "2026-11-09T13:04:59.768000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "DBD",
-      "price": 44.6,
-      "quote_timestamp": "2026-11-09T13:05:00.017000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "PGV",
-      "price": 20.45,
-      "quote_timestamp": "2026-11-09T13:05:00.333000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "AAA",
-      "price": 6.96,
-      "quote_timestamp": "2026-11-09T13:05:00.344000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "TSC",
-      "price": 1.63,
-      "quote_timestamp": "2026-11-09T13:05:00.611000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "HQC",
-      "price": 1.86,
-      "quote_timestamp": "2026-11-09T13:05:00.901000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "DMX",
-      "price": 74.6,
-      "quote_timestamp": "2026-11-09T13:05:00.906000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "VIP",
-      "price": 9.7,
-      "quote_timestamp": "2026-11-09T13:05:00.916000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "VDS",
-      "price": 9.65,
-      "quote_timestamp": "2026-11-09T13:05:00.927000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "DPR",
-      "price": 38.2,
-      "quote_timestamp": "2026-11-09T13:05:01.234000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "STK",
-      "price": 7.7,
-      "quote_timestamp": "2026-11-09T13:05:01.507000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "HII",
-      "price": 7.89,
-      "quote_timestamp": "2026-11-09T13:05:01.551000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "BAF",
-      "price": 30.8,
-      "quote_timestamp": "2026-11-09T13:05:01.552000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "BSI",
-      "price": 28.5,
-      "quote_timestamp": "2026-11-09T13:05:02.701000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "L10",
-      "price": 36.0,
-      "quote_timestamp": "2026-11-09T13:05:02.732000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "MBB",
-      "price": 19.1,
-      "quote_timestamp": "2026-11-09T13:05:03.012000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "SZC",
-      "price": 20.05,
-      "quote_timestamp": "2026-11-09T13:05:03.021000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "SHB",
-      "price": 10.65,
-      "quote_timestamp": "2026-11-09T13:05:03.023000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "SSB",
-      "price": 14.45,
-      "quote_timestamp": "2026-11-09T13:05:03.047000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "BVH",
-      "price": 63.0,
-      "quote_timestamp": "2026-11-09T13:05:03.314000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "ANV",
-      "price": 17.15,
-      "quote_timestamp": "2026-11-09T13:05:03.318000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
       "symbol": "NAF",
       "price": 47.9,
       "quote_timestamp": "2026-11-09T13:05:03.329000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "HID",
-      "price": 4.53,
-      "quote_timestamp": "2026-11-09T13:05:03.335000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "CMG",
-      "price": 17.5,
-      "quote_timestamp": "2026-11-09T13:05:03.352000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "TRC",
-      "price": 19.8,
-      "quote_timestamp": "2026-11-09T13:05:03.599000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "HPX",
-      "price": 3.5,
-      "quote_timestamp": "2026-11-09T13:05:03.602000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "KSB",
-      "price": 12.3,
-      "quote_timestamp": "2026-11-09T13:05:03.629000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "COM",
-      "price": 30.35,
-      "quote_timestamp": "2026-11-09T13:05:03.635000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "BCM",
-      "price": 37.85,
-      "quote_timestamp": "2026-11-09T13:05:03.927000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "CSM",
-      "price": 11.6,
-      "quote_timestamp": "2026-11-09T13:05:03.936000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "VGC",
-      "price": 39.75,
-      "quote_timestamp": "2026-11-09T13:05:04.224000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "NAB",
-      "price": 12.5,
-      "quote_timestamp": "2026-11-09T13:05:04.237000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "FRT",
-      "price": 140.5,
-      "quote_timestamp": "2026-11-09T13:05:04.240000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "CTD",
-      "price": 69.6,
-      "quote_timestamp": "2026-11-09T13:05:04.243000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "CTR",
-      "price": 64.0,
-      "quote_timestamp": "2026-11-09T13:05:04.538000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "NKG",
-      "price": 12.2,
-      "quote_timestamp": "2026-11-09T13:05:05.115000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "GEL",
-      "price": 25.9,
-      "quote_timestamp": "2026-11-09T13:05:05.116000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "GEE",
-      "price": 64.0,
-      "quote_timestamp": "2026-11-09T13:05:05.127000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "FIT",
-      "price": 2.92,
-      "quote_timestamp": "2026-11-09T13:05:05.406000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "PVP",
-      "price": 18.1,
-      "quote_timestamp": "2026-11-09T13:05:05.438000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "VTP",
-      "price": 45.6,
-      "quote_timestamp": "2026-11-09T13:05:05.455000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "DCM",
-      "price": 32.0,
-      "quote_timestamp": "2026-11-09T13:05:05.467000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "MCH",
-      "price": 125.8,
-      "quote_timestamp": "2026-11-09T13:05:05.699000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "QCG",
-      "price": 10.6,
-      "quote_timestamp": "2026-11-09T13:05:05.729000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "DHC",
-      "price": 36.2,
-      "quote_timestamp": "2026-11-09T13:05:05.734000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "LPB",
-      "price": 34.6,
-      "quote_timestamp": "2026-11-09T13:05:06.023000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "DBC",
-      "price": 16.0,
-      "quote_timestamp": "2026-11-09T13:05:06.025000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "PC1",
-      "price": 16.55,
-      "quote_timestamp": "2026-11-09T13:05:06.031000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "POW",
-      "price": 12.55,
-      "quote_timestamp": "2026-11-09T13:05:06.032000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "TCX",
-      "price": 28.25,
-      "quote_timestamp": "2026-11-09T13:05:06.040000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "GEX",
-      "price": 21.95,
-      "quote_timestamp": "2026-11-09T13:05:06.041000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "CII",
-      "price": 13.8,
-      "quote_timestamp": "2026-11-09T13:05:06.043000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "VIC",
-      "price": 228.4,
-      "quote_timestamp": "2026-11-09T13:05:06.047000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "PET",
-      "price": 49.8,
-      "quote_timestamp": "2026-11-09T13:05:06.048000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "PTL",
-      "price": 1.56,
-      "quote_timestamp": "2026-11-09T13:05:06.050000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "VPB",
-      "price": 22.15,
-      "quote_timestamp": "2026-11-09T13:05:06.303000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "HDG",
-      "price": 16.2,
-      "quote_timestamp": "2026-11-09T13:05:06.305000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "VCG",
-      "price": 15.2,
-      "quote_timestamp": "2026-11-09T13:05:06.316000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "FTS",
-      "price": 19.4,
-      "quote_timestamp": "2026-11-09T13:05:06.317000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "DPM",
-      "price": 19.65,
-      "quote_timestamp": "2026-11-09T13:05:06.339000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "DPG",
-      "price": 32.05,
-      "quote_timestamp": "2026-11-09T13:05:06.339000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "NLG",
-      "price": 22.7,
-      "quote_timestamp": "2026-11-09T13:05:06.612000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "KBC",
-      "price": 26.7,
-      "quote_timestamp": "2026-11-09T13:05:06.628000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "HHP",
-      "price": 15.6,
-      "quote_timestamp": "2026-11-09T13:05:06.636000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "DIG",
-      "price": 10.3,
-      "quote_timestamp": "2026-11-09T13:05:06.643000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "CTG",
-      "price": 31.5,
-      "quote_timestamp": "2026-11-09T13:05:06.645000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "VPL",
-      "price": 92.9,
-      "quote_timestamp": "2026-11-09T13:05:06.656000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "IJC",
-      "price": 7.06,
-      "quote_timestamp": "2026-11-09T13:05:06.660000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "VND",
-      "price": 14.55,
-      "quote_timestamp": "2026-11-09T13:05:06.663000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "DGW",
-      "price": 38.55,
-      "quote_timestamp": "2026-11-09T13:05:06.903000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "HSG",
-      "price": 10.8,
-      "quote_timestamp": "2026-11-09T13:05:06.904000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "TCH",
-      "price": 13.15,
-      "quote_timestamp": "2026-11-09T13:05:06.906000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "TCB",
-      "price": 21.55,
-      "quote_timestamp": "2026-11-09T13:05:06.907000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "PVT",
-      "price": 20.8,
-      "quote_timestamp": "2026-11-09T13:05:06.919000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "VSC",
-      "price": 13.45,
-      "quote_timestamp": "2026-11-09T13:05:06.921000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "VNM",
-      "price": 57.3,
-      "quote_timestamp": "2026-11-09T13:05:06.922000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "DXG",
-      "price": 10.8,
-      "quote_timestamp": "2026-11-09T13:05:06.925000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "MSN",
-      "price": 71.2,
-      "quote_timestamp": "2026-11-09T13:05:07.217000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "VRE",
-      "price": 23.6,
-      "quote_timestamp": "2026-11-09T13:05:07.219000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "PDR",
-      "price": 11.6,
-      "quote_timestamp": "2026-11-09T13:05:07.221000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "TPB",
-      "price": 12.6,
-      "quote_timestamp": "2026-11-09T13:05:07.229000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "GAS",
-      "price": 74.1,
-      "quote_timestamp": "2026-11-09T13:05:07.235000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "EIB",
-      "price": 16.2,
-      "quote_timestamp": "2026-11-09T13:05:07.236000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "PNJ",
-      "price": 14.65,
-      "quote_timestamp": "2026-11-09T13:05:07.500000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "CTS",
-      "price": 22.9,
-      "quote_timestamp": "2026-11-09T13:05:07.505000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "VCI",
-      "price": 19.85,
-      "quote_timestamp": "2026-11-09T13:05:07.507000+07:00",
       "provider": "KBS",
       "interval": "KBS_QUOTE_BOARD",
       "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
@@ -3347,246 +997,6 @@
       "live_eligible": true
     },
     {
-      "symbol": "VIB",
-      "price": 13.85,
-      "quote_timestamp": "2026-11-09T13:05:07.515000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "KOS",
-      "price": 3.49,
-      "quote_timestamp": "2026-11-09T13:05:07.517000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "VCB",
-      "price": 53.6,
-      "quote_timestamp": "2026-11-09T13:05:07.519000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "MWG",
-      "price": 72.9,
-      "quote_timestamp": "2026-11-09T13:05:07.524000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "REE",
-      "price": 46.9,
-      "quote_timestamp": "2026-11-09T13:05:07.525000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "HPG",
-      "price": 20.9,
-      "quote_timestamp": "2026-11-09T13:05:07.531000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "HCM",
-      "price": 23.15,
-      "quote_timestamp": "2026-11-09T13:05:07.536000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "ACB",
-      "price": 20.35,
-      "quote_timestamp": "2026-11-09T13:05:07.539000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "VHM",
-      "price": 60.8,
-      "quote_timestamp": "2026-11-09T13:05:07.544000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "NVL",
-      "price": 10.5,
-      "quote_timestamp": "2026-11-09T13:05:07.546000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "PLX",
-      "price": 33.25,
-      "quote_timestamp": "2026-11-09T13:05:07.548000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "KDH",
-      "price": 15.0,
-      "quote_timestamp": "2026-11-09T13:05:07.549000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "VPI",
-      "price": 60.0,
-      "quote_timestamp": "2026-11-09T13:05:07.551000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "STB",
-      "price": 68.5,
-      "quote_timestamp": "2026-11-09T13:05:07.801000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "VIX",
-      "price": 13.05,
-      "quote_timestamp": "2026-11-09T13:05:07.803000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "SSI",
-      "price": 20.0,
-      "quote_timestamp": "2026-11-09T13:05:07.806000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "FCN",
-      "price": 11.15,
-      "quote_timestamp": "2026-11-09T13:05:07.807000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "PDN",
-      "price": 81.9,
-      "quote_timestamp": "2026-11-09T13:05:07.811000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "HDB",
-      "price": 22.05,
-      "quote_timestamp": "2026-11-09T13:05:07.812000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "MSB",
-      "price": 16.15,
-      "quote_timestamp": "2026-11-09T13:05:07.820000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "BID",
-      "price": 32.05,
-      "quote_timestamp": "2026-11-09T13:05:07.826000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "HHV",
-      "price": 9.55,
-      "quote_timestamp": "2026-11-09T13:05:07.831000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "BSR",
-      "price": 26.3,
-      "quote_timestamp": "2026-11-09T13:05:07.838000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
-      "symbol": "VJC",
-      "price": 131.5,
-      "quote_timestamp": "2026-11-09T13:05:07.841000+07:00",
-      "provider": "KBS",
-      "interval": "KBS_QUOTE_BOARD",
-      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
-      "basis_vs_eod": "NOT_COMPARED",
-      "live_eligible": true
-    },
-    {
       "symbol": "VFG",
       "price": 39.85,
       "quote_timestamp": "2026-11-09T13:05:07.848000+07:00",
@@ -3597,9 +1007,1949 @@
       "live_eligible": true
     },
     {
-      "symbol": "FPT",
-      "price": 50.8,
-      "quote_timestamp": "2026-11-09T13:05:07.852000+07:00",
+      "symbol": "DAH",
+      "price": 2.34,
+      "quote_timestamp": "2026-11-09T13:05:31.514000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "MCM",
+      "price": 25.7,
+      "quote_timestamp": "2026-11-09T13:05:31.537000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "TCL",
+      "price": 28.65,
+      "quote_timestamp": "2026-11-09T13:05:36.012000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "PGI",
+      "price": 23.2,
+      "quote_timestamp": "2026-11-09T13:05:45.089000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "TTF",
+      "price": 1.02,
+      "quote_timestamp": "2026-11-09T13:05:55.252000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "RAL",
+      "price": 71.8,
+      "quote_timestamp": "2026-11-09T13:05:55.526000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "LGL",
+      "price": 4.03,
+      "quote_timestamp": "2026-11-09T13:06:02.426000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "TEG",
+      "price": 6.05,
+      "quote_timestamp": "2026-11-09T13:06:03.634000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "HCD",
+      "price": 5.96,
+      "quote_timestamp": "2026-11-09T13:06:05.133000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "FIR",
+      "price": 2.76,
+      "quote_timestamp": "2026-11-09T13:06:11.424000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "HTN",
+      "price": 7.31,
+      "quote_timestamp": "2026-11-09T13:06:11.769000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "HAR",
+      "price": 2.53,
+      "quote_timestamp": "2026-11-09T13:06:15.964000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "SZL",
+      "price": 27.6,
+      "quote_timestamp": "2026-11-09T13:06:20.164000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "VNG",
+      "price": 5.07,
+      "quote_timestamp": "2026-11-09T13:06:22.866000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "TLD",
+      "price": 7.84,
+      "quote_timestamp": "2026-11-09T13:06:25.870000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "DAT",
+      "price": 8.07,
+      "quote_timestamp": "2026-11-09T13:06:36.952000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "TTA",
+      "price": 10.35,
+      "quote_timestamp": "2026-11-09T13:06:41.141000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "HMC",
+      "price": 10.75,
+      "quote_timestamp": "2026-11-09T13:06:54.044000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "ABT",
+      "price": 56.6,
+      "quote_timestamp": "2026-11-09T13:07:03.962000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "VNS",
+      "price": 5.61,
+      "quote_timestamp": "2026-11-09T13:07:07.568000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "KHP",
+      "price": 9.27,
+      "quote_timestamp": "2026-11-09T13:07:10.563000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "GHC",
+      "price": 22.7,
+      "quote_timestamp": "2026-11-09T13:07:14.147000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "NNC",
+      "price": 47.2,
+      "quote_timestamp": "2026-11-09T13:07:15.950000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "DXV",
+      "price": 2.56,
+      "quote_timestamp": "2026-11-09T13:07:16.892000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "SJS",
+      "price": 54.0,
+      "quote_timestamp": "2026-11-09T13:07:20.777000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "DSH",
+      "price": 11.05,
+      "quote_timestamp": "2026-11-09T13:07:22.572000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "TMP",
+      "price": 48.75,
+      "quote_timestamp": "2026-11-09T13:07:22.884000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "PTL",
+      "price": 1.56,
+      "quote_timestamp": "2026-11-09T13:07:31.583000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "SBG",
+      "price": 14.4,
+      "quote_timestamp": "2026-11-09T13:07:31.882000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "PIT",
+      "price": 8.83,
+      "quote_timestamp": "2026-11-09T13:07:33.672000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "AFX",
+      "price": 9.8,
+      "quote_timestamp": "2026-11-09T13:07:35.780000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "TN1",
+      "price": 11.65,
+      "quote_timestamp": "2026-11-09T13:07:41.757000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "DQC",
+      "price": 9.22,
+      "quote_timestamp": "2026-11-09T13:07:43.272000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "DHG",
+      "price": 84.8,
+      "quote_timestamp": "2026-11-09T13:07:44.780000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "APH",
+      "price": 7.14,
+      "quote_timestamp": "2026-11-09T13:07:51.390000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "BCE",
+      "price": 6.11,
+      "quote_timestamp": "2026-11-09T13:08:00.383000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "ASP",
+      "price": 13.75,
+      "quote_timestamp": "2026-11-09T13:08:03.968000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "BMI",
+      "price": 13.65,
+      "quote_timestamp": "2026-11-09T13:08:07.877000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "BTP",
+      "price": 6.58,
+      "quote_timestamp": "2026-11-09T13:08:08.798000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "TLH",
+      "price": 3.25,
+      "quote_timestamp": "2026-11-09T13:08:18.077000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "VPH",
+      "price": 2.54,
+      "quote_timestamp": "2026-11-09T13:08:19.864000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "ANT",
+      "price": 15.7,
+      "quote_timestamp": "2026-11-09T13:08:24.372000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "TRA",
+      "price": 34.2,
+      "quote_timestamp": "2026-11-09T13:08:31.315000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "AAT",
+      "price": 1.81,
+      "quote_timestamp": "2026-11-09T13:08:31.868000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "PGV",
+      "price": 20.3,
+      "quote_timestamp": "2026-11-09T13:08:34.317000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "PGC",
+      "price": 14.0,
+      "quote_timestamp": "2026-11-09T13:08:36.677000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "PAC",
+      "price": 14.4,
+      "quote_timestamp": "2026-11-09T13:08:47.500000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "PET",
+      "price": 49.8,
+      "quote_timestamp": "2026-11-09T13:08:49.609000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "DCL",
+      "price": 44.0,
+      "quote_timestamp": "2026-11-09T13:08:51.083000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "DHA",
+      "price": 56.2,
+      "quote_timestamp": "2026-11-09T13:08:53.199000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "SCS",
+      "price": 39.9,
+      "quote_timestamp": "2026-11-09T13:08:54.381000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "BMP",
+      "price": 137.5,
+      "quote_timestamp": "2026-11-09T13:08:54.980000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "PLP",
+      "price": 3.36,
+      "quote_timestamp": "2026-11-09T13:08:58.011000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "CTI",
+      "price": 16.9,
+      "quote_timestamp": "2026-11-09T13:08:58.906000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "HTL",
+      "price": 19.5,
+      "quote_timestamp": "2026-11-09T13:09:01.306000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "STK",
+      "price": 7.7,
+      "quote_timestamp": "2026-11-09T13:09:01.884000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "BFC",
+      "price": 57.2,
+      "quote_timestamp": "2026-11-09T13:09:03.378000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "TCM",
+      "price": 15.0,
+      "quote_timestamp": "2026-11-09T13:09:03.986000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "ITC",
+      "price": 8.5,
+      "quote_timestamp": "2026-11-09T13:09:04.603000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "TIP",
+      "price": 15.7,
+      "quote_timestamp": "2026-11-09T13:09:06.683000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "TDC",
+      "price": 6.45,
+      "quote_timestamp": "2026-11-09T13:09:07.308000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "LIX",
+      "price": 24.8,
+      "quote_timestamp": "2026-11-09T13:09:07.317000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "L10",
+      "price": 36.0,
+      "quote_timestamp": "2026-11-09T13:09:09.117000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "VTO",
+      "price": 10.25,
+      "quote_timestamp": "2026-11-09T13:09:09.987000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "ACG",
+      "price": 29.85,
+      "quote_timestamp": "2026-11-09T13:09:15.711000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "DBD",
+      "price": 44.6,
+      "quote_timestamp": "2026-11-09T13:09:15.989000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "SVC",
+      "price": 16.5,
+      "quote_timestamp": "2026-11-09T13:09:20.211000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "SHI",
+      "price": 14.05,
+      "quote_timestamp": "2026-11-09T13:09:20.220000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "VIP",
+      "price": 9.7,
+      "quote_timestamp": "2026-11-09T13:09:21.396000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "CDC",
+      "price": 22.6,
+      "quote_timestamp": "2026-11-09T13:09:21.411000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "VRC",
+      "price": 11.6,
+      "quote_timestamp": "2026-11-09T13:09:22.605000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "SBT",
+      "price": 20.85,
+      "quote_timestamp": "2026-11-09T13:09:22.921000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "PDN",
+      "price": 81.8,
+      "quote_timestamp": "2026-11-09T13:09:24.099000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "RYG",
+      "price": 7.84,
+      "quote_timestamp": "2026-11-09T13:09:25.009000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "CIG",
+      "price": 6.04,
+      "quote_timestamp": "2026-11-09T13:09:25.920000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "TLG",
+      "price": 54.6,
+      "quote_timestamp": "2026-11-09T13:09:27.713000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "YEG",
+      "price": 7.56,
+      "quote_timestamp": "2026-11-09T13:09:27.725000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "PHC",
+      "price": 3.6,
+      "quote_timestamp": "2026-11-09T13:09:29.238000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "NT2",
+      "price": 22.2,
+      "quote_timestamp": "2026-11-09T13:09:29.488000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "OGC",
+      "price": 2.39,
+      "quote_timestamp": "2026-11-09T13:09:29.496000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "BCM",
+      "price": 37.9,
+      "quote_timestamp": "2026-11-09T13:09:29.520000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "OCB",
+      "price": 10.6,
+      "quote_timestamp": "2026-11-09T13:09:30.089000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "SIP",
+      "price": 49.8,
+      "quote_timestamp": "2026-11-09T13:09:30.427000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "SGN",
+      "price": 58.6,
+      "quote_timestamp": "2026-11-09T13:09:30.689000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "BMC",
+      "price": 9.62,
+      "quote_timestamp": "2026-11-09T13:09:31.595000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "DC4",
+      "price": 5.95,
+      "quote_timestamp": "2026-11-09T13:09:31.613000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "HAX",
+      "price": 8.29,
+      "quote_timestamp": "2026-11-09T13:09:32.204000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "CTF",
+      "price": 18.7,
+      "quote_timestamp": "2026-11-09T13:09:32.207000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "FCN",
+      "price": 11.15,
+      "quote_timestamp": "2026-11-09T13:09:32.492000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "PDV",
+      "price": 8.5,
+      "quote_timestamp": "2026-11-09T13:09:33.114000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "VPS",
+      "price": 8.29,
+      "quote_timestamp": "2026-11-09T13:09:33.117000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "VPG",
+      "price": 0.96,
+      "quote_timestamp": "2026-11-09T13:09:34.024000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "GIL",
+      "price": 9.25,
+      "quote_timestamp": "2026-11-09T13:09:34.913000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "VDS",
+      "price": 9.66,
+      "quote_timestamp": "2026-11-09T13:09:35.203000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "CSV",
+      "price": 22.6,
+      "quote_timestamp": "2026-11-09T13:09:36.695000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "CCL",
+      "price": 2.97,
+      "quote_timestamp": "2026-11-09T13:09:37.607000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "LAF",
+      "price": 18.0,
+      "quote_timestamp": "2026-11-09T13:09:38.802000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "NCT",
+      "price": 80.8,
+      "quote_timestamp": "2026-11-09T13:09:39.718000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "LBM",
+      "price": 28.1,
+      "quote_timestamp": "2026-11-09T13:09:41.199000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "FIT",
+      "price": 2.91,
+      "quote_timestamp": "2026-11-09T13:09:42.092000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "PHR",
+      "price": 29.65,
+      "quote_timestamp": "2026-11-09T13:09:42.121000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "AGG",
+      "price": 8.86,
+      "quote_timestamp": "2026-11-09T13:09:43.921000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "HPX",
+      "price": 3.5,
+      "quote_timestamp": "2026-11-09T13:09:44.492000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "THG",
+      "price": 25.25,
+      "quote_timestamp": "2026-11-09T13:09:44.811000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "ASM",
+      "price": 4.48,
+      "quote_timestamp": "2026-11-09T13:09:45.417000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "TVS",
+      "price": 12.2,
+      "quote_timestamp": "2026-11-09T13:09:46.020000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "TDH",
+      "price": 2.63,
+      "quote_timestamp": "2026-11-09T13:09:46.291000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "HID",
+      "price": 4.6,
+      "quote_timestamp": "2026-11-09T13:09:48.726000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "FMC",
+      "price": 34.6,
+      "quote_timestamp": "2026-11-09T13:09:49.027000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "MSH",
+      "price": 34.55,
+      "quote_timestamp": "2026-11-09T13:09:49.600000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "NAB",
+      "price": 12.55,
+      "quote_timestamp": "2026-11-09T13:09:49.623000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "LHG",
+      "price": 26.55,
+      "quote_timestamp": "2026-11-09T13:09:50.207000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "ST8",
+      "price": 2.05,
+      "quote_timestamp": "2026-11-09T13:09:50.834000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "VJC",
+      "price": 132.1,
+      "quote_timestamp": "2026-11-09T13:09:51.127000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "GAS",
+      "price": 74.1,
+      "quote_timestamp": "2026-11-09T13:09:51.439000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "GEG",
+      "price": 11.65,
+      "quote_timestamp": "2026-11-09T13:09:51.697000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "REE",
+      "price": 46.9,
+      "quote_timestamp": "2026-11-09T13:09:52.013000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "KLB",
+      "price": 10.3,
+      "quote_timestamp": "2026-11-09T13:09:52.305000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "IDI",
+      "price": 4.89,
+      "quote_timestamp": "2026-11-09T13:09:52.326000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "KSB",
+      "price": 12.3,
+      "quote_timestamp": "2026-11-09T13:09:52.937000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "NHA",
+      "price": 7.66,
+      "quote_timestamp": "2026-11-09T13:09:53.208000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "LDG",
+      "price": 2.36,
+      "quote_timestamp": "2026-11-09T13:09:53.239000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "VCK",
+      "price": 28.0,
+      "quote_timestamp": "2026-11-09T13:09:53.533000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "PC1",
+      "price": 16.55,
+      "quote_timestamp": "2026-11-09T13:09:54.423000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "BVB",
+      "price": 10.4,
+      "quote_timestamp": "2026-11-09T13:09:54.710000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "ADS",
+      "price": 7.71,
+      "quote_timestamp": "2026-11-09T13:09:55.635000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "VTP",
+      "price": 45.65,
+      "quote_timestamp": "2026-11-09T13:09:55.636000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "VAB",
+      "price": 8.97,
+      "quote_timestamp": "2026-11-09T13:09:56.527000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "PPC",
+      "price": 8.71,
+      "quote_timestamp": "2026-11-09T13:09:57.430000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "AGR",
+      "price": 11.55,
+      "quote_timestamp": "2026-11-09T13:09:58.007000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "DLG",
+      "price": 1.89,
+      "quote_timestamp": "2026-11-09T13:09:58.030000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "VGC",
+      "price": 39.75,
+      "quote_timestamp": "2026-11-09T13:09:58.320000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "BSI",
+      "price": 28.5,
+      "quote_timestamp": "2026-11-09T13:09:58.608000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "CRE",
+      "price": 4.08,
+      "quote_timestamp": "2026-11-09T13:09:58.922000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "HSG",
+      "price": 10.75,
+      "quote_timestamp": "2026-11-09T13:09:59.207000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "VHC",
+      "price": 48.9,
+      "quote_timestamp": "2026-11-09T13:09:59.552000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "NTL",
+      "price": 12.05,
+      "quote_timestamp": "2026-11-09T13:09:59.815000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "SJD",
+      "price": 14.0,
+      "quote_timestamp": "2026-11-09T13:09:59.826000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "TPB",
+      "price": 12.6,
+      "quote_timestamp": "2026-11-09T13:09:59.846000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "BWE",
+      "price": 42.1,
+      "quote_timestamp": "2026-11-09T13:10:00.107000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "TSC",
+      "price": 1.6,
+      "quote_timestamp": "2026-11-09T13:10:00.109000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "AAA",
+      "price": 6.96,
+      "quote_timestamp": "2026-11-09T13:10:00.135000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "ABS",
+      "price": 2.86,
+      "quote_timestamp": "2026-11-09T13:10:00.400000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "QCG",
+      "price": 10.6,
+      "quote_timestamp": "2026-11-09T13:10:00.710000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "ORS",
+      "price": 14.2,
+      "quote_timestamp": "2026-11-09T13:10:00.741000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "MCH",
+      "price": 126.1,
+      "quote_timestamp": "2026-11-09T13:10:01.002000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "BAF",
+      "price": 30.8,
+      "quote_timestamp": "2026-11-09T13:10:01.333000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "HQC",
+      "price": 1.86,
+      "quote_timestamp": "2026-11-09T13:10:01.600000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "VOS",
+      "price": 10.7,
+      "quote_timestamp": "2026-11-09T13:10:01.623000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "EVG",
+      "price": 3.67,
+      "quote_timestamp": "2026-11-09T13:10:01.900000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "SRF",
+      "price": 7.25,
+      "quote_timestamp": "2026-11-09T13:10:01.933000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "BVH",
+      "price": 62.7,
+      "quote_timestamp": "2026-11-09T13:10:02.547000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "TCO",
+      "price": 9.6,
+      "quote_timestamp": "2026-11-09T13:10:03.120000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "CMG",
+      "price": 17.5,
+      "quote_timestamp": "2026-11-09T13:10:03.134000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "FCM",
+      "price": 2.6,
+      "quote_timestamp": "2026-11-09T13:10:03.406000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "COM",
+      "price": 30.35,
+      "quote_timestamp": "2026-11-09T13:10:03.441000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "PAN",
+      "price": 17.0,
+      "quote_timestamp": "2026-11-09T13:10:03.726000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "HPA",
+      "price": 27.6,
+      "quote_timestamp": "2026-11-09T13:10:03.728000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "CSM",
+      "price": 11.6,
+      "quote_timestamp": "2026-11-09T13:10:03.729000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "TCI",
+      "price": 9.48,
+      "quote_timestamp": "2026-11-09T13:10:04.014000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "APG",
+      "price": 3.82,
+      "quote_timestamp": "2026-11-09T13:10:04.045000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "CTS",
+      "price": 22.95,
+      "quote_timestamp": "2026-11-09T13:10:04.301000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "DSE",
+      "price": 19.75,
+      "quote_timestamp": "2026-11-09T13:10:04.303000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "PTB",
+      "price": 29.0,
+      "quote_timestamp": "2026-11-09T13:10:04.323000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "HII",
+      "price": 7.9,
+      "quote_timestamp": "2026-11-09T13:10:04.343000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "TAL",
+      "price": 23.4,
+      "quote_timestamp": "2026-11-09T13:10:04.612000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "DPG",
+      "price": 32.0,
+      "quote_timestamp": "2026-11-09T13:10:04.628000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "JVC",
+      "price": 2.8,
+      "quote_timestamp": "2026-11-09T13:10:04.634000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "CTR",
+      "price": 64.1,
+      "quote_timestamp": "2026-11-09T13:10:04.635000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "TRC",
+      "price": 19.8,
+      "quote_timestamp": "2026-11-09T13:10:05.204000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "DGW",
+      "price": 38.6,
+      "quote_timestamp": "2026-11-09T13:10:05.243000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "DCM",
+      "price": 31.95,
+      "quote_timestamp": "2026-11-09T13:10:05.243000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "VPI",
+      "price": 60.2,
+      "quote_timestamp": "2026-11-09T13:10:05.526000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "DHC",
+      "price": 36.2,
+      "quote_timestamp": "2026-11-09T13:10:05.528000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "KBC",
+      "price": 26.7,
+      "quote_timestamp": "2026-11-09T13:10:05.813000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "ANV",
+      "price": 17.15,
+      "quote_timestamp": "2026-11-09T13:10:05.815000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "VVS",
+      "price": 70.6,
+      "quote_timestamp": "2026-11-09T13:10:05.829000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "STB",
+      "price": 68.5,
+      "quote_timestamp": "2026-11-09T13:10:06.100000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "DMX",
+      "price": 74.6,
+      "quote_timestamp": "2026-11-09T13:10:06.109000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "NLG",
+      "price": 22.65,
+      "quote_timestamp": "2026-11-09T13:10:06.112000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "PVD",
+      "price": 17.25,
+      "quote_timestamp": "2026-11-09T13:10:06.132000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "MSB",
+      "price": 16.2,
+      "quote_timestamp": "2026-11-09T13:10:06.134000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "PVP",
+      "price": 18.1,
+      "quote_timestamp": "2026-11-09T13:10:06.136000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "DPM",
+      "price": 19.65,
+      "quote_timestamp": "2026-11-09T13:10:06.434000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "SCR",
+      "price": 3.9,
+      "quote_timestamp": "2026-11-09T13:10:06.714000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "HVN",
+      "price": 21.35,
+      "quote_timestamp": "2026-11-09T13:10:06.758000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "HHS",
+      "price": 9.83,
+      "quote_timestamp": "2026-11-09T13:10:07.019000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "VCG",
+      "price": 15.2,
+      "quote_timestamp": "2026-11-09T13:10:07.023000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "VIC",
+      "price": 228.8,
+      "quote_timestamp": "2026-11-09T13:10:07.036000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "SKG",
+      "price": 7.3,
+      "quote_timestamp": "2026-11-09T13:10:07.042000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "DXS",
+      "price": 4.93,
+      "quote_timestamp": "2026-11-09T13:10:07.053000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "EIB",
+      "price": 16.15,
+      "quote_timestamp": "2026-11-09T13:10:07.308000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "HSL",
+      "price": 7.1,
+      "quote_timestamp": "2026-11-09T13:10:07.310000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "DPR",
+      "price": 38.3,
+      "quote_timestamp": "2026-11-09T13:10:07.333000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "VPL",
+      "price": 92.9,
+      "quote_timestamp": "2026-11-09T13:10:07.345000+07:00",
       "provider": "KBS",
       "interval": "KBS_QUOTE_BOARD",
       "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
@@ -3609,7 +2959,757 @@
     {
       "symbol": "GVR",
       "price": 29.25,
-      "quote_timestamp": "2026-11-09T13:05:07.852000+07:00",
+      "quote_timestamp": "2026-11-09T13:10:07.355000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "DGC",
+      "price": 33.0,
+      "quote_timestamp": "2026-11-09T13:10:07.356000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "ELC",
+      "price": 10.4,
+      "quote_timestamp": "2026-11-09T13:10:07.356000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "SZC",
+      "price": 20.1,
+      "quote_timestamp": "2026-11-09T13:10:07.910000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "HHV",
+      "price": 9.54,
+      "quote_timestamp": "2026-11-09T13:10:07.931000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "PLX",
+      "price": 33.35,
+      "quote_timestamp": "2026-11-09T13:10:07.941000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "FRT",
+      "price": 140.8,
+      "quote_timestamp": "2026-11-09T13:10:07.943000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "FTS",
+      "price": 19.45,
+      "quote_timestamp": "2026-11-09T13:10:08.252000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "HHP",
+      "price": 15.6,
+      "quote_timestamp": "2026-11-09T13:10:08.526000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "LPB",
+      "price": 34.55,
+      "quote_timestamp": "2026-11-09T13:10:08.527000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "MSN",
+      "price": 71.3,
+      "quote_timestamp": "2026-11-09T13:10:08.531000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "VRE",
+      "price": 23.65,
+      "quote_timestamp": "2026-11-09T13:10:08.533000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "SAB",
+      "price": 42.8,
+      "quote_timestamp": "2026-11-09T13:10:08.535000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "PDR",
+      "price": 11.65,
+      "quote_timestamp": "2026-11-09T13:10:08.537000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "HT1",
+      "price": 12.6,
+      "quote_timestamp": "2026-11-09T13:10:08.539000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "ACB",
+      "price": 20.35,
+      "quote_timestamp": "2026-11-09T13:10:08.552000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "ACC",
+      "price": 3.48,
+      "quote_timestamp": "2026-11-09T13:10:08.805000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "VCI",
+      "price": 19.85,
+      "quote_timestamp": "2026-11-09T13:10:08.808000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "KDC",
+      "price": 49.5,
+      "quote_timestamp": "2026-11-09T13:10:08.812000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "SAM",
+      "price": 6.21,
+      "quote_timestamp": "2026-11-09T13:10:08.813000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "DBC",
+      "price": 16.05,
+      "quote_timestamp": "2026-11-09T13:10:08.815000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "GEL",
+      "price": 25.95,
+      "quote_timestamp": "2026-11-09T13:10:08.825000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "VSC",
+      "price": 13.5,
+      "quote_timestamp": "2026-11-09T13:10:08.834000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "VCB",
+      "price": 53.5,
+      "quote_timestamp": "2026-11-09T13:10:09.117000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "DRC",
+      "price": 8.91,
+      "quote_timestamp": "2026-11-09T13:10:09.127000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "DIG",
+      "price": 10.35,
+      "quote_timestamp": "2026-11-09T13:10:09.131000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "HAG",
+      "price": 13.5,
+      "quote_timestamp": "2026-11-09T13:10:09.145000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "KHG",
+      "price": 4.53,
+      "quote_timestamp": "2026-11-09T13:10:09.421000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "POW",
+      "price": 12.5,
+      "quote_timestamp": "2026-11-09T13:10:09.423000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "TV2",
+      "price": 27.4,
+      "quote_timestamp": "2026-11-09T13:10:09.427000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "BID",
+      "price": 32.0,
+      "quote_timestamp": "2026-11-09T13:10:09.428000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "HAH",
+      "price": 47.95,
+      "quote_timestamp": "2026-11-09T13:10:09.443000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "MIG",
+      "price": 15.0,
+      "quote_timestamp": "2026-11-09T13:10:09.709000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "LPS",
+      "price": 15.35,
+      "quote_timestamp": "2026-11-09T13:10:09.711000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "CTD",
+      "price": 69.8,
+      "quote_timestamp": "2026-11-09T13:10:09.715000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "VIB",
+      "price": 13.85,
+      "quote_timestamp": "2026-11-09T13:10:09.722000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "TCH",
+      "price": 13.15,
+      "quote_timestamp": "2026-11-09T13:10:09.724000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "GMD",
+      "price": 53.0,
+      "quote_timestamp": "2026-11-09T13:10:09.730000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "SHB",
+      "price": 10.65,
+      "quote_timestamp": "2026-11-09T13:10:09.734000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "CII",
+      "price": 13.8,
+      "quote_timestamp": "2026-11-09T13:10:09.746000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "NKG",
+      "price": 12.3,
+      "quote_timestamp": "2026-11-09T13:10:09.748000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "LCG",
+      "price": 6.5,
+      "quote_timestamp": "2026-11-09T13:10:09.750000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "PVT",
+      "price": 20.8,
+      "quote_timestamp": "2026-11-09T13:10:09.761000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "IMP",
+      "price": 35.2,
+      "quote_timestamp": "2026-11-09T13:10:09.765000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "VNM",
+      "price": 57.2,
+      "quote_timestamp": "2026-11-09T13:10:09.769000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "SSI",
+      "price": 19.95,
+      "quote_timestamp": "2026-11-09T13:10:10.012000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "TCB",
+      "price": 21.5,
+      "quote_timestamp": "2026-11-09T13:10:10.021000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "DXG",
+      "price": 10.8,
+      "quote_timestamp": "2026-11-09T13:10:10.025000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "DRL",
+      "price": 40.7,
+      "quote_timestamp": "2026-11-09T13:10:10.028000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "HPG",
+      "price": 20.95,
+      "quote_timestamp": "2026-11-09T13:10:10.034000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "GEE",
+      "price": 64.0,
+      "quote_timestamp": "2026-11-09T13:10:10.046000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "TNH",
+      "price": 6.83,
+      "quote_timestamp": "2026-11-09T13:10:10.047000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "KDH",
+      "price": 14.95,
+      "quote_timestamp": "2026-11-09T13:10:10.055000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "HDB",
+      "price": 22.05,
+      "quote_timestamp": "2026-11-09T13:10:10.059000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "PNJ",
+      "price": 14.7,
+      "quote_timestamp": "2026-11-09T13:10:10.302000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "VPB",
+      "price": 22.15,
+      "quote_timestamp": "2026-11-09T13:10:10.310000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "MBB",
+      "price": 19.05,
+      "quote_timestamp": "2026-11-09T13:10:10.317000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "VPX",
+      "price": 23.0,
+      "quote_timestamp": "2026-11-09T13:10:10.318000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "KOS",
+      "price": 3.5,
+      "quote_timestamp": "2026-11-09T13:10:10.320000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "MWG",
+      "price": 72.8,
+      "quote_timestamp": "2026-11-09T13:10:10.323000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "SSB",
+      "price": 14.5,
+      "quote_timestamp": "2026-11-09T13:10:10.350000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "IJC",
+      "price": 7.08,
+      "quote_timestamp": "2026-11-09T13:10:10.355000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "HDC",
+      "price": 13.1,
+      "quote_timestamp": "2026-11-09T13:10:10.357000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "VHM",
+      "price": 61.0,
+      "quote_timestamp": "2026-11-09T13:10:10.359000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "MZG",
+      "price": 10.35,
+      "quote_timestamp": "2026-11-09T13:10:10.361000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "VND",
+      "price": 14.55,
+      "quote_timestamp": "2026-11-09T13:10:10.362000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "VIX",
+      "price": 13.05,
+      "quote_timestamp": "2026-11-09T13:10:10.602000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "HDG",
+      "price": 16.25,
+      "quote_timestamp": "2026-11-09T13:10:10.604000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "TCX",
+      "price": 28.3,
+      "quote_timestamp": "2026-11-09T13:10:10.621000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "GEX",
+      "price": 21.9,
+      "quote_timestamp": "2026-11-09T13:10:10.622000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "CTG",
+      "price": 31.45,
+      "quote_timestamp": "2026-11-09T13:10:10.623000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "HCM",
+      "price": 23.15,
+      "quote_timestamp": "2026-11-09T13:10:10.629000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "BSR",
+      "price": 26.25,
+      "quote_timestamp": "2026-11-09T13:10:10.634000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "EVF",
+      "price": 11.6,
+      "quote_timestamp": "2026-11-09T13:10:10.635000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "NVL",
+      "price": 10.5,
+      "quote_timestamp": "2026-11-09T13:10:10.638000+07:00",
+      "provider": "KBS",
+      "interval": "KBS_QUOTE_BOARD",
+      "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
+      "basis_vs_eod": "NOT_COMPARED",
+      "live_eligible": true
+    },
+    {
+      "symbol": "FPT",
+      "price": 50.7,
+      "quote_timestamp": "2026-11-09T13:10:10.650000+07:00",
       "provider": "KBS",
       "interval": "KBS_QUOTE_BOARD",
       "price_basis": "KBS_QUOTE_BOARD_PROVIDER_NATIVE",
@@ -3618,8 +3718,8 @@
     },
     {
       "symbol": "VNINDEX",
-      "price": 1702.87,
-      "quote_timestamp": "2026-11-09T13:05:00+07:00",
+      "price": 1704.26,
+      "quote_timestamp": "2026-11-09T13:10:00+07:00",
       "provider": "KBS",
       "interval": "5m",
       "price_basis": "KBS_INDEX_5M_PROVIDER_NATIVE",
@@ -3628,8 +3728,8 @@
     },
     {
       "symbol": "VN30",
-      "price": 1821.4,
-      "quote_timestamp": "2026-11-09T13:05:00+07:00",
+      "price": 1822.68,
+      "quote_timestamp": "2026-11-09T13:10:00+07:00",
       "provider": "KBS",
       "interval": "5m",
       "price_basis": "KBS_INDEX_5M_PROVIDER_NATIVE",
@@ -8141,6 +8241,6 @@
       "method_note": "Scanner output cannot CONFIRM LPS/BUEC/Spring/JAC/Phase. Method-Locked review and Action-Test/follow-through remain required."
     }
   ],
-  "message": "Đã công bố 324 quote KBS đủ freshness theo từng mã; giá hiển thị riêng, không trộn vào phép tính EOD khi chưa xác minh price basis.",
+  "message": "Đã công bố 334 quote KBS đủ freshness theo từng mã; giá hiển thị riêng, không trộn vào phép tính EOD khi chưa xác minh price basis.",
   "publication_policy": "PUBLISH_WITH_KBS_DATA_RISK_NO_DATA_CA_OR_INTEGRITY_GATES_V1"
 }
