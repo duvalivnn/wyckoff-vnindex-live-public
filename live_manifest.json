@@ -1,91 +1,23 @@
 {
-  "generated_at_utc": "2026-11-09T10:10:08.275342+00:00",
-  "publisher_generation_id": "r33-2026-11-09-3f4fbca1216b2b8f",
-  "source_snapshot_generated_at_utc": "2026-11-09T10:10:07.161667+00:00",
-  "alerts_snapshot_binding": {
-    "path": "alerts_live.json",
-    "publisher_generation_id": "r33-2026-11-09-3f4fbca1216b2b8f",
-    "snapshot_generated_at_utc": "2026-11-09T10:10:07.161667+00:00",
-    "status": "BRIDGE_MATERIALIZES_ALERTS_PAYLOAD"
-  },
+  "source": "DNSE",
+  "status": "EOD_VERIFIED_FOR_RELEASE",
   "source_latest_date": "2026-11-09",
-  "source_session_date": "2026-11-09",
-  "source_job": "eod",
-  "source_result": "PASS_WITH_QUARANTINE",
-  "publication_mode": "GITHUB_BRIDGE_READY",
-  "source_workspace": "DỮ LIỆU OHLCV",
-  "dashboard_consumer": "wyckoff-vnindex-market-dashboard",
-  "live_snapshot_available": true,
-  "freshness": {
-    "age_minutes": 0,
-    "stale": false,
-    "threshold_minutes": 30
-  },
-  "files": {
-    "stock_daily_ohlcv.csv": {
-      "bytes": 26730699,
-      "sha256": "0b958120a40c72d7ab21757ea022f23bf577fd5f2e1251e791bbc5eb08fa24c7"
-    },
-    "stock_weekly_ohlcv.csv": {
-      "bytes": 9970020,
-      "sha256": "65bcdc53d89d6636c5475e7a9378ba3c5f6bf27d25f05c263838a15328ee9830"
-    },
-    "index_daily_ohlcv.csv": {
-      "bytes": 189311,
-      "sha256": "8264b8761237c6abc4ba767eff91e834d31eba2e6381968198d535c152128d35"
-    },
-    "index_weekly_ohlcv.csv": {
-      "bytes": 61165,
-      "sha256": "1bc77f6311cac4a576bcbe453325e2867cdec5230d6328371fd3efb8c609b76c"
-    },
-    "sector_classification.csv": {
-      "bytes": 60284,
-      "sha256": "ccc5b15e679e87034ebdf48ab0ef6db82b9068ebeaf1d7fa2f4e968f6894585b"
-    },
-    "vn30_constituents.csv": {
-      "bytes": 3194,
-      "sha256": "b98017616a9b919dfcbac2bb31c5c441187495dfe01da88eccfdab57fe9685ac"
-    }
-  },
-  "result": "PASS",
-  "data_lane": "KBS_PUBLISHED_WITH_RISK",
-  "canonical_certified": true,
-  "analysis_allowed_as_completed": true,
-  "source": "KBS",
-  "source_risk": "OWNER_ACCEPTED_ALL",
-  "certification_mode": "OWNER_ACCEPTED_RISK_NO_DATA_GATES",
-  "risk_accepted": true,
-  "publication_policy": {
-    "policy_id": "KBS_PUBLIC_ACCEPTANCE_POLICY_V1",
-    "version": "1.0.0",
-    "enabled": true,
-    "source": "KBS",
-    "certification_mode": "AUTO_CERTIFIED_WITH_RISK",
-    "risk_label": "KBS_ACCEPTED_ALL_PROVIDER_RISKS",
-    "preserved_controls": [
-      "payload_sha256_and_manifest_consistency",
-      "generation_and_session_binding",
-      "github_remote_commit_readback",
-      "live_pointer_readback",
-      "intraday_status_only_no_event_phase_zone_add",
-      "risk_and_quarantine_fields_remain_visible"
-    ]
-  },
-  "quarantined_symbols": [],
-  "eligible_scope": "ALL_KBS_SYMBOLS",
+  "publisher_generation_id": "dnse-2026-11-09-d6103e7bff162615",
   "canonical_completed_cutoff": "2026-11-09",
-  "latest_completed_session": "2026-11-09",
-  "observed_date": "2026-11-09",
-  "static_refresh": {
-    "active": false,
-    "mode": null,
-    "window": null,
-    "canonical_static_replacement": null
-  },
-  "session_date": "2026-11-09",
-  "latest_live_snapshot": {
-    "file": "live_snapshots\\live_20261109T143010+0700.csv",
-    "bytes": 95211,
-    "sha256": "34dfd62403688305d6f751126993862d587a063ba988a3c6d644a4e051295447"
-  }
+  "analysis_allowed_as_completed": true,
+  "release_status": "PREPARED_PENDING_GITHUB_READBACK",
+  "canonical_certified": true,
+  "source_session_date": "2026-11-09",
+  "source_lineage": [
+    {
+      "provider": "KBS",
+      "through": "2026-11-05"
+    },
+    {
+      "provider": "DNSE",
+      "from": "2026-11-06",
+      "through": "2026-11-09"
+    }
+  ],
+  "source_job": "dnse-eod"
 }

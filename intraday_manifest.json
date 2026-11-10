@@ -1,176 +1,30 @@
 {
-  "schema_version": "intraday_manifest.v1",
-  "publisher_generation_id": "r33-2026-11-09-3f4fbca1216b2b8f",
-  "path": "MARKET_CLOSED_FINAL_SNAPSHOT",
-  "session_mode": "MARKET_CLOSED",
-  "overlay_mode": "STATUS_ONLY",
-  "trading_date": "2026-11-09",
-  "source_latest_date": "2026-11-09",
-  "generated_at_utc": "2026-11-09T10:10:07.161667+00:00",
-  "last_snapshot_generated_at_utc": "2026-11-09T07:30:10.881794+00:00",
-  "canonical_snapshot_updated": false,
-  "rows_written": 373,
-  "symbols_with_rows": 373,
-  "provider_capability": {
-    "provider": "KBS",
-    "daily_ohlcv": false,
-    "quote_board": true,
-    "intraday": true,
-    "index_5m": true,
-    "status": "AVAILABLE",
-    "mode": "kbs_stock_quote_board_plus_index_5m"
-  },
-  "snapshot_semantics": "final same-session KBS intraday snapshot; historical reference after market close",
-  "source_snapshot": "intraday_latest.csv",
-  "source_snapshot_sha256": "86ef303fe998f7913eb5adc6e918559edac4e7655af559741fb918680e93b2e8",
-  "errors": [
+  "source": "DNSE",
+  "source_lineage": [
     {
-      "symbol": "ABR",
-      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+      "provider": "KBS",
+      "through": "2026-11-05"
     },
     {
-      "symbol": "ADG",
-      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
-    },
-    {
-      "symbol": "ASG",
-      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
-    },
-    {
-      "symbol": "CCC",
-      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
-    },
-    {
-      "symbol": "CCI",
-      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
-    },
-    {
-      "symbol": "CLC",
-      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
-    },
-    {
-      "symbol": "CRV",
-      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
-    },
-    {
-      "symbol": "CVT",
-      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
-    },
-    {
-      "symbol": "DBT",
-      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
-    },
-    {
-      "symbol": "DHM",
-      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
-    },
-    {
-      "symbol": "DRH",
-      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
-    },
-    {
-      "symbol": "DTT",
-      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
-    },
-    {
-      "symbol": "FDC",
-      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
-    },
-    {
-      "symbol": "GTA",
-      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
-    },
-    {
-      "symbol": "HRC",
-      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
-    },
-    {
-      "symbol": "ILB",
-      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
-    },
-    {
-      "symbol": "LGC",
-      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
-    },
-    {
-      "symbol": "LM8",
-      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
-    },
-    {
-      "symbol": "MHC",
-      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
-    },
-    {
-      "symbol": "PNC",
-      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
-    },
-    {
-      "symbol": "S4A",
-      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
-    },
-    {
-      "symbol": "SBA",
-      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
-    },
-    {
-      "symbol": "SC5",
-      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
-    },
-    {
-      "symbol": "SHA",
-      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
-    },
-    {
-      "symbol": "SPM",
-      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
-    },
-    {
-      "symbol": "SSC",
-      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
-    },
-    {
-      "symbol": "STG",
-      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
-    },
-    {
-      "symbol": "TCR",
-      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
-    },
-    {
-      "symbol": "TCT",
-      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
-    },
-    {
-      "symbol": "TDW",
-      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
-    },
-    {
-      "symbol": "TPC",
-      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
-    },
-    {
-      "symbol": "TTE",
-      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
-    },
-    {
-      "symbol": "TVT",
-      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
-    },
-    {
-      "symbol": "VCF",
-      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
-    },
-    {
-      "symbol": "VID",
-      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
-    },
-    {
-      "symbol": "VSI",
-      "error": "NO_QUOTE_ROW_IN_PROVIDER_RESPONSE"
+      "provider": "DNSE",
+      "from": "2026-11-06",
+      "through": "2026-11-09"
     }
   ],
-  "result": "PASS",
-  "contract_status": "MARKET_CLOSED",
+  "release_status": "CANDIDATE_ONLY",
+  "candidate_eod_cutoff": "2026-11-09",
+  "canonical_completed_cutoff": null,
+  "canonical_certified": false,
+  "analysis_allowed_as_completed": false,
+  "publisher_generation_id": "dnse-2026-11-09-d6103e7bff162615",
+  "generated_at_utc": "2026-11-10T03:13:28.339708+00:00",
+  "source_latest_date": "2026-11-09",
+  "path": "FAST_INTRADAY",
+  "trading_date": null,
+  "result": "NOT_INCLUDED",
+  "contract_status": "STATUS_ONLY",
   "overlay_allowed": false,
-  "overlay_reason": "MARKET_CLOSED_COMPLETED_EOD_PUBLISHED"
+  "rows_written": 0,
+  "canonical_snapshot_updated": false,
+  "alerts_overlay_allowed": false
 }
