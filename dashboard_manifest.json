@@ -10,16 +10,35 @@
     {
       "provider": "DNSE",
       "from": "2026-11-06",
-      "through": "2026-11-09"
+      "through": "2026-11-10"
     }
   ],
-  "cutoff": "2026-11-09",
-  "layout_receipt_sha256": "237a0c2af0d625ec3688a1f995ff6193080f8c7f9cfd4b6f16cd2d4851962c24",
+  "cutoff": "2026-11-10",
+  "layout_receipt_sha256": "54e1f330319e21c73b8834fe33ac3a96d2c1bb0266a1af889017eebfa02c856b",
+  "session_evidence": {
+    "session": "2026-11-10",
+    "observed_at_utc": "2026-11-10T10:00:03.523074+00:00",
+    "working_dates_sha256": "a507014bfe645e4206c4c220ea88730915c2f3b872be85e3a89b87c47206abd2",
+    "exchange_calendar_authorized": false,
+    "status": "DNSE_HOSE_CLOSING_EVENTS_OBSERVED",
+    "session_response_sha256": "db341e236433c67d4d1bd99e27587717c498f107858caa629dafdf6fd1d41cd9",
+    "events": {
+      "G1": {
+        "event": "AC2",
+        "time": "2026-11-10T14:45:00.732000+07:00"
+      },
+      "T1": {
+        "event": "AB2",
+        "time": "2026-11-10T15:00:00.715000+07:00"
+      }
+    }
+  },
   "analysis_allowed_as_completed": false,
   "market_gate_authorized": false,
   "universe_symbols": 407,
-  "current_market_rows": 345,
+  "current_market_rows": 344,
   "excluded_from_current_scan": [
+    "ABR",
     "ADG",
     "ASG",
     "AST",
@@ -27,42 +46,44 @@
     "BTT",
     "CCC",
     "CCI",
-    "CLC",
     "CLW",
     "CRV",
     "CVT",
+    "DAT",
     "DBT",
-    "DHM",
+    "DMC",
+    "DQC",
     "DRH",
     "DTT",
     "DXV",
     "ECO",
     "FDC",
+    "GMH",
     "GTA",
     "GVR",
     "HNA",
     "HRC",
     "HTV",
     "HU1",
-    "ILB",
+    "HUB",
+    "LAF",
     "LGC",
     "LM8",
-    "MHC",
     "NAV",
+    "NSC",
     "NVT",
     "PC1",
     "PJT",
     "PNC",
     "PTC",
-    "S4A",
+    "QNP",
     "SBA",
     "SBV",
     "SC5",
     "SFI",
-    "SHA",
     "SPM",
     "SSC",
-    "STG",
+    "SVT",
     "TCR",
     "TCT",
     "TDW",
@@ -70,13 +91,11 @@
     "TNC",
     "TPC",
     "TTE",
-    "TVT",
     "UIC",
     "VBB",
     "VCA",
     "VCF",
     "VFG",
-    "VID",
     "VIX",
     "VNL",
     "VPI",
@@ -133,9 +152,9 @@
   ],
   "files": {
     "index_daily_ohlcv.csv": {
-      "bytes": 189442,
-      "sha256": "2b2f2f99ded26af4d55fb4df5af5059e8762245733b9b326dc8ba7ede703a17e",
-      "rows": 2910,
+      "bytes": 189573,
+      "sha256": "af2193abd9538b595b45321fe39a8bfa59183e7ae1b1788ae8acb33531a43ee6",
+      "rows": 2912,
       "header": [
         "date",
         "symbol",
@@ -148,8 +167,8 @@
       ]
     },
     "index_weekly_ohlcv.csv": {
-      "bytes": 61165,
-      "sha256": "7a7a29562e081bd4d2b906cea68dc05c2ba3dd0bad928048de6e61059e9ec8f9",
+      "bytes": 61166,
+      "sha256": "0040c2e5fd3629f304d41e9d41ed5e2c60c9b8d1c9a5682096ff9b3e56edf902",
       "rows": 606,
       "header": [
         "symbol",
@@ -166,9 +185,9 @@
       ]
     },
     "stock_weekly_ohlcv.csv": {
-      "bytes": 9968767,
-      "sha256": "16eafaaa0e4b451c837878158a241e2a6d6a8c869cdfe760d6a3849e1e94220f",
-      "rows": 116849,
+      "bytes": 9969611,
+      "sha256": "26ed35fcdac0aee68bd1bd8d56806c1b43d62e73f90533d9a569009af22d462a",
+      "rows": 116858,
       "header": [
         "symbol",
         "week_period",
@@ -184,9 +203,9 @@
       ]
     },
     "stock_daily_ohlcv.csv": {
-      "bytes": 26746485,
-      "sha256": "1f20e61f81dfcf2645cbe223f11b826667f3ddb8fca11b05398761c1ffb86726",
-      "rows": 538077,
+      "bytes": 26763046,
+      "sha256": "84e4eab340574554ef491fea050a4ff38c90c365ac42c098a2d8faae06ea7879",
+      "rows": 538421,
       "header": [
         "date",
         "symbol",
@@ -199,37 +218,38 @@
       ]
     },
     "daily_bridge.csv": {
-      "sha256": "8fa4fa9651629b0c94c72a3be45bd6af5dba574ea2182ba9b4ea7d9872fe02be",
-      "rows": 46668,
-      "bytes": 2267470
+      "sha256": "94d149b27895fff20ba68c41b9d25fb30b06cf86334ec2944a98547db02e3b9d",
+      "rows": 46638,
+      "bytes": 2265558
     },
     "weekly_replace.csv": {
-      "sha256": "d6ee11d5a26a9e6727da1236e196e85156459d3caa14dbba3ea2b4e9952b3aa2",
-      "rows": 116849,
-      "bytes": 9735048
+      "sha256": "728f73d2744993be65e713b9ad621af75687f4f9ec93f4403f6319f057ecc9b9",
+      "rows": 116858,
+      "bytes": 9735874
     },
     "index_daily_bridge.csv": {
-      "sha256": "0149ef898ffbe7da035eed27b02f26a1189c36eda89c1bd73706e5c12aabcd1b",
+      "sha256": "1829abf2cf3a44f61ad7c9bf6ad44f15255bb05248d29726c9f860ec6807aada",
       "rows": 252,
       "bytes": 16468
     },
     "latest_bars.csv": {
-      "sha256": "d01d1eddfc36b2dfbaa7fa71d22e1a727e43f1a130d6c4076c6fc536c31fbad9",
-      "rows": 345,
-      "bytes": 19609
+      "sha256": "2153b20bfa0a1c8ea211c8cf3d946903fb9b435d9bbc7047f9c6937cdb3e4cba",
+      "rows": 344,
+      "bytes": 19590
     },
     "market_scan.csv": {
-      "sha256": "77f9acec2a9b8e3c8b129d6136d2df6cf82c4e74afdc186f89f5868c2f01ac35",
+      "sha256": "d866f915726bfbb1688e8ee5c864ed0ef1f135ede7c5048f84d558ad986a69db",
       "rows": 407,
-      "bytes": 253710
+      "bytes": 255575
     },
     "sector_scan.csv": {
-      "sha256": "374089d0a87fa54a49531f996f21ddb64249ba2b9079f4ba76a692325f7e849b",
-      "rows": 26,
-      "bytes": 4548
+      "sha256": "f8164a000d444d519721d389e2d170e8a20c49e91999834be93545553425dac0",
+      "rows": 27,
+      "bytes": 4780
     }
   },
   "unresolved": [
+    "CA_REVIEW_REQUIRED_AFTER_BASELINE_EOD",
     "INDEX_VOLUME_AND_OHLC_CONVENTIONS",
     "PRODUCTION_SOURCE_POLICY_AND_PUBLICATION_BINDING"
   ]
